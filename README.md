@@ -2,14 +2,14 @@
 XFunit is an object oriented framework to implement unit testing in native Fortran. It uses object-oriented features of Fortran 2018.
 
 ## Unit testing with XFunit
-Unit testing with XFunit is structured in suites and units. A test suite typically define all test to be implemented for a Fortran module. The tests in the suite are structured in unit test (units) concevied to test specific aspects of the functionality in the module,  Within each unit, a number of assertions are made, i.e. to test whether a specified condition is satisfied or not, e.g. the output of a function against expected value.
+Unit testing with XFunit is structured in suites and units. A test suite typically define all test to be implemented for a Fortran module. The tests in the suite are structured in unit test (units) conceived to test specific aspects of the functionality in the module,  Within each unit, a number of assertions are made, i.e. to test whether a specified condition is satisfied or not, e.g. the output of a function against expected value.
 
 ## The XFunit types
 XFunit provides the `t_xfunit_unit` derived type to host the method that implements the  assertions within the unit test case. Objects of this type also keep track of how many assertions are implemented in the test, how many have been executed and how many have passed and failed.
 
-XFunit povides the `t_xfunit_suite`derived type to host all configured unit test. Objects of this type keep track of the number of implemented unit tests, how may have been executed and how many have passed or failed.
+XFunit provides the `t_xfunit_suite`derived type to host all configured unit tests. Objects of this type keep track of the number of implemented unit tests, how many have been executed and how many have passed or failed.
 
-XFunit provides the `t_xfunit_manager` derived type to manage the execution of the test suite, the configuraiton of the execution environment and the generation of the test exection report.
+XFunit provides the `t_xfunit_manager` derived type to manage the execution of the test suite, the configuration of the execution environment and the generation of the test execution report.
 
 ## Writing unit tests with XFunit
 ### Using XFunit and declaring suites and unit tests
@@ -22,7 +22,7 @@ type(t_xfunit_suite) :: suite
 type(t_xfunit_unit) :: ut
 ```
 ### Initialising the test suite
-The process of initialisation of the test module starts with the initialisation of the suite object. The constructor provided by XFunit has mandatory arguments for the package being tests, the source code where tested module is contained and the suite description (annotation).
+The process of initialisation of the test module starts with the initialisation of the suite object. The constructor provided by XFunit has mandatory arguments for the package being tested, the source code where the tested module is contained and the suite description (annotation).
 ```fortran
   suite = xfunit_suite( package='foo_package', &
                         source='foo.f90', &
@@ -54,18 +54,18 @@ end subroutine bar_test
 ### Assertions
 Within a test case subroutine, assertions are made invoking one of the `assert` methods of the `t_xfunit_unit` object. XFunit provides a variety of overloaded methods:
 - `assert_equal()`: Equality for real, integer, complex, logical and character. This includes comparison of arrays with respect to another array or a single value.
-- `assert_between()`: Value within a range for real and integer. This includes comparison of arrays with respect to two boundary array or with respect to single boundary values.
+- `assert_between()`: Value within a range for real and integer. This includes comparison of arrays with respect to two boundary arrays or with respect to single boundary values.
 - `assert_greater()` and `assert_less()`: Value greater than and value less than for real and integer. This includes comparison of arrays with respect to another boundary array (greater or less) or with respect to a single boundary value (greater or less).
 - `assert_true()` and `assert_false()`: Assert the logical argument provided to the function with respect to `.true.` or `.false.`.
 - `assert_files()`: File comparison assertion, either as binary (data stream) or text (line by line)
-- `assert_class()`: Object comparison assertion. A object comparison function compatible with the `assignment(=)` operator must be provided. Optionally, a function returning the object serialization as a character string can be provided to allow the text representation of the compared objects in the tes report.
-- `assert_pass()` and `assert_fail()`: Pass and fail assertion that generate directla pass or fail status of the assertion without actual comparison.
+- `assert_class()`: Object comparison assertion. An object comparison function compatible with the `assignment(=)` operator must be provided. Optionally, a function returning the object serialisation as a character string can be provided to allow the text representation of the compared objects in the tes report.
+- `assert_pass()` and `assert_fail()`: Pass and fail assertions that generate directly pass or fail status of the assertion without actual comparison.
 
 All `real` and `complex` functions are overloaded for `kind=4,8`
 All `integer` functions are overloaded for `kind=1,2,4,8`
 All `logical` functions  are overloaded for `kind=1,2,4`
 The derived type `t_string` is also supported as a native type in the same configuration as `character`.
-For floating point equality assertions a threshold is used in the comparison. This threshold is automatically computed from the values of the asserted values. I can be ovewritten passing to the assertion call the optional argument `threshold`.
+For floating point equality assertions a threshold is used in the comparison. This threshold is automatically computed from the values of the asserted values. I can be overwritten passing to the assertion call the optional argument `threshold`.
 ```fortran
 call ut%assert_equal( 'Test with tolerance', x, 3.0, threshold=0.001 )
 ```
@@ -76,7 +76,7 @@ call ut%assert_equal( 'Test with tolerance', x, 3.0, threshold=0.001, status=sta
 The status argument can take the values `xfunit_assertion_is_none` (status undefined), `xfunit_assertion_is_fail` or `xfunit_assertion_is_pass`.
 
 ### Setup and teardown routines
-Each suite may optionally contain special subroutines called to be executed before (setup) and after (teardown) the execution of the units test within the suite.
+Each suite may optionally contain special subroutines called to be executed before (setup) and after (teardown) the execution of the unit tests within the suite.
 ```fortran
   suite = xfunit_suite( package='foo', &
                         source='foo.f90', &
@@ -84,7 +84,7 @@ Each suite may optionally contain special subroutines called to be executed befo
                         after=execute_after_foo_tests, &
                         annotation='My description of foo' )
 ```
-The setup subroutine is called before any tests are run and the teardown routine is called after all tests are finished. These subroutines can be used to initialize and finalize global variables or other settings for the tests. They also take the unit suite object as argument.
+The setup subroutine is called before any tests are run and the teardown routine is called after all tests are finished. These subroutines can be used to initialise and finalise global variables or other settings for the tests. They also take the unit suite object as an argument.
 Analogously, each unit test may optionally contain dedicated setup and teardown routines.
 ```fortran
   ut = xfunit_unit( name='bar', &
@@ -95,11 +95,11 @@ Analogously, each unit test may optionally contain dedicated setup and teardown 
                     annotation='My description of bar' )
   call suite%add_unit_test( ut )
 ```
-The setup subroutine is called before the unit test is run and the teardown routine is called after the unit test is finished. These subroutines can be used to initialize and finalize global variables or other settings for the unit test. They also take the unit test object as argument.
+The setup subroutine is called before the unit test is run and the teardown routine is called after the unit test is finished. These subroutines can be used to initialise and finalise global variables or other settings for the unit test. They also take the unit test object as an argument.
 
 ### Test initialisation and execution
-XFunit provides the derived typ `t_xfunit_manager` to setup the test execution environment, to execute the test and to generate the test execution report.
-The manager can be initialised with the general constructor that allows the definition of the root directory for the test execution, the data directory where data files are to be feteched (e.g. model data for the tests), the reference directory where file comparison refernece files are to be fetched and the output directory where JUnit files with the text execution report are to be placed.
+XFunit provides the derived type `t_xfunit_manager` to set up the test execution environment, to execute the test and to generate the test execution report.
+The manager can be initialised with the general constructor that allows the definition of the root directory for the test execution, the data directory where data files are to be fetched (e.g. model data for the tests), the reference directory where file comparison reference files are to be fetched and the output directory where JUnit files with the text execution report are to be placed.
 ```fortran
 ! Constructor (generic)
 function xfunit_manager( fname, &
@@ -112,7 +112,7 @@ function xfunit_manager( fname, &
 ! The path to the root directory where the tests are implemented (default to .)
   character(len=*), optional, intent(in) :: xfunit_root_dir
 
-! The path to the unit data (defalt to xfunit_root_dir)
+! The path to the unit data (default to xfunit_root_dir)
   character(len=*), optional, intent(in) :: unit_data_dir
 
 ! The path to the unit test reference (default to xfunit_root_dir)
@@ -143,7 +143,7 @@ function xfunit_manager_eclipse( module, xfunit_root_dir ) result(res)
 
 ...
 ```
-The execution of the test folow a sequence similar to the following example:
+The execution of the test follow a sequence similar to the following example:
 ```fortran
 ! Declarations
   type(t_xfunit_suite) :: suite
@@ -183,7 +183,7 @@ Two modes can be selected for the generation of the report: strict compatible wi
   manager = xfunit_manager_eclipse( 'foo', xfunit_root_dir, junit_strict=.true. )
 ```
 
-By default, the `t_xfunit_manager` object captures the standard output and standard erros and writes them to the `<sytem-out>` and `<system-err>` sections of the JUnit file respetively. This capture can be overriden during the `t_xfunit_manager` object construction.
+By default, the `t_xfunit_manager` object captures the standard output and standard error and writes them to the `<sytem-out>` and `<system-err>` sections of the JUnit file respetively. This capture can be overriden during the `t_xfunit_manager` object construction.
 ```fortran
   manager = xfunit_manager_eclipse( 'foo', xfunit_root_dir, free_out=.true. )
 ```
@@ -209,16 +209,16 @@ To execute the unit tests  execute the following command in the `src` or the `ut
 ```make
 gmake units
 ```
-The default compiler is `gfortran` but can be overriden from he command line to use Intel Fortran
+The default compiler is `gfortran` but can be overridden from the command line to use Intel Fortran
 ```make
 gmake F90COMP=ifort
 ```
 The ifort or gfortran commands must be in the execution path.
-Alternatively, the makefile can be edited to provide the ful path to the compiler.
+Alternatively, the makefile can be edited to provide the full path to the compiler.
 Compiler options are automatically selected for the active compiler; only Debug configuration is provided in the make files.
 
 ## Documentation
-This readme page is the main user documentation. In addition, documentation generated fir FORD and Doxygen can be dound in the `documentation` directory. Two sets of documetation are provided
+This readme page is the main user documentation. In addition, documentation generated with FORD and Doxygen can be found in the `documentation` directory. Two sets of documentation are provided
 - API: limited to the modules and derived types necessary to build units tests using XFunit (`t_xfunit`, `t_xfunit_manager`, `t_xfunit_suite`, `t_xfunit_unit`, `t_xfunit_assertion`)
 - Full: contains documentation for the complete XFunit library, including all utility modules.
 
