@@ -1,0 +1,6 @@
+This is a test file
+Second record in the file
+
+Previous record is an empty record
+And this record is much longer than all the rest --> one two three for five six seven eith nine ten end_of_record
+And now another one to verify that previous long record is complete
