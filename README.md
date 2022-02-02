@@ -195,6 +195,8 @@ The test provided along with the XFunit libraries are written using XFunit, henc
 ### Windows
 XFunit is provided with a Visual Studio 2019 configured solution that allows building and testing the entire suite. The solution provides a C# project that integrates the unit test in Fortran with the unit test detection feature of Visual Studio. This allows the execution of all unit tests from the Test Explorer menu.
 
+Create the environment variable `XFUNIT_ROOT_DIR=$(ProjectDir)..` for each unit testing project to store the test output (.jxml file) in the `utest` directory. This configuration depends on the windows user in file `unit_m_xfunit_<functionname>.vfproj.<windows user>.user`
+
 ### Linux
 XFunit is provided with `gmake` makefiles to build and test the entire suite. 
 To build the XFunit library and use modules files  execute the following command in the `src` directory
