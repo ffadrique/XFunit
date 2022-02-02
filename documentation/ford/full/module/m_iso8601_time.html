@@ -1,0 +1,3634 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+   <meta name="description" content="Unit Test framework for Fortran">
+    
+    <meta name="author" content="Fran Martinez" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>m_iso8601_time &ndash; XFunit</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+    
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="../js/jquery-2.1.3.min.js"></script>
+    <script src="../js/svg-pan-zoom.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">XFunit </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+        
+            <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
+              <a href="#" class="dropdown-toggle"
+              data-toggle="dropdown" role="button"
+              aria-haspopup="true"
+     aria-expanded="false">Contents <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          
+              
+            <li><a href="../lists/files.html">Source Files</a></li>
+        
+        
+        
+            <li><a href="../lists/modules.html">Modules</a></li>
+        
+            
+                                
+            <li><a href="../lists/procedures.html">Procedures</a></li>
+        
+        
+            <li><a href="../lists/absint.html">Abstract Interfaces</a></li>
+               
+            <li><a href="../lists/types.html">Derived Types</a></li>
+        
+               
+        
+        
+            </ul>
+        
+            </li>
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/files.html">Source Files</a></li>
+
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/modules.html">Modules</a></li>
+
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/procedures.html">Procedures</a></li>
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/absint.html">Abstract Interfaces</a></li>
+                             
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/types.html">Derived Types</a></li>
+
+
+
+
+          </ul>
+        
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+    
+  
+  <div class="row">
+    <h1>m_iso8601_time 
+    <small>Module</small>
+    
+    </h1>
+    
+<div class="row">
+  <div class="col-lg-12">
+<div class="well well-sm">
+  <ul class="list-inline" style="margin-bottom:0px;display:inline">
+     
+     
+     
+    <li><i class="fa fa-legal"></i> <a rel="license" href="http://www.freebsd.org/copyright/freebsd-doc-license.html">FreeBSD Documentation License</a></li> 
+     
+     
+     
+    
+    
+     <li><i class="fa fa-list-ol"></i>
+       <a data-toggle="tooltip"
+    data-placement="bottom" data-html="true"
+    title=" 3.1% of total for modules and submodules.">356 statements</a>
+     </li> 
+     
+     
+     
+    <li><i class="fa fa-code"></i><a href="../src/m_iso8601_time.f03"> Source File</a></li>
+     
+     
+  </ul>
+  <ol class="breadcrumb in-well text-right">
+  
+    
+     <li><a href='../sourcefile/m_iso8601_time.f03.html'>m_iso8601_time.f03</a></li>
+    
+  
+     <li class="active">m_iso8601_time</li>
+  </ol>
+</div>
+</div>
+</div>
+<script>
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+
+  </div>
+  
+  <div class="row">
+    <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
+    
+<div id="sidebar">
+  
+<h3>Contents</h3>
+ 
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars-0">Variables</a></h3></div>
+  <div id="vars-0" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-sccs_info~4">sccs_info</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-iso8601_zone_none">iso8601_zone_none</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-iso8601_zone_hhmm">iso8601_zone_hhmm</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-iso8601_zone_hh">iso8601_zone_hh</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-utc">utc</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-time_period_designator">time_period_designator</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-recurring_period_designator">recurring_period_designator</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-time_separator">time_separator</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-solidus_separator">solidus_separator</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-iso8601_time_base_format">iso8601_time_base_format</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-iso8601_time_extended_format">iso8601_time_extended_format</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-iso8601_hhmmss">iso8601_hhmmss</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-iso8601_hhmm">iso8601_hhmm</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-iso8601_hh">iso8601_hh</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-iso8601_hhmmss_s">iso8601_hhmmss_s</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-iso8601_hhmmss_ss">iso8601_hhmmss_ss</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-iso8601_hhmmss_sss">iso8601_hhmmss_sss</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-iso8601_hhmmss_sss_sss">iso8601_hhmmss_sss_sss</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-iso8601_hhmmss_sss_sss_sss">iso8601_hhmmss_sss_sss_sss</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-time_format_base">time_format_base</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-i~8">i</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-time_format">time_format</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-time_length">time_length</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#inters-0">Interfaces</a></h3></div>
+  <div id="inters-0" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#interface-iso8601_time">iso8601_time</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#types-0">Derived Types</a></h3></div>
+  <div id="types-0" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#type-t_iso8601_time">t_iso8601_time</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#funcs-0">Functions</a></h3></div>
+  <div id="funcs-0" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_null">iso8601_time_null</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_specific">iso8601_time_specific</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_default">iso8601_time_default</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_now">iso8601_time_now</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_to_string">iso8601_time_to_string</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_zone_to_string">iso8601_time_zone_to_string</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_get_hour">iso8601_time_get_hour</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_get_minute">iso8601_time_get_minute</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_get_second">iso8601_time_get_second</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_get_millisecond">iso8601_time_get_millisecond</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_get_microsecond">iso8601_time_get_microsecond</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_get_nanosecond">iso8601_time_get_nanosecond</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_get_time_zone">iso8601_time_get_time_zone</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#subs-0">Subroutines</a></h3></div>
+  <div class="list-group">
+    <div id="subs-0" class="panel-collapse collapse">
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_set_hour">iso8601_time_set_hour</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_set_hour_default">iso8601_time_set_hour_default</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_set_minute">iso8601_time_set_minute</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_set_minute_default">iso8601_time_set_minute_default</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_set_second">iso8601_time_set_second</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_set_second_default">iso8601_time_set_second_default</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_set_millisecond">iso8601_time_set_millisecond</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_set_millisecond_default">iso8601_time_set_millisecond_default</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_set_microsecond">iso8601_time_set_microsecond</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_set_microsecond_default">iso8601_time_set_microsecond_default</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_set_nanosecond">iso8601_time_set_nanosecond</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_set_nanosecond_default">iso8601_time_set_nanosecond_default</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_set_time_zone">iso8601_time_set_time_zone</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+    </div>
+    
+    <div class="col-md-9" id='text'>
+    <p>ISO8601 time format</p>
+<p>License   : This file is part of XFunit.</p>
+<div class="codehilite"><pre><span></span>         XFunit is free software: you can redistribute it and/or modify
+         it under the terms of the GNU Lesser General Public License as
+         published by the Free Software Foundation, either version 3 of
+         the License, or (at your option) any later version.
+
+         XFunit is distributed in the hope that it will be useful,
+         but WITHOUT ANY WARRANTY; without even the implied warranty of
+         MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+         See the GNU Lesser General Public License for more details.
+
+         You should have received a copy of the GNU Lesser General Public
+         License along with Zofu.
+         If not, see &lt;http://www.gnu.org/licenses/&gt;.
+</pre></div>
+      <br>
+    
+  
+    <div class="panel panel-default">
+      <div class="panel-heading">
+  <h3 class="panel-title">Uses</h3>
+      </div>
+      <ul class="list-group">
+      
+      <li class="list-group-item">
+  <ul class="list-inline">
+    
+    <li><a href='../module/m_object.html'>m_object</a></li>
+    
+  </ul>
+      </li>
+      
+      
+      
+      </ul>
+    </div>
+    
+
+    
+    
+
+    <br>
+
+    <section class="visible-xs visible-sm hidden-md">
+      
+<h3>Contents</h3>
+ 
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars-1">Variables</a></h3></div>
+  <div id="vars-1" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-sccs_info~4">sccs_info</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-iso8601_zone_none">iso8601_zone_none</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-iso8601_zone_hhmm">iso8601_zone_hhmm</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-iso8601_zone_hh">iso8601_zone_hh</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-utc">utc</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-time_period_designator">time_period_designator</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-recurring_period_designator">recurring_period_designator</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-time_separator">time_separator</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-solidus_separator">solidus_separator</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-iso8601_time_base_format">iso8601_time_base_format</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-iso8601_time_extended_format">iso8601_time_extended_format</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-iso8601_hhmmss">iso8601_hhmmss</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-iso8601_hhmm">iso8601_hhmm</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-iso8601_hh">iso8601_hh</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-iso8601_hhmmss_s">iso8601_hhmmss_s</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-iso8601_hhmmss_ss">iso8601_hhmmss_ss</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-iso8601_hhmmss_sss">iso8601_hhmmss_sss</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-iso8601_hhmmss_sss_sss">iso8601_hhmmss_sss_sss</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-iso8601_hhmmss_sss_sss_sss">iso8601_hhmmss_sss_sss_sss</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-time_format_base">time_format_base</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-i~8">i</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-time_format">time_format</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#variable-time_length">time_length</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#inters-1">Interfaces</a></h3></div>
+  <div id="inters-1" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#interface-iso8601_time">iso8601_time</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#types-1">Derived Types</a></h3></div>
+  <div id="types-1" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#type-t_iso8601_time">t_iso8601_time</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#funcs-1">Functions</a></h3></div>
+  <div id="funcs-1" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_null">iso8601_time_null</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_specific">iso8601_time_specific</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_default">iso8601_time_default</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_now">iso8601_time_now</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_to_string">iso8601_time_to_string</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_zone_to_string">iso8601_time_zone_to_string</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_get_hour">iso8601_time_get_hour</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_get_minute">iso8601_time_get_minute</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_get_second">iso8601_time_get_second</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_get_millisecond">iso8601_time_get_millisecond</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_get_microsecond">iso8601_time_get_microsecond</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_get_nanosecond">iso8601_time_get_nanosecond</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_get_time_zone">iso8601_time_get_time_zone</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#subs-1">Subroutines</a></h3></div>
+  <div class="list-group">
+    <div id="subs-1" class="panel-collapse collapse">
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_set_hour">iso8601_time_set_hour</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_set_hour_default">iso8601_time_set_hour_default</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_set_minute">iso8601_time_set_minute</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_set_minute_default">iso8601_time_set_minute_default</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_set_second">iso8601_time_set_second</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_set_second_default">iso8601_time_set_second_default</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_set_millisecond">iso8601_time_set_millisecond</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_set_millisecond_default">iso8601_time_set_millisecond_default</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_set_microsecond">iso8601_time_set_microsecond</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_set_microsecond_default">iso8601_time_set_microsecond_default</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_set_nanosecond">iso8601_time_set_nanosecond</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_set_nanosecond_default">iso8601_time_set_nanosecond_default</a>
+      
+      <a class="list-group-item" href="../module/m_iso8601_time.html#proc-iso8601_time_set_time_zone">iso8601_time_set_time_zone</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+    </section>
+    <br class="visible-xs visible-sm hidden-md">
+
+    
+
+    
+    <section>
+    <h2>Variables</h2>
+    
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Visibility</th>
+
+<th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-sccs_info~4"></span>character(len=130),</td>
+  
+  <td>private,</td>
+  <td>parameter</td><td>::</td>
+  <td><strong>sccs_info</strong></td><td> =</td><td>'$Id: $'</td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-iso8601_zone_none"></span>integer(kind=1),</td>
+  
+  <td>public,</td>
+  <td>parameter</td><td>::</td>
+  <td><strong>iso8601_zone_none</strong></td><td> =</td><td>0_1</td><td><p>ISO8601 time zone format designators</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-iso8601_zone_hhmm"></span>integer(kind=1),</td>
+  
+  <td>public,</td>
+  <td>parameter</td><td>::</td>
+  <td><strong>iso8601_zone_hhmm</strong></td><td> =</td><td>1_1</td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-iso8601_zone_hh"></span>integer(kind=1),</td>
+  
+  <td>public,</td>
+  <td>parameter</td><td>::</td>
+  <td><strong>iso8601_zone_hh</strong></td><td> =</td><td>2_1</td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-utc"></span>character,</td>
+  
+  <td>private,</td>
+  <td>parameter</td><td>::</td>
+  <td><strong>utc</strong></td><td> =</td><td>'Z'</td><td><p>Time zone designators</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-time_period_designator"></span>character,</td>
+  
+  <td>private,</td>
+  <td>parameter</td><td>::</td>
+  <td><strong>time_period_designator</strong></td><td> =</td><td>'P'</td><td><p>ISO8601 format designators (<strong><em> for future use </em></strong>)</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-recurring_period_designator"></span>character,</td>
+  
+  <td>private,</td>
+  <td>parameter</td><td>::</td>
+  <td><strong>recurring_period_designator</strong></td><td> =</td><td>'R'</td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-time_separator"></span>character,</td>
+  
+  <td>private,</td>
+  <td>parameter</td><td>::</td>
+  <td><strong>time_separator</strong></td><td> =</td><td>':'</td><td><p>ISO6801 format separators (<strong><em> for future use </em></strong>)</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-solidus_separator"></span>character,</td>
+  
+  <td>private,</td>
+  <td>parameter</td><td>::</td>
+  <td><strong>solidus_separator</strong></td><td> =</td><td>'/'</td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-iso8601_time_base_format"></span>integer,</td>
+  
+  <td>public,</td>
+  <td>parameter</td><td>::</td>
+  <td><strong>iso8601_time_base_format</strong></td><td> =</td><td>1</td><td><p>Base/Extended format</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-iso8601_time_extended_format"></span>integer,</td>
+  
+  <td>public,</td>
+  <td>parameter</td><td>::</td>
+  <td><strong>iso8601_time_extended_format</strong></td><td> =</td><td>2</td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-iso8601_hhmmss"></span>integer,</td>
+  
+  <td>public,</td>
+  <td>parameter</td><td>::</td>
+  <td><strong>iso8601_hhmmss</strong></td><td> =</td><td>1</td><td><p>ISO8601 time format designators
+The values shall be multiples of 1 to allow combination with the time desingators and allow
+date/time designatos to be n00+m and make unique combinations of date and time designators</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-iso8601_hhmm"></span>integer,</td>
+  
+  <td>public,</td>
+  <td>parameter</td><td>::</td>
+  <td><strong>iso8601_hhmm</strong></td><td> =</td><td>2</td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-iso8601_hh"></span>integer,</td>
+  
+  <td>public,</td>
+  <td>parameter</td><td>::</td>
+  <td><strong>iso8601_hh</strong></td><td> =</td><td>3</td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-iso8601_hhmmss_s"></span>integer,</td>
+  
+  <td>public,</td>
+  <td>parameter</td><td>::</td>
+  <td><strong>iso8601_hhmmss_s</strong></td><td> =</td><td>4</td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-iso8601_hhmmss_ss"></span>integer,</td>
+  
+  <td>public,</td>
+  <td>parameter</td><td>::</td>
+  <td><strong>iso8601_hhmmss_ss</strong></td><td> =</td><td>5</td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-iso8601_hhmmss_sss"></span>integer,</td>
+  
+  <td>public,</td>
+  <td>parameter</td><td>::</td>
+  <td><strong>iso8601_hhmmss_sss</strong></td><td> =</td><td>6</td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-iso8601_hhmmss_sss_sss"></span>integer,</td>
+  
+  <td>public,</td>
+  <td>parameter</td><td>::</td>
+  <td><strong>iso8601_hhmmss_sss_sss</strong></td><td> =</td><td>7</td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-iso8601_hhmmss_sss_sss_sss"></span>integer,</td>
+  
+  <td>public,</td>
+  <td>parameter</td><td>::</td>
+  <td><strong>iso8601_hhmmss_sss_sss_sss</strong></td><td> =</td><td>8</td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-time_format_base"></span>character(len=*),</td>
+  
+  <td>private,</td>
+  <td>parameter, dimension(2,8)</td><td>::</td>
+  <td><strong>time_format_base</strong></td><td> =</td><td>reshape(['3i2.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;', 'i2.2,2(":",i2.2)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;', '2i2.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;', 'i2.2,":",i2.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;', 'i2.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;', 'i2.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;', '3i2.2,".",i1.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;', 'i2.2,2(":",i2.2),".",i1.1&nbsp;&nbsp;', '3i2.2,".",i2.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;', 'i2.2,2(":",i2.2),".",i2.2&nbsp;&nbsp;', '3i2.2,".",i3.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;', 'i2.2,2(":",i2.2),".",i3.3&nbsp;&nbsp;', '3i2.2,".",2i3.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;', 'i2.2,2(":",i2.2),".",2i3.3 ', '3i2.2,".",3i3.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;', 'i2.2,2(":",i2.2),".",3i3.3 '], [2, 8])</td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-i~8"></span>integer,</td>
+  
+  <td>private</td>
+  <td></td><td>::</td>
+  <td><strong>i</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-time_format"></span>character(len=*),</td>
+  
+  <td>private,</td>
+  <td>parameter, dimension(2,8)</td><td>::</td>
+  <td><strong>time_format</strong></td><td> =</td><td>reshape([('('//time_format_base(1, i)//')', '('//time_format_base(2, i)//')', i=1, 8)], [2, 8])</td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-time_length"></span>integer,</td>
+  
+  <td>private,</td>
+  <td>parameter</td><td>::</td>
+  <td><strong>time_length</strong></td><td> =</td><td>32</td><td><p>Default length for character representation</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+    </section>
+    <br>
+    
+    
+    
+    
+    
+    <section>
+   <h2>Interfaces</h2>
+   
+     
+<div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="interface-iso8601_time"></span><h3>public interface <a href='../interface/iso8601_time.html'>iso8601_time</a>
+    
+  </h3></div>
+  
+  <div class="panel-body">
+    
+    <p>Constructor interface</p>
+  </div>
+  
+  <ul class="list-group">
+  
+  
+  
+    <li class="list-group-item">
+    
+    
+    <h3>
+private pure function <a href='../proc/iso8601_time_null.html'>iso8601_time_null</a>() result(res)
+    
+    
+   
+</h3>
+    
+
+
+
+
+
+
+
+<p>Default time constructor</p>
+    
+    <h4>Arguments</h4>
+    
+      <em>None</em>
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>type(<a href='../type/t_iso8601_time.html'>t_iso8601_time</a>)
+  </small></h4>
+  
+    
+
+    </li>
+  
+    <li class="list-group-item">
+    
+    
+    <h3>
+private pure function <a href='../proc/iso8601_time_specific.html'>iso8601_time_specific</a>(hour, minute, second, millisecond, microsecond, nanosecond, time_zone) result(res)
+    
+    
+   
+</h3>
+    
+
+
+
+
+
+
+
+<p>Time constructor</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer(kind=1),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>hour</strong></td><td><p>The hour</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer(kind=1),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>minute</strong></td><td><p>The minute</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer(kind=1),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>second</strong></td><td><p>The second</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer(kind=2),</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>millisecond</strong></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer(kind=2),</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>microsecond</strong></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer(kind=2),</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>nanosecond</strong></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(len=*),</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>time_zone</strong></td><td></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>type(<a href='../type/t_iso8601_time.html'>t_iso8601_time</a>)
+  </small></h4>
+  
+    
+
+    </li>
+  
+    <li class="list-group-item">
+    
+    
+    <h3>
+private pure function <a href='../proc/iso8601_time_default.html'>iso8601_time_default</a>(hour, minute, second, millisecond, microsecond, nanosecond, time_zone) result(res)
+    
+    
+   
+</h3>
+    
+
+
+
+
+
+
+
+<p>Time constructor with default integers</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer,</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>hour</strong></td><td><p>The hour</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer,</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>minute</strong></td><td><p>The minute</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer,</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>second</strong></td><td><p>The second</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer,</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>millisecond</strong></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer,</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>microsecond</strong></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer,</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>nanosecond</strong></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(len=*),</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>time_zone</strong></td><td></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>type(<a href='../type/t_iso8601_time.html'>t_iso8601_time</a>)
+  </small></h4>
+  
+    
+
+    </li>
+  
+  
+  </ul>
+</div>
+
+    
+    </section>
+  <br>
+    
+
+    
+    
+    
+    <section>
+     <h2>Derived Types</h2>
+   
+     
+<div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="type-t_iso8601_time"></span><h3>type, public, extends(<a href='../type/t_object.html'>t_object</a>) :: <a href='../type/t_iso8601_time.html'>t_iso8601_time</a>
+    
+  </h3></div>
+  <div class="panel-body">
+    
+    
+    <p>The iso8601 structure</p>
+    
+     
+     <h4>Components</h4>
+    
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Visibility</th>
+
+<th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-hour"></span>integer(kind=1),</td>
+  
+  <td>private</td>
+  <td></td><td>::</td>
+  <td><strong>hour</strong></td><td> =</td><td>0_1</td><td><p>Hour of the day</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-minute"></span>integer(kind=1),</td>
+  
+  <td>private</td>
+  <td></td><td>::</td>
+  <td><strong>minute</strong></td><td> =</td><td>0_1</td><td><p>Minute of the hour</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-second"></span>integer(kind=1),</td>
+  
+  <td>private</td>
+  <td></td><td>::</td>
+  <td><strong>second</strong></td><td> =</td><td>0_1</td><td><p>Second of the minute</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-millisecond"></span>integer(kind=2),</td>
+  
+  <td>private</td>
+  <td></td><td>::</td>
+  <td><strong>millisecond</strong></td><td> =</td><td>0_2</td><td><p>Milllisecond of the second</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-microsecond"></span>integer(kind=2),</td>
+  
+  <td>private</td>
+  <td></td><td>::</td>
+  <td><strong>microsecond</strong></td><td> =</td><td>0_2</td><td><p>Microsecond of the milllisecond</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-nanosecond"></span>integer(kind=2),</td>
+  
+  <td>private</td>
+  <td></td><td>::</td>
+  <td><strong>nanosecond</strong></td><td> =</td><td>0_2</td><td><p>Nanosecond of the microsecond</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-time_zone"></span>character(len=6),</td>
+  
+  <td>private</td>
+  <td></td><td>::</td>
+  <td><strong>time_zone</strong></td><td> =</td><td>utc</td><td><p>World time zone</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-time_zone_designator"></span>integer(kind=1),</td>
+  
+  <td>private</td>
+  <td></td><td>::</td>
+  <td><strong>time_zone_designator</strong></td><td> =</td><td>iso8601_zone_none</td><td><p>World time zone designator</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+     
+     
+          
+     
+     <h4>Type-Bound Procedures</h4>
+      <table class="table table-striped varlist">
+      <tbody>
+      
+       <tr><td>procedure, public :: <strong><a href='../type/t_object.html#boundprocedure-equals'>equals</a></strong>  => object_equals </td>
+       <td><p>Determines whether the specified object is equal to the current object</p></td></tr>
+      
+       <tr><td>procedure, public :: <strong><a href='../type/t_object.html#boundprocedure-get_hash_code'>get_hash_code</a></strong>  => object_get_hash_code </td>
+       <td><p>Default hash function</p></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_iso8601_time.html#boundprocedure-to_string~6'>to_string</a></strong>  => iso8601_time_to_string </td>
+       <td></td></tr>
+      
+       <tr><td>procedure, private :: <strong><a href='../type/t_iso8601_time.html#boundprocedure-iso8601_time_to_string'>iso8601_time_to_string</a></strong>  </td>
+       <td></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_iso8601_time.html#boundprocedure-get_hour~2'>get_hour</a></strong>  => iso8601_time_get_hour </td>
+       <td></td></tr>
+      
+       <tr><td>procedure, private :: <strong><a href='../type/t_iso8601_time.html#boundprocedure-iso8601_time_get_hour'>iso8601_time_get_hour</a></strong>  </td>
+       <td></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_iso8601_time.html#boundprocedure-set_hour~2'>set_hour</a></strong>  => iso8601_time_set_hour, iso8601_time_set_hour_default </td>
+       <td></td></tr>
+      
+       <tr><td>procedure, private :: <strong><a href='../type/t_iso8601_time.html#boundprocedure-iso8601_time_set_hour'>iso8601_time_set_hour</a></strong>  </td>
+       <td></td></tr>
+      
+       <tr><td>procedure, private :: <strong><a href='../type/t_iso8601_time.html#boundprocedure-iso8601_time_set_hour_default'>iso8601_time_set_hour_default</a></strong>  </td>
+       <td></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_iso8601_time.html#boundprocedure-get_minute~2'>get_minute</a></strong>  => iso8601_time_get_minute </td>
+       <td></td></tr>
+      
+       <tr><td>procedure, private :: <strong><a href='../type/t_iso8601_time.html#boundprocedure-iso8601_time_get_minute'>iso8601_time_get_minute</a></strong>  </td>
+       <td></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_iso8601_time.html#boundprocedure-set_minute~2'>set_minute</a></strong>  => iso8601_time_set_minute, iso8601_time_set_minute_default </td>
+       <td></td></tr>
+      
+       <tr><td>procedure, private :: <strong><a href='../type/t_iso8601_time.html#boundprocedure-iso8601_time_set_minute'>iso8601_time_set_minute</a></strong>  </td>
+       <td></td></tr>
+      
+       <tr><td>procedure, private :: <strong><a href='../type/t_iso8601_time.html#boundprocedure-iso8601_time_set_minute_default'>iso8601_time_set_minute_default</a></strong>  </td>
+       <td></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_iso8601_time.html#boundprocedure-get_second~2'>get_second</a></strong>  => iso8601_time_get_second </td>
+       <td></td></tr>
+      
+       <tr><td>procedure, private :: <strong><a href='../type/t_iso8601_time.html#boundprocedure-iso8601_time_get_second'>iso8601_time_get_second</a></strong>  </td>
+       <td></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_iso8601_time.html#boundprocedure-set_second~2'>set_second</a></strong>  => iso8601_time_set_second, iso8601_time_set_second_default </td>
+       <td></td></tr>
+      
+       <tr><td>procedure, private :: <strong><a href='../type/t_iso8601_time.html#boundprocedure-iso8601_time_set_second'>iso8601_time_set_second</a></strong>  </td>
+       <td></td></tr>
+      
+       <tr><td>procedure, private :: <strong><a href='../type/t_iso8601_time.html#boundprocedure-iso8601_time_set_second_default'>iso8601_time_set_second_default</a></strong>  </td>
+       <td></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_iso8601_time.html#boundprocedure-get_millisecond~2'>get_millisecond</a></strong>  => iso8601_time_get_millisecond </td>
+       <td></td></tr>
+      
+       <tr><td>procedure, private :: <strong><a href='../type/t_iso8601_time.html#boundprocedure-iso8601_time_get_millisecond'>iso8601_time_get_millisecond</a></strong>  </td>
+       <td></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_iso8601_time.html#boundprocedure-set_millisecond~2'>set_millisecond</a></strong>  => iso8601_time_set_millisecond, iso8601_time_set_millisecond_default </td>
+       <td></td></tr>
+      
+       <tr><td>procedure, private :: <strong><a href='../type/t_iso8601_time.html#boundprocedure-iso8601_time_set_millisecond'>iso8601_time_set_millisecond</a></strong>  </td>
+       <td></td></tr>
+      
+       <tr><td>procedure, private :: <strong><a href='../type/t_iso8601_time.html#boundprocedure-iso8601_time_set_millisecond_default'>iso8601_time_set_millisecond_default</a></strong>  </td>
+       <td></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_iso8601_time.html#boundprocedure-get_microsecond~2'>get_microsecond</a></strong>  => iso8601_time_get_microsecond </td>
+       <td></td></tr>
+      
+       <tr><td>procedure, private :: <strong><a href='../type/t_iso8601_time.html#boundprocedure-iso8601_time_get_microsecond'>iso8601_time_get_microsecond</a></strong>  </td>
+       <td></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_iso8601_time.html#boundprocedure-set_microsecond~2'>set_microsecond</a></strong>  => iso8601_time_set_microsecond, iso8601_time_set_microsecond_default </td>
+       <td></td></tr>
+      
+       <tr><td>procedure, private :: <strong><a href='../type/t_iso8601_time.html#boundprocedure-iso8601_time_set_microsecond'>iso8601_time_set_microsecond</a></strong>  </td>
+       <td></td></tr>
+      
+       <tr><td>procedure, private :: <strong><a href='../type/t_iso8601_time.html#boundprocedure-iso8601_time_set_microsecond_default'>iso8601_time_set_microsecond_default</a></strong>  </td>
+       <td></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_iso8601_time.html#boundprocedure-get_nanosecond~2'>get_nanosecond</a></strong>  => iso8601_time_get_nanosecond </td>
+       <td></td></tr>
+      
+       <tr><td>procedure, private :: <strong><a href='../type/t_iso8601_time.html#boundprocedure-iso8601_time_get_nanosecond'>iso8601_time_get_nanosecond</a></strong>  </td>
+       <td></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_iso8601_time.html#boundprocedure-set_nanosecond~2'>set_nanosecond</a></strong>  => iso8601_time_set_nanosecond, iso8601_time_set_nanosecond_default </td>
+       <td></td></tr>
+      
+       <tr><td>procedure, private :: <strong><a href='../type/t_iso8601_time.html#boundprocedure-iso8601_time_set_nanosecond'>iso8601_time_set_nanosecond</a></strong>  </td>
+       <td></td></tr>
+      
+       <tr><td>procedure, private :: <strong><a href='../type/t_iso8601_time.html#boundprocedure-iso8601_time_set_nanosecond_default'>iso8601_time_set_nanosecond_default</a></strong>  </td>
+       <td></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_iso8601_time.html#boundprocedure-get_time_zone~2'>get_time_zone</a></strong>  => iso8601_time_get_time_zone </td>
+       <td></td></tr>
+      
+       <tr><td>procedure, private :: <strong><a href='../type/t_iso8601_time.html#boundprocedure-iso8601_time_get_time_zone'>iso8601_time_get_time_zone</a></strong>  </td>
+       <td></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_iso8601_time.html#boundprocedure-set_time_zone~2'>set_time_zone</a></strong>  => iso8601_time_set_time_zone </td>
+       <td></td></tr>
+      
+       <tr><td>procedure, private :: <strong><a href='../type/t_iso8601_time.html#boundprocedure-iso8601_time_set_time_zone'>iso8601_time_set_time_zone</a></strong>  </td>
+       <td></td></tr>
+      
+       <tr><td>procedure, private :: <strong><a href='../type/t_iso8601_time.html#boundprocedure-iso8601_time_zone_to_string'>iso8601_time_zone_to_string</a></strong>  </td>
+       <td><p>Private functions</p></td></tr>
+      
+       </tbody>
+       </table>
+     
+  </div>
+</div>
+
+     
+    </section>
+  <br>
+    
+    
+     
+    <section>
+    <h2>Functions</h2>
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-iso8601_time_null"></span><h3>
+private pure function <a href='../proc/iso8601_time_null.html'>iso8601_time_null</a>() result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Default time constructor</p>
+    
+    <h4>Arguments</h4>
+    
+      <em>None</em>
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>type(<a href='../type/t_iso8601_time.html'>t_iso8601_time</a>)
+  </small></h4>
+  
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-iso8601_time_specific"></span><h3>
+private pure function <a href='../proc/iso8601_time_specific.html'>iso8601_time_specific</a>(hour, minute, second, millisecond, microsecond, nanosecond, time_zone) result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Time constructor</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer(kind=1),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>hour</strong></td><td><p>The hour</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer(kind=1),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>minute</strong></td><td><p>The minute</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer(kind=1),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>second</strong></td><td><p>The second</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer(kind=2),</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>millisecond</strong></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer(kind=2),</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>microsecond</strong></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer(kind=2),</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>nanosecond</strong></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(len=*),</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>time_zone</strong></td><td></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>type(<a href='../type/t_iso8601_time.html'>t_iso8601_time</a>)
+  </small></h4>
+  
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-iso8601_time_default"></span><h3>
+private pure function <a href='../proc/iso8601_time_default.html'>iso8601_time_default</a>(hour, minute, second, millisecond, microsecond, nanosecond, time_zone) result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Time constructor with default integers</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer,</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>hour</strong></td><td><p>The hour</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer,</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>minute</strong></td><td><p>The minute</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer,</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>second</strong></td><td><p>The second</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer,</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>millisecond</strong></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer,</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>microsecond</strong></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer,</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>nanosecond</strong></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(len=*),</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>time_zone</strong></td><td></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>type(<a href='../type/t_iso8601_time.html'>t_iso8601_time</a>)
+  </small></h4>
+  
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-iso8601_time_now"></span><h3>
+public function <a href='../proc/iso8601_time_now.html'>iso8601_time_now</a>() result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Initialise from machine clock</p>
+    
+    <h4>Arguments</h4>
+    
+      <em>None</em>
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>type(<a href='../type/t_iso8601_time.html'>t_iso8601_time</a>)
+  </small></h4>
+  
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-iso8601_time_to_string"></span><h3>
+private elemental function <a href='../proc/iso8601_time_to_string.html'>iso8601_time_to_string</a>(this, format, size, zone) result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Format a time</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/t_iso8601_time.html'>t_iso8601_time</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>this</strong></td><td><p>The ISO8601 structure</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer,</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>format</strong></td><td><p>The format flag (optional, default to iso8601_hhmmss)</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer,</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>size</strong></td><td><p>The flag to for base/extended format (optional, default to extended_format)</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>logical,</td>
+  <td>intent(in),</td>
+  <td>optional</td>
+  
+  <td></td><td>::</td>
+  <td><strong>zone</strong></td><td><p>The flag to show the time zone (optional, default to .true.)</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>character(len=time_length)
+  </small></h4>
+  <p>The resulting string</p>
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-iso8601_time_zone_to_string"></span><h3>
+private pure function <a href='../proc/iso8601_time_zone_to_string.html'>iso8601_time_zone_to_string</a>(this, size) result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Build the zone string</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/t_iso8601_time.html'>t_iso8601_time</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>this</strong></td><td><p>The data structure</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer,</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>size</strong></td><td><p>Format for the zone string generation</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>character(len=:),
+  allocatable</small></h4>
+  <p>The resulting zone string</p>
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-iso8601_time_get_hour"></span><h3>
+private elemental function <a href='../proc/iso8601_time_get_hour.html'>iso8601_time_get_hour</a>(this) result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Get attribute hour</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/t_iso8601_time.html'>t_iso8601_time</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>this</strong></td><td><p>The data structure</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>integer(kind=1)
+  </small></h4>
+  <p>The parameter value to be returned</p>
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-iso8601_time_get_minute"></span><h3>
+private elemental function <a href='../proc/iso8601_time_get_minute.html'>iso8601_time_get_minute</a>(this) result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Get attribute minute</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/t_iso8601_time.html'>t_iso8601_time</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>this</strong></td><td><p>The data structure</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>integer(kind=1)
+  </small></h4>
+  <p>The parameter value to be returned</p>
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-iso8601_time_get_second"></span><h3>
+private elemental function <a href='../proc/iso8601_time_get_second.html'>iso8601_time_get_second</a>(this) result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Get attribute second</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/t_iso8601_time.html'>t_iso8601_time</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>this</strong></td><td><p>The data structure</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>integer(kind=1)
+  </small></h4>
+  <p>The parameter value to be returned</p>
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-iso8601_time_get_millisecond"></span><h3>
+private elemental function <a href='../proc/iso8601_time_get_millisecond.html'>iso8601_time_get_millisecond</a>(this) result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Get attribute millisecond</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/t_iso8601_time.html'>t_iso8601_time</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>this</strong></td><td><p>The data structure</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>integer(kind=2)
+  </small></h4>
+  <p>The parameter value to be returned</p>
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-iso8601_time_get_microsecond"></span><h3>
+private elemental function <a href='../proc/iso8601_time_get_microsecond.html'>iso8601_time_get_microsecond</a>(this) result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Get attribute microsecond</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/t_iso8601_time.html'>t_iso8601_time</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>this</strong></td><td><p>The data structure</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>integer(kind=2)
+  </small></h4>
+  <p>The parameter value to be returned</p>
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-iso8601_time_get_nanosecond"></span><h3>
+private elemental function <a href='../proc/iso8601_time_get_nanosecond.html'>iso8601_time_get_nanosecond</a>(this) result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Get attribute nanosecond</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/t_iso8601_time.html'>t_iso8601_time</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>this</strong></td><td><p>The data structure</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>integer(kind=2)
+  </small></h4>
+  <p>The parameter value to be returned</p>
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-iso8601_time_get_time_zone"></span><h3>
+private elemental function <a href='../proc/iso8601_time_get_time_zone.html'>iso8601_time_get_time_zone</a>(this) result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Get attribute time_zone</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/t_iso8601_time.html'>t_iso8601_time</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>this</strong></td><td><p>The data structure</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>character(len=6)
+  </small></h4>
+  <p>The parameter value to be returned</p>
+    
+
+  </div>
+  </div>
+
+    
+    </section>
+    <br>
+    
+
+    
+    <section>
+    <h2>Subroutines</h2>
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-iso8601_time_set_hour"></span><h3>
+private elemental subroutine <a href='../proc/iso8601_time_set_hour.html'>iso8601_time_set_hour</a>(this, value)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Set attribute hour</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/t_iso8601_time.html'>t_iso8601_time</a>),</td>
+  <td>intent(inout)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>this</strong></td><td><p>The data structure</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer(kind=1),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>value</strong></td><td><p>The parameter value to set</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-iso8601_time_set_hour_default"></span><h3>
+private elemental subroutine <a href='../proc/iso8601_time_set_hour_default.html'>iso8601_time_set_hour_default</a>(this, value)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Set attribute hour (from default integer)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/t_iso8601_time.html'>t_iso8601_time</a>),</td>
+  <td>intent(inout)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>this</strong></td><td><p>The data structure</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer,</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>value</strong></td><td><p>The parameter value to set</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-iso8601_time_set_minute"></span><h3>
+private elemental subroutine <a href='../proc/iso8601_time_set_minute.html'>iso8601_time_set_minute</a>(this, value)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Set attribute minute</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/t_iso8601_time.html'>t_iso8601_time</a>),</td>
+  <td>intent(inout)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>this</strong></td><td><p>The data structure</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer(kind=1),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>value</strong></td><td><p>The parameter value to set</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-iso8601_time_set_minute_default"></span><h3>
+private elemental subroutine <a href='../proc/iso8601_time_set_minute_default.html'>iso8601_time_set_minute_default</a>(this, value)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Set attribute minute (from default integer)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/t_iso8601_time.html'>t_iso8601_time</a>),</td>
+  <td>intent(inout)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>this</strong></td><td><p>The data structure</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer,</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>value</strong></td><td><p>The parameter value to set</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-iso8601_time_set_second"></span><h3>
+private elemental subroutine <a href='../proc/iso8601_time_set_second.html'>iso8601_time_set_second</a>(this, value)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Set attribute second</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/t_iso8601_time.html'>t_iso8601_time</a>),</td>
+  <td>intent(inout)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>this</strong></td><td><p>The data structure</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer(kind=1),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>value</strong></td><td><p>The parameter value to set</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-iso8601_time_set_second_default"></span><h3>
+private elemental subroutine <a href='../proc/iso8601_time_set_second_default.html'>iso8601_time_set_second_default</a>(this, value)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/t_iso8601_time.html'>t_iso8601_time</a>),</td>
+  <td>intent(inout)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>this</strong></td><td><p>The data structure</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer,</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>value</strong></td><td><p>The parameter value to set</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-iso8601_time_set_millisecond"></span><h3>
+private elemental subroutine <a href='../proc/iso8601_time_set_millisecond.html'>iso8601_time_set_millisecond</a>(this, value)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Set attribute millisecond</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/t_iso8601_time.html'>t_iso8601_time</a>),</td>
+  <td>intent(inout)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>this</strong></td><td><p>The data structure</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer(kind=2),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>value</strong></td><td><p>The parameter value to set</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-iso8601_time_set_millisecond_default"></span><h3>
+private elemental subroutine <a href='../proc/iso8601_time_set_millisecond_default.html'>iso8601_time_set_millisecond_default</a>(this, value)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/t_iso8601_time.html'>t_iso8601_time</a>),</td>
+  <td>intent(inout)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>this</strong></td><td><p>The data structure</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer,</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>value</strong></td><td><p>The parameter value to set</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-iso8601_time_set_microsecond"></span><h3>
+private elemental subroutine <a href='../proc/iso8601_time_set_microsecond.html'>iso8601_time_set_microsecond</a>(this, value)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Set attribute microsecond</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/t_iso8601_time.html'>t_iso8601_time</a>),</td>
+  <td>intent(inout)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>this</strong></td><td><p>The data structure</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer(kind=2),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>value</strong></td><td><p>The parameter value to set</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-iso8601_time_set_microsecond_default"></span><h3>
+private elemental subroutine <a href='../proc/iso8601_time_set_microsecond_default.html'>iso8601_time_set_microsecond_default</a>(this, value)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/t_iso8601_time.html'>t_iso8601_time</a>),</td>
+  <td>intent(inout)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>this</strong></td><td><p>The data structure</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer,</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>value</strong></td><td><p>The parameter value to set</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-iso8601_time_set_nanosecond"></span><h3>
+private elemental subroutine <a href='../proc/iso8601_time_set_nanosecond.html'>iso8601_time_set_nanosecond</a>(this, value)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Set attribute nanosecond</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/t_iso8601_time.html'>t_iso8601_time</a>),</td>
+  <td>intent(inout)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>this</strong></td><td><p>The data structure</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer(kind=2),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>value</strong></td><td><p>The parameter value to set</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-iso8601_time_set_nanosecond_default"></span><h3>
+private elemental subroutine <a href='../proc/iso8601_time_set_nanosecond_default.html'>iso8601_time_set_nanosecond_default</a>(this, value)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/t_iso8601_time.html'>t_iso8601_time</a>),</td>
+  <td>intent(inout)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>this</strong></td><td><p>The data structure</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer,</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>value</strong></td><td><p>The parameter value to set</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-iso8601_time_set_time_zone"></span><h3>
+private elemental subroutine <a href='../proc/iso8601_time_set_time_zone.html'>iso8601_time_set_time_zone</a>(this, value)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Set attribute time_zone</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/t_iso8601_time.html'>t_iso8601_time</a>),</td>
+  <td>intent(inout)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>this</strong></td><td><p>The data structure</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(len=*),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>value</strong></td><td><p>The parameter value to set</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  </div>
+  </div>
+
+    
+    </section>    
+    <br>
+    
+    
+    
+    </div>
+  </div>
+
+  
+    <hr>    
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-md-6"><p>XFunit was developed by Fran Martinez<br>&copy; 2022 <a rel="license" href="http://www.freebsd.org/copyright/freebsd-doc-license.html">FreeBSD Documentation License</a>
+                                          </p>
+        </div>
+        <div class="col-xs-6 col-md-6">
+          <p class="text-right">
+            Documentation generated by 
+            <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
+            
+            
+          </p>
+        </div>
+      </div>
+      <br>
+      </div> <!-- /container -->    
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+-->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- MathJax JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+        jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+        extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
+      });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    
+    
+  </body>
+</html>

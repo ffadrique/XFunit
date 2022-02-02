@@ -1,0 +1,5147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+   <meta name="description" content="Unit Test framework for Fortran">
+    
+    <meta name="author" content="Fran Martinez" >
+    <link rel="icon" href="../favicon.png">
+
+    <title>m_path &ndash; XFunit</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/pygments.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/local.css" rel="stylesheet">
+    
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <script src="../js/jquery-2.1.3.min.js"></script>
+    <script src="../js/svg-pan-zoom.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../index.html">XFunit </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+        
+            <li class="dropdown hidden-xs visible-sm visible-md hidden-lg">
+              <a href="#" class="dropdown-toggle"
+              data-toggle="dropdown" role="button"
+              aria-haspopup="true"
+     aria-expanded="false">Contents <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          
+              
+            <li><a href="../lists/files.html">Source Files</a></li>
+        
+        
+        
+            <li><a href="../lists/modules.html">Modules</a></li>
+        
+            
+                                
+            <li><a href="../lists/procedures.html">Procedures</a></li>
+        
+        
+            <li><a href="../lists/absint.html">Abstract Interfaces</a></li>
+               
+            <li><a href="../lists/types.html">Derived Types</a></li>
+        
+               
+        
+        
+            </ul>
+        
+            </li>
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/files.html">Source Files</a></li>
+
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/modules.html">Modules</a></li>
+
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/procedures.html">Procedures</a></li>
+
+
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/absint.html">Abstract Interfaces</a></li>
+                             
+<li class="visible-xs hidden-sm visible-lg"><a href="../lists/types.html">Derived Types</a></li>
+
+
+
+
+          </ul>
+        
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+    
+  
+  <div class="row">
+    <h1>m_path 
+    <small>Module</small>
+    
+    </h1>
+    
+<div class="row">
+  <div class="col-lg-12">
+<div class="well well-sm">
+  <ul class="list-inline" style="margin-bottom:0px;display:inline">
+     
+     
+     
+    <li><i class="fa fa-legal"></i> <a rel="license" href="http://www.freebsd.org/copyright/freebsd-doc-license.html">FreeBSD Documentation License</a></li> 
+     
+     
+     
+    
+    
+     <li><i class="fa fa-list-ol"></i>
+       <a data-toggle="tooltip"
+    data-placement="bottom" data-html="true"
+    title=" 3.3% of total for modules and submodules.">381 statements</a>
+     </li> 
+     
+     
+     
+    <li><i class="fa fa-code"></i><a href="../src/m_path.f03"> Source File</a></li>
+     
+     
+  </ul>
+  <ol class="breadcrumb in-well text-right">
+  
+    
+     <li><a href='../sourcefile/m_path.f03.html'>m_path.f03</a></li>
+    
+  
+     <li class="active">m_path</li>
+  </ol>
+</div>
+</div>
+</div>
+<script>
+  $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+
+  </div>
+  
+  <div class="row">
+    <div class="col-md-3 hidden-xs hidden-sm visible-md visible-lg">
+    
+<div id="sidebar">
+  
+<h3>Contents</h3>
+ 
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars-0">Variables</a></h3></div>
+  <div id="vars-0" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../module/m_path.html#variable-sccs_info~7">sccs_info</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#variable-path_unix_slash">path_unix_slash</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#variable-path_windows_slash">path_windows_slash</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#variable-dot">dot</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#variable-colon">colon</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#inters-0">Interfaces</a></h3></div>
+  <div id="inters-0" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../module/m_path.html#interface-path">path</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#interface-path_exists">path_exists</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#interface-path_directory">path_directory</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#interface-path_file_name">path_file_name</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#interface-path_name">path_name</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#interface-path_is_absolute">path_is_absolute</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#interface-path_extension">path_extension</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#interface-path_has_extension">path_has_extension</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#interface-path_change_extension">path_change_extension</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#interface-path_normalise">path_normalise</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#interface-path_temp_path">path_temp_path</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#interface-path_temp_file_name">path_temp_file_name</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#types-0">Derived Types</a></h3></div>
+  <div id="types-0" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../module/m_path.html#type-t_path">t_path</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#funcs-0">Functions</a></h3></div>
+  <div id="funcs-0" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_default">path_default</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_character">path_character</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_string">path_string</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_array_character">path_array_character</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_array_string">path_array_string</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_exists_method">path_exists_method</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_exists_string_static">path_exists_string_static</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_exists_character_static">path_exists_character_static</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_directory_method">path_directory_method</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_directory_string_static">path_directory_string_static</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_directory_character_static">path_directory_character_static</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_file_name_method">path_file_name_method</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_file_name_string_static">path_file_name_string_static</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_file_name_character_static">path_file_name_character_static</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_name_method">path_name_method</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_name_string_static">path_name_string_static</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_name_character_static">path_name_character_static</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_is_absolute_method">path_is_absolute_method</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_is_absolute_string_static">path_is_absolute_string_static</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_is_absolute_character_static">path_is_absolute_character_static</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_extension_method">path_extension_method</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_extension_string_static">path_extension_string_static</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_extension_character_static">path_extension_character_static</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_has_extension_method">path_has_extension_method</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_has_extension_string_static">path_has_extension_string_static</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_has_extension_character_static">path_has_extension_character_static</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_change_extension_string_static">path_change_extension_string_static</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_change_extension_character_static">path_change_extension_character_static</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_normalise_string_static">path_normalise_string_static</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_normalise_character_static">path_normalise_character_static</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_temp_path_static">path_temp_path_static</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_temp_file_name">path_temp_file_name</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_to_string">path_to_string</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#subs-0">Subroutines</a></h3></div>
+  <div class="list-group">
+    <div id="subs-0" class="panel-collapse collapse">
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_change_extension_string_method">path_change_extension_string_method</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_change_extension_character_method">path_change_extension_character_method</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_normalise_method">path_normalise_method</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+    </div>
+    
+    <div class="col-md-9" id='text'>
+    <p>Module for the implementation of path management
+             The extension from string holds the path of the file or directory
+             Both forward and backward separator slashes are managed seamlessly</p>
+<p>License   : This file is part of XFunit.</p>
+<div class="codehilite"><pre><span></span>         XFunit is free software: you can redistribute it and/or modify
+         it under the terms of the GNU Lesser General Public License as
+         published by the Free Software Foundation, either version 3 of
+         the License, or (at your option) any later version.
+
+         XFunit is distributed in the hope that it will be useful,
+         but WITHOUT ANY WARRANTY; without even the implied warranty of
+         MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+         See the GNU Lesser General Public License for more details.
+
+         You should have received a copy of the GNU Lesser General Public
+         License along with Zofu.
+         If not, see &lt;http://www.gnu.org/licenses/&gt;.
+</pre></div>
+      <br>
+    
+  
+    <div class="panel panel-default">
+      <div class="panel-heading">
+  <h3 class="panel-title">Uses</h3>
+      </div>
+      <ul class="list-group">
+      
+      <li class="list-group-item">
+  <ul class="list-inline">
+    
+    <li><a href='../module/m_string.html'>m_string</a></li>
+    
+  </ul>
+      </li>
+      
+      
+      
+      </ul>
+    </div>
+    
+
+    
+    
+
+    <br>
+
+    <section class="visible-xs visible-sm hidden-md">
+      
+<h3>Contents</h3>
+ 
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars-1">Variables</a></h3></div>
+  <div id="vars-1" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../module/m_path.html#variable-sccs_info~7">sccs_info</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#variable-path_unix_slash">path_unix_slash</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#variable-path_windows_slash">path_windows_slash</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#variable-dot">dot</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#variable-colon">colon</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#inters-1">Interfaces</a></h3></div>
+  <div id="inters-1" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../module/m_path.html#interface-path">path</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#interface-path_exists">path_exists</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#interface-path_directory">path_directory</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#interface-path_file_name">path_file_name</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#interface-path_name">path_name</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#interface-path_is_absolute">path_is_absolute</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#interface-path_extension">path_extension</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#interface-path_has_extension">path_has_extension</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#interface-path_change_extension">path_change_extension</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#interface-path_normalise">path_normalise</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#interface-path_temp_path">path_temp_path</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#interface-path_temp_file_name">path_temp_file_name</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#types-1">Derived Types</a></h3></div>
+  <div id="types-1" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../module/m_path.html#type-t_path">t_path</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#funcs-1">Functions</a></h3></div>
+  <div id="funcs-1" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_default">path_default</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_character">path_character</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_string">path_string</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_array_character">path_array_character</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_array_string">path_array_string</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_exists_method">path_exists_method</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_exists_string_static">path_exists_string_static</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_exists_character_static">path_exists_character_static</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_directory_method">path_directory_method</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_directory_string_static">path_directory_string_static</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_directory_character_static">path_directory_character_static</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_file_name_method">path_file_name_method</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_file_name_string_static">path_file_name_string_static</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_file_name_character_static">path_file_name_character_static</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_name_method">path_name_method</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_name_string_static">path_name_string_static</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_name_character_static">path_name_character_static</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_is_absolute_method">path_is_absolute_method</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_is_absolute_string_static">path_is_absolute_string_static</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_is_absolute_character_static">path_is_absolute_character_static</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_extension_method">path_extension_method</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_extension_string_static">path_extension_string_static</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_extension_character_static">path_extension_character_static</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_has_extension_method">path_has_extension_method</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_has_extension_string_static">path_has_extension_string_static</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_has_extension_character_static">path_has_extension_character_static</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_change_extension_string_static">path_change_extension_string_static</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_change_extension_character_static">path_change_extension_character_static</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_normalise_string_static">path_normalise_string_static</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_normalise_character_static">path_normalise_character_static</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_temp_path_static">path_temp_path_static</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_temp_file_name">path_temp_file_name</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_to_string">path_to_string</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#subs-1">Subroutines</a></h3></div>
+  <div class="list-group">
+    <div id="subs-1" class="panel-collapse collapse">
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_change_extension_string_method">path_change_extension_string_method</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_change_extension_character_method">path_change_extension_character_method</a>
+      
+      <a class="list-group-item" href="../module/m_path.html#proc-path_normalise_method">path_normalise_method</a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+    </section>
+    <br class="visible-xs visible-sm hidden-md">
+
+    
+
+    
+    <section>
+    <h2>Variables</h2>
+    
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Visibility</th>
+
+<th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-sccs_info~7"></span>character(len=130),</td>
+  
+  <td>private,</td>
+  <td>parameter</td><td>::</td>
+  <td><strong>sccs_info</strong></td><td> =</td><td>'$Id: $'</td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-path_unix_slash"></span>character,</td>
+  
+  <td>public,</td>
+  <td>parameter</td><td>::</td>
+  <td><strong>path_unix_slash</strong></td><td> =</td><td>'/'</td><td><p>Path separation symbols</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-path_windows_slash"></span>character,</td>
+  
+  <td>public,</td>
+  <td>parameter</td><td>::</td>
+  <td><strong>path_windows_slash</strong></td><td> =</td><td>'\'</td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-dot"></span>character,</td>
+  
+  <td>private,</td>
+  <td>parameter</td><td>::</td>
+  <td><strong>dot</strong></td><td> =</td><td>'.'</td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-colon"></span>character,</td>
+  
+  <td>private,</td>
+  <td>parameter</td><td>::</td>
+  <td><strong>colon</strong></td><td> =</td><td>':'</td><td></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+    </section>
+    <br>
+    
+    
+    
+    
+    
+    <section>
+   <h2>Interfaces</h2>
+   
+     
+<div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="interface-path"></span><h3>public interface <a href='../interface/path.html'>path</a>
+    
+  </h3></div>
+  
+  <div class="panel-body">
+    
+    <p>Constructor interface</p>
+  </div>
+  
+  <ul class="list-group">
+  
+  
+  
+    <li class="list-group-item">
+    
+    
+    <h3>
+private elemental function <a href='../proc/path_default.html'>path_default</a>() result(res)
+    
+    
+   
+</h3>
+    
+
+
+
+
+
+
+
+<p>Constructor</p>
+    
+    <h4>Arguments</h4>
+    
+      <em>None</em>
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>type(<a href='../type/t_path.html'>t_path</a>)
+  </small></h4>
+  
+    
+
+    </li>
+  
+    <li class="list-group-item">
+    
+    
+    <h3>
+private elemental function <a href='../proc/path_character.html'>path_character</a>(path) result(res)
+    
+    
+   
+</h3>
+    
+
+
+
+
+
+
+
+<p>Constructor from character</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(len=*),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>path</strong></td><td><p>The file name</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>type(<a href='../type/t_path.html'>t_path</a>)
+  </small></h4>
+  <p>The path</p>
+    
+
+    </li>
+  
+    <li class="list-group-item">
+    
+    
+    <h3>
+private elemental function <a href='../proc/path_string.html'>path_string</a>(path) result(res)
+    
+    
+   
+</h3>
+    
+
+
+
+
+
+
+
+<p>Constructor from string</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/t_string.html'>t_string</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>path</strong></td><td><p>The file name (polymorphic allows passing also t_path)</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>type(<a href='../type/t_path.html'>t_path</a>)
+  </small></h4>
+  <p>The path</p>
+    
+
+    </li>
+  
+    <li class="list-group-item">
+    
+    
+    <h3>
+private pure function <a href='../proc/path_array_character.html'>path_array_character</a>(tokens) result(res)
+    
+    
+   
+</h3>
+    
+
+
+
+
+
+
+
+<p>Constructor from array of strings</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(len=*),</td>
+  <td>intent(in),</td>
+  <td></td>
+  
+  <td>dimension(:)</td><td>::</td>
+  <td><strong>tokens</strong></td><td><p>The array of strings</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>type(<a href='../type/t_path.html'>t_path</a>)
+  </small></h4>
+  <p>The path</p>
+    
+
+    </li>
+  
+    <li class="list-group-item">
+    
+    
+    <h3>
+private pure function <a href='../proc/path_array_string.html'>path_array_string</a>(tokens) result(res)
+    
+    
+   
+</h3>
+    
+
+
+
+
+
+
+
+<p>Constructor from array of strings</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/t_string.html'>t_string</a>),</td>
+  <td>intent(in),</td>
+  <td></td>
+  
+  <td>dimension(:)</td><td>::</td>
+  <td><strong>tokens</strong></td><td><p>The array of strings (polymorphic allows passing also t_path)</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>type(<a href='../type/t_path.html'>t_path</a>)
+  </small></h4>
+  <p>The path</p>
+    
+
+    </li>
+  
+  
+  </ul>
+</div>
+
+    
+     
+<div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="interface-path_exists"></span><h3>public interface <a href='../interface/path_exists.html'>path_exists</a>
+    
+  </h3></div>
+  
+  <div class="panel-body">
+    
+    <p>Static interface for path exists</p>
+  </div>
+  
+  <ul class="list-group">
+  
+  
+  
+    <li class="list-group-item">
+    
+    
+    <h3>
+private function <a href='../proc/path_exists_string_static.html'>path_exists_string_static</a>(path) result(res)
+    
+    
+   
+</h3>
+    
+
+
+
+
+
+
+
+<p>Check if file in handler exists (string interface)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>type(<a href='../type/t_string.html'>t_string</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>path</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>logical
+  </small></h4>
+  <p>The status flag</p>
+    
+
+    </li>
+  
+    <li class="list-group-item">
+    
+    
+    <h3>
+private function <a href='../proc/path_exists_character_static.html'>path_exists_character_static</a>(path) result(res)
+    
+    
+   
+</h3>
+    
+
+
+
+
+
+
+
+<p>Check if file in handler exists (character interface)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(len=*),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>path</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>logical
+  </small></h4>
+  <p>The status flag</p>
+    
+
+    </li>
+  
+  
+  </ul>
+</div>
+
+    
+     
+<div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="interface-path_directory"></span><h3>public interface <a href='../interface/path_directory.html'>path_directory</a>
+    
+  </h3></div>
+  
+  <div class="panel-body">
+    
+    <p>Static interface for directory extrraction</p>
+  </div>
+  
+  <ul class="list-group">
+  
+  
+  
+    <li class="list-group-item">
+    
+    
+    <h3>
+private elemental function <a href='../proc/path_directory_string_static.html'>path_directory_string_static</a>(path) result(res)
+    
+    
+   
+</h3>
+    
+
+
+
+
+
+
+
+<p>Get the directroy (folder of file; string interface)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>type(<a href='../type/t_string.html'>t_string</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>path</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>type(<a href='../type/t_string.html'>t_string</a>)
+  </small></h4>
+  <p>The file path (without last slash)</p>
+    
+
+    </li>
+  
+    <li class="list-group-item">
+    
+    
+    <h3>
+private elemental function <a href='../proc/path_directory_character_static.html'>path_directory_character_static</a>(path) result(res)
+    
+    
+   
+</h3>
+    
+
+
+
+
+
+
+
+<p>Get the directroy (folder of file; character interface)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(len=*),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>path</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>character(len=len)
+  </small></h4>
+  <p>The file path (without last slash)</p>
+    
+
+    </li>
+  
+  
+  </ul>
+</div>
+
+    
+     
+<div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="interface-path_file_name"></span><h3>public interface <a href='../interface/path_file_name.html'>path_file_name</a>
+    
+  </h3></div>
+  
+  <div class="panel-body">
+    
+    <p>Static interface for file name (with extension)</p>
+  </div>
+  
+  <ul class="list-group">
+  
+  
+  
+    <li class="list-group-item">
+    
+    
+    <h3>
+private elemental function <a href='../proc/path_file_name_string_static.html'>path_file_name_string_static</a>(path) result(res)
+    
+    
+   
+</h3>
+    
+
+
+
+
+
+
+
+<p>Get the file name (includes extension; string interface)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>type(<a href='../type/t_string.html'>t_string</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>path</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>type(<a href='../type/t_string.html'>t_string</a>)
+  </small></h4>
+  <p>The file path (without last slash)</p>
+    
+
+    </li>
+  
+    <li class="list-group-item">
+    
+    
+    <h3>
+private elemental function <a href='../proc/path_file_name_character_static.html'>path_file_name_character_static</a>(path) result(res)
+    
+    
+   
+</h3>
+    
+
+
+
+
+
+
+
+<p>Get the file name (includes extension; character interface)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(len=*),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>path</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>character(len=len)
+  </small></h4>
+  <p>The file path (without last slash)</p>
+    
+
+    </li>
+  
+  
+  </ul>
+</div>
+
+    
+     
+<div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="interface-path_name"></span><h3>public interface <a href='../interface/path_name.html'>path_name</a>
+    
+  </h3></div>
+  
+  <div class="panel-body">
+    
+    <p>Static interface for name (without extension)</p>
+  </div>
+  
+  <ul class="list-group">
+  
+  
+  
+    <li class="list-group-item">
+    
+    
+    <h3>
+private elemental function <a href='../proc/path_name_string_static.html'>path_name_string_static</a>(path) result(res)
+    
+    
+   
+</h3>
+    
+
+
+
+
+
+
+
+<p>Get the file name (without extension; string interface)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>type(<a href='../type/t_string.html'>t_string</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>path</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>type(<a href='../type/t_string.html'>t_string</a>)
+  </small></h4>
+  <p>The file path (without last slash)</p>
+    
+
+    </li>
+  
+    <li class="list-group-item">
+    
+    
+    <h3>
+private elemental function <a href='../proc/path_name_character_static.html'>path_name_character_static</a>(path) result(res)
+    
+    
+   
+</h3>
+    
+
+
+
+
+
+
+
+<p>Get the file name (without extension; character interface)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(len=*),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>path</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>character(len=len)
+  </small></h4>
+  <p>The file path (without last slash)</p>
+    
+
+    </li>
+  
+  
+  </ul>
+</div>
+
+    
+     
+<div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="interface-path_is_absolute"></span><h3>public interface <a href='../interface/path_is_absolute.html'>path_is_absolute</a>
+    
+  </h3></div>
+  
+  <div class="panel-body">
+    
+    <p>Static interface to check absolute path representation</p>
+  </div>
+  
+  <ul class="list-group">
+  
+  
+  
+    <li class="list-group-item">
+    
+    
+    <h3>
+private elemental function <a href='../proc/path_is_absolute_string_static.html'>path_is_absolute_string_static</a>(path) result(res)
+    
+    
+   
+</h3>
+    
+
+
+
+
+
+
+
+<p>Check if path is an absolute path representation (string interface)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>type(<a href='../type/t_string.html'>t_string</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>path</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>logical
+  </small></h4>
+  <p>The absolute path flag</p>
+    
+
+    </li>
+  
+    <li class="list-group-item">
+    
+    
+    <h3>
+private elemental function <a href='../proc/path_is_absolute_character_static.html'>path_is_absolute_character_static</a>(path) result(res)
+    
+    
+   
+</h3>
+    
+
+
+
+
+
+
+
+<p>Check if path is an absolute path representation (character interface)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(len=*),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>path</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>logical
+  </small></h4>
+  <p>The absolute path flag</p>
+    
+
+    </li>
+  
+  
+  </ul>
+</div>
+
+    
+     
+<div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="interface-path_extension"></span><h3>public interface <a href='../interface/path_extension.html'>path_extension</a>
+    
+  </h3></div>
+  
+  <div class="panel-body">
+    
+    <p>Static interface for extension</p>
+  </div>
+  
+  <ul class="list-group">
+  
+  
+  
+    <li class="list-group-item">
+    
+    
+    <h3>
+private elemental function <a href='../proc/path_extension_string_static.html'>path_extension_string_static</a>(path) result(res)
+    
+    
+   
+</h3>
+    
+
+
+
+
+
+
+
+<p>Get the file extension (string interface)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>type(<a href='../type/t_string.html'>t_string</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>path</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>type(<a href='../type/t_string.html'>t_string</a>)
+  </small></h4>
+  <p>The file path (without last slash)</p>
+    
+
+    </li>
+  
+    <li class="list-group-item">
+    
+    
+    <h3>
+private elemental function <a href='../proc/path_extension_character_static.html'>path_extension_character_static</a>(path) result(res)
+    
+    
+   
+</h3>
+    
+
+
+
+
+
+
+
+<p>Get the file extension (character interface)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(len=*),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>path</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>character(len=len)
+  </small></h4>
+  <p>The file path (without last slash)</p>
+    
+
+    </li>
+  
+  
+  </ul>
+</div>
+
+    
+     
+<div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="interface-path_has_extension"></span><h3>public interface <a href='../interface/path_has_extension.html'>path_has_extension</a>
+    
+  </h3></div>
+  
+  <div class="panel-body">
+    
+    <p>Determines whether a path includes a file name extension</p>
+  </div>
+  
+  <ul class="list-group">
+  
+  
+  
+    <li class="list-group-item">
+    
+    
+    <h3>
+private elemental function <a href='../proc/path_has_extension_string_static.html'>path_has_extension_string_static</a>(path) result(res)
+    
+    
+   
+</h3>
+    
+
+
+
+
+
+
+
+<p>Determines whether a path includes a file name extension (string interface)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>type(<a href='../type/t_string.html'>t_string</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>path</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>logical
+  </small></h4>
+  <p>Has extension flag)</p>
+    
+
+    </li>
+  
+    <li class="list-group-item">
+    
+    
+    <h3>
+private elemental function <a href='../proc/path_has_extension_character_static.html'>path_has_extension_character_static</a>(path) result(res)
+    
+    
+   
+</h3>
+    
+
+
+
+
+
+
+
+<p>Determines whether a path includes a file name extension (character interface)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(len=*),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>path</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>logical
+  </small></h4>
+  <p>Has extension flag)</p>
+    
+
+    </li>
+  
+  
+  </ul>
+</div>
+
+    
+     
+<div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="interface-path_change_extension"></span><h3>public interface <a href='../interface/path_change_extension.html'>path_change_extension</a>
+    
+  </h3></div>
+  
+  <div class="panel-body">
+    
+    <p>Static interface for change extension</p>
+  </div>
+  
+  <ul class="list-group">
+  
+  
+  
+    <li class="list-group-item">
+    
+    
+    <h3>
+private elemental function <a href='../proc/path_change_extension_string_static.html'>path_change_extension_string_static</a>(path, extension) result(res)
+    
+    
+   
+</h3>
+    
+
+
+
+
+
+
+
+<p>Change path extension (string interface)
+Takes the characters after the last dot provided in the nex extension.
+If there are more than one dot, all leading characters prior to the vey last dot are ignored</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>type(<a href='../type/t_string.html'>t_string</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>path</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>type(<a href='../type/t_string.html'>t_string</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>extension</strong></td><td><p>The new extension</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>type(<a href='../type/t_string.html'>t_string</a>)
+  </small></h4>
+  <p>The path with the modified extension)</p>
+    
+
+    </li>
+  
+    <li class="list-group-item">
+    
+    
+    <h3>
+private elemental function <a href='../proc/path_change_extension_character_static.html'>path_change_extension_character_static</a>(path, extension) result(res)
+    
+    
+   
+</h3>
+    
+
+
+
+
+
+
+
+<p>Change path extension (character interface)
+Takes the characters after the last dot provided in the nex extension.
+If there are more than one dot, all leading characters prior to the vey last dot are ignored</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(len=*),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>path</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(len=*),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>extension</strong></td><td><p>The new extension</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>character(len=len)
+  </small></h4>
+  <p>The path with the modified extension)</p>
+    
+
+    </li>
+  
+  
+  </ul>
+</div>
+
+    
+     
+<div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="interface-path_normalise"></span><h3>public interface <a href='../interface/path_normalise.html'>path_normalise</a>
+    
+  </h3></div>
+  
+  <div class="panel-body">
+    
+    <p>Static interface for normalise</p>
+  </div>
+  
+  <ul class="list-group">
+  
+  
+  
+    <li class="list-group-item">
+    
+    
+    <h3>
+private elemental function <a href='../proc/path_normalise_string_static.html'>path_normalise_string_static</a>(path) result(res)
+    
+    
+   
+</h3>
+    
+
+
+
+
+
+
+
+<p>Normalise a file path (string interface)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>type(<a href='../type/t_string.html'>t_string</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>path</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>type(<a href='../type/t_string.html'>t_string</a>)
+  </small></h4>
+  <p>The normalised path</p>
+    
+
+    </li>
+  
+    <li class="list-group-item">
+    
+    
+    <h3>
+private elemental function <a href='../proc/path_normalise_character_static.html'>path_normalise_character_static</a>(path) result(res)
+    
+    
+   
+</h3>
+    
+
+
+
+
+
+
+
+<p>Normalise a file path (character interface)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(len=*),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>path</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>type(<a href='../type/t_string.html'>t_string</a>)
+  </small></h4>
+  <p>The normalised path</p>
+    
+
+    </li>
+  
+  
+  </ul>
+</div>
+
+    
+     
+<div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="interface-path_temp_path"></span><h3>public interface <a href='../interface/path_temp_path.html'>path_temp_path</a>
+    
+  </h3></div>
+  
+  <div class="panel-body">
+    
+    <p>Static interface for temp_path</p>
+  </div>
+  
+  <ul class="list-group">
+  
+  
+  
+    <li class="list-group-item">
+    
+    
+    <h3>
+private function <a href='../proc/path_temp_path_static.html'>path_temp_path_static</a>() result(res)
+    
+    
+   
+</h3>
+    
+
+
+
+
+
+
+
+<p>Get the path of the system temporary folder (defined by env(TMP))</p>
+    
+    <h4>Arguments</h4>
+    
+      <em>None</em>
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>type(<a href='../type/t_string.html'>t_string</a>)
+  </small></h4>
+  
+    
+
+    </li>
+  
+  
+  </ul>
+</div>
+
+    
+     
+<div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="interface-path_temp_file_name"></span><h3>private interface <a href='../interface/path_temp_file_name.html'>path_temp_file_name</a>
+    
+  </h3></div>
+  
+  <div class="panel-body">
+    
+    <p>Static interface for temp_path</p>
+  </div>
+  
+  <ul class="list-group">
+  
+  
+  
+    <li class="list-group-item">
+    
+    
+    <h3>
+private interface <a href='../interface/path_temp_file_name.html'>path_temp_file_name</a>()
+    
+    
+   
+</h3>
+    
+
+
+
+
+
+
+
+<p>Static interface for temp_path</p>
+    
+    <h4>Arguments</h4>
+    
+      <em>None</em>
+    
+    
+
+    </li>
+  
+  
+  </ul>
+</div>
+
+    
+    </section>
+  <br>
+    
+
+    
+    
+    
+    <section>
+     <h2>Derived Types</h2>
+   
+     
+<div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="type-t_path"></span><h3>type, public, extends(<a href='../type/t_string.html'>t_string</a>) :: <a href='../type/t_path.html'>t_path</a>
+    
+  </h3></div>
+  <div class="panel-body">
+    
+    
+    <p>The path class
+The extension from string holds the path of the file or directory</p>
+    
+     
+     
+          
+     
+     <h4>Type-Bound Procedures</h4>
+      <table class="table table-striped varlist">
+      <tbody>
+      
+       <tr><td>procedure, public :: <strong><a href='../type/t_object.html#boundprocedure-get_hash_code'>get_hash_code</a></strong>  => object_get_hash_code </td>
+       <td><p>Default hash function</p></td></tr>
+      
+       <tr><td>procedure, public :: <strong><a href='../type/t_string.html#boundprocedure-is_initialised'>is_initialised</a></strong>  => string_is_initialised </td>
+       <td><p>Initialisation status</p></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_path.html#boundprocedure-assignment%28%3D%29~3'>assignment(=)</a></strong>  => string_assign_from_char, string_assign_from_string, char_alloc_assign_from_string </td>
+       <td></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_path.html#boundprocedure-operator%28%2B%29'>operator(+)</a></strong>  => string_concat_string, string_concat_char, char_concat_string </td>
+       <td></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_path.html#boundprocedure-operator%28SLASHSLASH%29'>operator(//)</a></strong>  => string_concat_string, string_concat_char, char_concat_string </td>
+       <td></td></tr>
+      
+       <tr><td>procedure, public :: <strong><a href='../type/t_string.html#boundprocedure-split'>split</a></strong>  => string_split </td>
+       <td></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_path.html#boundprocedure-join'>join</a></strong>  => string_join_char, string_join_string </td>
+       <td></td></tr>
+      
+       <tr><td>procedure, public :: <strong><a href='../type/t_string.html#boundprocedure-equals~2'>equals</a></strong>  => string_equals </td>
+       <td><p>Equality overriding</p></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_path.html#boundprocedure-operator%28%3D%3D%29~2'>operator(==)</a></strong>  => string_equal_string, string_equal_char, char_equal_string </td>
+       <td></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_path.html#boundprocedure-operator%28SLASH%3D%29'>operator(/=)</a></strong>  => string_nonequal_string, string_nonequal_char, char_nonequal_string </td>
+       <td></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_path.html#boundprocedure-operator%28gt%29~2'>operator(>)</a></strong>  => string_greater_string, string_greater_char, char_greater_string </td>
+       <td></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_path.html#boundprocedure-operator%28gt%3D%29'>operator(>=)</a></strong>  => string_greater_equal_string, string_greater_equal_char, char_greater_equal_string </td>
+       <td></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_path.html#boundprocedure-operator%28lt%29~2'>operator(<)</a></strong>  => string_less_string, string_less_char, char_less_string </td>
+       <td></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_path.html#boundprocedure-operator%28lt%3D%29'>operator(<=)</a></strong>  => string_less_equal_string, string_less_equal_char, char_less_equal_string </td>
+       <td></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_path.html#boundprocedure-character'>character</a></strong>  => string_to_char, string_to_char_selected </td>
+       <td></td></tr>
+      
+       <tr><td>procedure, public :: <strong><a href='../type/t_string.html#boundprocedure-replace'>replace</a></strong>  => string_replace_s </td>
+       <td><p>String replacement</p></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_path.html#boundprocedure-len'>len</a></strong>  => string_len </td>
+       <td></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_path.html#boundprocedure-len_trim'>len_trim</a></strong>  => string_len_trim </td>
+       <td></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_path.html#boundprocedure-trim'>trim</a></strong>  => string_trim </td>
+       <td></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_path.html#boundprocedure-adjustl'>adjustl</a></strong>  => string_adjustl </td>
+       <td></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_path.html#boundprocedure-adjustr'>adjustr</a></strong>  => string_adjustr </td>
+       <td></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_path.html#boundprocedure-index'>index</a></strong>  => string_index_c, string_index_s </td>
+       <td></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_path.html#boundprocedure-scan'>scan</a></strong>  => string_scan_c, string_scan_s </td>
+       <td></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_path.html#boundprocedure-verify'>verify</a></strong>  => string_verify_c, string_verify_s </td>
+       <td></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_path.html#boundprocedure-len_strip'>len_strip</a></strong>  => string_len_strip </td>
+       <td></td></tr>
+      
+       <tr><td>procedure, public :: <strong><a href='../type/t_string.html#boundprocedure-strip'>strip</a></strong>  => string_strip </td>
+       <td></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_path.html#boundprocedure-lgt'>lgt</a></strong>  => string_greater_string, string_greater_char </td>
+       <td></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_path.html#boundprocedure-lge'>lge</a></strong>  => string_greater_equal_string, string_greater_equal_char </td>
+       <td></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_path.html#boundprocedure-llt'>llt</a></strong>  => string_less_string, string_less_char </td>
+       <td></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_path.html#boundprocedure-lle'>lle</a></strong>  => string_less_equal_string, string_less_equal_char </td>
+       <td></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_path.html#boundprocedure-match'>match</a></strong>  => string_match_s </td>
+       <td></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_path.html#boundprocedure-lowercase'>lowercase</a></strong>  => string_lowercase </td>
+       <td></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_path.html#boundprocedure-uppercase'>uppercase</a></strong>  => string_uppercase </td>
+       <td></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_path.html#boundprocedure-array~4'>array</a></strong>  => string_array, string_array_selected, string_array_selected_with_end </td>
+       <td></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_path.html#boundprocedure-read'>read</a></strong>  => string_read </td>
+       <td></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_path.html#boundprocedure-write~3'>write</a></strong>  => string_write </td>
+       <td></td></tr>
+      
+       <tr><td>procedure, public :: <strong><a href='../type/t_string.html#boundprocedure-less'>less</a></strong>  => string_less </td>
+       <td><p>Methods to make t_string quicksortable</p></td></tr>
+      
+       <tr><td>procedure, public :: <strong><a href='../type/t_string.html#boundprocedure-assign'>assign</a></strong>  => string_assign </td>
+       <td></td></tr>
+      
+       <tr><td>procedure, public :: <strong><a href='../type/t_string.html#boundprocedure-string'>string</a></strong>  => string_to_char </td>
+       <td></td></tr>
+      
+       <tr><td>procedure, public :: <strong><a href='../type/t_path.html#boundprocedure-directory'>directory</a></strong>  => path_directory_method </td>
+       <td><p>Directroy of the file path in the path (no trailing path separator)</p></td></tr>
+      
+       <tr><td>procedure, public :: <strong><a href='../type/t_path.html#boundprocedure-file_name'>file_name</a></strong>  => path_file_name_method </td>
+       <td><p>File name of the file path in the path (with extension)</p></td></tr>
+      
+       <tr><td>procedure, public :: <strong><a href='../type/t_path.html#boundprocedure-name'>name</a></strong>  => path_name_method </td>
+       <td><p>File name of the file path in the path (without extension)</p></td></tr>
+      
+       <tr><td>procedure, public :: <strong><a href='../type/t_path.html#boundprocedure-is_absolute'>is_absolute</a></strong>  => path_is_absolute_method </td>
+       <td><p>Check if the path is an absolute path representation</p></td></tr>
+      
+       <tr><td>procedure, public :: <strong><a href='../type/t_path.html#boundprocedure-extension'>extension</a></strong>  => path_extension_method </td>
+       <td><p>File extension of the file in the path</p></td></tr>
+      
+       <tr><td>procedure, public :: <strong><a href='../type/t_path.html#boundprocedure-has_extension'>has_extension</a></strong>  => path_has_extension_method </td>
+       <td><p>Determines whether a path includes a file name extension</p></td></tr>
+      
+       <tr><td>generic, public :: <strong><a href='../type/t_path.html#boundprocedure-change_extension'>change_extension</a></strong>  => path_change_extension_string_method, path_change_extension_character_method </td>
+       <td></td></tr>
+      
+       <tr><td>procedure, private :: <strong><a href='../type/t_path.html#boundprocedure-path_change_extension_string_method'>path_change_extension_string_method</a></strong>  </td>
+       <td></td></tr>
+      
+       <tr><td>procedure, private :: <strong><a href='../type/t_path.html#boundprocedure-path_change_extension_character_method'>path_change_extension_character_method</a></strong>  </td>
+       <td></td></tr>
+      
+       <tr><td>procedure, public :: <strong><a href='../type/t_path.html#boundprocedure-exists~2'>exists</a></strong>  => path_exists_method </td>
+       <td><p>Check if path exists</p></td></tr>
+      
+       <tr><td>procedure, public :: <strong><a href='../type/t_path.html#boundprocedure-normalise'>normalise</a></strong>  => path_normalise_method </td>
+       <td><p>Normalise the path</p></td></tr>
+      
+       <tr><td>procedure, public :: <strong><a href='../type/t_path.html#boundprocedure-to_string~2'>to_string</a></strong>  => path_to_string </td>
+       <td><p>Return the path as a string</p></td></tr>
+      
+       </tbody>
+       </table>
+     
+  </div>
+</div>
+
+     
+    </section>
+  <br>
+    
+    
+     
+    <section>
+    <h2>Functions</h2>
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-path_default"></span><h3>
+private elemental function <a href='../proc/path_default.html'>path_default</a>() result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Constructor</p>
+    
+    <h4>Arguments</h4>
+    
+      <em>None</em>
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>type(<a href='../type/t_path.html'>t_path</a>)
+  </small></h4>
+  
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-path_character"></span><h3>
+private elemental function <a href='../proc/path_character.html'>path_character</a>(path) result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Constructor from character</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(len=*),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>path</strong></td><td><p>The file name</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>type(<a href='../type/t_path.html'>t_path</a>)
+  </small></h4>
+  <p>The path</p>
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-path_string"></span><h3>
+private elemental function <a href='../proc/path_string.html'>path_string</a>(path) result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Constructor from string</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/t_string.html'>t_string</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>path</strong></td><td><p>The file name (polymorphic allows passing also t_path)</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>type(<a href='../type/t_path.html'>t_path</a>)
+  </small></h4>
+  <p>The path</p>
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-path_array_character"></span><h3>
+private pure function <a href='../proc/path_array_character.html'>path_array_character</a>(tokens) result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Constructor from array of strings</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(len=*),</td>
+  <td>intent(in),</td>
+  <td></td>
+  
+  <td>dimension(:)</td><td>::</td>
+  <td><strong>tokens</strong></td><td><p>The array of strings</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>type(<a href='../type/t_path.html'>t_path</a>)
+  </small></h4>
+  <p>The path</p>
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-path_array_string"></span><h3>
+private pure function <a href='../proc/path_array_string.html'>path_array_string</a>(tokens) result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Constructor from array of strings</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/t_string.html'>t_string</a>),</td>
+  <td>intent(in),</td>
+  <td></td>
+  
+  <td>dimension(:)</td><td>::</td>
+  <td><strong>tokens</strong></td><td><p>The array of strings (polymorphic allows passing also t_path)</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>type(<a href='../type/t_path.html'>t_path</a>)
+  </small></h4>
+  <p>The path</p>
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-path_exists_method"></span><h3>
+private function <a href='../proc/path_exists_method.html'>path_exists_method</a>(this) result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Check if file in handler exists</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/t_path.html'>t_path</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>this</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>logical
+  </small></h4>
+  <p>The status flag</p>
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-path_exists_string_static"></span><h3>
+private function <a href='../proc/path_exists_string_static.html'>path_exists_string_static</a>(path) result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Check if file in handler exists (string interface)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>type(<a href='../type/t_string.html'>t_string</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>path</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>logical
+  </small></h4>
+  <p>The status flag</p>
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-path_exists_character_static"></span><h3>
+private function <a href='../proc/path_exists_character_static.html'>path_exists_character_static</a>(path) result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Check if file in handler exists (character interface)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(len=*),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>path</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>logical
+  </small></h4>
+  <p>The status flag</p>
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-path_directory_method"></span><h3>
+private elemental function <a href='../proc/path_directory_method.html'>path_directory_method</a>(this) result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Get the directroy (folder of file)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/t_path.html'>t_path</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>this</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>type(<a href='../type/t_string.html'>t_string</a>)
+  </small></h4>
+  <p>The file path (without last slash)</p>
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-path_directory_string_static"></span><h3>
+private elemental function <a href='../proc/path_directory_string_static.html'>path_directory_string_static</a>(path) result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Get the directroy (folder of file; string interface)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>type(<a href='../type/t_string.html'>t_string</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>path</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>type(<a href='../type/t_string.html'>t_string</a>)
+  </small></h4>
+  <p>The file path (without last slash)</p>
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-path_directory_character_static"></span><h3>
+private elemental function <a href='../proc/path_directory_character_static.html'>path_directory_character_static</a>(path) result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Get the directroy (folder of file; character interface)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(len=*),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>path</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>character(len=len)
+  </small></h4>
+  <p>The file path (without last slash)</p>
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-path_file_name_method"></span><h3>
+private elemental function <a href='../proc/path_file_name_method.html'>path_file_name_method</a>(this) result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Get the file name (includes extension)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/t_path.html'>t_path</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>this</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>type(<a href='../type/t_string.html'>t_string</a>)
+  </small></h4>
+  <p>The file path (without last slash)</p>
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-path_file_name_string_static"></span><h3>
+private elemental function <a href='../proc/path_file_name_string_static.html'>path_file_name_string_static</a>(path) result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Get the file name (includes extension; string interface)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>type(<a href='../type/t_string.html'>t_string</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>path</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>type(<a href='../type/t_string.html'>t_string</a>)
+  </small></h4>
+  <p>The file path (without last slash)</p>
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-path_file_name_character_static"></span><h3>
+private elemental function <a href='../proc/path_file_name_character_static.html'>path_file_name_character_static</a>(path) result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Get the file name (includes extension; character interface)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(len=*),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>path</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>character(len=len)
+  </small></h4>
+  <p>The file path (without last slash)</p>
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-path_name_method"></span><h3>
+private elemental function <a href='../proc/path_name_method.html'>path_name_method</a>(this) result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Get the file name (without extension)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/t_path.html'>t_path</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>this</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>type(<a href='../type/t_string.html'>t_string</a>)
+  </small></h4>
+  <p>The file path (without last slash)</p>
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-path_name_string_static"></span><h3>
+private elemental function <a href='../proc/path_name_string_static.html'>path_name_string_static</a>(path) result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Get the file name (without extension; string interface)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>type(<a href='../type/t_string.html'>t_string</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>path</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>type(<a href='../type/t_string.html'>t_string</a>)
+  </small></h4>
+  <p>The file path (without last slash)</p>
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-path_name_character_static"></span><h3>
+private elemental function <a href='../proc/path_name_character_static.html'>path_name_character_static</a>(path) result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Get the file name (without extension; character interface)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(len=*),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>path</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>character(len=len)
+  </small></h4>
+  <p>The file path (without last slash)</p>
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-path_is_absolute_method"></span><h3>
+private elemental function <a href='../proc/path_is_absolute_method.html'>path_is_absolute_method</a>(this) result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Check if path is an absolute path representation</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/t_path.html'>t_path</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>this</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>logical
+  </small></h4>
+  <p>The absolute path flag</p>
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-path_is_absolute_string_static"></span><h3>
+private elemental function <a href='../proc/path_is_absolute_string_static.html'>path_is_absolute_string_static</a>(path) result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Check if path is an absolute path representation (string interface)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>type(<a href='../type/t_string.html'>t_string</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>path</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>logical
+  </small></h4>
+  <p>The absolute path flag</p>
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-path_is_absolute_character_static"></span><h3>
+private elemental function <a href='../proc/path_is_absolute_character_static.html'>path_is_absolute_character_static</a>(path) result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Check if path is an absolute path representation (character interface)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(len=*),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>path</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>logical
+  </small></h4>
+  <p>The absolute path flag</p>
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-path_extension_method"></span><h3>
+private elemental function <a href='../proc/path_extension_method.html'>path_extension_method</a>(this) result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Get the file extension</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/t_path.html'>t_path</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>this</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>type(<a href='../type/t_string.html'>t_string</a>)
+  </small></h4>
+  <p>The file path (without last slash)</p>
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-path_extension_string_static"></span><h3>
+private elemental function <a href='../proc/path_extension_string_static.html'>path_extension_string_static</a>(path) result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Get the file extension (string interface)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>type(<a href='../type/t_string.html'>t_string</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>path</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>type(<a href='../type/t_string.html'>t_string</a>)
+  </small></h4>
+  <p>The file path (without last slash)</p>
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-path_extension_character_static"></span><h3>
+private elemental function <a href='../proc/path_extension_character_static.html'>path_extension_character_static</a>(path) result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Get the file extension (character interface)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(len=*),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>path</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>character(len=len)
+  </small></h4>
+  <p>The file path (without last slash)</p>
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-path_has_extension_method"></span><h3>
+private elemental function <a href='../proc/path_has_extension_method.html'>path_has_extension_method</a>(this) result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Determines whether a path includes a file name extension</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/t_path.html'>t_path</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>this</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>logical
+  </small></h4>
+  <p>Has extension flag)</p>
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-path_has_extension_string_static"></span><h3>
+private elemental function <a href='../proc/path_has_extension_string_static.html'>path_has_extension_string_static</a>(path) result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Determines whether a path includes a file name extension (string interface)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>type(<a href='../type/t_string.html'>t_string</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>path</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>logical
+  </small></h4>
+  <p>Has extension flag)</p>
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-path_has_extension_character_static"></span><h3>
+private elemental function <a href='../proc/path_has_extension_character_static.html'>path_has_extension_character_static</a>(path) result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Determines whether a path includes a file name extension (character interface)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(len=*),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>path</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>logical
+  </small></h4>
+  <p>Has extension flag)</p>
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-path_change_extension_string_static"></span><h3>
+private elemental function <a href='../proc/path_change_extension_string_static.html'>path_change_extension_string_static</a>(path, extension) result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Change path extension (string interface)
+Takes the characters after the last dot provided in the nex extension.
+If there are more than one dot, all leading characters prior to the vey last dot are ignored</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>type(<a href='../type/t_string.html'>t_string</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>path</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>type(<a href='../type/t_string.html'>t_string</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>extension</strong></td><td><p>The new extension</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>type(<a href='../type/t_string.html'>t_string</a>)
+  </small></h4>
+  <p>The path with the modified extension)</p>
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-path_change_extension_character_static"></span><h3>
+private elemental function <a href='../proc/path_change_extension_character_static.html'>path_change_extension_character_static</a>(path, extension) result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Change path extension (character interface)
+Takes the characters after the last dot provided in the nex extension.
+If there are more than one dot, all leading characters prior to the vey last dot are ignored</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(len=*),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>path</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(len=*),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>extension</strong></td><td><p>The new extension</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>character(len=len)
+  </small></h4>
+  <p>The path with the modified extension)</p>
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-path_normalise_string_static"></span><h3>
+private elemental function <a href='../proc/path_normalise_string_static.html'>path_normalise_string_static</a>(path) result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Normalise a file path (string interface)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>type(<a href='../type/t_string.html'>t_string</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>path</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>type(<a href='../type/t_string.html'>t_string</a>)
+  </small></h4>
+  <p>The normalised path</p>
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-path_normalise_character_static"></span><h3>
+private elemental function <a href='../proc/path_normalise_character_static.html'>path_normalise_character_static</a>(path) result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Normalise a file path (character interface)</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(len=*),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>path</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>type(<a href='../type/t_string.html'>t_string</a>)
+  </small></h4>
+  <p>The normalised path</p>
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-path_temp_path_static"></span><h3>
+private function <a href='../proc/path_temp_path_static.html'>path_temp_path_static</a>() result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Get the path of the system temporary folder (defined by env(TMP))</p>
+    
+    <h4>Arguments</h4>
+    
+      <em>None</em>
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>type(<a href='../type/t_string.html'>t_string</a>)
+  </small></h4>
+  
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-path_temp_file_name"></span><h3>
+public function <a href='../proc/path_temp_file_name.html'>path_temp_file_name</a>() result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Returns the full path of a unique named temporary file</p>
+    
+    <h4>Arguments</h4>
+    
+      <em>None</em>
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>type(<a href='../type/t_string.html'>t_string</a>)
+  </small></h4>
+  
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-path_to_string"></span><h3>
+private elemental function <a href='../proc/path_to_string.html'>path_to_string</a>(this) result(res)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Get the full file path as a string</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/t_path.html'>t_path</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>this</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>type(<a href='../type/t_string.html'>t_string</a>)
+  </small></h4>
+  <p>The file path (without last slash)</p>
+    
+
+  </div>
+  </div>
+
+    
+    </section>
+    <br>
+    
+
+    
+    <section>
+    <h2>Subroutines</h2>
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-path_change_extension_string_method"></span><h3>
+private elemental subroutine <a href='../proc/path_change_extension_string_method.html'>path_change_extension_string_method</a>(this, extension)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Change path extension (string interface)
+Takes the characters after the last dot provided in the nex extension.
+If there are more than one dot, all leading characters prior to the vey last dot are ignored</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/t_path.html'>t_path</a>),</td>
+  <td>intent(inout)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>this</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>type(<a href='../type/t_string.html'>t_string</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>extension</strong></td><td><p>The new extension</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-path_change_extension_character_method"></span><h3>
+private elemental subroutine <a href='../proc/path_change_extension_character_method.html'>path_change_extension_character_method</a>(this, extension)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Change path extension (character interface)
+Takes the characters after the last dot provided in the nex extension.
+If there are more than one dot, all leading characters prior to the vey last dot are ignored</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/t_path.html'>t_path</a>),</td>
+  <td>intent(inout)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>this</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(len=*),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>extension</strong></td><td><p>The new extension</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-path_normalise_method"></span><h3>
+private elemental subroutine <a href='../proc/path_normalise_method.html'>path_normalise_method</a>(this)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Normalise a file path</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/t_path.html'>t_path</a>),</td>
+  <td>intent(inout)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>this</strong></td><td><p>The path</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  </div>
+  </div>
+
+    
+    </section>    
+    <br>
+    
+    
+    
+    </div>
+  </div>
+
+  
+    <hr>    
+    </div> <!-- /container -->
+    <footer>
+      <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-md-6"><p>XFunit was developed by Fran Martinez<br>&copy; 2022 <a rel="license" href="http://www.freebsd.org/copyright/freebsd-doc-license.html">FreeBSD Documentation License</a>
+                                          </p>
+        </div>
+        <div class="col-xs-6 col-md-6">
+          <p class="text-right">
+            Documentation generated by 
+            <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
+            
+            
+          </p>
+        </div>
+      </div>
+      <br>
+      </div> <!-- /container -->    
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+-->
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- MathJax JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } },
+        jax: ['input/TeX','input/MathML','output/HTML-CSS'],
+        extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']
+      });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    
+    
+  </body>
+</html>
