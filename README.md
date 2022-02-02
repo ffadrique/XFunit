@@ -143,7 +143,7 @@ function xfunit_manager_eclipse( module, xfunit_root_dir ) result(res)
 
 ...
 ```
-The execution of the test follow a sequence similar to the following example:
+The test sequnece can be implemented according to the following example:
 ```fortran
 ! Declarations
   type(t_xfunit_suite) :: suite
@@ -224,3 +224,4 @@ This readme page is the main user documentation. In addition, documentation gene
 
 ## Licensing
 XFunit is open-source software, licensed under the GNU Lesser General Public License (LGPL).
+

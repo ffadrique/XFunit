@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject ProjectType="typeStaticLibrary" ProjectCreator="Intel Fortran" Keyword="Static Library" Version="11.0" ProjectIdGuid="{BAF1F38D-56FB-4B54-9F53-FCCC78E5B60D}">
+	<Platforms>
+		<Platform Name="Win32"/>
+		<Platform Name="x64"/></Platforms>
+	<Configurations>
+		<Configuration Name="Debug|Win32" ConfigurationType="typeStaticLibrary">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" Preprocess="preprocessYes" StandardWarnings="standardWarningsF18" WarnUnusedVariables="true" WarnInterfaces="true" Traceback="true" BoundsCheck="true" StackFrameCheck="true" RuntimeLibrary="rtMultiThreadedDebugDLL"/>
+				<Tool Name="VFLibrarianTool"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/></Configuration>
+		<Configuration Name="Debug|x64" ConfigurationType="typeStaticLibrary">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" DisableSpecificDiagnostics="5462" WarnInterfaces="true" Traceback="true" BoundsCheck="true" StackFrameCheck="true" RuntimeLibrary="rtMultiThreadedDebug"/>
+				<Tool Name="VFLibrarianTool"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/></Configuration>
+		<Configuration Name="Release|Win32" ConfigurationType="typeStaticLibrary">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" RuntimeLibrary="rtMultiThreadedDLL"/>
+				<Tool Name="VFLibrarianTool"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/></Configuration>
+		<Configuration Name="Release|x64" ConfigurationType="typeStaticLibrary">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" RuntimeLibrary="rtMultiThreadedDLL"/>
+				<Tool Name="VFLibrarianTool"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/></Configuration></Configurations>
+	<Files>
+		<Filter Name="Header Files" Filter="fi;fd"/>
+		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe">
+		<File RelativePath=".\LICENSE.md"/>
+		<File RelativePath=".\src\makefile"/>
+		<File RelativePath=".\src\makefile.deps"/>
+		<File RelativePath=".\README.md"/></Filter>
+		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
+		<Filter Name="API">
+		<File RelativePath=".\src\m_xfunit.f03"/>
+		<File RelativePath=".\src\m_xfunit_assertion.f03"/>
+		<File RelativePath=".\src\m_xfunit_manager.f03"/>
+		<File RelativePath=".\src\m_xfunit_suite.f03"/>
+		<File RelativePath=".\src\m_xfunit_unit.f03"/></Filter>
+		<Filter Name="Library">
+		<File RelativePath=".\src\m_xfunit_assertion_array.f03"/>
+		<File RelativePath=".\src\m_xfunit_assertion_array_character.f03"/>
+		<File RelativePath=".\src\m_xfunit_assertion_array_class.f03"/>
+		<File RelativePath=".\src\m_xfunit_assertion_array_complex.f03"/>
+		<File RelativePath=".\src\m_xfunit_assertion_array_integer.f03"/>
+		<File RelativePath=".\src\m_xfunit_assertion_array_integer_between.f03"/>
+		<File RelativePath=".\src\m_xfunit_assertion_array_integer_greater.f03"/>
+		<File RelativePath=".\src\m_xfunit_assertion_array_integer_less.f03"/>
+		<File RelativePath=".\src\m_xfunit_assertion_array_logical.f03"/>
+		<File RelativePath=".\src\m_xfunit_assertion_array_real.f03"/>
+		<File RelativePath=".\src\m_xfunit_assertion_array_real_between.f03"/>
+		<File RelativePath=".\src\m_xfunit_assertion_array_real_greater.f03"/>
+		<File RelativePath=".\src\m_xfunit_assertion_array_real_less.f03"/>
+		<File RelativePath=".\src\m_xfunit_assertion_array_string.f03"/>
+		<File RelativePath=".\src\m_xfunit_assertion_character.f03"/>
+		<File RelativePath=".\src\m_xfunit_assertion_class.f03"/>
+		<File RelativePath=".\src\m_xfunit_assertion_complex.f03"/>
+		<File RelativePath=".\src\m_xfunit_assertion_fail.f03"/>
+		<File RelativePath=".\src\m_xfunit_assertion_files.f03"/>
+		<File RelativePath=".\src\m_xfunit_assertion_integer.f03"/>
+		<File RelativePath=".\src\m_xfunit_assertion_integer_between.f03"/>
+		<File RelativePath=".\src\m_xfunit_assertion_integer_greater.f03"/>
+		<File RelativePath=".\src\m_xfunit_assertion_integer_less.f03"/>
+		<File RelativePath=".\src\m_xfunit_assertion_list_ftl.f03"/>
+		<File RelativePath=".\src\m_xfunit_assertion_logical.f03"/>
+		<File RelativePath=".\src\m_xfunit_assertion_matrix.f03"/>
+		<File RelativePath=".\src\m_xfunit_assertion_matrix_class.f03"/>
+		<File RelativePath=".\src\m_xfunit_assertion_matrix_integer.f03"/>
+		<File RelativePath=".\src\m_xfunit_assertion_matrix_real.f03"/>
+		<File RelativePath=".\src\m_xfunit_assertion_pass.f03"/>
+		<File RelativePath=".\src\m_xfunit_assertion_real.f03"/>
+		<File RelativePath=".\src\m_xfunit_assertion_real_between.f03"/>
+		<File RelativePath=".\src\m_xfunit_assertion_real_greater.f03"/>
+		<File RelativePath=".\src\m_xfunit_assertion_real_less.f03"/>
+		<File RelativePath=".\src\m_xfunit_assertion_string.f03"/>
+		<File RelativePath=".\src\m_xfunit_report.f03"/>
+		<File RelativePath=".\src\m_xfunit_summary.f03"/>
+		<File RelativePath=".\src\m_xfunit_unit_list_ftl.f03"/></Filter>
+		<Filter Name="Utilities">
+		<File RelativePath=".\src\m_file_handler.f03"/>
+		<File RelativePath=".\src\m_iso8601_date.f03"/>
+		<File RelativePath=".\src\m_iso8601_date_time.f03"/>
+		<File RelativePath=".\src\m_iso8601_time.f03"/>
+		<File RelativePath=".\src\m_messages.f03"/>
+		<File RelativePath=".\src\m_msg.f03"/>
+		<File RelativePath=".\src\m_object.f03"/>
+		<File RelativePath=".\src\m_path.f03"/>
+		<File RelativePath=".\src\m_string.f03"/>
+		<File RelativePath=".\src\m_util_convert.f03"/>
+		<File RelativePath=".\src\m_xml.f03"/>
+		<File RelativePath=".\src\m_xml_attribute.f03"/>
+		<File RelativePath=".\src\m_xml_encoder.f03"/>
+		<File RelativePath=".\src\m_xml_writer.f03"/>
+		<File RelativePath=".\src\m_xml_writer_settings.f03"/></Filter></Filter></Files>
+	<Globals/></VisualStudioProject>
