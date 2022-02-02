@@ -123,7 +123,7 @@
      <li><i class="fa fa-list-ol"></i>
        <a data-toggle="tooltip"
     data-placement="bottom" data-html="true"
-    title="11.3% of total for modules and submodules.">295 statements</a>
+    title=" 3.8% of total for modules and submodules.">295 statements</a>
      </li> 
      
      
@@ -264,21 +264,6 @@
     
     <div class="col-md-9" id='text'>
     <p>Unit tests suite top level implementation and interface</p>
-<p>License   : This file is part of XFunit.</p>
-<div class="codehilite"><pre><span></span>         XFunit is free software: you can redistribute it and/or modify
-         it under the terms of the GNU Lesser General Public License as
-         published by the Free Software Foundation, either version 3 of
-         the License, or (at your option) any later version.
-
-         XFunit is distributed in the hope that it will be useful,
-         but WITHOUT ANY WARRANTY; without even the implied warranty of
-         MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-         See the GNU Lesser General Public License for more details.
-
-         You should have received a copy of the GNU Lesser General Public
-         License along with Zofu.
-         If not, see &lt;http://www.gnu.org/licenses/&gt;.
-</pre></div>
       <br>
     
   
@@ -291,25 +276,25 @@
       <li class="list-group-item">
   <ul class="list-inline">
     
-    <li>m_object</li>
+    <li>m_xfunit_unit_list_ftl</li>
+    
+    <li>m_string</li>
+    
+    <li><a href="http://fortranwiki.org/fortran/show/iso_fortran_env">iso_fortran_env</a></li>
     
     <li>m_path</li>
     
     <li>m_xml</li>
     
-    <li>m_string</li>
-    
-    <li>m_xfunit_unit_list_ftl</li>
-    
-    <li><a href="http://fortranwiki.org/fortran/show/iso_fortran_env">iso_fortran_env</a></li>
-    
-    <li>m_iso8601_date_time</li>
+    <li>m_file_handler</li>
     
     <li>m_xfunit_summary</li>
     
-    <li>m_file_handler</li>
-    
     <li><a href='../module/m_xfunit_unit.html'>m_xfunit_unit</a></li>
+    
+    <li>m_object</li>
+    
+    <li>m_iso8601_date_time</li>
     
   </ul>
       </li>
@@ -843,7 +828,7 @@ private subroutine xfunit_suite_executer(suite)
   
 <tr>
   
-  <td><span class="anchor" id="variable-name~2"></span>type(t_string),</td>
+  <td><span class="anchor" id="variable-name~3"></span>type(t_string),</td>
   
   <td>private</td>
   <td></td><td>::</td>
@@ -857,7 +842,7 @@ private subroutine xfunit_suite_executer(suite)
   
 <tr>
   
-  <td><span class="anchor" id="variable-annotation"></span>type(t_string),</td>
+  <td><span class="anchor" id="variable-annotation~2"></span>type(t_string),</td>
   
   <td>private</td>
   <td></td><td>::</td>
@@ -885,7 +870,7 @@ private subroutine xfunit_suite_executer(suite)
   
 <tr>
   
-  <td><span class="anchor" id="variable-before"></span>procedure(<a href='../interface/xfunit_suite_executer.html'>xfunit_suite_executer</a>),</td>
+  <td><span class="anchor" id="variable-before~2"></span>procedure(<a href='../interface/xfunit_suite_executer.html'>xfunit_suite_executer</a>),</td>
   
   <td>private,</td>
   <td>pointer</td><td>::</td>
@@ -899,7 +884,7 @@ private subroutine xfunit_suite_executer(suite)
   
 <tr>
   
-  <td><span class="anchor" id="variable-after"></span>procedure(<a href='../interface/xfunit_suite_executer.html'>xfunit_suite_executer</a>),</td>
+  <td><span class="anchor" id="variable-after~2"></span>procedure(<a href='../interface/xfunit_suite_executer.html'>xfunit_suite_executer</a>),</td>
   
   <td>private,</td>
   <td>pointer</td><td>::</td>
@@ -913,7 +898,7 @@ private subroutine xfunit_suite_executer(suite)
   
 <tr>
   
-  <td><span class="anchor" id="variable-status~2"></span>integer,</td>
+  <td><span class="anchor" id="variable-status~3"></span>integer,</td>
   
   <td>private</td>
   <td></td><td>::</td>
@@ -932,7 +917,7 @@ private subroutine xfunit_suite_executer(suite)
       <table class="table table-striped varlist">
       <tbody>
       
-       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_suite.html#boundprocedure-write_xml~3'>write_xml</a></strong>  => xfunit_suite_write_xml </td>
+       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_suite.html#boundprocedure-write_xml~6'>write_xml</a></strong>  => xfunit_suite_write_xml </td>
        <td></td></tr>
       
        <tr><td>procedure, private :: <strong><a href='../type/t_xfunit_suite.html#boundprocedure-xfunit_suite_write_xml'>xfunit_suite_write_xml</a></strong>  </td>
@@ -947,7 +932,7 @@ private subroutine xfunit_suite_executer(suite)
        <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_suite.html#boundprocedure-add_unit_test'>add_unit_test</a></strong>  => xfunit_suite_add_unit_test </td>
        <td><p>Add a unit test to the suite</p></td></tr>
       
-       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_suite.html#boundprocedure-execute~3'>execute</a></strong>  => xfunit_suite_execute_string, xfunit_suite_execute_character </td>
+       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_suite.html#boundprocedure-execute~7'>execute</a></strong>  => xfunit_suite_execute_string, xfunit_suite_execute_character </td>
        <td></td></tr>
       
        <tr><td>procedure, private :: <strong><a href='../type/t_xfunit_suite.html#boundprocedure-xfunit_suite_execute_string'>xfunit_suite_execute_string</a></strong>  </td>
@@ -956,10 +941,10 @@ private subroutine xfunit_suite_executer(suite)
        <tr><td>procedure, private :: <strong><a href='../type/t_xfunit_suite.html#boundprocedure-xfunit_suite_execute_character'>xfunit_suite_execute_character</a></strong>  </td>
        <td></td></tr>
       
-       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_suite.html#boundprocedure-error'>error</a></strong>  => xfunit_suite_error </td>
+       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_suite.html#boundprocedure-error~2'>error</a></strong>  => xfunit_suite_error </td>
        <td><p>Error handling</p></td></tr>
       
-       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_suite.html#boundprocedure-is_error~2'>is_error</a></strong>  => xfunit_suite_is_error </td>
+       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_suite.html#boundprocedure-is_error~5'>is_error</a></strong>  => xfunit_suite_is_error </td>
        <td></td></tr>
       
        <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_suite.html#boundprocedure-get_package'>get_package</a></strong>  => xfunit_suite_get_package </td>
@@ -968,13 +953,13 @@ private subroutine xfunit_suite_executer(suite)
        <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_suite.html#boundprocedure-get_source'>get_source</a></strong>  => xfunit_suite_get_source </td>
        <td></td></tr>
       
-       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_suite.html#boundprocedure-get_name~3'>get_name</a></strong>  => xfunit_suite_get_name </td>
+       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_suite.html#boundprocedure-get_name~7'>get_name</a></strong>  => xfunit_suite_get_name </td>
        <td></td></tr>
       
        <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_suite.html#boundprocedure-get_annotation'>get_annotation</a></strong>  => xfunit_suite_get_annotation </td>
        <td></td></tr>
       
-       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_suite.html#boundprocedure-assignment%28%3D%29~3'>assignment(=)</a></strong>  => xfunit_suite_assign_xfunit_suite </td>
+       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_suite.html#boundprocedure-assignment%28%3D%29~4'>assignment(=)</a></strong>  => xfunit_suite_assign_xfunit_suite </td>
        <td></td></tr>
       
        <tr><td>procedure, private :: <strong><a href='../type/t_xfunit_suite.html#boundprocedure-xfunit_suite_assign_xfunit_suite'>xfunit_suite_assign_xfunit_suite</a></strong>  </td>

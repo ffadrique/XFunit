@@ -127,7 +127,7 @@
      <li><i class="fa fa-list-ol"></i>
        <a data-toggle="tooltip"
     data-placement="bottom" data-html="true"
-    title=" 0.6% of total for modules and submodules.">67 statements</a>
+    title=" 0.3% of total for modules and submodules.">67 statements</a>
      </li> 
      
      
@@ -230,21 +230,6 @@
     
     <div class="col-md-9" id='text'>
     <p>Unit tests real array assertion</p>
-<p>License   : This file is part of XFunit.</p>
-<div class="codehilite"><pre><span></span>         XFunit is free software: you can redistribute it and/or modify
-         it under the terms of the GNU Lesser General Public License as
-         published by the Free Software Foundation, either version 3 of
-         the License, or (at your option) any later version.
-
-         XFunit is distributed in the hope that it will be useful,
-         but WITHOUT ANY WARRANTY; without even the implied warranty of
-         MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-         See the GNU Lesser General Public License for more details.
-
-         You should have received a copy of the GNU Lesser General Public
-         License along with Zofu.
-         If not, see &lt;http://www.gnu.org/licenses/&gt;.
-</pre></div>
       <br>
     
   
@@ -257,9 +242,9 @@
       <li class="list-group-item">
   <ul class="list-inline">
     
-    <li><a href='../module/m_xfunit_assertion.html'>m_xfunit_assertion</a></li>
+    <li>m_util_convert</li>
     
-    <li><a href='../module/m_util_convert.html'>m_util_convert</a></li>
+    <li><a href='../module/m_xfunit_assertion.html'>m_xfunit_assertion</a></li>
     
     <li><a href='../module/m_xfunit_assertion_real.html'>m_xfunit_assertion_real</a></li>
     
@@ -736,13 +721,7 @@ private pure function <a href='../proc/xfunit_assertion_array_real_array.html'>x
       <table class="table table-striped varlist">
       <tbody>
       
-       <tr><td>procedure, public :: <strong><a href='../type/t_object.html#boundprocedure-equals'>equals</a></strong>  => object_equals </td>
-       <td><p>Determines whether the specified object is equal to the current object</p></td></tr>
-      
-       <tr><td>procedure, public :: <strong><a href='../type/t_object.html#boundprocedure-get_hash_code'>get_hash_code</a></strong>  => object_get_hash_code </td>
-       <td><p>Default hash function</p></td></tr>
-      
-       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-get_name'>get_name</a></strong>  => xfunit_assertion_get_name </td>
+       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-get_name~2'>get_name</a></strong>  => xfunit_assertion_get_name </td>
        <td><p>Getters and setters</p></td></tr>
       
        <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-set_name'>set_name</a></strong>  => xfunit_assertion_set_name </td>
@@ -760,34 +739,34 @@ private pure function <a href='../proc/xfunit_assertion_array_real_array.html'>x
        <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-set_status'>set_status</a></strong>  => xfunit_assertion_set_status </td>
        <td></td></tr>
       
-       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-write_xml_start_tag'>write_xml_start_tag</a></strong>  => write_xfunit_assertion_start_tag </td>
+       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-write_xml_start_tag'>write_xml_start_tag</a></strong>  => xfunit_assertion_write_start_tag </td>
        <td><p>Interface (deferred) defintion for XML serialization</p></td></tr>
       
-       <tr><td>procedure, public, nopass :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-write_xml_end_tag'>write_xml_end_tag</a></strong>  => write_xfunit_assertion_end_tag </td>
+       <tr><td>procedure, public, nopass :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-write_xml_end_tag'>write_xml_end_tag</a></strong>  => xfunit_assertion_write_end_tag </td>
        <td></td></tr>
       
-       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-write_header'>write_header</a></strong>  => write_xfunit_assertion_header </td>
+       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-write_header'>write_header</a></strong>  => xfunit_assertion_write_header </td>
        <td><p>Interface (deferred) defintion for text serialization</p></td></tr>
       
-       <tr><td>procedure, public, nopass :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-write_footer'>write_footer</a></strong>  => write_xfunit_assertion_footer </td>
+       <tr><td>procedure, public, nopass :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-write_footer'>write_footer</a></strong>  => xfunit_assertion_write_footer </td>
        <td></td></tr>
       
        <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-is_passed'>is_passed</a></strong>  => xfunit_assertion_is_passed </td>
        <td><p>Assertion verification</p></td></tr>
       
-       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_assertion_array_real.html#boundprocedure-assignment%28%3D%29~15'>assignment(=)</a></strong>  => xfunit_assertion_assign </td>
+       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_assertion_array_real.html#boundprocedure-assignment%28%3D%29~12'>assignment(=)</a></strong>  => xfunit_assertion_assign </td>
        <td></td></tr>
       
-       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_assertion_array_real.html#boundprocedure-operator%28%3D%3D%29~14'>operator(==)</a></strong>  => xfunit_assertion_equals </td>
+       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_assertion_array_real.html#boundprocedure-operator%28%3D%3D%29~12'>operator(==)</a></strong>  => xfunit_assertion_equals </td>
        <td></td></tr>
       
-       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_assertion_array_real.html#boundprocedure-operator%28gt%29~14'>operator(>)</a></strong>  => xfunit_assertion_greater </td>
+       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_assertion_array_real.html#boundprocedure-operator%28gt%29~12'>operator(>)</a></strong>  => xfunit_assertion_greater </td>
        <td></td></tr>
       
-       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_assertion_array_real.html#boundprocedure-operator%28lt%29~14'>operator(<)</a></strong>  => xfunit_assertion_less </td>
+       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_assertion_array_real.html#boundprocedure-operator%28lt%29~12'>operator(<)</a></strong>  => xfunit_assertion_less </td>
        <td></td></tr>
       
-       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-on_error~2'>on_error</a></strong>  => xfunit_assertion_on_error </td>
+       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-on_error'>on_error</a></strong>  => xfunit_assertion_on_error </td>
        <td><p>Error handling</p></td></tr>
       
        <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-get_error'>get_error</a></strong>  => xfunit_assertion_get_error </td>
@@ -796,16 +775,16 @@ private pure function <a href='../proc/xfunit_assertion_array_real_array.html'>x
        <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-set_error'>set_error</a></strong>  => xfunit_assertion_set_error </td>
        <td></td></tr>
       
-       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion_array.html#boundprocedure-xfunit_assertion_assign'>xfunit_assertion_assign</a></strong>  => xfunit_assertion_array_assign </td>
+       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion_array.html#boundprocedure-xfunit_assertion_assign~4'>xfunit_assertion_assign</a></strong>  => xfunit_assertion_array_assign </td>
        <td><p>Assignment</p></td></tr>
       
        <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion_array.html#boundprocedure-count'>count</a></strong>  => xfunit_assertion_array_count </td>
        <td><p>Count of indiidual assertions</p></td></tr>
       
-       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion_array.html#boundprocedure-write_xml'>write_xml</a></strong>  => xfunit_assertion_array_write_xml </td>
+       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion_array.html#boundprocedure-write_xml~4'>write_xml</a></strong>  => xfunit_assertion_array_write_xml </td>
        <td><p>Serialization interface (overrides abstract base; same name required)</p></td></tr>
       
-       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion_array.html#boundprocedure-write~6'>write</a></strong>  => xfunit_assertion_array_write </td>
+       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion_array.html#boundprocedure-write~4'>write</a></strong>  => xfunit_assertion_array_write </td>
        <td></td></tr>
       
        </tbody>

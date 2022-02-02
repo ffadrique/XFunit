@@ -127,7 +127,7 @@
      <li><i class="fa fa-list-ol"></i>
        <a data-toggle="tooltip"
     data-placement="bottom" data-html="true"
-    title=" 2.0% of total for modules and submodules.">233 statements</a>
+    title=" 1.1% of total for modules and submodules.">233 statements</a>
      </li> 
      
      
@@ -335,13 +335,13 @@
       
       <a class="list-group-item" href="../module/m_xfunit_assertion.html#proc-xfunit_assertion_write">xfunit_assertion_write</a>
       
-      <a class="list-group-item" href="../module/m_xfunit_assertion.html#proc-write_xfunit_assertion_start_tag">write_xfunit_assertion_start_tag</a>
+      <a class="list-group-item" href="../module/m_xfunit_assertion.html#proc-xfunit_assertion_write_start_tag">xfunit_assertion_write_start_tag</a>
       
-      <a class="list-group-item" href="../module/m_xfunit_assertion.html#proc-write_xfunit_assertion_end_tag">write_xfunit_assertion_end_tag</a>
+      <a class="list-group-item" href="../module/m_xfunit_assertion.html#proc-xfunit_assertion_write_end_tag">xfunit_assertion_write_end_tag</a>
       
-      <a class="list-group-item" href="../module/m_xfunit_assertion.html#proc-write_xfunit_assertion_header">write_xfunit_assertion_header</a>
+      <a class="list-group-item" href="../module/m_xfunit_assertion.html#proc-xfunit_assertion_write_header">xfunit_assertion_write_header</a>
       
-      <a class="list-group-item" href="../module/m_xfunit_assertion.html#proc-write_xfunit_assertion_footer">write_xfunit_assertion_footer</a>
+      <a class="list-group-item" href="../module/m_xfunit_assertion.html#proc-xfunit_assertion_write_footer">xfunit_assertion_write_footer</a>
       
       <a class="list-group-item" href="../module/m_xfunit_assertion.html#proc-xfunit_assertion_assign">xfunit_assertion_assign</a>
       
@@ -372,21 +372,6 @@
     
     <div class="col-md-9" id='text'>
     <p>Unit tests assertion parent type</p>
-<p>License   : This file is part of XFunit.</p>
-<div class="codehilite"><pre><span></span>         XFunit is free software: you can redistribute it and/or modify
-         it under the terms of the GNU Lesser General Public License as
-         published by the Free Software Foundation, either version 3 of
-         the License, or (at your option) any later version.
-
-         XFunit is distributed in the hope that it will be useful,
-         but WITHOUT ANY WARRANTY; without even the implied warranty of
-         MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-         See the GNU Lesser General Public License for more details.
-
-         You should have received a copy of the GNU Lesser General Public
-         License along with Zofu.
-         If not, see &lt;http://www.gnu.org/licenses/&gt;.
-</pre></div>
       <br>
     
   
@@ -399,15 +384,15 @@
       <li class="list-group-item">
   <ul class="list-inline">
     
-    <li><a href='../module/m_string.html'>m_string</a></li>
+    <li>m_object</li>
     
-    <li><a href='../module/m_xml.html'>m_xml</a></li>
+    <li>m_util_convert</li>
     
-    <li><a href='../module/m_msg.html'>m_msg</a></li>
+    <li>m_string</li>
     
-    <li><a href='../module/m_util_convert.html'>m_util_convert</a></li>
+    <li>m_msg</li>
     
-    <li><a href='../module/m_object.html'>m_object</a></li>
+    <li>m_xml</li>
     
   </ul>
       </li>
@@ -600,13 +585,13 @@
       
       <a class="list-group-item" href="../module/m_xfunit_assertion.html#proc-xfunit_assertion_write">xfunit_assertion_write</a>
       
-      <a class="list-group-item" href="../module/m_xfunit_assertion.html#proc-write_xfunit_assertion_start_tag">write_xfunit_assertion_start_tag</a>
+      <a class="list-group-item" href="../module/m_xfunit_assertion.html#proc-xfunit_assertion_write_start_tag">xfunit_assertion_write_start_tag</a>
       
-      <a class="list-group-item" href="../module/m_xfunit_assertion.html#proc-write_xfunit_assertion_end_tag">write_xfunit_assertion_end_tag</a>
+      <a class="list-group-item" href="../module/m_xfunit_assertion.html#proc-xfunit_assertion_write_end_tag">xfunit_assertion_write_end_tag</a>
       
-      <a class="list-group-item" href="../module/m_xfunit_assertion.html#proc-write_xfunit_assertion_header">write_xfunit_assertion_header</a>
+      <a class="list-group-item" href="../module/m_xfunit_assertion.html#proc-xfunit_assertion_write_header">xfunit_assertion_write_header</a>
       
-      <a class="list-group-item" href="../module/m_xfunit_assertion.html#proc-write_xfunit_assertion_footer">write_xfunit_assertion_footer</a>
+      <a class="list-group-item" href="../module/m_xfunit_assertion.html#proc-xfunit_assertion_write_footer">xfunit_assertion_write_footer</a>
       
       <a class="list-group-item" href="../module/m_xfunit_assertion.html#proc-xfunit_assertion_assign">xfunit_assertion_assign</a>
       
@@ -1354,7 +1339,7 @@
    
      
 <div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="type-t_xfunit_assertion"></span><h3>type, public, extends(<a href='../type/t_object.html'>t_object</a>) :: <a href='../type/t_xfunit_assertion.html'>t_xfunit_assertion</a>
+  <div class="panel-heading codesum"><span class="anchor" id="type-t_xfunit_assertion"></span><h3>type, public, extends(t_object) :: <a href='../type/t_xfunit_assertion.html'>t_xfunit_assertion</a>
     
   </h3></div>
   <div class="panel-body">
@@ -1380,7 +1365,7 @@
   
 <tr>
   
-  <td><span class="anchor" id="variable-name~2"></span>type(<a href='../type/t_string.html'>t_string</a>),</td>
+  <td><span class="anchor" id="variable-name~2"></span>type(t_string),</td>
   
   <td>private</td>
   <td></td><td>::</td>
@@ -1408,7 +1393,7 @@
   
 <tr>
   
-  <td><span class="anchor" id="variable-status"></span>integer,</td>
+  <td><span class="anchor" id="variable-status~2"></span>integer,</td>
   
   <td>private</td>
   <td></td><td>::</td>
@@ -1422,7 +1407,7 @@
   
 <tr>
   
-  <td><span class="anchor" id="variable-msg"></span>type(<a href='../type/t_msg.html'>t_msg</a>),</td>
+  <td><span class="anchor" id="variable-msg~2"></span>type(t_msg),</td>
   
   <td>private</td>
   <td></td><td>::</td>
@@ -1441,13 +1426,7 @@
       <table class="table table-striped varlist">
       <tbody>
       
-       <tr><td>procedure, public :: <strong><a href='../type/t_object.html#boundprocedure-equals'>equals</a></strong>  => object_equals </td>
-       <td><p>Determines whether the specified object is equal to the current object</p></td></tr>
-      
-       <tr><td>procedure, public :: <strong><a href='../type/t_object.html#boundprocedure-get_hash_code'>get_hash_code</a></strong>  => object_get_hash_code </td>
-       <td><p>Default hash function</p></td></tr>
-      
-       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-get_name'>get_name</a></strong>  => xfunit_assertion_get_name </td>
+       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-get_name~2'>get_name</a></strong>  => xfunit_assertion_get_name </td>
        <td><p>Getters and setters</p></td></tr>
       
        <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-set_name'>set_name</a></strong>  => xfunit_assertion_set_name </td>
@@ -1465,52 +1444,52 @@
        <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-set_status'>set_status</a></strong>  => xfunit_assertion_set_status </td>
        <td></td></tr>
       
-       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-write_xml_start_tag'>write_xml_start_tag</a></strong>  => write_xfunit_assertion_start_tag </td>
+       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-write_xml_start_tag'>write_xml_start_tag</a></strong>  => xfunit_assertion_write_start_tag </td>
        <td><p>Interface (deferred) defintion for XML serialization</p></td></tr>
       
-       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-write_xml~21'>write_xml</a></strong>  => xfunit_assertion_write_xml </td>
+       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-write_xml~62'>write_xml</a></strong>  => xfunit_assertion_write_xml </td>
        <td></td></tr>
       
-       <tr><td>procedure, public, nopass :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-write_xml_end_tag'>write_xml_end_tag</a></strong>  => write_xfunit_assertion_end_tag </td>
+       <tr><td>procedure, public, nopass :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-write_xml_end_tag'>write_xml_end_tag</a></strong>  => xfunit_assertion_write_end_tag </td>
        <td></td></tr>
       
-       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-write_header'>write_header</a></strong>  => write_xfunit_assertion_header </td>
+       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-write_header'>write_header</a></strong>  => xfunit_assertion_write_header </td>
        <td><p>Interface (deferred) defintion for text serialization</p></td></tr>
       
-       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-write~5'>write</a></strong>  => xfunit_assertion_write </td>
+       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-write~12'>write</a></strong>  => xfunit_assertion_write </td>
        <td></td></tr>
       
-       <tr><td>procedure, public, nopass :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-write_footer'>write_footer</a></strong>  => write_xfunit_assertion_footer </td>
+       <tr><td>procedure, public, nopass :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-write_footer'>write_footer</a></strong>  => xfunit_assertion_write_footer </td>
        <td></td></tr>
       
        <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-is_passed'>is_passed</a></strong>  => xfunit_assertion_is_passed </td>
        <td><p>Assertion verification</p></td></tr>
       
-       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-assignment%28%3D%29~5'>assignment(=)</a></strong>  => xfunit_assertion_assign </td>
+       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-assignment%28%3D%29~16'>assignment(=)</a></strong>  => xfunit_assertion_assign </td>
        <td></td></tr>
       
-       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-xfunit_assertion_assign~19'>xfunit_assertion_assign</a></strong>  </td>
+       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-xfunit_assertion_assign~55'>xfunit_assertion_assign</a></strong>  </td>
        <td></td></tr>
       
-       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-operator%28%3D%3D%29~4'>operator(==)</a></strong>  => xfunit_assertion_equals </td>
+       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-operator%28%3D%3D%29~16'>operator(==)</a></strong>  => xfunit_assertion_equals </td>
        <td></td></tr>
       
        <tr><td>procedure, private :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-xfunit_assertion_equals'>xfunit_assertion_equals</a></strong>  </td>
        <td></td></tr>
       
-       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-operator%28gt%29~4'>operator(>)</a></strong>  => xfunit_assertion_greater </td>
+       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-operator%28gt%29~16'>operator(>)</a></strong>  => xfunit_assertion_greater </td>
        <td></td></tr>
       
        <tr><td>procedure, private :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-xfunit_assertion_greater'>xfunit_assertion_greater</a></strong>  </td>
        <td></td></tr>
       
-       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-operator%28lt%29~4'>operator(<)</a></strong>  => xfunit_assertion_less </td>
+       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-operator%28lt%29~16'>operator(<)</a></strong>  => xfunit_assertion_less </td>
        <td></td></tr>
       
        <tr><td>procedure, private :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-xfunit_assertion_less'>xfunit_assertion_less</a></strong>  </td>
        <td></td></tr>
       
-       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-on_error~2'>on_error</a></strong>  => xfunit_assertion_on_error </td>
+       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-on_error'>on_error</a></strong>  => xfunit_assertion_on_error </td>
        <td><p>Error handling</p></td></tr>
       
        <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion.html#boundprocedure-get_error'>get_error</a></strong>  => xfunit_assertion_get_error </td>
@@ -2076,7 +2055,7 @@ private pure function <a href='../proc/xfunit_assertion_get_error.html'>xfunit_a
   
   
   
-     <h4>Return Value <small>type(<a href='../type/t_msg.html'>t_msg</a>)
+     <h4>Return Value <small>type(t_msg)
   </small></h4>
   <p>Error structure</p>
     
@@ -2144,7 +2123,7 @@ private pure function <a href='../proc/xfunit_assertion_get_name.html'>xfunit_as
   
   
   
-     <h4>Return Value <small>type(<a href='../type/t_string.html'>t_string</a>)
+     <h4>Return Value <small>type(t_string)
   </small></h4>
   <p>Return value</p>
     
@@ -2351,7 +2330,7 @@ private subroutine <a href='../proc/xfunit_assertion_write_xml.html'>xfunit_asse
   
 <tr>
   
-  <td><span class="anchor" ></span>type(<a href='../type/t_xml_writer.html'>t_xml_writer</a>),</td>
+  <td><span class="anchor" ></span>type(t_xml_writer),</td>
   <td>intent(inout)</td>
   <td></td>
   
@@ -2447,8 +2426,8 @@ private subroutine <a href='../proc/xfunit_assertion_write.html'>xfunit_assertio
     
     
   <div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="proc-write_xfunit_assertion_start_tag"></span><h3>
-private subroutine <a href='../proc/write_xfunit_assertion_start_tag.html'>write_xfunit_assertion_start_tag</a>(this, xml)
+  <div class="panel-heading codesum"><span class="anchor" id="proc-xfunit_assertion_write_start_tag"></span><h3>
+private subroutine <a href='../proc/xfunit_assertion_write_start_tag.html'>xfunit_assertion_write_start_tag</a>(this, xml)
     
     
    
@@ -2499,7 +2478,7 @@ private subroutine <a href='../proc/write_xfunit_assertion_start_tag.html'>write
   
 <tr>
   
-  <td><span class="anchor" ></span>type(<a href='../type/t_xml_writer.html'>t_xml_writer</a>),</td>
+  <td><span class="anchor" ></span>type(t_xml_writer),</td>
   <td>intent(inout)</td>
   <td></td>
   
@@ -2521,8 +2500,8 @@ private subroutine <a href='../proc/write_xfunit_assertion_start_tag.html'>write
     
     
   <div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="proc-write_xfunit_assertion_end_tag"></span><h3>
-private subroutine <a href='../proc/write_xfunit_assertion_end_tag.html'>write_xfunit_assertion_end_tag</a>(xml)
+  <div class="panel-heading codesum"><span class="anchor" id="proc-xfunit_assertion_write_end_tag"></span><h3>
+private subroutine <a href='../proc/xfunit_assertion_write_end_tag.html'>xfunit_assertion_write_end_tag</a>(xml)
     
     
    
@@ -2558,7 +2537,7 @@ private subroutine <a href='../proc/write_xfunit_assertion_end_tag.html'>write_x
   
 <tr>
   
-  <td><span class="anchor" ></span>type(<a href='../type/t_xml_writer.html'>t_xml_writer</a>),</td>
+  <td><span class="anchor" ></span>type(t_xml_writer),</td>
   <td>intent(inout)</td>
   <td></td>
   
@@ -2580,8 +2559,8 @@ private subroutine <a href='../proc/write_xfunit_assertion_end_tag.html'>write_x
     
     
   <div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="proc-write_xfunit_assertion_header"></span><h3>
-private subroutine <a href='../proc/write_xfunit_assertion_header.html'>write_xfunit_assertion_header</a>(this, unit)
+  <div class="panel-heading codesum"><span class="anchor" id="proc-xfunit_assertion_write_header"></span><h3>
+private subroutine <a href='../proc/xfunit_assertion_write_header.html'>xfunit_assertion_write_header</a>(this, unit)
     
     
    
@@ -2654,8 +2633,8 @@ private subroutine <a href='../proc/write_xfunit_assertion_header.html'>write_xf
     
     
   <div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="proc-write_xfunit_assertion_footer"></span><h3>
-private subroutine <a href='../proc/write_xfunit_assertion_footer.html'>write_xfunit_assertion_footer</a>(unit)
+  <div class="panel-heading codesum"><span class="anchor" id="proc-xfunit_assertion_write_footer"></span><h3>
+private subroutine <a href='../proc/xfunit_assertion_write_footer.html'>xfunit_assertion_write_footer</a>(unit)
     
     
    
@@ -2839,7 +2818,7 @@ private pure subroutine <a href='../proc/xfunit_assertion_set_error.html'>xfunit
   
 <tr>
   
-  <td><span class="anchor" ></span>type(<a href='../type/t_msg.html'>t_msg</a>),</td>
+  <td><span class="anchor" ></span>type(t_msg),</td>
   <td>intent(in)</td>
   <td></td>
   
@@ -2913,7 +2892,7 @@ private elemental subroutine <a href='../proc/xfunit_assertion_set_name.html'>xf
   
 <tr>
   
-  <td><span class="anchor" ></span>type(<a href='../type/t_string.html'>t_string</a>),</td>
+  <td><span class="anchor" ></span>type(t_string),</td>
   <td>intent(in)</td>
   <td></td>
   

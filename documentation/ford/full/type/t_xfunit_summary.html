@@ -127,7 +127,7 @@
      <li><i class="fa fa-list-ol"></i>
        <a data-toggle="tooltip"
     data-placement="bottom" data-html="true"
-    title="<p> 1.4% of total for derived types.</p>Including implementation: 62 statements,  0.4% of total for derived types.">16 statements</a>
+    title="<p> 0.8% of total for derived types.</p>Including implementation: 46 statements,  0.1% of total for derived types.">16 statements</a>
      </li> 
      
      
@@ -180,9 +180,9 @@
       
       <a class="list-group-item" href="../type/t_xfunit_summary.html#variable-failed">failed</a>
       
-      <a class="list-group-item" href="../type/t_xfunit_summary.html#variable-errors~2">errors</a>
+      <a class="list-group-item" href="../type/t_xfunit_summary.html#variable-errors">errors</a>
       
-      <a class="list-group-item" href="../type/t_xfunit_summary.html#variable-time~2">time</a>
+      <a class="list-group-item" href="../type/t_xfunit_summary.html#variable-time">time</a>
       
     </div>
   </div>
@@ -210,10 +210,6 @@
   <div id="boundprocs-0" class="panel-collapse collapse">
     <div class="list-group">
       
-      <a class="list-group-item" href="../type/t_xfunit_summary.html#boundprocedure-equals">equals</a>
-      
-      <a class="list-group-item" href="../type/t_xfunit_summary.html#boundprocedure-get_hash_code">get_hash_code</a>
-      
       <a class="list-group-item" href="../type/t_xfunit_summary.html#boundprocedure-get_tests">get_tests</a>
       
       <a class="list-group-item" href="../type/t_xfunit_summary.html#boundprocedure-get_executed">get_executed</a>
@@ -222,7 +218,7 @@
       
       <a class="list-group-item" href="../type/t_xfunit_summary.html#boundprocedure-get_failed">get_failed</a>
       
-      <a class="list-group-item" href="../type/t_xfunit_summary.html#boundprocedure-get_errors~2">get_errors</a>
+      <a class="list-group-item" href="../type/t_xfunit_summary.html#boundprocedure-get_errors">get_errors</a>
       
       <a class="list-group-item" href="../type/t_xfunit_summary.html#boundprocedure-get_time">get_time</a>
       
@@ -247,7 +243,7 @@
     </div>
     
     <div class="col-md-9" id='text'>
-      <h2>type, public, extends(<a href='../type/t_object.html'>t_object</a>) :: t_xfunit_summary</h2>
+      <h2>type, public, extends(t_object) :: t_xfunit_summary</h2>
     <p>The suite or unit test summary type</p>
     
     
@@ -274,9 +270,9 @@
       
       <a class="list-group-item" href="../type/t_xfunit_summary.html#variable-failed">failed</a>
       
-      <a class="list-group-item" href="../type/t_xfunit_summary.html#variable-errors~2">errors</a>
+      <a class="list-group-item" href="../type/t_xfunit_summary.html#variable-errors">errors</a>
       
-      <a class="list-group-item" href="../type/t_xfunit_summary.html#variable-time~2">time</a>
+      <a class="list-group-item" href="../type/t_xfunit_summary.html#variable-time">time</a>
       
     </div>
   </div>
@@ -304,10 +300,6 @@
   <div id="boundprocs-1" class="panel-collapse collapse">
     <div class="list-group">
       
-      <a class="list-group-item" href="../type/t_xfunit_summary.html#boundprocedure-equals">equals</a>
-      
-      <a class="list-group-item" href="../type/t_xfunit_summary.html#boundprocedure-get_hash_code">get_hash_code</a>
-      
       <a class="list-group-item" href="../type/t_xfunit_summary.html#boundprocedure-get_tests">get_tests</a>
       
       <a class="list-group-item" href="../type/t_xfunit_summary.html#boundprocedure-get_executed">get_executed</a>
@@ -316,7 +308,7 @@
       
       <a class="list-group-item" href="../type/t_xfunit_summary.html#boundprocedure-get_failed">get_failed</a>
       
-      <a class="list-group-item" href="../type/t_xfunit_summary.html#boundprocedure-get_errors~2">get_errors</a>
+      <a class="list-group-item" href="../type/t_xfunit_summary.html#boundprocedure-get_errors">get_errors</a>
       
       <a class="list-group-item" href="../type/t_xfunit_summary.html#boundprocedure-get_time">get_time</a>
       
@@ -414,7 +406,7 @@
   
 <tr>
   
-  <td><span class="anchor" id="variable-errors~2"></span>integer,</td>
+  <td><span class="anchor" id="variable-errors"></span>integer,</td>
   
   <td>private</td>
   <td></td><td>::</td>
@@ -428,7 +420,7 @@
   
 <tr>
   
-  <td><span class="anchor" id="variable-time~2"></span>real(kind=8),</td>
+  <td><span class="anchor" id="variable-time"></span>real(kind=8),</td>
   
   <td>private</td>
   <td></td><td>::</td>
@@ -450,197 +442,6 @@
      
     <section>
     <h2>Type-Bound Procedures</h2>
-    
-     
-<div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="boundprocedure-equals"></span><h3>procedure, public :: <strong>equals</strong>  => <a href='../proc/object_equals.html'>object_equals</a> 
-    
-  </h3></div>
-  
-  <div class="panel-body">
-    
-
-
-    <p>Determines whether the specified object is equal to the current object</p>
-  </div>
-  
-  <ul class="list-group">
-    
-      <li class="list-group-item">
-      
-        
-          
-    
-    <h3>
-private elemental function <a href='../proc/object_equals.html'>object_equals</a>(this, other) result(res)
-    
-    
-   
-</h3>
-    
-
-
-
-
-
-
-
-<p>Determines whether the specified object is equal to the current object</p>
-    
-    <h4>Arguments</h4>
-    
-      
-      
-<table class="table table-striped varlist">
-<thead><tr><th>Type</th>
-<th>Intent</th><th>Optional</th>
-<th>Attributes</th><th></th><th>Name</th><th></th></thead>
-
-
-
-<tbody>
-
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" ></span>class(<a href='../type/t_object.html'>t_object</a>),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
-  <td><strong>this</strong></td><td><p>Calling object</p></td>
-  
-</tr>
-
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" ></span>class(<a href='../type/t_object.html'>t_object</a>),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
-  <td><strong>other</strong></td><td><p>Other object</p></td>
-  
-</tr>
-
-</tbody>
-</table>
-
-      
-    
-    
-
-  
-  
-  
-  
-     <h4>Return Value <small>logical
-  </small></h4>
-  <p>Comparison result</p>
-    
-
-        
-      
-      </li>
-    
-  </ul>
-</div>
-
-    
-     
-<div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="boundprocedure-get_hash_code"></span><h3>procedure, public :: <strong>get_hash_code</strong>  => <a href='../proc/object_get_hash_code.html'>object_get_hash_code</a> 
-    
-  </h3></div>
-  
-  <div class="panel-body">
-    
-
-
-    <p>Default hash function</p>
-  </div>
-  
-  <ul class="list-group">
-    
-      <li class="list-group-item">
-      
-        
-          
-    
-    <h3>
-private elemental function <a href='../proc/object_get_hash_code.html'>object_get_hash_code</a>(this) result(res)
-    
-    
-   
-</h3>
-    
-
-
-
-
-
-
-
-<p>Default hash function</p>
-    
-    <h4>Arguments</h4>
-    
-      
-      
-<table class="table table-striped varlist">
-<thead><tr><th>Type</th>
-<th>Intent</th><th>Optional</th>
-<th>Attributes</th><th></th><th>Name</th><th></th></thead>
-
-
-
-<tbody>
-
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" ></span>class(<a href='../type/t_object.html'>t_object</a>),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
-  <td><strong>this</strong></td><td><p>Calling object</p></td>
-  
-</tr>
-
-</tbody>
-</table>
-
-      
-    
-    
-
-  
-  
-  
-  
-     <h4>Return Value <small>integer
-  </small></h4>
-  <p>String representation of the object</p>
-    
-
-        
-      
-      </li>
-    
-  </ul>
-</div>
-
     
      
 <div class="panel panel-default">
@@ -975,7 +776,7 @@ private elemental function <a href='../proc/xfunit_summary_get_failed.html'>xfun
     
      
 <div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="boundprocedure-get_errors~2"></span><h3>procedure, public :: <strong>get_errors</strong>  => <a href='../proc/xfunit_summary_get_errors.html'>xfunit_summary_get_errors</a> 
+  <div class="panel-heading codesum"><span class="anchor" id="boundprocedure-get_errors"></span><h3>procedure, public :: <strong>get_errors</strong>  => <a href='../proc/xfunit_summary_get_errors.html'>xfunit_summary_get_errors</a> 
     
   </h3></div>
   

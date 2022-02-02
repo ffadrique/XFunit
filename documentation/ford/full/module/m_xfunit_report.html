@@ -127,7 +127,7 @@
      <li><i class="fa fa-list-ol"></i>
        <a data-toggle="tooltip"
     data-placement="bottom" data-html="true"
-    title=" 0.5% of total for modules and submodules.">53 statements</a>
+    title=" 0.3% of total for modules and submodules.">53 statements</a>
      </li> 
      
      
@@ -240,21 +240,6 @@
     
     <div class="col-md-9" id='text'>
     <p>Unit tests reports (detailed report added to JUnit compliant report)</p>
-<p>License   : This file is part of XFunit.</p>
-<div class="codehilite"><pre><span></span>         XFunit is free software: you can redistribute it and/or modify
-         it under the terms of the GNU Lesser General Public License as
-         published by the Free Software Foundation, either version 3 of
-         the License, or (at your option) any later version.
-
-         XFunit is distributed in the hope that it will be useful,
-         but WITHOUT ANY WARRANTY; without even the implied warranty of
-         MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-         See the GNU Lesser General Public License for more details.
-
-         You should have received a copy of the GNU Lesser General Public
-         License along with Zofu.
-         If not, see &lt;http://www.gnu.org/licenses/&gt;.
-</pre></div>
       <br>
     
   
@@ -269,9 +254,9 @@
     
     <li><a href='../module/m_xfunit_assertion_list_ftl.html'>m_xfunit_assertion_list_ftl</a></li>
     
-    <li><a href='../module/m_xml.html'>m_xml</a></li>
-    
     <li><a href='../module/m_xfunit_assertion.html'>m_xfunit_assertion</a></li>
+    
+    <li>m_xml</li>
     
   </ul>
       </li>
@@ -460,13 +445,7 @@ private function <a href='../proc/xfunit_report_default.html'>xfunit_report_defa
       <table class="table table-striped varlist">
       <tbody>
       
-       <tr><td>procedure, public :: <strong><a href='../type/t_object.html#boundprocedure-equals'>equals</a></strong>  => object_equals </td>
-       <td><p>Determines whether the specified object is equal to the current object</p></td></tr>
-      
-       <tr><td>procedure, public :: <strong><a href='../type/t_object.html#boundprocedure-get_hash_code'>get_hash_code</a></strong>  => object_get_hash_code </td>
-       <td><p>Default hash function</p></td></tr>
-      
-       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_report.html#boundprocedure-assignment%28%3D%29~43'>assignment(=)</a></strong>  => list_assign_from_list </td>
+       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_report.html#boundprocedure-assignment%28%3D%29~22'>assignment(=)</a></strong>  => list_assign_from_list </td>
        <td></td></tr>
       
        <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion_list_ftl.html#boundprocedure-list_assign_from_list'>list_assign_from_list</a></strong>  </td>
@@ -493,7 +472,7 @@ private function <a href='../proc/xfunit_report_default.html'>xfunit_report_defa
        <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion_list_ftl.html#boundprocedure-back'>back</a></strong>  => list_back </td>
        <td></td></tr>
       
-       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_report.html#boundprocedure-assign~3'>assign</a></strong>  => list_assign_from_list, list_assign_from_range, list_assign_from_fill, list_assign_from_array </td>
+       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_report.html#boundprocedure-assign'>assign</a></strong>  => list_assign_from_list, list_assign_from_range, list_assign_from_fill, list_assign_from_array </td>
        <td></td></tr>
       
        <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion_list_ftl.html#boundprocedure-push_front'>push_front</a></strong>  => list_push_front </td>
@@ -508,10 +487,10 @@ private function <a href='../proc/xfunit_report_default.html'>xfunit_report_defa
        <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion_list_ftl.html#boundprocedure-pop_back'>pop_back</a></strong>  => list_pop_back </td>
        <td></td></tr>
       
-       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_report.html#boundprocedure-insert~2'>insert</a></strong>  => list_insert_single, list_insert_fill, list_insert_range, list_insert_array </td>
+       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_report.html#boundprocedure-insert'>insert</a></strong>  => list_insert_single, list_insert_fill, list_insert_range, list_insert_array </td>
        <td></td></tr>
       
-       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_report.html#boundprocedure-erase~2'>erase</a></strong>  => list_erase_single, list_erase_range </td>
+       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_report.html#boundprocedure-erase'>erase</a></strong>  => list_erase_single, list_erase_range </td>
        <td></td></tr>
       
        <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion_list_ftl.html#boundprocedure-swap'>swap</a></strong>  => list_swap </td>
@@ -523,7 +502,7 @@ private function <a href='../proc/xfunit_report_default.html'>xfunit_report_defa
        <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion_list_ftl.html#boundprocedure-clear'>clear</a></strong>  => list_clear </td>
        <td></td></tr>
       
-       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_report.html#boundprocedure-splice~2'>splice</a></strong>  => list_splice_list, list_splice_range, list_splice_single </td>
+       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_report.html#boundprocedure-splice'>splice</a></strong>  => list_splice_list, list_splice_range, list_splice_single </td>
        <td></td></tr>
       
        <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion_list_ftl.html#boundprocedure-remove'>remove</a></strong>  => list_remove </td>
@@ -556,10 +535,10 @@ private function <a href='../proc/xfunit_report_default.html'>xfunit_report_defa
        <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_assertion_list_ftl.html#boundprocedure-array~2'>array</a></strong>  => list_array </td>
        <td><p>Conversion</p></td></tr>
       
-       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_report.html#boundprocedure-write_xml~20'>write_xml</a></strong>  => xfunit_report_write_xml </td>
+       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_report.html#boundprocedure-write_xml~11'>write_xml</a></strong>  => xfunit_report_write_xml </td>
        <td><p>Serialization interfaces</p></td></tr>
       
-       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_report.html#boundprocedure-write~24'>write</a></strong>  => xfunit_report_write </td>
+       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_report.html#boundprocedure-write~15'>write</a></strong>  => xfunit_report_write </td>
        <td></td></tr>
       
        </tbody>
@@ -767,7 +746,7 @@ private subroutine <a href='../proc/xfunit_report_write_xml.html'>xfunit_report_
   
 <tr>
   
-  <td><span class="anchor" ></span>type(<a href='../type/t_xml_writer.html'>t_xml_writer</a>),</td>
+  <td><span class="anchor" ></span>type(t_xml_writer),</td>
   <td>intent(inout)</td>
   <td></td>
   

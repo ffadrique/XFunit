@@ -127,7 +127,7 @@
      <li><i class="fa fa-list-ol"></i>
        <a data-toggle="tooltip"
     data-placement="bottom" data-html="true"
-    title=" 0.6% of total for modules and submodules.">72 statements</a>
+    title=" 0.3% of total for modules and submodules.">72 statements</a>
      </li> 
      
      
@@ -226,21 +226,6 @@
     
     <div class="col-md-9" id='text'>
     <p>Container of statistics information for suite and unit tests</p>
-<p>License   : This file is part of XFunit.</p>
-<div class="codehilite"><pre><span></span>         XFunit is free software: you can redistribute it and/or modify
-         it under the terms of the GNU Lesser General Public License as
-         published by the Free Software Foundation, either version 3 of
-         the License, or (at your option) any later version.
-
-         XFunit is distributed in the hope that it will be useful,
-         but WITHOUT ANY WARRANTY; without even the implied warranty of
-         MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-         See the GNU Lesser General Public License for more details.
-
-         You should have received a copy of the GNU Lesser General Public
-         License along with Zofu.
-         If not, see &lt;http://www.gnu.org/licenses/&gt;.
-</pre></div>
       <br>
     
   
@@ -253,13 +238,13 @@
       <li class="list-group-item">
   <ul class="list-inline">
     
-    <li><a href='../module/m_util_convert.html'>m_util_convert</a></li>
+    <li>m_object</li>
     
-    <li><a href='../module/m_messages.html'>m_messages</a></li>
+    <li>m_util_convert</li>
     
-    <li><a href='../module/m_xml.html'>m_xml</a></li>
+    <li>m_xml</li>
     
-    <li><a href='../module/m_object.html'>m_object</a></li>
+    <li>m_messages</li>
     
   </ul>
       </li>
@@ -356,7 +341,7 @@
    
      
 <div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="type-t_xfunit_summary"></span><h3>type, public, extends(<a href='../type/t_object.html'>t_object</a>) :: <a href='../type/t_xfunit_summary.html'>t_xfunit_summary</a>
+  <div class="panel-heading codesum"><span class="anchor" id="type-t_xfunit_summary"></span><h3>type, public, extends(t_object) :: <a href='../type/t_xfunit_summary.html'>t_xfunit_summary</a>
     
   </h3></div>
   <div class="panel-body">
@@ -438,7 +423,7 @@
   
 <tr>
   
-  <td><span class="anchor" id="variable-errors~2"></span>integer,</td>
+  <td><span class="anchor" id="variable-errors"></span>integer,</td>
   
   <td>private</td>
   <td></td><td>::</td>
@@ -452,7 +437,7 @@
   
 <tr>
   
-  <td><span class="anchor" id="variable-time~2"></span>real(kind=8),</td>
+  <td><span class="anchor" id="variable-time"></span>real(kind=8),</td>
   
   <td>private</td>
   <td></td><td>::</td>
@@ -471,12 +456,6 @@
       <table class="table table-striped varlist">
       <tbody>
       
-       <tr><td>procedure, public :: <strong><a href='../type/t_object.html#boundprocedure-equals'>equals</a></strong>  => object_equals </td>
-       <td><p>Determines whether the specified object is equal to the current object</p></td></tr>
-      
-       <tr><td>procedure, public :: <strong><a href='../type/t_object.html#boundprocedure-get_hash_code'>get_hash_code</a></strong>  => object_get_hash_code </td>
-       <td><p>Default hash function</p></td></tr>
-      
        <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_summary.html#boundprocedure-get_tests'>get_tests</a></strong>  => xfunit_summary_get_tests </td>
        <td><p>Getters/setters</p></td></tr>
       
@@ -489,7 +468,7 @@
        <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_summary.html#boundprocedure-get_failed'>get_failed</a></strong>  => xfunit_summary_get_failed </td>
        <td></td></tr>
       
-       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_summary.html#boundprocedure-get_errors~2'>get_errors</a></strong>  => xfunit_summary_get_errors </td>
+       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_summary.html#boundprocedure-get_errors'>get_errors</a></strong>  => xfunit_summary_get_errors </td>
        <td></td></tr>
       
        <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_summary.html#boundprocedure-get_time'>get_time</a></strong>  => xfunit_summary_get_time </td>

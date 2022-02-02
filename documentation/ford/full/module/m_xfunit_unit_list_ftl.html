@@ -127,7 +127,7 @@
      <li><i class="fa fa-list-ol"></i>
        <a data-toggle="tooltip"
     data-placement="bottom" data-html="true"
-    title=" 7.8% of total for modules and submodules.">911 statements</a>
+    title=" 4.4% of total for modules and submodules.">911 statements</a>
      </li> 
      
      
@@ -382,22 +382,14 @@
     
     <div class="col-md-9" id='text'>
     <p>Double linked list container template
+             Limitations with repsect to STL C++
+              - No reverse iteration.
+              - No constant iterators.
+              - Max size is dummy (dummy value not computed from architecture).
+              - No emplace functions.
+              - Splice can append lists with an extension on the STL C++
+                interface that emulates the past-last-element with null iterator
  Version   : 3.0</p>
-<p>License   : This file is part of XFunit.</p>
-<div class="codehilite"><pre><span></span>         XFunit is free software: you can redistribute it and/or modify
-         it under the terms of the GNU Lesser General Public License as
-         published by the Free Software Foundation, either version 3 of
-         the License, or (at your option) any later version.
-
-         XFunit is distributed in the hope that it will be useful,
-         but WITHOUT ANY WARRANTY; without even the implied warranty of
-         MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-         See the GNU Lesser General Public License for more details.
-
-         You should have received a copy of the GNU Lesser General Public
-         License along with Zofu.
-         If not, see &lt;http://www.gnu.org/licenses/&gt;.
-</pre></div>
       <br>
     
   
@@ -410,9 +402,9 @@
       <li class="list-group-item">
   <ul class="list-inline">
     
-    <li><a href='../module/m_xfunit_unit.html'>m_xfunit_unit</a></li>
+    <li>m_object</li>
     
-    <li><a href='../module/m_object.html'>m_object</a></li>
+    <li><a href='../module/m_xfunit_unit.html'>m_xfunit_unit</a></li>
     
   </ul>
       </li>
@@ -1533,7 +1525,7 @@ private pure function binary_predicate(a, b) result(res)
      
      
 <div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="type-t_xfunit_unit_list_ftl"></span><h3>type, public, extends(<a href='../type/t_object.html'>t_object</a>) :: <a href='../type/t_xfunit_unit_list_ftl.html'>t_xfunit_unit_list_ftl</a>
+  <div class="panel-heading codesum"><span class="anchor" id="type-t_xfunit_unit_list_ftl"></span><h3>type, public, extends(t_object) :: <a href='../type/t_xfunit_unit_list_ftl.html'>t_xfunit_unit_list_ftl</a>
     
   </h3></div>
   <div class="panel-body">
@@ -1559,7 +1551,7 @@ private pure function binary_predicate(a, b) result(res)
   
 <tr>
   
-  <td><span class="anchor" id="variable-count~4"></span>integer,</td>
+  <td><span class="anchor" id="variable-count~3"></span>integer,</td>
   
   <td>private</td>
   <td></td><td>::</td>
@@ -1615,13 +1607,7 @@ private pure function binary_predicate(a, b) result(res)
       <table class="table table-striped varlist">
       <tbody>
       
-       <tr><td>procedure, public :: <strong><a href='../type/t_object.html#boundprocedure-equals'>equals</a></strong>  => object_equals </td>
-       <td><p>Determines whether the specified object is equal to the current object</p></td></tr>
-      
-       <tr><td>procedure, public :: <strong><a href='../type/t_object.html#boundprocedure-get_hash_code'>get_hash_code</a></strong>  => object_get_hash_code </td>
-       <td><p>Default hash function</p></td></tr>
-      
-       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_unit_list_ftl.html#boundprocedure-assignment%28%3D%29~46'>assignment(=)</a></strong>  => list_assign_from_list </td>
+       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_unit_list_ftl.html#boundprocedure-assignment%28%3D%29~37'>assignment(=)</a></strong>  => list_assign_from_list </td>
        <td></td></tr>
       
        <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_unit_list_ftl.html#boundprocedure-list_assign_from_list~2'>list_assign_from_list</a></strong>  </td>
@@ -1648,7 +1634,7 @@ private pure function binary_predicate(a, b) result(res)
        <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_unit_list_ftl.html#boundprocedure-back~2'>back</a></strong>  => list_back </td>
        <td></td></tr>
       
-       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_unit_list_ftl.html#boundprocedure-assign~4'>assign</a></strong>  => list_assign_from_list, list_assign_from_range, list_assign_from_fill, list_assign_from_array </td>
+       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_unit_list_ftl.html#boundprocedure-assign~3'>assign</a></strong>  => list_assign_from_list, list_assign_from_range, list_assign_from_fill, list_assign_from_array </td>
        <td></td></tr>
       
        <tr><td>procedure, private :: <strong><a href='../type/t_xfunit_unit_list_ftl.html#boundprocedure-list_assign_from_range~2'>list_assign_from_range</a></strong>  </td>
@@ -1762,7 +1748,7 @@ private pure function binary_predicate(a, b) result(res)
      
      
 <div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="type-t_xfunit_unit_list_ftl_iterator"></span><h3>type, public, extends(<a href='../type/t_object.html'>t_object</a>) :: <a href='../type/t_xfunit_unit_list_ftl_iterator.html'>t_xfunit_unit_list_ftl_iterator</a>
+  <div class="panel-heading codesum"><span class="anchor" id="type-t_xfunit_unit_list_ftl_iterator"></span><h3>type, public, extends(t_object) :: <a href='../type/t_xfunit_unit_list_ftl_iterator.html'>t_xfunit_unit_list_ftl_iterator</a>
     
   </h3></div>
   <div class="panel-body">
@@ -1809,12 +1795,6 @@ Iterator is constructed by defaul using this attribute initialisation</p></td>
       <table class="table table-striped varlist">
       <tbody>
       
-       <tr><td>procedure, public :: <strong><a href='../type/t_object.html#boundprocedure-equals'>equals</a></strong>  => object_equals </td>
-       <td><p>Determines whether the specified object is equal to the current object</p></td></tr>
-      
-       <tr><td>procedure, public :: <strong><a href='../type/t_object.html#boundprocedure-get_hash_code'>get_hash_code</a></strong>  => object_get_hash_code </td>
-       <td><p>Default hash function</p></td></tr>
-      
        <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_unit_list_ftl_iterator.html#boundprocedure-get_element~2'>get_element</a></strong>  => list_iterator_get_element </td>
        <td><p>Access</p></td></tr>
       
@@ -1827,7 +1807,7 @@ Iterator is constructed by defaul using this attribute initialisation</p></td>
        <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_unit_list_ftl_iterator.html#boundprocedure-next~4'>next</a></strong>  => list_iterator_next </td>
        <td><p>Navigation</p></td></tr>
       
-       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_unit_list_ftl_iterator.html#boundprocedure-previous~4'>previous</a></strong>  => list_iterator_previous </td>
+       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_unit_list_ftl_iterator.html#boundprocedure-previous~8'>previous</a></strong>  => list_iterator_previous </td>
        <td></td></tr>
       
        <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_unit_list_ftl_iterator.html#boundprocedure-associated~2'>associated</a></strong>  => list_iterator_associated </td>
@@ -1842,19 +1822,19 @@ Iterator is constructed by defaul using this attribute initialisation</p></td>
        <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_unit_list_ftl_iterator.html#boundprocedure-swap~4'>swap</a></strong>  => list_iterator_swap_iterators </td>
        <td></td></tr>
       
-       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_unit_list_ftl_iterator.html#boundprocedure-assignment%28%3D%29~47'>assignment(=)</a></strong>  => list_iterator_assign </td>
+       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_unit_list_ftl_iterator.html#boundprocedure-assignment%28%3D%29~38'>assignment(=)</a></strong>  => list_iterator_assign </td>
        <td></td></tr>
       
        <tr><td>procedure, private :: <strong><a href='../type/t_xfunit_unit_list_ftl_iterator.html#boundprocedure-list_iterator_assign~2'>list_iterator_assign</a></strong>  </td>
        <td></td></tr>
       
-       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_unit_list_ftl_iterator.html#boundprocedure-operator%28%3D%3D%29~41'>operator(==)</a></strong>  => list_iterator_equal </td>
+       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_unit_list_ftl_iterator.html#boundprocedure-operator%28%3D%3D%29~34'>operator(==)</a></strong>  => list_iterator_equal </td>
        <td></td></tr>
       
        <tr><td>procedure, private :: <strong><a href='../type/t_xfunit_unit_list_ftl_iterator.html#boundprocedure-list_iterator_equal~2'>list_iterator_equal</a></strong>  </td>
        <td></td></tr>
       
-       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_unit_list_ftl_iterator.html#boundprocedure-operator%28SLASH%3D%29~4'>operator(/=)</a></strong>  => list_iterator_not_equal </td>
+       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_unit_list_ftl_iterator.html#boundprocedure-operator%28SLASH%3D%29~2'>operator(/=)</a></strong>  => list_iterator_not_equal </td>
        <td></td></tr>
       
        <tr><td>procedure, private :: <strong><a href='../type/t_xfunit_unit_list_ftl_iterator.html#boundprocedure-list_iterator_not_equal~2'>list_iterator_not_equal</a></strong>  </td>

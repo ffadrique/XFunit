@@ -123,7 +123,7 @@
      <li><i class="fa fa-list-ol"></i>
        <a data-toggle="tooltip"
     data-placement="bottom" data-html="true"
-    title="10.3% of total for modules and submodules.">268 statements</a>
+    title=" 3.4% of total for modules and submodules.">268 statements</a>
      </li> 
      
      
@@ -248,21 +248,6 @@
     
     <div class="col-md-9" id='text'>
     <p>Management of the unit test execution</p>
-<p>License   : This file is part of XFunit.</p>
-<div class="codehilite"><pre><span></span>         XFunit is free software: you can redistribute it and/or modify
-         it under the terms of the GNU Lesser General Public License as
-         published by the Free Software Foundation, either version 3 of
-         the License, or (at your option) any later version.
-
-         XFunit is distributed in the hope that it will be useful,
-         but WITHOUT ANY WARRANTY; without even the implied warranty of
-         MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-         See the GNU Lesser General Public License for more details.
-
-         You should have received a copy of the GNU Lesser General Public
-         License along with Zofu.
-         If not, see &lt;http://www.gnu.org/licenses/&gt;.
-</pre></div>
       <br>
     
   
@@ -275,25 +260,25 @@
       <li class="list-group-item">
   <ul class="list-inline">
     
-    <li>m_object</li>
-    
     <li><a href='../module/m_xfunit_suite.html'>m_xfunit_suite</a></li>
+    
+    <li>m_string</li>
+    
+    <li><a href="http://fortranwiki.org/fortran/show/iso_fortran_env">iso_fortran_env</a></li>
     
     <li>m_path</li>
     
     <li>m_xml</li>
     
-    <li>m_string</li>
+    <li>m_file_handler</li>
     
     <li>m_util_convert</li>
     
-    <li><a href="http://fortranwiki.org/fortran/show/iso_fortran_env">iso_fortran_env</a></li>
+    <li><a href='../module/m_xfunit_unit.html'>m_xfunit_unit</a></li>
     
     <li>m_messages</li>
     
-    <li>m_file_handler</li>
-    
-    <li><a href='../module/m_xfunit_unit.html'>m_xfunit_unit</a></li>
+    <li>m_object</li>
     
   </ul>
       </li>
@@ -568,7 +553,7 @@
   
 <tr>
   
-  <td><span class="anchor" id="variable-msg~2"></span>type(t_messages),</td>
+  <td><span class="anchor" id="variable-msg~3"></span>type(t_messages),</td>
   
   <td>private</td>
   <td></td><td>::</td>
@@ -636,13 +621,13 @@
        <tr><td>procedure, private :: <strong><a href='../type/t_xfunit_manager.html#boundprocedure-xfunit_manager_process_command_line'>xfunit_manager_process_command_line</a></strong>  </td>
        <td><p>Process the command line</p></td></tr>
       
-       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_manager.html#boundprocedure-assignment%28%3D%29~2'>assignment(=)</a></strong>  => xfunit_manager_assignment </td>
+       <tr><td>generic, public :: <strong><a href='../type/t_xfunit_manager.html#boundprocedure-assignment%28%3D%29~3'>assignment(=)</a></strong>  => xfunit_manager_assignment </td>
        <td></td></tr>
       
        <tr><td>procedure, private :: <strong><a href='../type/t_xfunit_manager.html#boundprocedure-xfunit_manager_assignment'>xfunit_manager_assignment</a></strong>  </td>
        <td></td></tr>
       
-       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_manager.html#boundprocedure-execute'>execute</a></strong>  => xfunit_manager_execute_suite </td>
+       <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_manager.html#boundprocedure-execute~2'>execute</a></strong>  => xfunit_manager_execute_suite </td>
        <td><p>Execute the suiteof test</p></td></tr>
       
        <tr><td>procedure, public :: <strong><a href='../type/t_xfunit_manager.html#boundprocedure-write_xml'>write_xml</a></strong>  => xfunit_manager_write_xml_suite </td>
