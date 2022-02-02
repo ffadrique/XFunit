@@ -1,0 +1,27 @@
+<assertion name="i_n_t_e_g_e_r" type="integer">
+<status>pass</status>
+<actual>7</actual>
+<expected>7</expected>
+</assertion>
+<assertion name="r_e_a_l" type="real">
+<status>pass</status>
+<actual>8.000000</actual>
+<expected>8.000000</expected>
+<threshold>9.9999997E-005</threshold>
+</assertion>
+<assertion name="d_o_u_b_l_e" type="double">
+<status>pass</status>
+<actual>9.00000000000000</actual>
+<expected>9.00000000000000</expected>
+<threshold>1.000000000000000E-004</threshold>
+</assertion>
+<assertion name="l_o_g_i_c_a_l" type="logical">
+<status>pass</status>
+<actual>T</actual>
+<expected>T</expected>
+</assertion>
+<assertion name="c_h_a_r_a_c_t_e_r" type="character">
+<status>pass</status>
+<actual>Hello</actual>
+<expected>Hello</expected>
+</assertion>
