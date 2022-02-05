@@ -64,7 +64,7 @@ program unit_m_xfunit_assertion_array_real_between
 ! Initialise test suite
   allocate( suite )
   suite = xfunit_suite( package=package, &
-                        source='m_xfunit_assertion_array_real_between.f03', &
+                        source='m_xfunit_assertion_array_real_between.f90', &
                         annotation='Assertion interface for array real between values' )
 
 ! Create test

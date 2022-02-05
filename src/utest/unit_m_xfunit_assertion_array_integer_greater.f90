@@ -64,7 +64,7 @@ program unit_m_xfunit_assertion_array_integer_greater
 ! Initialise test suite
   allocate( suite )
   suite = xfunit_suite( package=package, &
-                        source='m_xfunit_assertion_array_integer_greater.f03', &
+                        source='m_xfunit_assertion_array_integer_greater.f90', &
                         annotation='Assertion interface for array integer greater values' )
 
 ! Create test

@@ -64,7 +64,7 @@ program unit_m_xfunit_assertion_array_logical
 ! Initialise test suite
   allocate( suite )
   suite = xfunit_suite( package=package, &
-                        source='m_xfunit_assertion_array_logical.f03', &
+                        source='m_xfunit_assertion_array_logical.f90', &
                         annotation='Assertion interface for logical array' )
 
 ! Create test

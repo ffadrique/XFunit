@@ -64,7 +64,7 @@ program unit_m_xfunit_assertion_real_greater
 ! Initialise test suite
   allocate( suite )
   suite = xfunit_suite( package=package, &
-                        source='m_xfunit_assertion_real_greater.f03', &
+                        source='m_xfunit_assertion_real_greater.f90', &
                         annotation='Assertion interface for real greater values' )
 
 ! Create test

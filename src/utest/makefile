@@ -37,7 +37,7 @@ LIBS = $(ILIBDIR)/libxfunit.a
 
 # Option selection for Intel Fortran (ifort)
 ifeq ($(findstring ifort, $(F90COMP)), ifort)
-OPTIONS = -fpp -O0 -stand f18 -traceback -check bounds -assume byterecl -diag-disable=5462 -I $(IMODDIR) -I $(MODDIR) -module $(MODDIR) -o $@ -free -Tf $< -Tf $*.f03
+OPTIONS = -fpp -O0 -stand f18 -traceback -check bounds -assume byterecl -diag-disable=5462 -I $(IMODDIR) -I $(MODDIR) -module $(MODDIR) -o $@ $< $(subst _tests,, $<)
 AR = ar
 endif
 
@@ -51,28 +51,18 @@ endif
 SRCS_TEST_F90 := $(wildcard ls unit_*_tests.f90)
 SRCS_MAIN_F90 := $(filter-out $(SRCS_TEST_F90), $(wildcard ls unit_*.f90))
 BINS_MAIN_F90 := $(SRCS_MAIN_F90:%.f90=$(BINDIR)/%.bin)
-SRCS_TEST_F03 := $(wildcard ls unit_*_tests.f03)
-SRCS_MAIN_F03 := $(filter-out $(SRCS_TEST_F03), $(wildcard ls unit_*.f03))
-BINS_MAIN_F03 := $(SRCS_MAIN_F03:%.f03=$(BINDIR)/%.bin)
-OBJECTS := $(OBJECTS_F90) $(OBJECTS_F03)
-BINS_MAIN := $(BINS_MAIN_F90) $(BINS_MAIN_F03)
+OBJECTS := $(OBJECTS_F90)
+BINS_MAIN := $(BINS_MAIN_F90)
 
 # List of unit test output files (JUnit-like files)
 JUNITS_F90 := $(SRCS_MAIN_F90:unit_%.f90=%.jxml)
-JUNITS_F03 := $(SRCS_MAIN_F03:unit_%.f03=%.jxml)
-JUNITS := $(JUNITS_F90) $(JUNITS_F03)
+JUNITS := $(JUNITS_F90)
 
 # Main make target 
 all: $(BINS_MAIN)
 
 # Build executables from related sources
 $(OBJDIR)/%.bin: %_tests.f90 %.f90
-	@if [ ! -d "$(BINDIR)" ]; then mkdir -p $(OBJDIR); fi
-	@echo "(FC)" $@
-	@$(F90COMP) $(OPTIONS) $(LIBS)
-
-# Build executables from related sources
-$(OBJDIR)/%.bin: %_tests.f03 %.f03 
 	@if [ ! -d "$(BINDIR)" ]; then mkdir -p $(OBJDIR); fi
 	@echo "(FC)" $@
 	@$(F90COMP) $(OPTIONS) $(LIBS)
@@ -99,4 +89,4 @@ clean:
 
 # Test target
 test:
-	echo $(SRCS_MAIN_F03)
+	echo $(SRCS_MAIN_F90)

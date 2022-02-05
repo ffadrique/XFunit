@@ -64,7 +64,7 @@ program unit_m_xfunit_assertion_character
 ! Initialise test suite
   allocate( suite )
   suite = xfunit_suite( package=package, &
-                        source='m_xfunit_assertion_character.f03', &
+                        source='m_xfunit_assertion_character.f90', &
                         annotation='Assertion interface for character' )
 
 ! Create test

@@ -64,7 +64,7 @@ program unit_m_xfunit_assertion_complex
 ! Initialise test suite
   allocate( suite )
   suite = xfunit_suite( package=package, &
-                        source='m_xfunit_assertion_complex.f03', &
+                        source='m_xfunit_assertion_complex.f90', &
                         annotation='Assertion interface for complex' )
 
 ! Create test

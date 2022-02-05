@@ -66,7 +66,7 @@ program unit_m_xfunit_assertion_class
   allocate( suite )
   allocate( ut )
   suite = xfunit_suite( package=package, &
-                        source='m_xfunit_assertion_class.f03', &
+                        source='m_xfunit_assertion_class.f90', &
                         annotation='Assertion interface for class(*)' )
 
 ! Create test

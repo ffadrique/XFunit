@@ -60,7 +60,7 @@ program unit_m_xfunit_assertion_write
 ! Initialise test suite
   allocate( suite )
   suite = xfunit_suite( package=package, &
-                        source='m_xfunit_assertion_write.f03', &
+                        source='m_xfunit_assertion_write.f90', &
                         annotation='Assertion interface for text writers' )
 
 ! Create test

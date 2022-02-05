@@ -64,7 +64,7 @@ program unit_m_xfunit_assertion_real_less
 ! Initialise test suite
   allocate( suite )
   suite = xfunit_suite( package=package, &
-                        source='m_xfunit_assertion_real_less.f03', &
+                        source='m_xfunit_assertion_real_less.f90', &
                         annotation='Assertion interface for real less values' )
 
 ! Create test

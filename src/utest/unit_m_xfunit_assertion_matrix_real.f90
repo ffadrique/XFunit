@@ -63,7 +63,7 @@ program unit_m_xfunit_assertion_matrix_real
   allocate( suite )
   allocate( ut )
   suite = xfunit_suite( package=package, &
-                        source='m_xfunit_assertion_matrix_real.f03', &
+                        source='m_xfunit_assertion_matrix_real.f90', &
                         annotation='Assertion interface for real matrix' )
 
 ! Create test

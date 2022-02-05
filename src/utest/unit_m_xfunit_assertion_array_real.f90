@@ -66,7 +66,7 @@ program unit_m_xfunit_assertion_array_real
   allocate( suite )
   allocate( ut )
   suite = xfunit_suite( package=package, &
-                        source='m_xfunit_assertion_array_real.f03', &
+                        source='m_xfunit_assertion_array_real.f90', &
                         annotation='Assertion interface for real array' )
 
 ! Create test

@@ -63,7 +63,7 @@ program unit_m_xfunit_assertion_matrix_integer
   allocate( suite )
   allocate( ut )
   suite = xfunit_suite( package=package, &
-                        source='m_xfunit_assertion_matrix_integer.f03', &
+                        source='m_xfunit_assertion_matrix_integer.f90', &
                         annotation='Assertion interface for integer matrix' )
 
 ! Create test

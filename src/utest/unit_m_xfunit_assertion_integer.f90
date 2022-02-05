@@ -64,7 +64,7 @@ program unit_m_xfunit_assertion_integer
 ! Initialise test suite
   allocate( suite )
   suite = xfunit_suite( package=package, &
-                        source='m_xfunit_assertion_integer.f03', &
+                        source='m_xfunit_assertion_integer.f90', &
                         annotation='Assertion interface for integer' )
 
 ! Create test

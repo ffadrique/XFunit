@@ -63,7 +63,7 @@ program unit_m_xfunit_assertion_array_complex
   allocate( suite )
   allocate( ut )
   suite = xfunit_suite( package=package, &
-                        source='m_xfunit_assertion_array_complex.f03', &
+                        source='m_xfunit_assertion_array_complex.f90', &
                         annotation='Assertion interface for complex array' )
 
 ! Create test

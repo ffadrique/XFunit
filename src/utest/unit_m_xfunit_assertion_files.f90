@@ -60,7 +60,7 @@ program unit_m_xfunit_assertion_files
 ! Initialise test suite
   allocate( suite )
   suite = xfunit_suite( package=package, &
-                        source='m_xfunit_assertion_files.f03', &
+                        source='m_xfunit_assertion_files.f90', &
                         annotation='Assertion interface for file comparison' )
 
 ! Create test

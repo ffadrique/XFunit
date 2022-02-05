@@ -66,7 +66,7 @@ program unit_m_xfunit_assertion_array_class
   allocate( suite )
   allocate( ut )
   suite = xfunit_suite( package=package, &
-                        source='m_xfunit_assertion_array_class.f03', &
+                        source='m_xfunit_assertion_array_class.f90', &
                         before=unit_m_xfunit_assertion_array_class_suite_before, &
                         annotation='Assertion interface for class(*) array' )
 
