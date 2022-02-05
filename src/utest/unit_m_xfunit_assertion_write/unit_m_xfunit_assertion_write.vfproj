@@ -51,6 +51,6 @@
 		<File RelativePath=".\unit_m_xfunit_assertion_write_001.out"/>
 		<File RelativePath="..\reference\unit_m_xfunit_assertion_write_001.ref"/></Filter>
 		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
-		<File RelativePath="..\unit_m_xfunit_assertion_write.f03"/>
-		<File RelativePath="..\unit_m_xfunit_assertion_write_tests.f03"/></Filter></Files>
+		<File RelativePath="..\unit_m_xfunit_assertion_write.f90"/>
+		<File RelativePath="..\unit_m_xfunit_assertion_write_tests.f90"/></Filter></Files>
 	<Globals/></VisualStudioProject>

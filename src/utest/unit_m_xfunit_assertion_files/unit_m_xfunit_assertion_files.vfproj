@@ -53,6 +53,6 @@
 		<File RelativePath="..\data\xfunit_test_actual.dat"/>
 		<File RelativePath="..\data\xfunit_test_expected.dat"/></Filter>
 		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
-		<File RelativePath="..\unit_m_xfunit_assertion_files.f03"/>
-		<File RelativePath="..\unit_m_xfunit_assertion_files_tests.f03"/></Filter></Files>
+		<File RelativePath="..\unit_m_xfunit_assertion_files.f90"/>
+		<File RelativePath="..\unit_m_xfunit_assertion_files_tests.f90"/></Filter></Files>
 	<Globals/></VisualStudioProject>

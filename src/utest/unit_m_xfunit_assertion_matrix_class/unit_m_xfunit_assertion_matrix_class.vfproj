@@ -49,6 +49,6 @@
 		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe">
 		<File RelativePath="..\m_xfunit_assertion_matrix_class.jxml"/></Filter>
 		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
-		<File RelativePath="..\unit_m_xfunit_assertion_matrix_class.f03"/>
-		<File RelativePath="..\unit_m_xfunit_assertion_matrix_class_tests.f03"/></Filter></Files>
+		<File RelativePath="..\unit_m_xfunit_assertion_matrix_class.f90"/>
+		<File RelativePath="..\unit_m_xfunit_assertion_matrix_class_tests.f90"/></Filter></Files>
 	<Globals/></VisualStudioProject>
