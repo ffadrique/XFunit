@@ -45,8 +45,11 @@ AR = ar
 endif
 
 # Automatic generation of list of source files and targets
+SRCS_F90 := $(wildcard *.f90)
+OBJECTS_F90 := $(SRCS_F90:%.f90=$(OBJDIR)/%.o)
 SRCS_F03 := $(wildcard *.f03)
 OBJECTS_F03 := $(SRCS_F03:%.f03=$(OBJDIR)/%.o)
+OBJECTS := $(OBJECTS_F90) $(OBJECTS_F03)
 
 # Main make target (recursive in subdirectories)
 all: $(LIBS)
@@ -56,10 +59,16 @@ all: $(LIBS)
 libs: $(LIBS)
 
 # Build library from objects
-$(LIBS): $(OBJECTS_F03)
+$(LIBS): $(OBJECTS)
 	@echo "(AR)" $(LIBS)
-	@$(AR) -r $@ $(OBJECTS_F03)
+	@$(AR) -r $@ $(OBJECTS)
     
+# Build objects from sources
+$(OBJDIR)/%.o: %.f90
+	@if [ ! -d "$(OBJDIR)" ]; then mkdir -p $(OBJDIR); fi
+	@echo "(FC)" $@
+	@$(F90COMP) $(OPTIONS)
+	
 # Build objects from sources
 $(OBJDIR)/%.o: %.f03
 	@if [ ! -d "$(OBJDIR)" ]; then mkdir -p $(OBJDIR); fi
@@ -80,8 +89,7 @@ clean:
 
 # Test target
 test:
-	echo $(OPTIONS)
-	echo $(findstring $(F90COMP), "ifort")
+	echo $(OBJECTS)
 
 # Include dependencies for individual sources/objects for compilation order
 include makefile.deps

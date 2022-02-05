@@ -43,19 +43,33 @@ endif
 
 # Option selection for GNU Fortran (gfortran)
 ifeq ($(findstring gfortran, $(F90COMP)), gfortran)
-OPTIONS = -cpp -O0 -std=f2008 -fbacktrace -fbounds-check -I $(IMODDIR) -I $(MODDIR) -J $(MODDIR) -o $@ $^
+OPTIONS = -cpp -O0 -no-pie -std=f2008 -fbacktrace -fbounds-check -I $(IMODDIR) -I $(MODDIR) -J $(MODDIR) -o $@ $^
 AR = ar
 endif
 
 # Automatic generation of list of source files and targets
-SRCS_MAIN_F03 := $(shell ls unit_*.f03 | grep -v _tests)
-BINS_MAIN := $(SRCS_MAIN_F03:%.f03=$(BINDIR)/%.bin)
+SRCS_TEST_F90 := $(wildcard ls unit_*_tests.f90)
+SRCS_MAIN_F90 := $(filter-out $(SRCS_TEST_F90), $(wildcard ls unit_*.f90))
+BINS_MAIN_F90 := $(SRCS_MAIN_F90:%.f90=$(BINDIR)/%.bin)
+SRCS_TEST_F03 := $(wildcard ls unit_*_tests.f03)
+SRCS_MAIN_F03 := $(filter-out $(SRCS_TEST_F03), $(wildcard ls unit_*.f03))
+BINS_MAIN_F03 := $(SRCS_MAIN_F03:%.f03=$(BINDIR)/%.bin)
+OBJECTS := $(OBJECTS_F90) $(OBJECTS_F03)
+BINS_MAIN := $(BINS_MAIN_F90) $(BINS_MAIN_F03)
 
 # List of unit test output files (JUnit-like files)
-JUNITS := $(SRCS_MAIN_F03:unit_%.f03=%.jxml)
+JUNITS_F90 := $(SRCS_MAIN_F90:unit_%.f90=%.jxml)
+JUNITS_F03 := $(SRCS_MAIN_F03:unit_%.f03=%.jxml)
+JUNITS := $(JUNITS_F90) $(JUNITS_F03)
 
 # Main make target 
 all: $(BINS_MAIN)
+
+# Build executables from related sources
+$(OBJDIR)/%.bin: %_tests.f90 %.f90
+	@if [ ! -d "$(BINDIR)" ]; then mkdir -p $(OBJDIR); fi
+	@echo "(FC)" $@
+	@$(F90COMP) $(OPTIONS) $(LIBS)
 
 # Build executables from related sources
 $(OBJDIR)/%.bin: %_tests.f03 %.f03 
@@ -85,4 +99,4 @@ clean:
 
 # Test target
 test:
-	echo $(JUNITS)
+	echo $(SRCS_MAIN_F03)
