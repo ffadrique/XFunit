@@ -2,7 +2,7 @@
 # Project   : Atlantis
 # Author    : Fran Martinez Fadrique
 # Language  : make
-# Synopsis  : Makefile for unit test build and execution
+# Synopsis  : Makefile for XFunit library build
 
 # License   : This file is part of XFunit.
 #
@@ -22,71 +22,66 @@
 
 # Master configuration key through the compiler command
 F90COMP = gfortran
+F90COMP = /home/fran/gcc/gcc-10/bin/gfortran
 
 # Reference directories
 OBJDIR := Debug
 MODDIR := Debug
 LIBDIR := Debug
-BINDIR := Debug
-
-IMODDIR := ../Debug
-ILIBDIR := ../Debug
 
 # XFunit library
-LIBS = $(ILIBDIR)/libxfunit.a
+LIBS = $(LIBDIR)/libxfunit_utilities.a
 
 # Option selection for Intel Fortran (ifort)
 ifeq ($(findstring ifort, $(F90COMP)), ifort)
-OPTIONS = -fpp -O0 -stand f18 -traceback -check bounds -assume byterecl -diag-disable=5462 -I $(IMODDIR) -I $(MODDIR) -module $(MODDIR) -o $@ $< $(subst _tests,, $<)
+OPTIONS = -c -fpp -g -O0 -stand f18 -traceback -check bounds -assume byterecl -diag-disable=5462 -I $(MODDIR) -module $(MODDIR) -o $@ $<
 AR = ar
 endif
 
 # Option selection for GNU Fortran (gfortran)
 ifeq ($(findstring gfortran, $(F90COMP)), gfortran)
-OPTIONS = -cpp -O0 -no-pie -std=f2008 -fbacktrace -fbounds-check -I $(IMODDIR) -I $(MODDIR) -J $(MODDIR) -o $@ $^
+OPTIONS = -c -cpp -g -O0 -std=f2008 -fbacktrace -fbounds-check -I $(MODDIR) -J $(MODDIR) -o $@ $<
 AR = ar
 endif
 
 # Automatic generation of list of source files and targets
-SRCS_TEST_F90 := $(wildcard ls unit_*_tests.f90)
-SRCS_MAIN_F90 := $(filter-out $(SRCS_TEST_F90), $(wildcard ls unit_*.f90))
-BINS_MAIN_F90 := $(SRCS_MAIN_F90:%.f90=$(BINDIR)/%.bin)
+SRCS_F90 := $(wildcard *.f90)
+OBJECTS_F90 := $(SRCS_F90:%.f90=$(OBJDIR)/%.o)
 OBJECTS := $(OBJECTS_F90)
-BINS_MAIN := $(BINS_MAIN_F90)
 
-# List of unit test output files (JUnit-like files)
-JUNITS_F90 := $(SRCS_MAIN_F90:unit_%.f90=%.jxml)
-JUNITS := $(JUNITS_F90)
+# Main make target (recursive in subdirectories)
+all: $(LIBS)
+	@cd utest; $(MAKE)
 
-# Main make target 
-all: $(BINS_MAIN)
+# Target to build the XFunit library only
+libs: $(LIBS)
 
-# Build executables from related sources
-$(OBJDIR)/%.bin: %_tests.f90 %.f90
-	@if [ ! -d "$(BINDIR)" ]; then mkdir -p $(OBJDIR); fi
+# Build library from objects
+$(LIBS): $(OBJECTS)
+	@echo "(AR)" $(LIBS)
+	@$(AR) -r $@ $(OBJECTS)
+    
+# Build objects from sources
+$(OBJDIR)/%.o: %.f90
+	@if [ ! -d "$(OBJDIR)" ]; then mkdir -p $(OBJDIR); fi
 	@echo "(FC)" $@
-	@$(F90COMP) $(OPTIONS) $(LIBS)
+	@$(F90COMP) $(OPTIONS)
+	
+# Target for unit test execution (recursive in subdirectories)
+units:
+	@$(MAKE); cd utest; $(MAKE) units
 
-# Target for unit test execution
-units: $(JUNITS)
-
-# Execute unit test
-%.jxml: $(BINDIR)/unit_%.bin
-	@echo "(UT)" $@
-	@export XFUNIT_ROOT_DIR=$(PWD);  \
-    $< > /dev/null
-
-# Target for directory clean up
+# Target for directory clean up (recursive in subdirectories)
 clean:
-	@echo "(RM)" $(OBJDIR)"/*.bin"
-	@rm -f $(OBJDIR)/*.bin
+	@echo "(RM)" $(OBJDIR)"/*.o"
+	@rm -f $(OBJDIR)/*.o
 	@echo "(RM)" $(MODDIR)"/*.mod"
 	@rm -f $(MODDIR)/*.mod
-	@echo "(RM) *.jxml"
-	@rm -f *.jxml
-	@echo "(RM) *.out"
-	@rm -f *.out
+	@cd utest; $(MAKE) clean
 
 # Test target
 test:
-	echo $(SRCS_MAIN_F90)
+	echo $(OBJECTS)
+
+# Include dependencies for individual sources/objects for compilation order
+include makefile.deps

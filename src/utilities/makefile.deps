@@ -1,0 +1,15 @@
+$(OBJDIR)/m_object.o: 
+$(OBJDIR)/m_string.o: $(OBJDIR)/m_util_convert.o $(OBJDIR)/m_object.o
+$(OBJDIR)/m_util_convert.o: 
+$(OBJDIR)/m_messages.o: $(OBJDIR)/m_object.o $(OBJDIR)/m_string.o $(OBJDIR)/m_msg.o
+$(OBJDIR)/m_msg.o: $(OBJDIR)/m_object.o $(OBJDIR)/m_string.o
+$(OBJDIR)/m_xml.o: $(OBJDIR)/m_xml_attribute.o $(OBJDIR)/m_xml_writer.o $(OBJDIR)/m_xml_writer_settings.o $(OBJDIR)/m_xml_encoder.o
+$(OBJDIR)/m_xml_attribute.o: $(OBJDIR)/m_util_convert.o $(OBJDIR)/m_object.o $(OBJDIR)/m_string.o $(OBJDIR)/m_xml_encoder.o
+$(OBJDIR)/m_xml_encoder.o: $(OBJDIR)/m_object.o $(OBJDIR)/m_string.o
+$(OBJDIR)/m_xml_writer.o: $(OBJDIR)/m_util_convert.o $(OBJDIR)/m_object.o $(OBJDIR)/m_string.o $(OBJDIR)/m_messages.o $(OBJDIR)/m_file_handler.o $(OBJDIR)/m_xml_attribute.o $(OBJDIR)/m_xml_writer_settings.o $(OBJDIR)/m_xml_encoder.o
+$(OBJDIR)/m_file_handler.o: $(OBJDIR)/m_object.o $(OBJDIR)/m_string.o
+$(OBJDIR)/m_xml_writer_settings.o: $(OBJDIR)/m_object.o $(OBJDIR)/m_xml_encoder.o
+$(OBJDIR)/m_iso8601_date_time.o: $(OBJDIR)/m_object.o $(OBJDIR)/m_iso8601_date.o $(OBJDIR)/m_iso8601_time.o
+$(OBJDIR)/m_iso8601_date.o: $(OBJDIR)/m_object.o
+$(OBJDIR)/m_iso8601_time.o: $(OBJDIR)/m_object.o
+$(OBJDIR)/m_path.o: $(OBJDIR)/m_string.o
