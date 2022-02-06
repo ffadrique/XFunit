@@ -7,8 +7,14 @@ module m_xfunit_assertion_list_ftl
 ! Language  : Object Oriented Fortran 2018
 ! Reference : http://www.cplusplus.com/reference/list
 ! Synopsis  : Double linked list container template
+!             Limitations with repsect to STL C++
+!              - No reverse iteration.
+!              - No constant iterators.
+!              - Max size is dummy (dummy value not computed from architecture).
+!              - No emplace functions.
+!              - Splice can append lists with an extension on the STL C++
+!                interface that emulates the past-last-element with null iterator
 ! Version   : 3.0
-!
 ! License   : This file is part of XFunit.
 !
 !             XFunit is free software: you can redistribute it and/or modify
@@ -2177,7 +2183,7 @@ subroutine element_assign_pointer( left, right )
 ! Allocate first. Use mold to allow polymorphic object storage through parent class
   allocate( left, mold=right )
 
-! Assign explicitly to allow invoking the assignment operator is available
+! Assign explicitly to allow invoking the assignment operator if implemented in the element
   left = right
 
 end subroutine element_assign_pointer
@@ -2197,7 +2203,7 @@ subroutine element_assign_allocatable( left, right )
 ! Allocate first. Use mold to allow polymorphic object storage through parent class
   allocate( left, mold=right )
 
-! Assign explicitly to allow invoking the assignment operator is available
+! Assign explicitly to allow invoking the assignment operator if implemented in the element
   left = right
 
 end subroutine element_assign_allocatable

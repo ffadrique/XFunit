@@ -27,7 +27,7 @@ module m_xfunit_suite
 
   use, intrinsic :: iso_fortran_env
 
-  use m_xfunit_unit_list_ftl
+  use <list>
 
   use m_object
   use m_string
@@ -72,7 +72,7 @@ module m_xfunit_suite
       type(t_string) :: annotation
 
 !     List of unit tests in the test suite
-      type(t_xfunit_unit_list_ftl) :: ut
+      list<m_xfunit_unit,t_xfunit_unit> :: ut
 
 !     Pointer to the subroutine to be executer prior to the unit test execution
       procedure (xfunit_suite_executer), pointer :: before => null()
@@ -233,7 +233,7 @@ subroutine xfunit_suite_write_xml( suite, xml, junit_strict, fail_only, stdout, 
   type(t_file_handler), intent(in) :: stderr
 
 ! Local variables
-  type(t_xfunit_unit_list_ftl_iterator) :: it
+  list_iterator<m_xfunit_unit,t_xfunit_unit> :: it
   type(t_xml_attribute), dimension(7) :: attr
   type(t_xfunit_unit), pointer :: ut
   type(t_xfunit_summary) :: summary
@@ -386,7 +386,7 @@ subroutine xfunit_suite_add_unit_test( suite, ut, skip )
   logical, optional, intent(in) :: skip
 
 ! Local variables
-  type(t_xfunit_unit_list_ftl_iterator) :: it
+  list_iterator<m_xfunit_unit,t_xfunit_unit> :: it
   type(t_xfunit_unit), pointer :: put
 
 ! Add the unit test to the suite
@@ -434,7 +434,7 @@ subroutine xfunit_suite_execute_string( suite, names )
   type(t_string), optional, dimension(:), intent(in) :: names
 
 ! Local variables
-  type(t_xfunit_unit_list_ftl_iterator) :: it
+  list_iterator<m_xfunit_unit,t_xfunit_unit> :: it
   type(t_xfunit_unit), pointer :: put
   logical :: do_execute
   type(t_string) :: utname
@@ -534,7 +534,7 @@ subroutine xfunit_suite_summary( suite, summary )
   type(t_xfunit_summary), intent(out) :: summary
 
 ! Local variables
-  type(t_xfunit_unit_list_ftl_iterator) :: it
+  list_iterator<m_xfunit_unit,t_xfunit_unit> :: it
   integer :: npassed, nexecuted, nerrors, nfailed
   real(kind=8) :: time
   type(t_xfunit_unit), pointer :: put

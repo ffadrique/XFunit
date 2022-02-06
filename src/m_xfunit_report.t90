@@ -25,7 +25,7 @@ module m_xfunit_report
 
 !---USE statements--------------------------------------------------------------
 
-  use m_xfunit_assertion_list_ftl
+  use <list>
 
   use m_xml
 
@@ -48,7 +48,7 @@ module m_xfunit_report
 !---Declaration of module variables---------------------------------------------
 
 ! The unit test case detailed report type
-  type, extends(t_xfunit_assertion_list_ftl) :: t_xfunit_report
+  type, extends(list<m_xfunit_assertion,*t_xfunit_assertion>) :: t_xfunit_report
     private
 
     contains
@@ -91,7 +91,7 @@ subroutine xfunit_report_write( this, unit, fail_only )
   logical, intent(in) :: fail_only
 
 ! Local variables
-  type(t_xfunit_assertion_list_ftl_iterator) :: it
+  list_iterator<m_xfunit_assertion,*t_xfunit_assertion> :: it
   class(t_xfunit_assertion), allocatable :: assertion
 
 ! Loop on the assertions
@@ -133,7 +133,7 @@ subroutine xfunit_report_write_xml( this, xml, fail_only )
   logical, intent(in) :: fail_only
 
 ! Local variables
-  type(t_xfunit_assertion_list_ftl_iterator) :: it
+  list_iterator<m_xfunit_assertion,*t_xfunit_assertion> :: it
   class(t_xfunit_assertion), pointer :: assertion
 
 ! Loop on the assertions
