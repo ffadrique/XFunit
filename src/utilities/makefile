@@ -51,9 +51,8 @@ OBJECTS := $(OBJECTS_F90)
 
 # Main make target (recursive in subdirectories)
 all: $(LIBS)
-	@cd utest; $(MAKE)
 
-# Target to build the XFunit library only
+# Target to build the library only
 libs: $(LIBS)
 
 # Build library from objects
@@ -67,17 +66,12 @@ $(OBJDIR)/%.o: %.f90
 	@echo "(FC)" $@
 	@$(F90COMP) $(OPTIONS)
 	
-# Target for unit test execution (recursive in subdirectories)
-units:
-	@$(MAKE); cd utest; $(MAKE) units
-
 # Target for directory clean up (recursive in subdirectories)
 clean:
 	@echo "(RM)" $(OBJDIR)"/*.o"
 	@rm -f $(OBJDIR)/*.o
 	@echo "(RM)" $(MODDIR)"/*.mod"
 	@rm -f $(MODDIR)/*.mod
-	@cd utest; $(MAKE) clean
 
 # Test target
 test:

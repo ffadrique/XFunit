@@ -199,7 +199,7 @@ Create the environment variable `XFUNIT_ROOT_DIR=$(ProjectDir)..` for each unit 
 
 ### Linux
 XFunit is provided with `gmake` makefiles to build and test the entire suite. 
-To build the XFunit library and use modules files  execute the following command in the `src` directory
+To build the XFunit library and use modules files execute the following command in the `src` directory
 ```make
 gmake libs
 ```
@@ -207,7 +207,7 @@ To build the XFunit library, use modules files and unit tests execute the follow
 ```make
 gmake all
 ```
-To execute the unit tests  execute the following command in the `src` or the `utest` directory
+To execute the unit tests execute the following command in the `src`, `xfunit` or `utest` directory
 ```make
 gmake units
 ```

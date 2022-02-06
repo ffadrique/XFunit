@@ -54,7 +54,7 @@ OBJECTS := $(OBJECTS_F90)
 all: $(LIBS)
 	@cd utest; $(MAKE)
 
-# Target to build the XFunit library only
+# Target to build the library only
 libs: $(LIBS)
 
 # Build library from objects

@@ -28,11 +28,10 @@ OBJDIR := Debug
 MODDIR := Debug
 LIBDIR := Debug
 BINDIR := Debug
+IMODDIR := ../../xfunit/$(MODDIR) ../../utilities/$(MODDIR)
 
-IMODDIR := ../xfunit/$(MODDIR) ../utilities/$(MODDIR)
-
-# XFunit library
-LIBS = ../xfunit/$(MODDIR)/libxfunit.a ../xfunit/$(MODDIR)/libxfunit_utilities.a
+# Libraries
+LIBS = ../../xfunit/$(MODDIR)/libxfunit.a ../../utilities/$(MODDIR)/libxfunit_utilities.a
 
 # Option selection for Intel Fortran (ifort)
 ifeq ($(findstring ifort, $(F90COMP)), ifort)
