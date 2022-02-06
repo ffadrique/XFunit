@@ -30,7 +30,7 @@ namespace UnitTestDriver
 			String solution_path = Path.GetDirectoryName(dte.Solution.FullName);
 
 			// Get the test path
-			String test_path = Path.Combine(solution_path, "src", "utest");
+			String test_path = Path.Combine(solution_path, library, "utest");
 
 			// List the test directories
 			String [] test_cases = Directory.GetDirectories(test_path, "unit_*", SearchOption.TopDirectoryOnly);
