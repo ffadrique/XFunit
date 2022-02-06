@@ -24,6 +24,9 @@
 F90COMP = gfortran
 F90COMP = /home/fran/gcc/gcc-10/bin/gfortran
 
+# FXX command to process FTL files
+FXX := python ../../fxx/fxx.py --templates-dir ../../fxx
+
 # Reference directories
 OBJDIR := Debug
 MODDIR := Debug
@@ -67,6 +70,11 @@ $(OBJDIR)/%.o: %.f90
 	@if [ ! -d "$(OBJDIR)" ]; then mkdir -p $(OBJDIR); fi
 	@echo "(FC)" $@
 	@$(F90COMP) $(OPTIONS)
+	
+# FTL files to be processed with FXX
+%.f90:%.t90
+	@echo "(FXX) : $@"
+	@$(FXX) $< 	
 	
 # Target for unit test execution (recursive in subdirectories)
 units:
