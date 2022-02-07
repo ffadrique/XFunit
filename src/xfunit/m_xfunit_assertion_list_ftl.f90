@@ -7,29 +7,14 @@ module m_xfunit_assertion_list_ftl
 ! Language  : Object Oriented Fortran 2018
 ! Reference : http://www.cplusplus.com/reference/list
 ! Synopsis  : Double linked list container template
-!             Limitations with respect to STL C++
+!             Limitations with repsect to STL C++
 !              - No reverse iteration.
 !              - No constant iterators.
 !              - Max size is dummy (dummy value not computed from architecture).
 !              - No emplace functions.
 !              - Splice can append lists with an extension on the STL C++
 !                interface that emulates the past-last-element with null iterator
-!
-! License   : This file is part of the Fortran Template Library (FTL).
-!
-!             FTL is free software: you can redistribute it and/or modify
-!             it under the terms of the GNU Lesser General Public License as
-!             published by the Free Software Foundation, either version 3 of
-!             the License, or (at your option) any later version.
-!
-!             FTL is distributed in the hope that it will be useful,
-!             but WITHOUT ANY WARRANTY; without even the implied warranty of
-!             MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-!             See the GNU Lesser General Public License for more details.
-!
-!             You should have received a copy of the GNU Lesser General Public
-!             License along with FTL.  
-!             If not, see <http://www.gnu.org/licenses/>.
+! Version   : 3.0
 !-------------------------------------------------------------------------------
 
 !---USE statements--------------------------------------------------------------
@@ -2441,5 +2426,3 @@ pure function list_iterator_not_equal( left, right ) result(res)
 end function list_iterator_not_equal
 
 end module m_xfunit_assertion_list_ftl
-
-! 2022-02-06T22:34:09
