@@ -48,7 +48,6 @@
 		<File RelativePath="makefile.deps"/>
 		<File RelativePath="..\..\README.md"/></Filter>
 		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
-		<Filter Name="Utilities">
 		<File RelativePath="m_file_handler.f90"/>
 		<File RelativePath="m_iso8601_date.f90"/>
 		<File RelativePath="m_iso8601_date_time.f90"/>
@@ -63,5 +62,5 @@
 		<File RelativePath="m_xml_attribute.f90"/>
 		<File RelativePath="m_xml_encoder.f90"/>
 		<File RelativePath="m_xml_writer.f90"/>
-		<File RelativePath="m_xml_writer_settings.f90"/></Filter></Filter></Files>
+		<File RelativePath="m_xml_writer_settings.f90"/></Filter></Files>
 	<Globals/></VisualStudioProject>
