@@ -6,22 +6,6 @@ module m_string
 ! Author    : Fran Martinez Fadrique
 ! Language  : Object Oriented Fortran 2018
 ! Synopsis  : Dynamic character string
-!
-! License   : This file is part of XFunit.
-!
-!             XFunit is free software: you can redistribute it and/or modify
-!             it under the terms of the GNU Lesser General Public License as
-!             published by the Free Software Foundation, either version 3 of
-!             the License, or (at your option) any later version.
-!
-!             XFunit is distributed in the hope that it will be useful,
-!             but WITHOUT ANY WARRANTY; without even the implied warranty of
-!             MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-!             See the GNU Lesser General Public License for more details.
-!
-!             You should have received a copy of the GNU Lesser General Public
-!             License along with XFunit.  
-!             If not, see <http://www.gnu.org/licenses/>.
 !------------------------------------------------------------------------------
 
 !- Start of use statements ----------------------------------------------------
@@ -45,10 +29,7 @@ module m_string
 
   public operator(+), character, match, replace, lowercase, uppercase
 
-  !- End of Public/Private declarations -----------------------------------------
-
-  character(len=130), parameter, private :: sccs_info = &
-     '$Id: $'
+!- End of Public/Private declarations -----------------------------------------
 
 !- Start of module variable declarations --------------------------------------
 
@@ -95,7 +76,7 @@ module m_string
 !     Equality overriding
       procedure :: equals => string_equals
 
-!     Equalityoperator
+!     Equality operator
       generic :: operator(==) => string_equal_string, &
                                  string_equal_char, &
                                  char_equal_string
@@ -253,8 +234,8 @@ module m_string
     module procedure string_strip
   end interface strip
   interface character
-    module procedure string_to_char_static
-    module procedure string_to_char_selected_static
+    module procedure string_to_char
+    module procedure string_to_char_selected
   end interface character
   interface replace
     module procedure string_replace_c
@@ -804,24 +785,6 @@ pure function string_to_char( this ) result(res)
 end function string_to_char
 
 
-! Return the string as character
-! intel-bug
-! Used as static function; the type bound procedure generates
-! a SIGSEGV if the passed first object is class instead of type
-pure function string_to_char_static( object ) result(res)
-
-! The string
-  type(t_string), intent(in) :: object
-
-! The resulting character string
-  character(len=:), allocatable :: res
-
-! Return the character string
-  res = object%character()
-
-end function string_to_char_static
-
-
 ! Return the string as character with selected bounds
 pure function string_to_char_selected( this, start, end ) result(res)
 
@@ -851,30 +814,6 @@ pure function string_to_char_selected( this, start, end ) result(res)
   allocate( res, source=this%buffer(start:iend) )
 
 end function string_to_char_selected
-
-
-! Return the string as character with selected bounds
-! intel-bug
-! Used as static function; the type bound procedure generates
-! a SIGSEGV if the passed first object is class instead of type
-pure function string_to_char_selected_static( object, start, end ) result(res)
-
-! The string
-  type(t_string), intent(in) :: object
-
-! The first character to select
-  integer, intent(in) :: start
-
-! The last character to select (defaults to last)
-  integer, optional, intent(in) :: end
-
-! The resulting character string
-  character(len=:), allocatable :: res
-
-! Return the character string
-  res = object%character( start, end )
-
-end function string_to_char_selected_static
 
 
 ! Return the string all in lowercase
