@@ -1,6 +1,9 @@
 # XFunit
 XFunit is an object oriented framework to implement unit testing in native Fortran. It uses object-oriented features of Fortran 2018.
 
+<font size="10"> :warning: </font> 
+Note that the strcuture o this repository has changed. The supporting library `utilities` has been replaced by [Fommons](https://github.com/ffadrique/Fommons). See below for details on this dependency.
+
 ## Unit testing with XFunit
 Unit testing with XFunit is structured in suites and units. A test suite typically define all test to be implemented for a Fortran module. The tests in the suite are structured in unit test (units) conceived to test specific aspects of the functionality in the module,  Within each unit, a number of assertions are made, i.e. to test whether a specified condition is satisfied or not, e.g. the output of a function against expected value.
 
@@ -192,6 +195,18 @@ By default, the `t_xfunit_manager` object captures the standard output and stand
 XFunit has been tested with Intel Fortran 19 (or higher) and gfortran 9.4 (or higher).
 The test provided along with the XFunit libraries are written using XFunit, hence being the XFunit autotest.
 
+## Dependencies with Fommons
+
+Like the other libraries in the collection, XFunit depends on Fommons. At the same time, Fommons depens on XFunit for its unit testing. The aparent circular dependency is not such taking into account.
+- The Fommons library can be build indenpendently of any other library.
+- The XFunit library depends on on Fommons, but only in the library, not on the unit tests.
+- The Fommons unit tests are build from the Fommons unit test sources and the XFunit and Fommons libraries.
+- The Xfunit unit tests are build from the XFunit unit test sources and the XFunit and Fommons libraries.
+
+In both Windows and Linux deploy the Fommons and XFunit from the same root directory
+- Windows: `Projects/Fommons` and `Projects/XFunit`. The `.sln` files are prepared for this configuration.
+- Linux: `Projects/fommons` and `Projects/xfunit`. The `gmake` files are prepared for this configuration (mind the lowercase for the library folder names).
+
 ### Windows
 XFunit is provided with a Visual Studio 2019 configured solution that allows building and testing the entire suite. The solution provides a C# project that integrates the unit test in Fortran with the unit test detection feature of Visual Studio. This allows the execution of all unit tests from the Test Explorer menu.
 
@@ -207,7 +222,7 @@ To build the XFunit library, use modules files and unit tests execute the follow
 ```make
 gmake all
 ```
-To execute the unit tests execute the following command in the `src`, `xfunit` or `utest` directory
+To execute the unit tests execute the following command in the `src` or `utest` directory
 ```make
 gmake units
 ```

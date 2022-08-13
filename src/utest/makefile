@@ -2,7 +2,7 @@
 # Project   : Atlantis
 # Author    : Fran Martinez Fadrique
 # Language  : make
-# Synopsis  : Makefile for XFunit library build
+# Synopsis  : Makefile for unit test build and execution
 
 # License   : This file is part of XFunit.
 #
@@ -22,75 +22,69 @@
 
 # Master configuration key through the compiler command
 F90COMP = gfortran
-F90COMP = /home/fran/gcc/gcc-10/bin/gfortran
-
-# FXX command to process FTL files
-FXX := python ../fxx/fxx.py --templates-dir ../fxx
 
 # Reference directories
 OBJDIR := Debug
 MODDIR := Debug
 LIBDIR := Debug
-EXTMODDIRS := ../../fommons/src/$(MODDIR)
+BINDIR := Debug
+IMODDIR := ../$(MODDIR) ../../../fommons/src/$(MODDIR)
 
-# XFunit library
-LIBS = $(LIBDIR)/libxfunit.a
+# Libraries
+LIBS = ../$(MODDIR)/libxfunit.a ../../../fommons/src/$(MODDIR)/libfommons.a
 
 # Option selection for Intel Fortran (ifort)
 ifeq ($(findstring ifort, $(F90COMP)), ifort)
-OPTIONS = -c -fpp -g -O0 -stand f18 -traceback -check bounds -assume byterecl -diag-disable=5462 -I $(MODDIR)  $(EXTMODDIRS:%=-I%) -module $(MODDIR) -o $@ $<
+OPTIONS = -fpp -O0 -stand f18 -traceback -check bounds -assume byterecl -diag-disable=5462 $(IMODDIR:%=-I%) -I $(MODDIR) -module $(MODDIR) -o $@ $< $(subst _tests,, $<)
 AR = ar
 endif
 
 # Option selection for GNU Fortran (gfortran)
 ifeq ($(findstring gfortran, $(F90COMP)), gfortran)
-OPTIONS = -c -cpp -g -O0 -std=f2008 -fbacktrace -fbounds-check -I $(MODDIR) $(EXTMODDIRS:%=-I%) -J $(MODDIR) -o $@ $<
+OPTIONS = -cpp -O0 -no-pie -std=f2008 -fbacktrace -fbounds-check $(IMODDIR:%=-I%) -I $(MODDIR) -J $(MODDIR) -o $@ $^
 AR = ar
 endif
 
 # Automatic generation of list of source files and targets
-SRCS_F90 := $(wildcard *.f90)
-OBJECTS_F90 := $(SRCS_F90:%.f90=$(OBJDIR)/%.o)
+SRCS_TEST_F90 := $(wildcard ls unit_*_tests.f90)
+SRCS_MAIN_F90 := $(filter-out $(SRCS_TEST_F90), $(wildcard ls unit_*.f90))
+BINS_MAIN_F90 := $(SRCS_MAIN_F90:%.f90=$(BINDIR)/%.bin)
 OBJECTS := $(OBJECTS_F90)
+BINS_MAIN := $(BINS_MAIN_F90)
 
-# Main make target (recursive in subdirectories)
-all: $(LIBS)
-	@cd utest; $(MAKE)
+# List of unit test output files (JUnit-like files)
+JUNITS_F90 := $(SRCS_MAIN_F90:unit_%.f90=%.jxml)
+JUNITS := $(JUNITS_F90)
 
-# Target to build the library only
-libs: $(LIBS)
+# Main make target 
+all: $(BINS_MAIN)
 
-# Build library from objects
-$(LIBS): $(OBJECTS)
-	@echo "(AR)" $(LIBS)
-	@$(AR) -r $@ $(OBJECTS)
-    
-# Build objects from sources
-$(OBJDIR)/%.o: %.f90
-	@if [ ! -d "$(OBJDIR)" ]; then mkdir -p $(OBJDIR); fi
+# Build executables from related sources
+$(OBJDIR)/%.bin: %_tests.f90 %.f90
+	@if [ ! -d "$(BINDIR)" ]; then mkdir -p $(OBJDIR); fi
 	@echo "(FC)" $@
-	@$(F90COMP) $(OPTIONS)
-	
-# FTL files to be processed with FXX
-%.f90:%.t90
-	@echo "(FXX) : $@"
-	@$(FXX) $< 	
-	
-# Target for unit test execution (recursive in subdirectories)
-units:
-	@$(MAKE); cd utest; $(MAKE) units
+	@$(F90COMP) $(OPTIONS) $(LIBS)
 
-# Target for directory clean up (recursive in subdirectories)
+# Target for unit test execution
+units: $(JUNITS)
+
+# Execute unit test
+%.jxml: $(BINDIR)/unit_%.bin
+	@echo "(UT)" $@
+	@export XFUNIT_ROOT_DIR=$(PWD);  \
+    $< > /dev/null
+
+# Target for directory clean up
 clean:
-	@echo "(RM)" $(OBJDIR)"/*.o"
-	@rm -f $(OBJDIR)/*.o
+	@echo "(RM)" $(OBJDIR)"/*.bin"
+	@rm -f $(OBJDIR)/*.bin
 	@echo "(RM)" $(MODDIR)"/*.mod"
 	@rm -f $(MODDIR)/*.mod
-	@cd utest; $(MAKE) clean
+	@echo "(RM) *.jxml"
+	@rm -f *.jxml
+	@echo "(RM) *.out"
+	@rm -f *.out
 
 # Test target
 test:
-	echo $(OBJECTS)
-
-# Include dependencies for individual sources/objects for compilation order
-include makefile.deps
+	echo $(IMODDIR)

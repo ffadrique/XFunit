@@ -1,223 +1,225 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31911.196
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32804.467
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "utest", "utest", "{89DDDCE0-F344-4B26-8A1C-97899AEFBE95}"
 EndProject
-Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_array_character", "xfunit\utest\unit_m_xfunit_assertion_array_character\unit_m_xfunit_assertion_array_character.vfproj", "{4427DE0B-3989-4372-8818-AF475DC9E12F}"
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_array_character", "utest\unit_m_xfunit_assertion_array_character\unit_m_xfunit_assertion_array_character.vfproj", "{4427DE0B-3989-4372-8818-AF475DC9E12F}"
 	ProjectSection(ProjectDependencies) = postProject
-		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82} = {5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}
+		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 	EndProjectSection
 EndProject
-Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_real", "xfunit\utest\unit_m_xfunit_assertion_real\unit_m_xfunit_assertion_real.vfproj", "{A65891D1-8837-4386-B6FE-BB54F9649AB0}"
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_real", "utest\unit_m_xfunit_assertion_real\unit_m_xfunit_assertion_real.vfproj", "{A65891D1-8837-4386-B6FE-BB54F9649AB0}"
 	ProjectSection(ProjectDependencies) = postProject
-		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82} = {5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}
+		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 	EndProjectSection
 EndProject
-Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_suite", "xfunit\utest\unit_m_xfunit_suite\unit_m_xfunit_suite.vfproj", "{C29AF13C-38FE-4C28-862F-CC2C1EB697FE}"
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_suite", "utest\unit_m_xfunit_suite\unit_m_xfunit_suite.vfproj", "{C29AF13C-38FE-4C28-862F-CC2C1EB697FE}"
 	ProjectSection(ProjectDependencies) = postProject
-		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82} = {5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}
+		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 	EndProjectSection
 EndProject
-Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_unit", "xfunit\utest\unit_m_xfunit_unit\unit_m_xfunit_unit.vfproj", "{1B578CEB-E9E1-433D-8523-1F4DF74E9CEB}"
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_unit", "utest\unit_m_xfunit_unit\unit_m_xfunit_unit.vfproj", "{1B578CEB-E9E1-433D-8523-1F4DF74E9CEB}"
 	ProjectSection(ProjectDependencies) = postProject
-		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82} = {5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}
+		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 	EndProjectSection
 EndProject
-Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_matrix_real", "xfunit\utest\unit_m_xfunit_assertion_matrix_real\unit_m_xfunit_assertion_matrix_real.vfproj", "{7ACE6DDF-E49B-4A43-8800-1B435FBB068F}"
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_matrix_real", "utest\unit_m_xfunit_assertion_matrix_real\unit_m_xfunit_assertion_matrix_real.vfproj", "{7ACE6DDF-E49B-4A43-8800-1B435FBB068F}"
 	ProjectSection(ProjectDependencies) = postProject
-		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82} = {5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}
+		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 	EndProjectSection
 EndProject
-Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_matrix_integer", "xfunit\utest\unit_m_xfunit_assertion_matrix_integer\unit_m_xfunit_assertion_matrix_integer.vfproj", "{12DED94E-29E0-4902-BCF8-E36AB1C6F319}"
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_matrix_integer", "utest\unit_m_xfunit_assertion_matrix_integer\unit_m_xfunit_assertion_matrix_integer.vfproj", "{12DED94E-29E0-4902-BCF8-E36AB1C6F319}"
 	ProjectSection(ProjectDependencies) = postProject
-		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82} = {5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}
+		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 	EndProjectSection
 EndProject
-Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_matrix_class", "xfunit\utest\unit_m_xfunit_assertion_matrix_class\unit_m_xfunit_assertion_matrix_class.vfproj", "{58FDAE53-5223-426C-9F9E-EF45859778E2}"
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_matrix_class", "utest\unit_m_xfunit_assertion_matrix_class\unit_m_xfunit_assertion_matrix_class.vfproj", "{58FDAE53-5223-426C-9F9E-EF45859778E2}"
 	ProjectSection(ProjectDependencies) = postProject
-		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82} = {5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}
+		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 	EndProjectSection
 EndProject
-Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_integer", "xfunit\utest\unit_m_xfunit_assertion_integer\unit_m_xfunit_assertion_integer.vfproj", "{3ADD306F-607D-477F-AA76-623B90393AC5}"
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_integer", "utest\unit_m_xfunit_assertion_integer\unit_m_xfunit_assertion_integer.vfproj", "{3ADD306F-607D-477F-AA76-623B90393AC5}"
 	ProjectSection(ProjectDependencies) = postProject
-		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82} = {5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}
+		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 	EndProjectSection
 EndProject
-Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_array_integer", "xfunit\utest\unit_m_xfunit_assertion_array_integer\unit_m_xfunit_assertion_array_integer.vfproj", "{83AE846E-66C4-406C-A86C-77B4AE6C1674}"
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_array_integer", "utest\unit_m_xfunit_assertion_array_integer\unit_m_xfunit_assertion_array_integer.vfproj", "{83AE846E-66C4-406C-A86C-77B4AE6C1674}"
 	ProjectSection(ProjectDependencies) = postProject
-		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82} = {5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}
+		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 	EndProjectSection
 EndProject
-Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_array_real", "xfunit\utest\unit_m_xfunit_assertion_array_real\unit_m_xfunit_assertion_array_real.vfproj", "{81458920-9A61-4695-82FF-EBD8DDBFE05A}"
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_array_real", "utest\unit_m_xfunit_assertion_array_real\unit_m_xfunit_assertion_array_real.vfproj", "{81458920-9A61-4695-82FF-EBD8DDBFE05A}"
 	ProjectSection(ProjectDependencies) = postProject
-		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82} = {5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}
+		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 	EndProjectSection
 EndProject
-Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_array_complex", "xfunit\utest\unit_m_xfunit_assertion_array_complex\unit_m_xfunit_assertion_array_complex.vfproj", "{019DCF93-C345-490B-AFE4-9C457B8ABCF3}"
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_array_complex", "utest\unit_m_xfunit_assertion_array_complex\unit_m_xfunit_assertion_array_complex.vfproj", "{019DCF93-C345-490B-AFE4-9C457B8ABCF3}"
 	ProjectSection(ProjectDependencies) = postProject
-		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82} = {5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}
+		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 	EndProjectSection
 EndProject
-Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_array_class", "xfunit\utest\unit_m_xfunit_assertion_array_class\unit_m_xfunit_assertion_array_class.vfproj", "{9378ABD5-9725-405D-957A-5826DD61ED5A}"
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_array_class", "utest\unit_m_xfunit_assertion_array_class\unit_m_xfunit_assertion_array_class.vfproj", "{9378ABD5-9725-405D-957A-5826DD61ED5A}"
 	ProjectSection(ProjectDependencies) = postProject
-		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82} = {5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}
+		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 	EndProjectSection
 EndProject
-Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_character", "xfunit\utest\unit_m_xfunit_assertion_character\unit_m_xfunit_assertion_character.vfproj", "{7106A1BD-5C22-49CF-BECA-DB64B4A007E2}"
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_character", "utest\unit_m_xfunit_assertion_character\unit_m_xfunit_assertion_character.vfproj", "{7106A1BD-5C22-49CF-BECA-DB64B4A007E2}"
 	ProjectSection(ProjectDependencies) = postProject
-		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82} = {5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}
+		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 	EndProjectSection
 EndProject
-Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_string", "xfunit\utest\unit_m_xfunit_assertion_string\unit_m_xfunit_assertion_string.vfproj", "{AAEAF4C2-F241-4382-A9F2-AF78AC289D4E}"
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_string", "utest\unit_m_xfunit_assertion_string\unit_m_xfunit_assertion_string.vfproj", "{AAEAF4C2-F241-4382-A9F2-AF78AC289D4E}"
 	ProjectSection(ProjectDependencies) = postProject
-		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82} = {5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}
+		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 	EndProjectSection
 EndProject
-Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_array_string", "xfunit\utest\unit_m_xfunit_assertion_array_string\unit_m_xfunit_assertion_array_string.vfproj", "{06D1722E-5A5D-46B6-BC8E-64D064EBD054}"
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_array_string", "utest\unit_m_xfunit_assertion_array_string\unit_m_xfunit_assertion_array_string.vfproj", "{06D1722E-5A5D-46B6-BC8E-64D064EBD054}"
 	ProjectSection(ProjectDependencies) = postProject
-		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82} = {5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}
+		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 	EndProjectSection
 EndProject
-Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_class", "xfunit\utest\unit_m_xfunit_assertion_class\unit_m_xfunit_assertion_class.vfproj", "{05D1FE9A-4EAC-45FD-8589-F461485F8BD8}"
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_class", "utest\unit_m_xfunit_assertion_class\unit_m_xfunit_assertion_class.vfproj", "{05D1FE9A-4EAC-45FD-8589-F461485F8BD8}"
 	ProjectSection(ProjectDependencies) = postProject
-		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82} = {5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}
+		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 	EndProjectSection
 EndProject
-Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_complex", "xfunit\utest\unit_m_xfunit_assertion_complex\unit_m_xfunit_assertion_complex.vfproj", "{0B50D70E-BC93-4C45-8327-D5CEF595D411}"
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_complex", "utest\unit_m_xfunit_assertion_complex\unit_m_xfunit_assertion_complex.vfproj", "{0B50D70E-BC93-4C45-8327-D5CEF595D411}"
 	ProjectSection(ProjectDependencies) = postProject
-		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82} = {5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}
+		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 	EndProjectSection
 EndProject
-Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_logical", "xfunit\utest\unit_m_xfunit_assertion_logical\unit_m_xfunit_assertion_logical.vfproj", "{799AF134-A04B-4334-94D7-FCDCA1D820D2}"
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_logical", "utest\unit_m_xfunit_assertion_logical\unit_m_xfunit_assertion_logical.vfproj", "{799AF134-A04B-4334-94D7-FCDCA1D820D2}"
 	ProjectSection(ProjectDependencies) = postProject
-		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82} = {5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}
+		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 	EndProjectSection
 EndProject
-Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_array_logical", "xfunit\utest\unit_m_xfunit_assertion_array_logical\unit_m_xfunit_assertion_array_logical.vfproj", "{F9BA502B-0D16-443A-BA95-D62C6ED36B4D}"
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_array_logical", "utest\unit_m_xfunit_assertion_array_logical\unit_m_xfunit_assertion_array_logical.vfproj", "{F9BA502B-0D16-443A-BA95-D62C6ED36B4D}"
 	ProjectSection(ProjectDependencies) = postProject
-		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82} = {5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}
+		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 	EndProjectSection
 EndProject
-Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_integer_between", "xfunit\utest\unit_m_xfunit_assertion_integer_between\unit_m_xfunit_assertion_integer_between.vfproj", "{23AD1FB1-95C6-4EC0-90D5-70EAF093D6FC}"
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_integer_between", "utest\unit_m_xfunit_assertion_integer_between\unit_m_xfunit_assertion_integer_between.vfproj", "{23AD1FB1-95C6-4EC0-90D5-70EAF093D6FC}"
 	ProjectSection(ProjectDependencies) = postProject
-		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82} = {5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}
+		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 	EndProjectSection
 EndProject
-Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_array_integer_between", "xfunit\utest\unit_m_xfunit_assertion_array_integer_between\unit_m_xfunit_assertion_array_integer_between.vfproj", "{D4F1B629-7FDD-45C6-8EE7-712174247D43}"
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_array_integer_between", "utest\unit_m_xfunit_assertion_array_integer_between\unit_m_xfunit_assertion_array_integer_between.vfproj", "{D4F1B629-7FDD-45C6-8EE7-712174247D43}"
 	ProjectSection(ProjectDependencies) = postProject
-		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82} = {5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}
+		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 	EndProjectSection
 EndProject
-Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_real_between", "xfunit\utest\unit_m_xfunit_assertion_real_between\unit_m_xfunit_assertion_real_between.vfproj", "{32117640-4E11-4865-AD20-574604AF9452}"
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_real_between", "utest\unit_m_xfunit_assertion_real_between\unit_m_xfunit_assertion_real_between.vfproj", "{32117640-4E11-4865-AD20-574604AF9452}"
 	ProjectSection(ProjectDependencies) = postProject
-		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82} = {5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}
+		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 	EndProjectSection
 EndProject
-Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_array_real_between", "xfunit\utest\unit_m_xfunit_assertion_array_real_between\unit_m_xfunit_assertion_array_real_between.vfproj", "{72F685E9-A1B2-4202-88A3-BDD391B7DE04}"
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_array_real_between", "utest\unit_m_xfunit_assertion_array_real_between\unit_m_xfunit_assertion_array_real_between.vfproj", "{72F685E9-A1B2-4202-88A3-BDD391B7DE04}"
 	ProjectSection(ProjectDependencies) = postProject
-		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82} = {5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}
+		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 	EndProjectSection
 EndProject
-Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_integer_greater", "xfunit\utest\unit_m_xfunit_assertion_integer_greater\unit_m_xfunit_assertion_integer_greater.vfproj", "{1D7CDE0C-232B-4C12-BA32-5BC2380CE5A2}"
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_integer_greater", "utest\unit_m_xfunit_assertion_integer_greater\unit_m_xfunit_assertion_integer_greater.vfproj", "{1D7CDE0C-232B-4C12-BA32-5BC2380CE5A2}"
 	ProjectSection(ProjectDependencies) = postProject
-		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82} = {5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}
+		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 	EndProjectSection
 EndProject
-Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_integer_less", "xfunit\utest\unit_m_xfunit_assertion_integer_less\unit_m_xfunit_assertion_integer_less.vfproj", "{110ADC3A-CB56-4E80-9DD8-EA265946AA2B}"
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_integer_less", "utest\unit_m_xfunit_assertion_integer_less\unit_m_xfunit_assertion_integer_less.vfproj", "{110ADC3A-CB56-4E80-9DD8-EA265946AA2B}"
 	ProjectSection(ProjectDependencies) = postProject
-		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82} = {5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}
+		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 	EndProjectSection
 EndProject
-Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_real_greater", "xfunit\utest\unit_m_xfunit_assertion_real_greater\unit_m_xfunit_assertion_real_greater.vfproj", "{23A7F5A2-C590-4F83-89F9-98BAC63FA4AD}"
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_real_greater", "utest\unit_m_xfunit_assertion_real_greater\unit_m_xfunit_assertion_real_greater.vfproj", "{23A7F5A2-C590-4F83-89F9-98BAC63FA4AD}"
 	ProjectSection(ProjectDependencies) = postProject
-		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82} = {5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}
+		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 	EndProjectSection
 EndProject
-Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_real_less", "xfunit\utest\unit_m_xfunit_assertion_real_less\unit_m_xfunit_assertion_real_less.vfproj", "{9FB8C8A9-FB4E-4F27-8BD0-9BE48553D42D}"
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_real_less", "utest\unit_m_xfunit_assertion_real_less\unit_m_xfunit_assertion_real_less.vfproj", "{9FB8C8A9-FB4E-4F27-8BD0-9BE48553D42D}"
 	ProjectSection(ProjectDependencies) = postProject
-		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82} = {5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}
+		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 	EndProjectSection
 EndProject
-Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_array_integer_greater", "xfunit\utest\unit_m_xfunit_assertion_array_integer_greater\unit_m_xfunit_assertion_array_integer_greater.vfproj", "{6E91D443-E979-47BD-93FE-DBCA2E2CA5D1}"
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_array_integer_greater", "utest\unit_m_xfunit_assertion_array_integer_greater\unit_m_xfunit_assertion_array_integer_greater.vfproj", "{6E91D443-E979-47BD-93FE-DBCA2E2CA5D1}"
 	ProjectSection(ProjectDependencies) = postProject
-		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82} = {5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}
+		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 	EndProjectSection
 EndProject
-Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_array_integer_less", "xfunit\utest\unit_m_xfunit_assertion_array_integer_less\unit_m_xfunit_assertion_array_integer_less.vfproj", "{0CA8435B-B915-4D16-AEAF-B6509960E180}"
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_array_integer_less", "utest\unit_m_xfunit_assertion_array_integer_less\unit_m_xfunit_assertion_array_integer_less.vfproj", "{0CA8435B-B915-4D16-AEAF-B6509960E180}"
 	ProjectSection(ProjectDependencies) = postProject
-		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82} = {5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}
+		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 	EndProjectSection
 EndProject
-Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_array_real_greater", "xfunit\utest\unit_m_xfunit_assertion_array_real_greater\unit_m_xfunit_assertion_array_real_greater.vfproj", "{D821B469-0846-49D5-A593-8337A0912268}"
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_array_real_greater", "utest\unit_m_xfunit_assertion_array_real_greater\unit_m_xfunit_assertion_array_real_greater.vfproj", "{D821B469-0846-49D5-A593-8337A0912268}"
 	ProjectSection(ProjectDependencies) = postProject
-		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82} = {5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}
+		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 	EndProjectSection
 EndProject
-Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_array_real_less", "xfunit\utest\unit_m_xfunit_assertion_array_real_less\unit_m_xfunit_assertion_array_real_less.vfproj", "{A19FF59F-6F03-43AF-BFFC-D64FBE8BF29F}"
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_array_real_less", "utest\unit_m_xfunit_assertion_array_real_less\unit_m_xfunit_assertion_array_real_less.vfproj", "{A19FF59F-6F03-43AF-BFFC-D64FBE8BF29F}"
 	ProjectSection(ProjectDependencies) = postProject
-		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82} = {5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}
+		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 	EndProjectSection
 EndProject
-Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_files", "xfunit\utest\unit_m_xfunit_assertion_files\unit_m_xfunit_assertion_files.vfproj", "{6628B502-1C4A-407A-B3D1-E2DC70F8238B}"
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_files", "utest\unit_m_xfunit_assertion_files\unit_m_xfunit_assertion_files.vfproj", "{6628B502-1C4A-407A-B3D1-E2DC70F8238B}"
 	ProjectSection(ProjectDependencies) = postProject
-		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82} = {5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}
+		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 	EndProjectSection
 EndProject
-Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_write", "xfunit\utest\unit_m_xfunit_assertion_write\unit_m_xfunit_assertion_write.vfproj", "{709D0ACE-6C24-4130-BE58-2606ECB883EF}"
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "unit_m_xfunit_assertion_write", "utest\unit_m_xfunit_assertion_write\unit_m_xfunit_assertion_write.vfproj", "{709D0ACE-6C24-4130-BE58-2606ECB883EF}"
 	ProjectSection(ProjectDependencies) = postProject
-		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82} = {5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}
+		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {CB98DE4E-28F8-4983-91B9-D5C179E97364}
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "unit_test_driver", "..\unit_test_driver\unit_test_driver.csproj", "{587E0562-72B0-4944-A09E-AA91378A6EFA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{1C455CFF-A48B-435B-93E4-1F6118F3376C}"
 	ProjectSection(SolutionItems) = preProject
-		xfunit\utest\makefile = xfunit\utest\makefile
+		utest\makefile = utest\makefile
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "library", "library", "{5E2D3E0F-3BAB-463F-A9F1-745A90617C24}"
 EndProject
-Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "utilities", "utilities\utilities.vfproj", "{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}"
-EndProject
-Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "xfunit", "xfunit\xfunit.vfproj", "{CB98DE4E-28F8-4983-91B9-D5C179E97364}"
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "xfunit", "xfunit.vfproj", "{CB98DE4E-28F8-4983-91B9-D5C179E97364}"
 	ProjectSection(ProjectDependencies) = postProject
 		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82} = {5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "external", "external", "{0B34AE2A-25B4-4E43-8210-CE05465CDFB1}"
+EndProject
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "Fommons", "..\..\Fommons\src\Fommons.vfproj", "{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -604,17 +606,6 @@ Global
 		{587E0562-72B0-4944-A09E-AA91378A6EFA}.Release|x64.Build.0 = Release|Any CPU
 		{587E0562-72B0-4944-A09E-AA91378A6EFA}.Release|x86.ActiveCfg = Release|Any CPU
 		{587E0562-72B0-4944-A09E-AA91378A6EFA}.Release|x86.Build.0 = Release|Any CPU
-		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}.Debug|Any CPU.ActiveCfg = Debug|x64
-		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}.Debug|Any CPU.Build.0 = Debug|x64
-		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}.Debug|x64.ActiveCfg = Debug|x64
-		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}.Debug|x64.Build.0 = Debug|x64
-		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}.Debug|x86.ActiveCfg = Debug|Win32
-		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}.Debug|x86.Build.0 = Debug|Win32
-		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}.Release|Any CPU.ActiveCfg = Release|Win32
-		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}.Release|x64.ActiveCfg = Release|x64
-		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}.Release|x64.Build.0 = Release|x64
-		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}.Release|x86.ActiveCfg = Release|Win32
-		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}.Release|x86.Build.0 = Release|Win32
 		{CB98DE4E-28F8-4983-91B9-D5C179E97364}.Debug|Any CPU.ActiveCfg = Debug|x64
 		{CB98DE4E-28F8-4983-91B9-D5C179E97364}.Debug|Any CPU.Build.0 = Debug|x64
 		{CB98DE4E-28F8-4983-91B9-D5C179E97364}.Debug|x64.ActiveCfg = Debug|x64
@@ -626,6 +617,16 @@ Global
 		{CB98DE4E-28F8-4983-91B9-D5C179E97364}.Release|x64.Build.0 = Release|x64
 		{CB98DE4E-28F8-4983-91B9-D5C179E97364}.Release|x86.ActiveCfg = Release|Win32
 		{CB98DE4E-28F8-4983-91B9-D5C179E97364}.Release|x86.Build.0 = Release|Win32
+		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}.Debug|Any CPU.Build.0 = Debug|x64
+		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}.Debug|x64.ActiveCfg = Debug|x64
+		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}.Debug|x86.ActiveCfg = Debug|Win32
+		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}.Debug|x86.Build.0 = Debug|Win32
+		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}.Release|Any CPU.ActiveCfg = Release|x64
+		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}.Release|Any CPU.Build.0 = Release|x64
+		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}.Release|x64.ActiveCfg = Release|x64
+		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}.Release|x86.ActiveCfg = Release|Win32
+		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -665,8 +666,8 @@ Global
 		{6628B502-1C4A-407A-B3D1-E2DC70F8238B} = {89DDDCE0-F344-4B26-8A1C-97899AEFBE95}
 		{709D0ACE-6C24-4130-BE58-2606ECB883EF} = {89DDDCE0-F344-4B26-8A1C-97899AEFBE95}
 		{1C455CFF-A48B-435B-93E4-1F6118F3376C} = {89DDDCE0-F344-4B26-8A1C-97899AEFBE95}
-		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82} = {5E2D3E0F-3BAB-463F-A9F1-745A90617C24}
 		{CB98DE4E-28F8-4983-91B9-D5C179E97364} = {5E2D3E0F-3BAB-463F-A9F1-745A90617C24}
+		{5A255DD3-8AAD-4EB7-9FA8-8065A0B9EA82} = {0B34AE2A-25B4-4E43-8210-CE05465CDFB1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		VisualSVNWorkingCopyRoot = .
