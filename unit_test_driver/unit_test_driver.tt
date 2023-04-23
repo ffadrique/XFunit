@@ -13,7 +13,7 @@ namespace UnitTestDriver
 	// Define the list of libraries to test
 	String [] libraries = new String [] 
 	{
-		"xfunit",
+		"xfunit"
 	};
 
 	// Loop on the Libraries
@@ -30,11 +30,11 @@ namespace UnitTestDriver
 			String solution_path = Path.GetDirectoryName(dte.Solution.FullName);
 
 			// Get the test path
-			String test_path = Path.Combine(solution_path, library, "utest");
+			String test_path = Path.Combine(solution_path, "utest");
 
 			// List the test directories
-			String [] test_cases = Directory.GetDirectories(test_path, "unit_*", SearchOption.TopDirectoryOnly);
-
+  		String [] test_cases = Directory.GetDirectories(test_path, "unit_*", SearchOption.TopDirectoryOnly);
+	
 			// Loop on the test cases
 			foreach(String test in test_cases)
 			{
