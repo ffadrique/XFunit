@@ -22,7 +22,6 @@
 
 # Master configuration key through the compiler command
 F90COMP = gfortran
-F90COMP = /home/fran/gcc/gcc-10/bin/gfortran
 
 # FXX command to process FTL files
 FXX := python ../fxx/fxx.py --templates-dir ../fxx
