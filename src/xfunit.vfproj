@@ -55,9 +55,9 @@
 		<File RelativePath="m_xfunit_suite.f90"/>
 		<File RelativePath="m_xfunit_suite.t90">
 			<FileConfiguration Name="Release|x64">
-				<Tool Name="VFCustomBuildTool" CommandLine="py &quot;$(ProjectDir)/../../../FTL/fxx/fxx.py&quot; &quot;$(InputDir)$(InputName).t90&quot;" Description="Generating $(InputName).f90" Outputs="$(InputDir)$(InputName).f90;$(InputDir)m_xfunit_unit_list_ftl.f90"/></FileConfiguration>
+				<Tool Name="VFCustomBuildTool" CommandLine="py &quot;$(ProjectDir)/../../FTL/fxx/fxx.py&quot; &quot;$(InputDir)$(InputName).t90&quot;" Description="Generating $(InputName).f90" Outputs="$(InputDir)$(InputName).f90;$(InputDir)m_xfunit_unit_list_ftl.f90"/></FileConfiguration>
 			<FileConfiguration Name="Debug|x64">
-				<Tool Name="VFCustomBuildTool" CommandLine="py &quot;$(ProjectDir)/../../../FTL/fxx/fxx.py&quot; &quot;$(InputDir)$(InputName).t90&quot;" Description="Generating $(InputName).f90" Outputs="$(InputDir)$(InputName).f90;$(InputDir)m_xfunit_unit_list_ftl.f90"/></FileConfiguration></File>
+				<Tool Name="VFCustomBuildTool" CommandLine="py &quot;$(ProjectDir)/../../FTL/fxx/fxx.py&quot; &quot;$(InputDir)$(InputName).t90&quot;" Description="Generating $(InputName).f90" Outputs="$(InputDir)$(InputName).f90;$(InputDir)m_xfunit_unit_list_ftl.f90"/></FileConfiguration></File>
 		<File RelativePath="m_xfunit_unit.f90"/>
 		<File RelativePath="m_xfunit_unit_list_ftl.f90"/></Filter>
 		<Filter Name="Library">
@@ -99,8 +99,8 @@
 		<File RelativePath="m_xfunit_report.f90"/>
 		<File RelativePath="m_xfunit_report.t90">
 			<FileConfiguration Name="Release|x64">
-				<Tool Name="VFCustomBuildTool" CommandLine="py &quot;$(ProjectDir)/../../../FTL/fxx/fxx.py&quot; &quot;$(InputDir)$(InputName).t90&quot;" Description="Generating $(InputName).f90" Outputs="$(InputDir)$(InputName).f90;$(InputDir)m_xfunit_unit_list_ftl.f90"/></FileConfiguration>
+				<Tool Name="VFCustomBuildTool" CommandLine="py &quot;$(ProjectDir)/../../FTL/fxx/fxx.py&quot; &quot;$(InputDir)$(InputName).t90&quot;" Description="Generating $(InputName).f90" Outputs="$(InputDir)$(InputName).f90;$(InputDir)m_xfunit_unit_list_ftl.f90"/></FileConfiguration>
 			<FileConfiguration Name="Debug|x64">
-				<Tool Name="VFCustomBuildTool" CommandLine="py &quot;$(ProjectDir)/../../../FTL/fxx/fxx.py&quot; &quot;$(InputDir)$(InputName).t90&quot;" Description="Generating $(InputName).f90" Outputs="$(InputDir)$(InputName).f90;$(InputDir)m_xfunit_unit_list_ftl.f90"/></FileConfiguration></File>
+				<Tool Name="VFCustomBuildTool" CommandLine="py &quot;$(ProjectDir)/../../FTL/fxx/fxx.py&quot; &quot;$(InputDir)$(InputName).t90&quot;" Description="Generating $(InputName).f90" Outputs="$(InputDir)$(InputName).f90;$(InputDir)m_xfunit_unit_list_ftl.f90"/></FileConfiguration></File>
 		<File RelativePath="m_xfunit_summary.f90"/></Filter></Filter></Files>
 	<Globals/></VisualStudioProject>
