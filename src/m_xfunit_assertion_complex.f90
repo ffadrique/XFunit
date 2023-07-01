@@ -76,7 +76,7 @@ module m_xfunit_assertion_complex
 contains
 
 ! Constructor for complex assertion from character
-elemental function xfunit_assertion_complex( name, actual, expected, threshold ) result(res)
+impure elemental function xfunit_assertion_complex( name, actual, expected, threshold ) result(res)
 
 ! The assertion name
   character(len=*), intent(in)  :: name
@@ -121,7 +121,7 @@ end function xfunit_assertion_complex
 
 
 ! Assignment
-elemental subroutine xfunit_assertion_complex_assign( this, other )
+impure elemental subroutine xfunit_assertion_complex_assign( this, other )
 
 ! The target assertion
   class(t_xfunit_assertion_complex), intent(inout) :: this

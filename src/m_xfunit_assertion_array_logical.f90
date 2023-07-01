@@ -62,7 +62,7 @@ module m_xfunit_assertion_array_logical
 contains
 
 ! Constructor for logical array assertion (common expected)
-pure function xfunit_assertion_array_logical_common( name, actual, expected ) result(res)
+function xfunit_assertion_array_logical_common( name, actual, expected ) result(res)
 
 ! The assertion name
   character(len=*), intent(in) :: name
@@ -89,7 +89,7 @@ end function xfunit_assertion_array_logical_common
 
 
 ! Constructor for logical array assertion
-pure function xfunit_assertion_array_logical_array( name, actual, expected ) result(res)
+function xfunit_assertion_array_logical_array( name, actual, expected ) result(res)
 
 ! The assertion name
   character(len=*), intent(in) :: name

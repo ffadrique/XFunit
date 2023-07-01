@@ -63,7 +63,7 @@ module m_xfunit_assertion_matrix_real
 contains
 
 ! Constructor for real matrix assertion
-pure function xfunit_assertion_matrix_real_common( name, actual, expected, threshold ) result(res)
+function xfunit_assertion_matrix_real_common( name, actual, expected, threshold ) result(res)
 
 ! The assertion name
   character(len=*), intent(in) :: name
@@ -102,7 +102,7 @@ end function xfunit_assertion_matrix_real_common
 
 
 ! Constructor for real matrix assertion
-pure function xfunit_assertion_matrix_real_array_common( name, actual, expected, threshold ) result(res)
+function xfunit_assertion_matrix_real_array_common( name, actual, expected, threshold ) result(res)
 
 ! The assertion name
   character(len=*), intent(in) :: name
@@ -133,7 +133,7 @@ end function xfunit_assertion_matrix_real_array_common
 
 
 ! Constructor for real assertion
-pure function xfunit_assertion_matrix_real_array( name, actual, expected, threshold ) result(res)
+function xfunit_assertion_matrix_real_array( name, actual, expected, threshold ) result(res)
 
 ! The assertion name
   character(len=*), intent(in) :: name

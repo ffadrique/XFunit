@@ -63,7 +63,7 @@ module m_xfunit_assertion_array_character
 contains
 
 ! Constructor for character array assertion (common expected)
-pure function xfunit_assertion_array_character_common( name, actual, expected, matching, ignorecase ) result(res)
+function xfunit_assertion_array_character_common( name, actual, expected, matching, ignorecase ) result(res)
 
 ! The assertion name
   character(len=*), intent(in)  :: name
@@ -114,7 +114,7 @@ end function xfunit_assertion_array_character_common
 
 
 ! Constructor for character array assertion
-pure function xfunit_assertion_array_character_array( name, actual, expected, matching, ignorecase ) result(res)
+function xfunit_assertion_array_character_array( name, actual, expected, matching, ignorecase ) result(res)
 
 ! The assertion name
   character(len=*), intent(in)  :: name

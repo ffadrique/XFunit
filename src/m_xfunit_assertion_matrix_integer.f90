@@ -62,7 +62,7 @@ module m_xfunit_assertion_matrix_integer
 contains
 
 ! Constructor for integer matrix assertion (common expected)
-pure function xfunit_assertion_matrix_integer_common( name, actual, expected ) result(res)
+function xfunit_assertion_matrix_integer_common( name, actual, expected ) result(res)
 
 ! The assertion name
   character(len=*), intent(in) :: name
@@ -90,7 +90,7 @@ end function xfunit_assertion_matrix_integer_common
 
 
 ! Constructor for integer matrix assertion
-pure function xfunit_assertion_matrix_integer_array( name, actual, expected ) result(res)
+function xfunit_assertion_matrix_integer_array( name, actual, expected ) result(res)
 
 ! The assertion name
   character(len=*), intent(in) :: name

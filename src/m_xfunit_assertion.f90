@@ -430,7 +430,7 @@ end function xfunit_assertion_is_passed
 
 
 ! Assignment
-elemental subroutine xfunit_assertion_assign( this, other )
+impure elemental subroutine xfunit_assertion_assign( this, other )
 
 ! The target assertion
   class(t_xfunit_assertion), intent(inout) :: this

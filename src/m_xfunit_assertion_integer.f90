@@ -73,7 +73,7 @@ module m_xfunit_assertion_integer
 contains
 
 ! Constructor for integer assertion
-elemental function xfunit_assertion_integer( name, actual, expected ) result(res)
+impure elemental function xfunit_assertion_integer( name, actual, expected ) result(res)
 
 ! The assertion name
   character(len=*), intent(in) :: name
@@ -106,7 +106,7 @@ end function xfunit_assertion_integer
 
 
 ! Assignment
-elemental subroutine xfunit_assertion_integer_assign( this, other )
+impure elemental subroutine xfunit_assertion_integer_assign( this, other )
 
 ! The target assertion
   class(t_xfunit_assertion_integer), intent(inout) :: this

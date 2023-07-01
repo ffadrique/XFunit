@@ -67,7 +67,7 @@ module m_xfunit_assertion_fail
 contains
 
 ! Constructor for fail assertion
-elemental function xfunit_assertion_fail( name ) result(res)
+impure elemental function xfunit_assertion_fail( name ) result(res)
 
 ! The assertion name
   character(len=*), intent(in) :: name
@@ -88,7 +88,7 @@ end function xfunit_assertion_fail
 
 
 ! Assignment
-elemental subroutine xfunit_assertion_fail_assign( this, other )
+impure elemental subroutine xfunit_assertion_fail_assign( this, other )
 
 ! The target assertion
   class(t_xfunit_assertion_fail), intent(inout) :: this

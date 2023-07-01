@@ -63,7 +63,7 @@ module m_xfunit_assertion_array_complex
 contains
 
 ! Constructor for complex array assertion (common expected and threshold)
-pure function xfunit_assertion_array_complex_common( name, actual, expected, threshold ) result(res)
+function xfunit_assertion_array_complex_common( name, actual, expected, threshold ) result(res)
 
 ! The assertion name
   character(len=*), intent(in) :: name
@@ -101,7 +101,7 @@ end function xfunit_assertion_array_complex_common
 
 
 ! Constructor for complex array assertion (array expected and common threshold)
-pure function xfunit_assertion_array_complex_array_common( name, actual, expected, threshold ) result(res)
+function xfunit_assertion_array_complex_array_common( name, actual, expected, threshold ) result(res)
 
 ! The assertion name
   character(len=*), intent(in) :: name
@@ -131,7 +131,7 @@ end function xfunit_assertion_array_complex_array_common
 
 
 ! Constructor for complex assertion
-pure function xfunit_assertion_array_complex_array( name, actual, expected, threshold ) result(res)
+function xfunit_assertion_array_complex_array( name, actual, expected, threshold ) result(res)
 
 ! The assertion name
   character(len=*), intent(in) :: name

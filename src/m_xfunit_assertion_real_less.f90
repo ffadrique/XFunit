@@ -78,7 +78,7 @@ module m_xfunit_assertion_real_less
 contains
 
 ! Constructor for real range (less than) assertion
-elemental function xfunit_assertion_real_less( name, actual, high, open_high ) result(res)
+impure elemental function xfunit_assertion_real_less( name, actual, high, open_high ) result(res)
 
 ! The assertion name
   character(len=*), intent(in) :: name
@@ -128,7 +128,7 @@ end function xfunit_assertion_real_less
 
 
 ! Assignment
-elemental subroutine xfunit_assertion_real_less_assign( this, other )
+impure elemental subroutine xfunit_assertion_real_less_assign( this, other )
 
 ! The target assertion
   class(t_xfunit_assertion_real_less), intent(inout) :: this

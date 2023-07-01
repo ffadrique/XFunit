@@ -84,7 +84,7 @@ module m_xfunit_assertion_matrix
 contains
 
 ! Constructor for array assertion
-pure function xfunit_assertion_matrix( name, type, rast, mold ) result(res)
+function xfunit_assertion_matrix( name, type, rast, mold ) result(res)
 
 ! The assertion name
   character(len=*), intent(in)  :: name
@@ -146,7 +146,7 @@ end function xfunit_assertion_matrix
 
 
 ! Assignment
-elemental subroutine xfunit_assertion_matrix_assign( this, other )
+impure elemental subroutine xfunit_assertion_matrix_assign( this, other )
 
 ! The target assertion
   class(t_xfunit_assertion_matrix), intent(inout) :: this

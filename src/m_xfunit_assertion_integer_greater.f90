@@ -73,7 +73,7 @@ module m_xfunit_assertion_integer_greater
 contains
 
 ! Constructor for real range (greater than) assertion
-elemental function xfunit_assertion_integer_greater( name, actual, low, open_low ) result(res)
+impure elemental function xfunit_assertion_integer_greater( name, actual, low, open_low ) result(res)
 
 ! The assertion name
   character(len=*), intent(in) :: name
@@ -123,7 +123,7 @@ end function xfunit_assertion_integer_greater
 
 
 ! Assignment
-elemental subroutine xfunit_assertion_integer_greater_assign( this, other )
+impure elemental subroutine xfunit_assertion_integer_greater_assign( this, other )
 
 ! The target assertion
   class(t_xfunit_assertion_integer_greater), intent(inout) :: this

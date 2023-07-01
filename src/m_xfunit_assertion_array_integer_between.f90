@@ -63,7 +63,7 @@ module m_xfunit_assertion_array_integer_between
 contains
 
 ! Constructor for integer range array assertion (common boundaries)
-pure function xfunit_assertion_array_integer_between_common( name, actual, low, high, open_low, open_high ) result(res)
+function xfunit_assertion_array_integer_between_common( name, actual, low, high, open_low, open_high ) result(res)
 
 ! The assertion name
   character(len=*), intent(in)  :: name
@@ -99,7 +99,7 @@ end function xfunit_assertion_array_integer_between_common
 
 
 ! Constructor for integer range array assertion
-pure function xfunit_assertion_array_integer_between_array( name, actual, low, high, open_low, open_high ) result(res)
+function xfunit_assertion_array_integer_between_array( name, actual, low, high, open_low, open_high ) result(res)
 
 ! The assertion name
   character(len=*), intent(in)  :: name

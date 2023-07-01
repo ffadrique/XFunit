@@ -73,7 +73,7 @@ module m_xfunit_assertion_logical
 contains
 
 ! Constructor for logical assertion
-elemental function xfunit_assertion_logical( name, actual, expected ) result(res)
+impure elemental function xfunit_assertion_logical( name, actual, expected ) result(res)
 
 ! The assertion name
   character(len=*), intent(in) :: name
@@ -106,7 +106,7 @@ end function xfunit_assertion_logical
 
 
 ! Assignment
-elemental subroutine xfunit_assertion_logical_assign( this, other )
+impure elemental subroutine xfunit_assertion_logical_assign( this, other )
 
 ! The target assertion
   class(t_xfunit_assertion_logical), intent(inout) :: this

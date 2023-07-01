@@ -327,7 +327,7 @@ end subroutine xfunit_assertion_files_compare_binary
 
 
 ! Assignment
-elemental subroutine xfunit_assertion_files_assign( this, other )
+impure elemental subroutine xfunit_assertion_files_assign( this, other )
 
 ! The target assertion
   class(t_xfunit_assertion_files), intent(inout) :: this

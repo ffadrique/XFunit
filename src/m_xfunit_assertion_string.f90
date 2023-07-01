@@ -74,7 +74,7 @@ module m_xfunit_assertion_string
 contains
 
 ! Constructor for string assertion
-elemental function xfunit_assertion_string( name, actual, expected, matching, ignorecase ) result(res)
+impure elemental function xfunit_assertion_string( name, actual, expected, matching, ignorecase ) result(res)
 
 ! The assertion name
   character(len=*), intent(in)  :: name
@@ -174,7 +174,7 @@ end function xfunit_assertion_string
 
 
 ! Assignment
-elemental subroutine xfunit_assertion_string_assign( this, other )
+impure elemental subroutine xfunit_assertion_string_assign( this, other )
 
 ! The target assertion
   class(t_xfunit_assertion_string), intent(inout) :: this

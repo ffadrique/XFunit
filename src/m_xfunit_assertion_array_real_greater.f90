@@ -63,7 +63,7 @@ module m_xfunit_assertion_array_real_greater
 contains
 
 ! Constructor for real range (greater than) array assertion (common boundary)
-pure function xfunit_assertion_array_real_greater_common( name, actual, low, open_low ) result(res)
+function xfunit_assertion_array_real_greater_common( name, actual, low, open_low ) result(res)
 
 ! The assertion name
   character(len=*), intent(in)  :: name
@@ -93,7 +93,7 @@ end function xfunit_assertion_array_real_greater_common
 
 
 ! Constructor for real range (greater than) array assertion
-pure function xfunit_assertion_array_real_greater_array( name, actual, low, open_low ) result(res)
+function xfunit_assertion_array_real_greater_array( name, actual, low, open_low ) result(res)
 
 ! The assertion name
   character(len=*), intent(in)  :: name

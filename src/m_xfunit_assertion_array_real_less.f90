@@ -62,7 +62,7 @@ module m_xfunit_assertion_array_real_less
 contains
 
 ! Constructor for real range (less than) array assertion (common boundary)
-pure function xfunit_assertion_array_real_less_common( name, actual, high, open_high ) result(res)
+function xfunit_assertion_array_real_less_common( name, actual, high, open_high ) result(res)
 
 ! The assertion name
   character(len=*), intent(in)  :: name
@@ -92,7 +92,7 @@ end function xfunit_assertion_array_real_less_common
 
 
 ! Constructor for real range (less than) array assertion
-pure function xfunit_assertion_array_real_less_array( name, actual, high, open_high ) result(res)
+function xfunit_assertion_array_real_less_array( name, actual, high, open_high ) result(res)
 
 ! The assertion name
   character(len=*), intent(in)  :: name

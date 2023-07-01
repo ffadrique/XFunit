@@ -77,7 +77,7 @@ module m_xfunit_assertion_real_between
 contains
 
 ! Constructor for real range assertion
-elemental function xfunit_assertion_real_between( name, actual, low, high, open_low, open_high ) result(res)
+impure elemental function xfunit_assertion_real_between( name, actual, low, high, open_low, open_high ) result(res)
 
 ! The assertion name
   character(len=*), intent(in) :: name
@@ -146,7 +146,7 @@ end function xfunit_assertion_real_between
 
 
 ! Assignment
-elemental subroutine xfunit_assertion_real_between_assign( this, other )
+impure elemental subroutine xfunit_assertion_real_between_assign( this, other )
 
 ! The target assertion
   class(t_xfunit_assertion_real_between), intent(inout) :: this

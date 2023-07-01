@@ -74,7 +74,7 @@ module m_xfunit_assertion_character
 contains
 
 ! Constructor for character assertion
-elemental function xfunit_assertion_character( name, actual, expected, matching, ignorecase ) result(res)
+impure elemental function xfunit_assertion_character( name, actual, expected, matching, ignorecase ) result(res)
 
 ! The assertion name
   character(len=*), intent(in) :: name
@@ -182,7 +182,7 @@ end function xfunit_assertion_character
 
 
 ! Assignment
-elemental subroutine xfunit_assertion_character_assign( this, other )
+impure elemental subroutine xfunit_assertion_character_assign( this, other )
 
 ! The target assertion
   class(t_xfunit_assertion_character), intent(inout) :: this

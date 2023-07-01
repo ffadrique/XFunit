@@ -67,7 +67,7 @@ module m_xfunit_assertion_pass
 contains
 
 ! Constructor for pass assertion
-elemental function xfunit_assertion_pass( name ) result(res)
+impure elemental function xfunit_assertion_pass( name ) result(res)
 
 ! The assertion name
   character(len=*), intent(in) :: name
@@ -88,7 +88,7 @@ end function xfunit_assertion_pass
 
 
 ! Assignment
-elemental subroutine xfunit_assertion_pass_assign( this, other )
+impure elemental subroutine xfunit_assertion_pass_assign( this, other )
 
 ! The target assertion (ifort accepts out; gfortran forces inout)
   class(t_xfunit_assertion_pass), intent(inout) :: this
