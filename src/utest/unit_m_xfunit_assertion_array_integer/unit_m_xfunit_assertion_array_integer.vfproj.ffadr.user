@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VisualStudioUserFile ProjectCreator="Intel Fortran" Keyword="Console Application" Version="11.0" ProjectIdGuid="{83AE846E-66C4-406C-A86C-77B4AE6C1674}">
 	<Configurations>
-		<Configuration Name="Debug|Win32" Environment="XFUNIT_ROOT_DIR=$(ProjectDir).."/>
-		<Configuration Name="Release|Win32" Environment="XFUNIT_ROOT_DIR=$(ProjectDir).."/>
-		<Configuration Name="Debug|x64" Environment="XFUNIT_ROOT_DIR=$(ProjectDir)..&#xA;PROF_DIR=$(ProjectDir).."/>
-		<Configuration Name="Release|x64" Environment="XFUNIT_ROOT_DIR=$(ProjectDir).."/></Configurations></VisualStudioUserFile>
+		<Configuration Name="Debug|Win32" Environment="XFUNIT_ROOT_DIR=$(ProjectDir)..">
+		</Configuration>
+		<Configuration Name="Release|Win32" Environment="XFUNIT_ROOT_DIR=$(ProjectDir)..">
+		</Configuration>
+		<Configuration Name="Debug|x64" Environment="XFUNIT_ROOT_DIR=$(ProjectDir)..&#xA;PROF_DIR=$(ProjectDir)..">
+		</Configuration>
+		<Configuration Name="Release|x64" Environment="XFUNIT_ROOT_DIR=$(ProjectDir)..">
+		</Configuration>
+	</Configurations></VisualStudioUserFile>
