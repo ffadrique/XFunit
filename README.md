@@ -159,7 +159,7 @@ The test sequnece can be implemented according to the following example:
 
 ! Initialise test suite
   suite = xfunit_suite( package='foobar', &
-                        source='foo.f03', &
+                        source='foo.f90', &
                         annotation='My description for suite foo' )
 
 ! Create test
