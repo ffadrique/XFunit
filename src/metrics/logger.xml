@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="fmx.xsl"?>
+<logger xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LogEntry source="m_xfunit_assertion.f90" lineno="232">
+    <source>      integer :: type = xfunit_assertion_none_index</source>
+    <text>Doubtfull matching</text>
+  </LogEntry>
+  <LogEntry source="m_xfunit_assertion_array.f90" lineno="112">
+    <source>  call res%set_type( type )</source>
+    <text>Doubtfull matching</text>
+  </LogEntry>
+  <LogEntry source="m_xfunit_assertion_files.f90" lineno="211">
+    <source>          amsg = msg( 3, 'Files do not compare', 'm_xfunit_assertion_files', 'xfunit_assertion_files_compare_text' )</source>
+    <text>Doubtfull matching</text>
+  </LogEntry>
+  <LogEntry source="m_xfunit_assertion_files.f90" lineno="293">
+    <source>          amsg = msg( 3, 'Files do not compare', 'm_xfunit_assertion_files', 'xfunit_assertion_files_compare_binary' )</source>
+    <text>Doubtfull matching</text>
+  </LogEntry>
+  <LogEntry source="m_xfunit_assertion_list_ftl.f90" lineno="150">
+    <source>      procedure :: select =&gt; list_select</source>
+    <text>Doubtfull matching</text>
+  </LogEntry>
+  <LogEntry source="m_xfunit_assertion_matrix.f90" lineno="112">
+    <source>  call res%set_type( type )</source>
+    <text>Doubtfull matching</text>
+  </LogEntry>
+  <LogEntry source="m_xfunit_unit_list_ftl.f90" lineno="150">
+    <source>      procedure :: select =&gt; list_select</source>
+    <text>Doubtfull matching</text>
+  </LogEntry>
+</logger>

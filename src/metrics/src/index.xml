@@ -1,0 +1,936 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../fmx.xsl"?>
+<fmxdir xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="src">
+    <files>
+        <file name="m_xfunit.f90">
+            <statistics>
+                <lines>
+                    <source percent="15.79">6</source>
+                    <comments percent="65.79">25</comments>
+                    <empty percent="18.42">7</empty>
+                    <total>38</total>
+                </lines>
+                <complexity>
+                    <minimum>1</minimum>
+                    <maximum>1</maximum>
+                    <average>1.00</average>
+                </complexity>
+                <nesting>
+                    <minimum>1</minimum>
+                    <maximum>1</maximum>
+                    <average>1.00</average>
+                </nesting>
+                <methods>0</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_assertion.f90">
+            <statistics>
+                <lines>
+                    <source percent="47.81">306</source>
+                    <comments percent="21.72">139</comments>
+                    <empty percent="30.47">195</empty>
+                    <total>640</total>
+                </lines>
+                <complexity>
+                    <minimum>1</minimum>
+                    <maximum>1</maximum>
+                    <average>1.00</average>
+                </complexity>
+                <nesting>
+                    <minimum>1</minimum>
+                    <maximum>1</maximum>
+                    <average>1.00</average>
+                </nesting>
+                <methods>21</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_assertion_array.f90">
+            <statistics>
+                <lines>
+                    <source percent="36.40">95</source>
+                    <comments percent="31.42">82</comments>
+                    <empty percent="32.18">84</empty>
+                    <total>261</total>
+                </lines>
+                <complexity>
+                    <minimum>1</minimum>
+                    <maximum>6</maximum>
+                    <average>3.00</average>
+                </complexity>
+                <nesting>
+                    <minimum>1</minimum>
+                    <maximum>4</maximum>
+                    <average>2.40</average>
+                </nesting>
+                <methods>5</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_assertion_array_character.f90">
+            <statistics>
+                <lines>
+                    <source percent="41.32">69</source>
+                    <comments percent="32.93">55</comments>
+                    <empty percent="25.75">43</empty>
+                    <total>167</total>
+                </lines>
+                <complexity>
+                    <minimum>5</minimum>
+                    <maximum>5</maximum>
+                    <average>5.00</average>
+                </complexity>
+                <nesting>
+                    <minimum>2</minimum>
+                    <maximum>2</maximum>
+                    <average>2.00</average>
+                </nesting>
+                <methods>2</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_assertion_array_class.f90">
+            <statistics>
+                <lines>
+                    <source percent="36.96">51</source>
+                    <comments percent="35.51">49</comments>
+                    <empty percent="27.54">38</empty>
+                    <total>138</total>
+                </lines>
+                <complexity>
+                    <minimum>2</minimum>
+                    <maximum>2</maximum>
+                    <average>2.00</average>
+                </complexity>
+                <nesting>
+                    <minimum>2</minimum>
+                    <maximum>2</maximum>
+                    <average>2.00</average>
+                </nesting>
+                <methods>2</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_assertion_array_complex.f90">
+            <statistics>
+                <lines>
+                    <source percent="38.60">66</source>
+                    <comments percent="33.33">57</comments>
+                    <empty percent="28.07">48</empty>
+                    <total>171</total>
+                </lines>
+                <complexity>
+                    <minimum>1</minimum>
+                    <maximum>3</maximum>
+                    <average>2.33</average>
+                </complexity>
+                <nesting>
+                    <minimum>1</minimum>
+                    <maximum>2</maximum>
+                    <average>1.67</average>
+                </nesting>
+                <methods>3</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_assertion_array_integer.f90">
+            <statistics>
+                <lines>
+                    <source percent="33.05">39</source>
+                    <comments percent="38.14">45</comments>
+                    <empty percent="28.81">34</empty>
+                    <total>118</total>
+                </lines>
+                <complexity>
+                    <minimum>1</minimum>
+                    <maximum>1</maximum>
+                    <average>1.00</average>
+                </complexity>
+                <nesting>
+                    <minimum>1</minimum>
+                    <maximum>1</maximum>
+                    <average>1.00</average>
+                </nesting>
+                <methods>2</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_assertion_array_integer_between.f90">
+            <statistics>
+                <lines>
+                    <source percent="32.85">45</source>
+                    <comments percent="37.23">51</comments>
+                    <empty percent="29.93">41</empty>
+                    <total>137</total>
+                </lines>
+                <complexity>
+                    <minimum>1</minimum>
+                    <maximum>1</maximum>
+                    <average>1.00</average>
+                </complexity>
+                <nesting>
+                    <minimum>1</minimum>
+                    <maximum>1</maximum>
+                    <average>1.00</average>
+                </nesting>
+                <methods>2</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_assertion_array_integer_greater.f90">
+            <statistics>
+                <lines>
+                    <source percent="33.06">41</source>
+                    <comments percent="37.90">47</comments>
+                    <empty percent="29.03">36</empty>
+                    <total>124</total>
+                </lines>
+                <complexity>
+                    <minimum>1</minimum>
+                    <maximum>1</maximum>
+                    <average>1.00</average>
+                </complexity>
+                <nesting>
+                    <minimum>1</minimum>
+                    <maximum>1</maximum>
+                    <average>1.00</average>
+                </nesting>
+                <methods>2</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_assertion_array_integer_less.f90">
+            <statistics>
+                <lines>
+                    <source percent="33.06">41</source>
+                    <comments percent="37.90">47</comments>
+                    <empty percent="29.03">36</empty>
+                    <total>124</total>
+                </lines>
+                <complexity>
+                    <minimum>1</minimum>
+                    <maximum>1</maximum>
+                    <average>1.00</average>
+                </complexity>
+                <nesting>
+                    <minimum>1</minimum>
+                    <maximum>1</maximum>
+                    <average>1.00</average>
+                </nesting>
+                <methods>2</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_assertion_array_logical.f90">
+            <statistics>
+                <lines>
+                    <source percent="33.05">39</source>
+                    <comments percent="38.14">45</comments>
+                    <empty percent="28.81">34</empty>
+                    <total>118</total>
+                </lines>
+                <complexity>
+                    <minimum>1</minimum>
+                    <maximum>1</maximum>
+                    <average>1.00</average>
+                </complexity>
+                <nesting>
+                    <minimum>1</minimum>
+                    <maximum>1</maximum>
+                    <average>1.00</average>
+                </nesting>
+                <methods>2</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_assertion_array_real.f90">
+            <statistics>
+                <lines>
+                    <source percent="38.95">67</source>
+                    <comments percent="33.14">57</comments>
+                    <empty percent="27.91">48</empty>
+                    <total>172</total>
+                </lines>
+                <complexity>
+                    <minimum>1</minimum>
+                    <maximum>3</maximum>
+                    <average>2.33</average>
+                </complexity>
+                <nesting>
+                    <minimum>1</minimum>
+                    <maximum>2</maximum>
+                    <average>1.67</average>
+                </nesting>
+                <methods>3</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_assertion_array_real_between.f90">
+            <statistics>
+                <lines>
+                    <source percent="32.85">45</source>
+                    <comments percent="37.23">51</comments>
+                    <empty percent="29.93">41</empty>
+                    <total>137</total>
+                </lines>
+                <complexity>
+                    <minimum>1</minimum>
+                    <maximum>1</maximum>
+                    <average>1.00</average>
+                </complexity>
+                <nesting>
+                    <minimum>1</minimum>
+                    <maximum>1</maximum>
+                    <average>1.00</average>
+                </nesting>
+                <methods>2</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_assertion_array_real_greater.f90">
+            <statistics>
+                <lines>
+                    <source percent="32.80">41</source>
+                    <comments percent="37.60">47</comments>
+                    <empty percent="29.60">37</empty>
+                    <total>125</total>
+                </lines>
+                <complexity>
+                    <minimum>1</minimum>
+                    <maximum>1</maximum>
+                    <average>1.00</average>
+                </complexity>
+                <nesting>
+                    <minimum>1</minimum>
+                    <maximum>1</maximum>
+                    <average>1.00</average>
+                </nesting>
+                <methods>2</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_assertion_array_real_less.f90">
+            <statistics>
+                <lines>
+                    <source percent="33.06">41</source>
+                    <comments percent="37.90">47</comments>
+                    <empty percent="29.03">36</empty>
+                    <total>124</total>
+                </lines>
+                <complexity>
+                    <minimum>1</minimum>
+                    <maximum>1</maximum>
+                    <average>1.00</average>
+                </complexity>
+                <nesting>
+                    <minimum>1</minimum>
+                    <maximum>1</maximum>
+                    <average>1.00</average>
+                </nesting>
+                <methods>2</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_assertion_array_string.f90">
+            <statistics>
+                <lines>
+                    <source percent="41.67">70</source>
+                    <comments percent="32.74">55</comments>
+                    <empty percent="25.60">43</empty>
+                    <total>168</total>
+                </lines>
+                <complexity>
+                    <minimum>5</minimum>
+                    <maximum>5</maximum>
+                    <average>5.00</average>
+                </complexity>
+                <nesting>
+                    <minimum>2</minimum>
+                    <maximum>2</maximum>
+                    <average>2.00</average>
+                </nesting>
+                <methods>2</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_assertion_character.f90">
+            <statistics>
+                <lines>
+                    <source percent="44.62">116</source>
+                    <comments percent="28.46">74</comments>
+                    <empty percent="26.92">70</empty>
+                    <total>260</total>
+                </lines>
+                <complexity>
+                    <minimum>1</minimum>
+                    <maximum>19</maximum>
+                    <average>5.75</average>
+                </complexity>
+                <nesting>
+                    <minimum>1</minimum>
+                    <maximum>3</maximum>
+                    <average>1.75</average>
+                </nesting>
+                <methods>4</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_assertion_class.f90">
+            <statistics>
+                <lines>
+                    <source percent="29.59">58</source>
+                    <comments percent="37.24">73</comments>
+                    <empty percent="33.16">65</empty>
+                    <total>196</total>
+                </lines>
+                <complexity>
+                    <minimum>1</minimum>
+                    <maximum>4</maximum>
+                    <average>2.50</average>
+                </complexity>
+                <nesting>
+                    <minimum>1</minimum>
+                    <maximum>4</maximum>
+                    <average>2.00</average>
+                </nesting>
+                <methods>4</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_assertion_complex.f90">
+            <statistics>
+                <lines>
+                    <source percent="36.65">70</source>
+                    <comments percent="32.46">62</comments>
+                    <empty percent="30.89">59</empty>
+                    <total>191</total>
+                </lines>
+                <complexity>
+                    <minimum>1</minimum>
+                    <maximum>5</maximum>
+                    <average>2.25</average>
+                </complexity>
+                <nesting>
+                    <minimum>1</minimum>
+                    <maximum>2</maximum>
+                    <average>1.50</average>
+                </nesting>
+                <methods>4</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_assertion_fail.f90">
+            <statistics>
+                <lines>
+                    <source percent="29.93">44</source>
+                    <comments percent="36.05">53</comments>
+                    <empty percent="34.01">50</empty>
+                    <total>147</total>
+                </lines>
+                <complexity>
+                    <minimum>1</minimum>
+                    <maximum>2</maximum>
+                    <average>1.25</average>
+                </complexity>
+                <nesting>
+                    <minimum>1</minimum>
+                    <maximum>2</maximum>
+                    <average>1.25</average>
+                </nesting>
+                <methods>4</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_assertion_files.f90">
+            <statistics>
+                <lines>
+                    <source percent="42.93">176</source>
+                    <comments percent="26.10">107</comments>
+                    <empty percent="30.98">127</empty>
+                    <total>410</total>
+                </lines>
+                <complexity>
+                    <minimum>1</minimum>
+                    <maximum>10</maximum>
+                    <average>5.33</average>
+                </complexity>
+                <nesting>
+                    <minimum>1</minimum>
+                    <maximum>5</maximum>
+                    <average>3.17</average>
+                </nesting>
+                <methods>6</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_assertion_integer.f90">
+            <statistics>
+                <lines>
+                    <source percent="34.48">60</source>
+                    <comments percent="33.91">59</comments>
+                    <empty percent="31.61">55</empty>
+                    <total>174</total>
+                </lines>
+                <complexity>
+                    <minimum>1</minimum>
+                    <maximum>3</maximum>
+                    <average>1.75</average>
+                </complexity>
+                <nesting>
+                    <minimum>1</minimum>
+                    <maximum>2</maximum>
+                    <average>1.50</average>
+                </nesting>
+                <methods>4</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_assertion_integer_between.f90">
+            <statistics>
+                <lines>
+                    <source percent="42.06">90</source>
+                    <comments percent="29.91">64</comments>
+                    <empty percent="28.04">60</empty>
+                    <total>214</total>
+                </lines>
+                <complexity>
+                    <minimum>1</minimum>
+                    <maximum>11</maximum>
+                    <average>3.75</average>
+                </complexity>
+                <nesting>
+                    <minimum>1</minimum>
+                    <maximum>2</maximum>
+                    <average>1.50</average>
+                </nesting>
+                <methods>4</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_assertion_integer_greater.f90">
+            <statistics>
+                <lines>
+                    <source percent="38.22">73</source>
+                    <comments percent="31.94">61</comments>
+                    <empty percent="29.84">57</empty>
+                    <total>191</total>
+                </lines>
+                <complexity>
+                    <minimum>1</minimum>
+                    <maximum>7</maximum>
+                    <average>2.75</average>
+                </complexity>
+                <nesting>
+                    <minimum>1</minimum>
+                    <maximum>2</maximum>
+                    <average>1.50</average>
+                </nesting>
+                <methods>4</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_assertion_integer_less.f90">
+            <statistics>
+                <lines>
+                    <source percent="38.22">73</source>
+                    <comments percent="31.94">61</comments>
+                    <empty percent="29.84">57</empty>
+                    <total>191</total>
+                </lines>
+                <complexity>
+                    <minimum>1</minimum>
+                    <maximum>7</maximum>
+                    <average>2.75</average>
+                </complexity>
+                <nesting>
+                    <minimum>1</minimum>
+                    <maximum>2</maximum>
+                    <average>1.50</average>
+                </nesting>
+                <methods>4</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_assertion_list_ftl.f90">
+            <statistics>
+                <lines>
+                    <source percent="35.02">822</source>
+                    <comments percent="33.62">789</comments>
+                    <empty percent="31.36">736</empty>
+                    <total>2347</total>
+                </lines>
+                <complexity>
+                    <minimum>1</minimum>
+                    <maximum>12</maximum>
+                    <average>2.79</average>
+                </complexity>
+                <nesting>
+                    <minimum>1</minimum>
+                    <maximum>6</maximum>
+                    <average>1.97</average>
+                </nesting>
+                <methods>62</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_assertion_logical.f90">
+            <statistics>
+                <lines>
+                    <source percent="34.48">60</source>
+                    <comments percent="33.91">59</comments>
+                    <empty percent="31.61">55</empty>
+                    <total>174</total>
+                </lines>
+                <complexity>
+                    <minimum>1</minimum>
+                    <maximum>3</maximum>
+                    <average>1.75</average>
+                </complexity>
+                <nesting>
+                    <minimum>1</minimum>
+                    <maximum>2</maximum>
+                    <average>1.50</average>
+                </nesting>
+                <methods>4</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_assertion_matrix.f90">
+            <statistics>
+                <lines>
+                    <source percent="39.11">106</source>
+                    <comments percent="30.26">82</comments>
+                    <empty percent="30.63">83</empty>
+                    <total>271</total>
+                </lines>
+                <complexity>
+                    <minimum>1</minimum>
+                    <maximum>7</maximum>
+                    <average>3.60</average>
+                </complexity>
+                <nesting>
+                    <minimum>1</minimum>
+                    <maximum>4</maximum>
+                    <average>3.00</average>
+                </nesting>
+                <methods>5</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_assertion_matrix_class.f90">
+            <statistics>
+                <lines>
+                    <source percent="39.58">57</source>
+                    <comments percent="34.03">49</comments>
+                    <empty percent="26.39">38</empty>
+                    <total>144</total>
+                </lines>
+                <complexity>
+                    <minimum>3</minimum>
+                    <maximum>3</maximum>
+                    <average>3.00</average>
+                </complexity>
+                <nesting>
+                    <minimum>3</minimum>
+                    <maximum>3</maximum>
+                    <average>3.00</average>
+                </nesting>
+                <methods>2</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_assertion_matrix_integer.f90">
+            <statistics>
+                <lines>
+                    <source percent="34.17">41</source>
+                    <comments percent="37.50">45</comments>
+                    <empty percent="28.33">34</empty>
+                    <total>120</total>
+                </lines>
+                <complexity>
+                    <minimum>1</minimum>
+                    <maximum>1</maximum>
+                    <average>1.00</average>
+                </complexity>
+                <nesting>
+                    <minimum>1</minimum>
+                    <maximum>1</maximum>
+                    <average>1.00</average>
+                </nesting>
+                <methods>2</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_assertion_matrix_real.f90">
+            <statistics>
+                <lines>
+                    <source percent="39.88">69</source>
+                    <comments percent="32.95">57</comments>
+                    <empty percent="27.17">47</empty>
+                    <total>173</total>
+                </lines>
+                <complexity>
+                    <minimum>1</minimum>
+                    <maximum>3</maximum>
+                    <average>2.33</average>
+                </complexity>
+                <nesting>
+                    <minimum>1</minimum>
+                    <maximum>2</maximum>
+                    <average>1.67</average>
+                </nesting>
+                <methods>3</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_assertion_pass.f90">
+            <statistics>
+                <lines>
+                    <source percent="29.93">44</source>
+                    <comments percent="36.05">53</comments>
+                    <empty percent="34.01">50</empty>
+                    <total>147</total>
+                </lines>
+                <complexity>
+                    <minimum>1</minimum>
+                    <maximum>2</maximum>
+                    <average>1.25</average>
+                </complexity>
+                <nesting>
+                    <minimum>1</minimum>
+                    <maximum>2</maximum>
+                    <average>1.25</average>
+                </nesting>
+                <methods>4</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_assertion_real.f90">
+            <statistics>
+                <lines>
+                    <source percent="37.31">72</source>
+                    <comments percent="32.12">62</comments>
+                    <empty percent="30.57">59</empty>
+                    <total>193</total>
+                </lines>
+                <complexity>
+                    <minimum>1</minimum>
+                    <maximum>5</maximum>
+                    <average>2.25</average>
+                </complexity>
+                <nesting>
+                    <minimum>1</minimum>
+                    <maximum>2</maximum>
+                    <average>1.50</average>
+                </nesting>
+                <methods>4</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_assertion_real_between.f90">
+            <statistics>
+                <lines>
+                    <source percent="41.94">91</source>
+                    <comments percent="29.95">65</comments>
+                    <empty percent="28.11">61</empty>
+                    <total>217</total>
+                </lines>
+                <complexity>
+                    <minimum>1</minimum>
+                    <maximum>11</maximum>
+                    <average>3.75</average>
+                </complexity>
+                <nesting>
+                    <minimum>1</minimum>
+                    <maximum>2</maximum>
+                    <average>1.50</average>
+                </nesting>
+                <methods>4</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_assertion_real_greater.f90">
+            <statistics>
+                <lines>
+                    <source percent="38.54">74</source>
+                    <comments percent="31.77">61</comments>
+                    <empty percent="29.69">57</empty>
+                    <total>192</total>
+                </lines>
+                <complexity>
+                    <minimum>1</minimum>
+                    <maximum>7</maximum>
+                    <average>2.75</average>
+                </complexity>
+                <nesting>
+                    <minimum>1</minimum>
+                    <maximum>2</maximum>
+                    <average>1.50</average>
+                </nesting>
+                <methods>4</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_assertion_real_less.f90">
+            <statistics>
+                <lines>
+                    <source percent="38.05">86</source>
+                    <comments percent="30.97">70</comments>
+                    <empty percent="30.97">70</empty>
+                    <total>226</total>
+                </lines>
+                <complexity>
+                    <minimum>1</minimum>
+                    <maximum>7</maximum>
+                    <average>2.17</average>
+                </complexity>
+                <nesting>
+                    <minimum>1</minimum>
+                    <maximum>2</maximum>
+                    <average>1.33</average>
+                </nesting>
+                <methods>6</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_assertion_string.f90">
+            <statistics>
+                <lines>
+                    <source percent="42.56">103</source>
+                    <comments percent="29.75">72</comments>
+                    <empty percent="27.69">67</empty>
+                    <total>242</total>
+                </lines>
+                <complexity>
+                    <minimum>1</minimum>
+                    <maximum>15</maximum>
+                    <average>4.75</average>
+                </complexity>
+                <nesting>
+                    <minimum>1</minimum>
+                    <maximum>3</maximum>
+                    <average>1.75</average>
+                </nesting>
+                <methods>4</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_manager.f90">
+            <statistics>
+                <lines>
+                    <source percent="42.40">276</source>
+                    <comments percent="27.80">181</comments>
+                    <empty percent="29.80">194</empty>
+                    <total>651</total>
+                </lines>
+                <complexity>
+                    <minimum>1</minimum>
+                    <maximum>19</maximum>
+                    <average>3.20</average>
+                </complexity>
+                <nesting>
+                    <minimum>1</minimum>
+                    <maximum>3</maximum>
+                    <average>1.67</average>
+                </nesting>
+                <methods>15</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_report.f90">
+            <statistics>
+                <lines>
+                    <source percent="32.72">53</source>
+                    <comments percent="33.95">55</comments>
+                    <empty percent="33.33">54</empty>
+                    <total>162</total>
+                </lines>
+                <complexity>
+                    <minimum>1</minimum>
+                    <maximum>4</maximum>
+                    <average>2.67</average>
+                </complexity>
+                <nesting>
+                    <minimum>1</minimum>
+                    <maximum>4</maximum>
+                    <average>2.67</average>
+                </nesting>
+                <methods>3</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_suite.f90">
+            <statistics>
+                <lines>
+                    <source percent="40.39">248</source>
+                    <comments percent="27.52">169</comments>
+                    <empty percent="32.08">197</empty>
+                    <total>614</total>
+                </lines>
+                <complexity>
+                    <minimum>1</minimum>
+                    <maximum>11</maximum>
+                    <average>2.50</average>
+                </complexity>
+                <nesting>
+                    <minimum>1</minimum>
+                    <maximum>6</maximum>
+                    <average>1.94</average>
+                </nesting>
+                <methods>16</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_summary.f90">
+            <statistics>
+                <lines>
+                    <source percent="32.29">72</source>
+                    <comments percent="34.08">76</comments>
+                    <empty percent="33.63">75</empty>
+                    <total>223</total>
+                </lines>
+                <complexity>
+                    <minimum>1</minimum>
+                    <maximum>1</maximum>
+                    <average>1.00</average>
+                </complexity>
+                <nesting>
+                    <minimum>1</minimum>
+                    <maximum>1</maximum>
+                    <average>1.00</average>
+                </nesting>
+                <methods>7</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_unit.f90">
+            <statistics>
+                <lines>
+                    <source percent="34.16">1575</source>
+                    <comments percent="29.60">1365</comments>
+                    <empty percent="36.24">1671</empty>
+                    <total>4611</total>
+                </lines>
+                <complexity>
+                    <minimum>1</minimum>
+                    <maximum>6</maximum>
+                    <average>1.26</average>
+                </complexity>
+                <nesting>
+                    <minimum>1</minimum>
+                    <maximum>3</maximum>
+                    <average>1.11</average>
+                </nesting>
+                <methods>154</methods>
+            </statistics>
+        </file>
+        <file name="m_xfunit_unit_list_ftl.f90">
+            <statistics>
+                <lines>
+                    <source percent="35.02">822</source>
+                    <comments percent="33.62">789</comments>
+                    <empty percent="31.36">736</empty>
+                    <total>2347</total>
+                </lines>
+                <complexity>
+                    <minimum>1</minimum>
+                    <maximum>12</maximum>
+                    <average>2.79</average>
+                </complexity>
+                <nesting>
+                    <minimum>1</minimum>
+                    <maximum>6</maximum>
+                    <average>1.97</average>
+                </nesting>
+                <methods>62</methods>
+            </statistics>
+        </file>
+    </files>
+    <context>
+        <time>2025-03-09T10:39:11</time>
+        <version>1.0.0.1</version>
+        <path>src</path>
+        <path_to_root>../</path_to_root>
+        <project>XFunit</project>
+        <copyright>Copyright © 2020, Fran Martinez Fadrique &lt;Fran.Martinez.Fadrique@gmail.com&gt;</copyright>
+    </context>
+    <statistics>
+        <lines>
+            <source percent="36.50">6493</source>
+            <comments percent="31.55">5612</comments>
+            <empty percent="31.96">5685</empty>
+            <total>17790</total>
+        </lines>
+        <complexity>
+            <minimum>1</minimum>
+            <maximum>19</maximum>
+            <average>2.39</average>
+        </complexity>
+        <nesting>
+            <minimum>1</minimum>
+            <maximum>6</maximum>
+            <average>1.60</average>
+        </nesting>
+        <modules>43</modules>
+    </statistics>
+</fmxdir>

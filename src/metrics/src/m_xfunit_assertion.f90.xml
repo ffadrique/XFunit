@@ -1,0 +1,1139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../fmx.xsl"?>
+<fmx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="m_xfunit_assertion.f90">
+    <context>
+        <time>2025-03-09T10:39:11</time>
+        <version>1.0.0.1</version>
+        <path>src</path>
+        <path_to_root>../</path_to_root>
+        <project>XFunit</project>
+        <name>m_xfunit_assertion.f90</name>
+        <copyright>Copyright © 2020, Fran Martinez Fadrique &lt;Fran.Martinez.Fadrique@gmail.com&gt;</copyright>
+    </context>
+    <units>
+        <unit name="m_xfunit_assertion" type="module">
+            <main>
+                <lines>
+                    <source percent="61.59">178</source>
+                    <comments percent="16.26">47</comments>
+                    <empty percent="22.15">64</empty>
+                    <total>289</total>
+                </lines>
+                <complexity>
+                    <minimum>0</minimum>
+                    <maximum>0</maximum>
+                    <average>0.00</average>
+                </complexity>
+                <nesting>
+                    <minimum>0</minimum>
+                    <maximum>0</maximum>
+                    <average>0.00</average>
+                </nesting>
+                <methods>0</methods>
+            </main>
+            <methods>
+                <method name="xfunit_assertion" type="function">
+                    <statistics>
+                        <lines>
+                            <source percent="40.91">9</source>
+                            <comments percent="27.27">6</comments>
+                            <empty percent="31.82">7</empty>
+                            <total>22</total>
+                        </lines>
+                        <complexity>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </complexity>
+                        <nesting>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </nesting>
+                    </statistics>
+                </method>
+                <method name="xfunit_assertion_assign" type="subroutine">
+                    <statistics>
+                        <lines>
+                            <source percent="44.44">8</source>
+                            <comments percent="22.22">4</comments>
+                            <empty percent="33.33">6</empty>
+                            <total>18</total>
+                        </lines>
+                        <complexity>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </complexity>
+                        <nesting>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </nesting>
+                    </statistics>
+                </method>
+                <method name="xfunit_assertion_equals" type="function">
+                    <statistics>
+                        <lines>
+                            <source percent="30.00">6</source>
+                            <comments percent="30.00">6</comments>
+                            <empty percent="40.00">8</empty>
+                            <total>20</total>
+                        </lines>
+                        <complexity>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </complexity>
+                        <nesting>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </nesting>
+                    </statistics>
+                </method>
+                <method name="xfunit_assertion_get_error" type="function">
+                    <statistics>
+                        <lines>
+                            <source percent="33.33">5</source>
+                            <comments percent="26.67">4</comments>
+                            <empty percent="40.00">6</empty>
+                            <total>15</total>
+                        </lines>
+                        <complexity>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </complexity>
+                        <nesting>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </nesting>
+                    </statistics>
+                </method>
+                <method name="xfunit_assertion_get_name" type="function">
+                    <statistics>
+                        <lines>
+                            <source percent="33.33">5</source>
+                            <comments percent="26.67">4</comments>
+                            <empty percent="40.00">6</empty>
+                            <total>15</total>
+                        </lines>
+                        <complexity>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </complexity>
+                        <nesting>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </nesting>
+                    </statistics>
+                </method>
+                <method name="xfunit_assertion_get_status" type="function">
+                    <statistics>
+                        <lines>
+                            <source percent="33.33">5</source>
+                            <comments percent="26.67">4</comments>
+                            <empty percent="40.00">6</empty>
+                            <total>15</total>
+                        </lines>
+                        <complexity>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </complexity>
+                        <nesting>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </nesting>
+                    </statistics>
+                </method>
+                <method name="xfunit_assertion_get_type" type="function">
+                    <statistics>
+                        <lines>
+                            <source percent="33.33">5</source>
+                            <comments percent="26.67">4</comments>
+                            <empty percent="40.00">6</empty>
+                            <total>15</total>
+                        </lines>
+                        <complexity>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </complexity>
+                        <nesting>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </nesting>
+                    </statistics>
+                </method>
+                <method name="xfunit_assertion_greater" type="function">
+                    <statistics>
+                        <lines>
+                            <source percent="35.29">6</source>
+                            <comments percent="29.41">5</comments>
+                            <empty percent="35.29">6</empty>
+                            <total>17</total>
+                        </lines>
+                        <complexity>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </complexity>
+                        <nesting>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </nesting>
+                    </statistics>
+                </method>
+                <method name="xfunit_assertion_is_passed" type="function">
+                    <statistics>
+                        <lines>
+                            <source percent="33.33">5</source>
+                            <comments percent="26.67">4</comments>
+                            <empty percent="40.00">6</empty>
+                            <total>15</total>
+                        </lines>
+                        <complexity>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </complexity>
+                        <nesting>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </nesting>
+                    </statistics>
+                </method>
+                <method name="xfunit_assertion_less" type="function">
+                    <statistics>
+                        <lines>
+                            <source percent="33.33">6</source>
+                            <comments percent="27.78">5</comments>
+                            <empty percent="38.89">7</empty>
+                            <total>18</total>
+                        </lines>
+                        <complexity>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </complexity>
+                        <nesting>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </nesting>
+                    </statistics>
+                </method>
+                <method name="xfunit_assertion_on_error" type="function">
+                    <statistics>
+                        <lines>
+                            <source percent="33.33">5</source>
+                            <comments percent="26.67">4</comments>
+                            <empty percent="40.00">6</empty>
+                            <total>15</total>
+                        </lines>
+                        <complexity>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </complexity>
+                        <nesting>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </nesting>
+                    </statistics>
+                </method>
+                <method name="xfunit_assertion_set_error" type="subroutine">
+                    <statistics>
+                        <lines>
+                            <source percent="35.71">5</source>
+                            <comments percent="28.57">4</comments>
+                            <empty percent="35.71">5</empty>
+                            <total>14</total>
+                        </lines>
+                        <complexity>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </complexity>
+                        <nesting>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </nesting>
+                    </statistics>
+                </method>
+                <method name="xfunit_assertion_set_name" type="subroutine">
+                    <statistics>
+                        <lines>
+                            <source percent="33.33">5</source>
+                            <comments percent="26.67">4</comments>
+                            <empty percent="40.00">6</empty>
+                            <total>15</total>
+                        </lines>
+                        <complexity>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </complexity>
+                        <nesting>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </nesting>
+                    </statistics>
+                </method>
+                <method name="xfunit_assertion_set_status" type="subroutine">
+                    <statistics>
+                        <lines>
+                            <source percent="33.33">5</source>
+                            <comments percent="26.67">4</comments>
+                            <empty percent="40.00">6</empty>
+                            <total>15</total>
+                        </lines>
+                        <complexity>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </complexity>
+                        <nesting>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </nesting>
+                    </statistics>
+                </method>
+                <method name="xfunit_assertion_set_type" type="subroutine">
+                    <statistics>
+                        <lines>
+                            <source percent="33.33">5</source>
+                            <comments percent="26.67">4</comments>
+                            <empty percent="40.00">6</empty>
+                            <total>15</total>
+                        </lines>
+                        <complexity>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </complexity>
+                        <nesting>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </nesting>
+                    </statistics>
+                </method>
+                <method name="xfunit_assertion_write" type="subroutine">
+                    <statistics>
+                        <lines>
+                            <source percent="41.18">7</source>
+                            <comments percent="23.53">4</comments>
+                            <empty percent="35.29">6</empty>
+                            <total>17</total>
+                        </lines>
+                        <complexity>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </complexity>
+                        <nesting>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </nesting>
+                    </statistics>
+                </method>
+                <method name="xfunit_assertion_write_end_tag" type="subroutine">
+                    <statistics>
+                        <lines>
+                            <source percent="33.33">4</source>
+                            <comments percent="25.00">3</comments>
+                            <empty percent="41.67">5</empty>
+                            <total>12</total>
+                        </lines>
+                        <complexity>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </complexity>
+                        <nesting>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </nesting>
+                    </statistics>
+                </method>
+                <method name="xfunit_assertion_write_footer" type="subroutine">
+                    <statistics>
+                        <lines>
+                            <source percent="33.33">4</source>
+                            <comments percent="25.00">3</comments>
+                            <empty percent="41.67">5</empty>
+                            <total>12</total>
+                        </lines>
+                        <complexity>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </complexity>
+                        <nesting>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </nesting>
+                    </statistics>
+                </method>
+                <method name="xfunit_assertion_write_header" type="subroutine">
+                    <statistics>
+                        <lines>
+                            <source percent="44.00">11</source>
+                            <comments percent="24.00">6</comments>
+                            <empty percent="32.00">8</empty>
+                            <total>25</total>
+                        </lines>
+                        <complexity>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </complexity>
+                        <nesting>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </nesting>
+                    </statistics>
+                </method>
+                <method name="xfunit_assertion_write_start_tag" type="subroutine">
+                    <statistics>
+                        <lines>
+                            <source percent="42.86">9</source>
+                            <comments percent="23.81">5</comments>
+                            <empty percent="33.33">7</empty>
+                            <total>21</total>
+                        </lines>
+                        <complexity>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </complexity>
+                        <nesting>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </nesting>
+                    </statistics>
+                </method>
+                <method name="xfunit_assertion_write_xml" type="subroutine">
+                    <statistics>
+                        <lines>
+                            <source percent="40.00">8</source>
+                            <comments percent="25.00">5</comments>
+                            <empty percent="35.00">7</empty>
+                            <total>20</total>
+                        </lines>
+                        <complexity>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </complexity>
+                        <nesting>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </nesting>
+                    </statistics>
+                </method>
+            </methods>
+            <statistics>
+                <lines>
+                    <source percent="47.81">306</source>
+                    <comments percent="21.72">139</comments>
+                    <empty percent="30.47">195</empty>
+                    <total>640</total>
+                </lines>
+                <complexity>
+                    <minimum>1</minimum>
+                    <maximum>1</maximum>
+                    <average>1.00</average>
+                </complexity>
+                <nesting>
+                    <minimum>1</minimum>
+                    <maximum>1</maximum>
+                    <average>1.00</average>
+                </nesting>
+                <methods>21</methods>
+            </statistics>
+        </unit>
+    </units>
+    <statistics>
+        <lines>
+            <source percent="47.81">306</source>
+            <comments percent="21.72">139</comments>
+            <empty percent="30.47">195</empty>
+            <total>640</total>
+        </lines>
+        <complexity>
+            <minimum>1</minimum>
+            <maximum>1</maximum>
+            <average>1.00</average>
+        </complexity>
+        <nesting>
+            <minimum>1</minimum>
+            <maximum>1</maximum>
+            <average>1.00</average>
+        </nesting>
+        <methods>21</methods>
+    </statistics>
+    <code>
+        <line t="M" i="1" b="0" n="0">module m_xfunit_assertion</line>
+        <line t="M" i="2" b="0" n="0"></line>
+        <line t="C" i="3" b="0" n="0">!-------------------------------------------------------------------------------</line>
+        <line t="C" i="4" b="0" n="0">! Copyright : 2025, Fran Martinez Fadrique &lt;Fran.Martinez.Fadrique@gmail.com&gt;</line>
+        <line t="C" i="5" b="0" n="0">! Project   : Atlantis</line>
+        <line t="C" i="6" b="0" n="0">! Author    : Fran Martinez Fadrique</line>
+        <line t="C" i="7" b="0" n="0">! Language  : Object Oriented Fortran 2018</line>
+        <line t="C" i="8" b="0" n="0">! Synopsis  : Unit tests assertion parent type</line>
+        <line t="C" i="9" b="0" n="0">!</line>
+        <line t="C" i="10" b="0" n="0">! License   : This file is part of XFunit.</line>
+        <line t="C" i="11" b="0" n="0">!</line>
+        <line t="C" i="12" b="0" n="0">!             XFunit is free software: you can redistribute it and/or modify</line>
+        <line t="C" i="13" b="0" n="0">!             it under the terms of the GNU Lesser General Public License as</line>
+        <line t="C" i="14" b="0" n="0">!             published by the Free Software Foundation, either version 3 of</line>
+        <line t="C" i="15" b="0" n="0">!             the License, or (at your option) any later version.</line>
+        <line t="C" i="16" b="0" n="0">!</line>
+        <line t="C" i="17" b="0" n="0">!             XFunit is distributed in the hope that it will be useful,</line>
+        <line t="C" i="18" b="0" n="0">!             but WITHOUT ANY WARRANTY; without even the implied warranty of</line>
+        <line t="C" i="19" b="0" n="0">!             MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</line>
+        <line t="C" i="20" b="0" n="0">!             See the GNU Lesser General Public License for more details.</line>
+        <line t="C" i="21" b="0" n="0">!</line>
+        <line t="C" i="22" b="0" n="0">!             You should have received a copy of the GNU Lesser General Public</line>
+        <line t="C" i="23" b="0" n="0">!             License along with XFunit.  </line>
+        <line t="C" i="24" b="0" n="0">!             If not, see &lt;http://www.gnu.org/licenses/&gt;.</line>
+        <line t="C" i="25" b="0" n="0">!-------------------------------------------------------------------------------</line>
+        <line t="C" i="26" b="0" n="0"></line>
+        <line t="C" i="27" b="0" n="0">!---USE statements--------------------------------------------------------------</line>
+        <line t="C" i="28" b="0" n="0"></line>
+        <line t="X" i="29" b="0" n="0">  use m_object</line>
+        <line t="X" i="30" b="0" n="0"></line>
+        <line t="X" i="31" b="0" n="0">  use m_string</line>
+        <line t="X" i="32" b="0" n="0">  use m_util_convert</line>
+        <line t="X" i="33" b="0" n="0"></line>
+        <line t="X" i="34" b="0" n="0">  use m_xml</line>
+        <line t="X" i="35" b="0" n="0">  use m_msg</line>
+        <line t="X" i="36" b="0" n="0"></line>
+        <line t="C" i="37" b="0" n="0">!---End of use statements-------------------------------------------------------</line>
+        <line t="C" i="38" b="0" n="0"></line>
+        <line t="X" i="39" b="0" n="0">  implicit none</line>
+        <line t="X" i="40" b="0" n="0"></line>
+        <line t="C" i="41" b="0" n="0">!---Public/Private declarations-------------------------------------------------</line>
+        <line t="C" i="42" b="0" n="0"></line>
+        <line t="X" i="43" b="0" n="0">  private</line>
+        <line t="X" i="44" b="0" n="0"></line>
+        <line t="X" i="45" b="0" n="0">  public t_xfunit_assertion, &amp;</line>
+        <line t="X" i="46" b="0" n="0">         xfunit_assertion</line>
+        <line t="X" i="47" b="0" n="0"></line>
+        <line t="X" i="48" b="0" n="0">  public xfunit_assertion_none_index, &amp;</line>
+        <line t="X" i="49" b="0" n="0">         xfunit_assertion_integer_index, &amp;</line>
+        <line t="X" i="50" b="0" n="0">         xfunit_assertion_real_index, &amp;</line>
+        <line t="X" i="51" b="0" n="0">         xfunit_assertion_complex_index, &amp;</line>
+        <line t="X" i="52" b="0" n="0">         xfunit_assertion_character_index, &amp;</line>
+        <line t="X" i="53" b="0" n="0">         xfunit_assertion_string_index, &amp;</line>
+        <line t="X" i="54" b="0" n="0">         xfunit_assertion_character_nocase_index, &amp;</line>
+        <line t="X" i="55" b="0" n="0">         xfunit_assertion_string_nocase_index, &amp;</line>
+        <line t="X" i="56" b="0" n="0">         xfunit_assertion_logical_index, &amp;</line>
+        <line t="X" i="57" b="0" n="0">         xfunit_assertion_class_index</line>
+        <line t="X" i="58" b="0" n="0"></line>
+        <line t="X" i="59" b="0" n="0">  public xfunit_assertion_pass_index, &amp;</line>
+        <line t="X" i="60" b="0" n="0">         xfunit_assertion_fail_index</line>
+        <line t="X" i="61" b="0" n="0"></line>
+        <line t="X" i="62" b="0" n="0">  public xfunit_assertion_integer_between_index, &amp;</line>
+        <line t="X" i="63" b="0" n="0">         xfunit_assertion_real_between_index</line>
+        <line t="X" i="64" b="0" n="0"></line>
+        <line t="X" i="65" b="0" n="0">  public xfunit_assertion_integer_greater_index, &amp;</line>
+        <line t="X" i="66" b="0" n="0">         xfunit_assertion_real_greater_index</line>
+        <line t="X" i="67" b="0" n="0"></line>
+        <line t="X" i="68" b="0" n="0">  public xfunit_assertion_integer_less_index, &amp;</line>
+        <line t="X" i="69" b="0" n="0">         xfunit_assertion_real_less_index</line>
+        <line t="X" i="70" b="0" n="0"></line>
+        <line t="X" i="71" b="0" n="0">  public xfunit_assertion_array_integer_index, &amp;</line>
+        <line t="X" i="72" b="0" n="0">         xfunit_assertion_array_real_index, &amp;</line>
+        <line t="X" i="73" b="0" n="0">         xfunit_assertion_array_complex_index, &amp;</line>
+        <line t="X" i="74" b="0" n="0">         xfunit_assertion_array_character_index, &amp;</line>
+        <line t="X" i="75" b="0" n="0">         xfunit_assertion_array_string_index, &amp;</line>
+        <line t="X" i="76" b="0" n="0">         xfunit_assertion_array_character_nocase_index, &amp;</line>
+        <line t="X" i="77" b="0" n="0">         xfunit_assertion_array_string_nocase_index, &amp;</line>
+        <line t="X" i="78" b="0" n="0">         xfunit_assertion_array_logical_index, &amp;</line>
+        <line t="X" i="79" b="0" n="0">         xfunit_assertion_array_class_index</line>
+        <line t="X" i="80" b="0" n="0"></line>
+        <line t="X" i="81" b="0" n="0">  public xfunit_assertion_array_integer_between_index, &amp;</line>
+        <line t="X" i="82" b="0" n="0">         xfunit_assertion_array_real_between_index</line>
+        <line t="X" i="83" b="0" n="0"></line>
+        <line t="X" i="84" b="0" n="0">  public xfunit_assertion_array_integer_greater_index, &amp;</line>
+        <line t="X" i="85" b="0" n="0">         xfunit_assertion_array_real_greater_index</line>
+        <line t="X" i="86" b="0" n="0"></line>
+        <line t="X" i="87" b="0" n="0">  public xfunit_assertion_array_integer_less_index, &amp;</line>
+        <line t="X" i="88" b="0" n="0">         xfunit_assertion_array_real_less_index</line>
+        <line t="X" i="89" b="0" n="0"></line>
+        <line t="X" i="90" b="0" n="0">  public xfunit_assertion_matrix_integer_index, &amp;</line>
+        <line t="X" i="91" b="0" n="0">         xfunit_assertion_matrix_real_index, &amp;</line>
+        <line t="X" i="92" b="0" n="0">         xfunit_assertion_matrix_class_index</line>
+        <line t="X" i="93" b="0" n="0"></line>
+        <line t="X" i="94" b="0" n="0">  public xfunit_assertion_files_index</line>
+        <line t="X" i="95" b="0" n="0"></line>
+        <line t="X" i="96" b="0" n="0">  public xfunit_assertion_character_match_exact, &amp;</line>
+        <line t="X" i="97" b="0" n="0">         xfunit_assertion_character_match_global, &amp;</line>
+        <line t="X" i="98" b="0" n="0">         xfunit_assertion_character_match_regexp</line>
+        <line t="X" i="99" b="0" n="0"></line>
+        <line t="X" i="100" b="0" n="0">  public xfunit_assertion_string_match_exact, &amp;</line>
+        <line t="X" i="101" b="0" n="0">         xfunit_assertion_string_match_global, &amp;</line>
+        <line t="X" i="102" b="0" n="0">         xfunit_assertion_string_match_regexp</line>
+        <line t="X" i="103" b="0" n="0"></line>
+        <line t="X" i="104" b="0" n="0">  public xfunit_assertion_is_none, &amp;</line>
+        <line t="X" i="105" b="0" n="0">         xfunit_assertion_is_pass, &amp;</line>
+        <line t="X" i="106" b="0" n="0">         xfunit_assertion_is_fail</line>
+        <line t="X" i="107" b="0" n="0"></line>
+        <line t="X" i="108" b="0" n="0">  public xfunit_real_scale</line>
+        <line t="X" i="109" b="0" n="0"></line>
+        <line t="C" i="110" b="0" n="0">!---End of public/private declarations------------------------------------------</line>
+        <line t="C" i="111" b="0" n="0"></line>
+        <line t="C" i="112" b="0" n="0">!---Declaration of module variables---------------------------------------------</line>
+        <line t="C" i="113" b="0" n="0"></line>
+        <line t="C" i="114" b="0" n="0">! Assertion type enumeration</line>
+        <line t="X" i="115" b="0" n="0">  integer, parameter :: xfunit_assertion_none_index                   =  0</line>
+        <line t="X" i="116" b="0" n="0"></line>
+        <line t="X" i="117" b="0" n="0">  integer, parameter :: xfunit_assertion_integer_index                =  1</line>
+        <line t="X" i="118" b="0" n="0">  integer, parameter :: xfunit_assertion_real_index                   =  2</line>
+        <line t="X" i="119" b="0" n="0">  integer, parameter :: xfunit_assertion_complex_index                =  3</line>
+        <line t="X" i="120" b="0" n="0">  integer, parameter :: xfunit_assertion_character_index              =  4</line>
+        <line t="X" i="121" b="0" n="0">  integer, parameter :: xfunit_assertion_string_index                 =  5</line>
+        <line t="X" i="122" b="0" n="0">  integer, parameter :: xfunit_assertion_character_nocase_index       =  6</line>
+        <line t="X" i="123" b="0" n="0">  integer, parameter :: xfunit_assertion_string_nocase_index          =  7</line>
+        <line t="X" i="124" b="0" n="0">  integer, parameter :: xfunit_assertion_logical_index                =  8</line>
+        <line t="X" i="125" b="0" n="0">  integer, parameter :: xfunit_assertion_class_index                  =  9</line>
+        <line t="X" i="126" b="0" n="0"></line>
+        <line t="X" i="127" b="0" n="0">  integer, parameter :: xfunit_assertion_pass_index                   = 10</line>
+        <line t="X" i="128" b="0" n="0">  integer, parameter :: xfunit_assertion_fail_index                   = 11</line>
+        <line t="X" i="129" b="0" n="0"></line>
+        <line t="X" i="130" b="0" n="0">  integer, parameter :: xfunit_assertion_integer_between_index        = 12</line>
+        <line t="X" i="131" b="0" n="0">  integer, parameter :: xfunit_assertion_real_between_index           = 13</line>
+        <line t="X" i="132" b="0" n="0"></line>
+        <line t="X" i="133" b="0" n="0">  integer, parameter :: xfunit_assertion_integer_greater_index        = 14</line>
+        <line t="X" i="134" b="0" n="0">  integer, parameter :: xfunit_assertion_real_greater_index           = 15</line>
+        <line t="X" i="135" b="0" n="0"></line>
+        <line t="X" i="136" b="0" n="0">  integer, parameter :: xfunit_assertion_integer_less_index           = 16</line>
+        <line t="X" i="137" b="0" n="0">  integer, parameter :: xfunit_assertion_real_less_index              = 17</line>
+        <line t="X" i="138" b="0" n="0"></line>
+        <line t="X" i="139" b="0" n="0">  integer, parameter :: xfunit_assertion_array_integer_index          = 18</line>
+        <line t="X" i="140" b="0" n="0">  integer, parameter :: xfunit_assertion_array_real_index             = 19</line>
+        <line t="X" i="141" b="0" n="0">  integer, parameter :: xfunit_assertion_array_complex_index          = 20</line>
+        <line t="X" i="142" b="0" n="0">  integer, parameter :: xfunit_assertion_array_character_index        = 21</line>
+        <line t="X" i="143" b="0" n="0">  integer, parameter :: xfunit_assertion_array_string_index           = 22</line>
+        <line t="X" i="144" b="0" n="0">  integer, parameter :: xfunit_assertion_array_character_nocase_index = 23</line>
+        <line t="X" i="145" b="0" n="0">  integer, parameter :: xfunit_assertion_array_string_nocase_index    = 24</line>
+        <line t="X" i="146" b="0" n="0">  integer, parameter :: xfunit_assertion_array_logical_index          = 25</line>
+        <line t="X" i="147" b="0" n="0">  integer, parameter :: xfunit_assertion_array_class_index            = 26</line>
+        <line t="X" i="148" b="0" n="0"></line>
+        <line t="X" i="149" b="0" n="0">  integer, parameter :: xfunit_assertion_array_integer_between_index  = 27</line>
+        <line t="X" i="150" b="0" n="0">  integer, parameter :: xfunit_assertion_array_real_between_index     = 28</line>
+        <line t="X" i="151" b="0" n="0"></line>
+        <line t="X" i="152" b="0" n="0">  integer, parameter :: xfunit_assertion_array_integer_greater_index  = 29</line>
+        <line t="X" i="153" b="0" n="0">  integer, parameter :: xfunit_assertion_array_real_greater_index     = 30</line>
+        <line t="X" i="154" b="0" n="0"></line>
+        <line t="X" i="155" b="0" n="0">  integer, parameter :: xfunit_assertion_array_integer_less_index     = 31</line>
+        <line t="X" i="156" b="0" n="0">  integer, parameter :: xfunit_assertion_array_real_less_index        = 32</line>
+        <line t="X" i="157" b="0" n="0"></line>
+        <line t="X" i="158" b="0" n="0">  integer, parameter :: xfunit_assertion_matrix_real_index            = 33</line>
+        <line t="X" i="159" b="0" n="0">  integer, parameter :: xfunit_assertion_matrix_integer_index         = 34</line>
+        <line t="X" i="160" b="0" n="0">  integer, parameter :: xfunit_assertion_matrix_class_index           = 35</line>
+        <line t="X" i="161" b="0" n="0"></line>
+        <line t="X" i="162" b="0" n="0">  integer, parameter :: xfunit_assertion_files_index                  = 36</line>
+        <line t="X" i="163" b="0" n="0"></line>
+        <line t="X" i="164" b="0" n="0"></line>
+        <line t="C" i="165" b="0" n="0">! Assertion type descriptors</line>
+        <line t="X" i="166" b="0" n="0">  character(len=22), dimension(0:xfunit_assertion_files_index), parameter :: xfunit_assertion_name = [ &amp;</line>
+        <line t="X" i="167" b="0" n="0">    '                      ', &amp;         ! none_index                   =  0</line>
+        <line t="X" i="168" b="0" n="0">    'integer               ', &amp;         ! integer_index                =  1</line>
+        <line t="X" i="169" b="0" n="0">    'real                  ', &amp;         ! real_index                   =  2</line>
+        <line t="X" i="170" b="0" n="0">    'complex               ', &amp;         ! complex_index                =  3</line>
+        <line t="X" i="171" b="0" n="0">    'character             ', &amp;         ! character_index              =  4</line>
+        <line t="X" i="172" b="0" n="0">    'string                ', &amp;         ! string_index                 =  5</line>
+        <line t="X" i="173" b="0" n="0">    'character_nocase      ', &amp;         ! character_nocase_index       =  6</line>
+        <line t="X" i="174" b="0" n="0">    'string_nocase         ', &amp;         ! string_nocase_index          =  7</line>
+        <line t="X" i="175" b="0" n="0">    'logical               ', &amp;         ! logical_index                =  8</line>
+        <line t="X" i="176" b="0" n="0">    'class                 ', &amp;         ! class_index                  =  9</line>
+        <line t="X" i="177" b="0" n="0">    'pass                  ', &amp;         ! pass_index                   = 10</line>
+        <line t="X" i="178" b="0" n="0">    'fail                  ', &amp;         ! fail_index                   = 11</line>
+        <line t="X" i="179" b="0" n="0">    'integer_between       ', &amp;         ! integer_between_index        = 12</line>
+        <line t="X" i="180" b="0" n="0">    'real_between          ', &amp;         ! real_between_index           = 13</line>
+        <line t="X" i="181" b="0" n="0">    'integer_greater       ', &amp;         ! integer_greater_index        = 14</line>
+        <line t="X" i="182" b="0" n="0">    'real_greater          ', &amp;         ! real_greater_index           = 15</line>
+        <line t="X" i="183" b="0" n="0">    'integer_less          ', &amp;         ! integer_less_index           = 16</line>
+        <line t="X" i="184" b="0" n="0">    'real_less             ', &amp;         ! real_less_index              = 17</line>
+        <line t="X" i="185" b="0" n="0">    'array_integer         ', &amp;         ! array_integer_index          = 18</line>
+        <line t="X" i="186" b="0" n="0">    'array_real            ', &amp;         ! array_real_index             = 19</line>
+        <line t="X" i="187" b="0" n="0">    'array_complex         ', &amp;         ! array_complex_index          = 20</line>
+        <line t="X" i="188" b="0" n="0">    'array_character       ', &amp;         ! array_character_index        = 21</line>
+        <line t="X" i="189" b="0" n="0">    'array_string          ', &amp;         ! array_string_index           = 22</line>
+        <line t="X" i="190" b="0" n="0">    'array_character_nocase', &amp;         ! array_character_nocase_index = 23</line>
+        <line t="X" i="191" b="0" n="0">    'array_string_nocase   ', &amp;         ! array_string_nocase_index    = 24</line>
+        <line t="X" i="192" b="0" n="0">    'array_logical         ', &amp;         ! array_logical_index          = 25</line>
+        <line t="X" i="193" b="0" n="0">    'array_class           ', &amp;         ! array_class_index            = 26</line>
+        <line t="X" i="194" b="0" n="0">    'array_integer_between ', &amp;         ! array_integer_between_index  = 27</line>
+        <line t="X" i="195" b="0" n="0">    'array_real_between    ', &amp;         ! array_real_between_index     = 28</line>
+        <line t="X" i="196" b="0" n="0">    'array_integer_greater ', &amp;         ! array_integer_greater_index  = 29</line>
+        <line t="X" i="197" b="0" n="0">    'array_real_greater    ', &amp;         ! array_real_greater_index     = 30</line>
+        <line t="X" i="198" b="0" n="0">    'array_integer_less    ', &amp;         ! array_integer_less_index     = 31</line>
+        <line t="X" i="199" b="0" n="0">    'array_real_less       ', &amp;         ! array_real_less_index        = 32</line>
+        <line t="X" i="200" b="0" n="0">    'matrix_real           ', &amp;         ! matrix_real_index            = 33</line>
+        <line t="X" i="201" b="0" n="0">    'matrix_integer        ', &amp;         ! matrix_integer_index         = 34</line>
+        <line t="X" i="202" b="0" n="0">    'matrix_class          ', &amp;         ! matrix_class_index           = 35</line>
+        <line t="X" i="203" b="0" n="0">    'files                 ' ]          ! files_index                  = 36</line>
+        <line t="X" i="204" b="0" n="0"></line>
+        <line t="C" i="205" b="0" n="0">! The character and string matching strategies</line>
+        <line t="X" i="206" b="0" n="0">  integer, parameter :: xfunit_assertion_character_match_exact = 0</line>
+        <line t="X" i="207" b="0" n="0">  integer, parameter :: xfunit_assertion_character_match_global = 1</line>
+        <line t="X" i="208" b="0" n="0">  integer, parameter :: xfunit_assertion_character_match_regexp = 2</line>
+        <line t="X" i="209" b="0" n="0">  integer, parameter :: xfunit_assertion_string_match_exact = xfunit_assertion_character_match_exact</line>
+        <line t="X" i="210" b="0" n="0">  integer, parameter :: xfunit_assertion_string_match_global = xfunit_assertion_character_match_global</line>
+        <line t="X" i="211" b="0" n="0">  integer, parameter :: xfunit_assertion_string_match_regexp = xfunit_assertion_character_match_regexp</line>
+        <line t="X" i="212" b="0" n="0"></line>
+        <line t="C" i="213" b="0" n="0">! Assertion status enumeration</line>
+        <line t="X" i="214" b="0" n="0">  integer, parameter :: xfunit_assertion_is_none = 0</line>
+        <line t="X" i="215" b="0" n="0">  integer, parameter :: xfunit_assertion_is_pass = 1</line>
+        <line t="X" i="216" b="0" n="0">  integer, parameter :: xfunit_assertion_is_fail = 2</line>
+        <line t="X" i="217" b="0" n="0"></line>
+        <line t="C" i="218" b="0" n="0">! Assertion status descriptors</line>
+        <line t="X" i="219" b="0" n="0">  character(len=4), dimension(0:2), parameter :: xfunit_assertion_status = &amp;</line>
+        <line t="X" i="220" b="0" n="0">    [ 'none', 'pass', 'fail' ]</line>
+        <line t="X" i="221" b="0" n="0"></line>
+        <line t="C" i="222" b="0" n="0">! Scale factor for default real comparison (multiplies corresponding epsilon)</line>
+        <line t="X" i="223" b="0" n="0">  real, parameter :: xfunit_real_scale = 100.0</line>
+        <line t="X" i="224" b="0" n="0"></line>
+        <line t="C" i="225" b="0" n="0">! The assertion general parent type</line>
+        <line t="T" i="226" b="0" n="0">  type, extends(t_object) :: t_xfunit_assertion</line>
+        <line t="X" i="227" b="0" n="0">    private</line>
+        <line t="X" i="228" b="0" n="0"></line>
+        <line t="C" i="229" b="0" n="0">!     Assertion mame</line>
+        <line t="X" i="230" b="0" n="0">      type(t_string) :: name</line>
+        <line t="X" i="231" b="0" n="0"></line>
+        <line t="C" i="232" b="0" n="0">!     Assertion type</line>
+        <line t="X" i="233" b="0" n="0">      integer :: type = xfunit_assertion_none_index</line>
+        <line t="X" i="234" b="0" n="0"></line>
+        <line t="C" i="235" b="0" n="0">!     Assertion status</line>
+        <line t="X" i="236" b="0" n="0">      integer :: status = xfunit_assertion_is_none</line>
+        <line t="X" i="237" b="0" n="0"></line>
+        <line t="C" i="238" b="0" n="0">!     Error message</line>
+        <line t="X" i="239" b="0" n="0">      type(t_msg) :: msg</line>
+        <line t="X" i="240" b="0" n="0"></line>
+        <line t="X" i="241" b="0" n="0">    contains</line>
+        <line t="X" i="242" b="0" n="0"></line>
+        <line t="C" i="243" b="0" n="0">!     Getters and setters</line>
+        <line t="X" i="244" b="0" n="0">      procedure :: get_name =&gt; xfunit_assertion_get_name</line>
+        <line t="X" i="245" b="0" n="0">      procedure :: set_name =&gt; xfunit_assertion_set_name</line>
+        <line t="X" i="246" b="0" n="0">      procedure :: get_type =&gt; xfunit_assertion_get_type</line>
+        <line t="X" i="247" b="0" n="0">      procedure :: set_type =&gt; xfunit_assertion_set_type</line>
+        <line t="X" i="248" b="0" n="0">      procedure :: get_status =&gt; xfunit_assertion_get_status</line>
+        <line t="X" i="249" b="0" n="0">      procedure :: set_status =&gt; xfunit_assertion_set_status</line>
+        <line t="X" i="250" b="0" n="0"></line>
+        <line t="C" i="251" b="0" n="0">!     Interface (deferred) defintion for XML serialization</line>
+        <line t="X" i="252" b="0" n="0">      procedure :: write_xml_start_tag =&gt; xfunit_assertion_write_start_tag</line>
+        <line t="X" i="253" b="0" n="0">      procedure :: write_xml =&gt; xfunit_assertion_write_xml</line>
+        <line t="X" i="254" b="0" n="0">      procedure, nopass :: write_xml_end_tag =&gt; xfunit_assertion_write_end_tag</line>
+        <line t="X" i="255" b="0" n="0"></line>
+        <line t="C" i="256" b="0" n="0">!     Interface (deferred) defintion for text serialization</line>
+        <line t="X" i="257" b="0" n="0">      procedure :: write_header =&gt; xfunit_assertion_write_header</line>
+        <line t="X" i="258" b="0" n="0">      procedure :: write =&gt; xfunit_assertion_write</line>
+        <line t="X" i="259" b="0" n="0">      procedure, nopass :: write_footer =&gt; xfunit_assertion_write_footer</line>
+        <line t="X" i="260" b="0" n="0"></line>
+        <line t="C" i="261" b="0" n="0">!     Assertion verification</line>
+        <line t="X" i="262" b="0" n="0">      procedure :: is_passed =&gt; xfunit_assertion_is_passed</line>
+        <line t="X" i="263" b="0" n="0"></line>
+        <line t="C" i="264" b="0" n="0">!     Assignment</line>
+        <line t="X" i="265" b="0" n="0">      generic :: assignment(=) =&gt; xfunit_assertion_assign</line>
+        <line t="X" i="266" b="0" n="0">      procedure :: xfunit_assertion_assign</line>
+        <line t="X" i="267" b="0" n="0"></line>
+        <line t="C" i="268" b="0" n="0">!     Operator interfaces (to allow inclusion in dyanmic containers)</line>
+        <line t="X" i="269" b="0" n="0">      generic :: operator(==) =&gt; xfunit_assertion_equals</line>
+        <line t="X" i="270" b="0" n="0">      procedure, private :: xfunit_assertion_equals</line>
+        <line t="X" i="271" b="0" n="0">      generic :: operator(&gt;)  =&gt; xfunit_assertion_greater</line>
+        <line t="X" i="272" b="0" n="0">      procedure, private :: xfunit_assertion_greater</line>
+        <line t="X" i="273" b="0" n="0">      generic :: operator(&lt;)  =&gt; xfunit_assertion_less</line>
+        <line t="X" i="274" b="0" n="0">      procedure, private :: xfunit_assertion_less</line>
+        <line t="X" i="275" b="0" n="0"></line>
+        <line t="C" i="276" b="0" n="0">!     Error handling</line>
+        <line t="X" i="277" b="0" n="0">      procedure :: on_error =&gt; xfunit_assertion_on_error</line>
+        <line t="X" i="278" b="0" n="0">      procedure :: get_error =&gt; xfunit_assertion_get_error</line>
+        <line t="X" i="279" b="0" n="0">      procedure :: set_error =&gt; xfunit_assertion_set_error</line>
+        <line t="X" i="280" b="0" n="0"></line>
+        <line t="T" i="281" b="0" n="0">  end type t_xfunit_assertion</line>
+        <line t="T" i="282" b="0" n="0"></line>
+        <line t="C" i="283" b="0" n="0">!---End of declaration of module variables--------------------------------------</line>
+        <line t="C" i="284" b="0" n="0"></line>
+        <line t="X" i="285" b="0" n="0">contains</line>
+        <line t="X" i="286" b="0" n="0"></line>
+        <line t="C" i="287" b="0" n="0">! General constructor</line>
+        <line k="xfunit_assertion" t="F" i="288" b="1" n="1">pure function xfunit_assertion( name, type, status ) result(res)</line>
+        <line t="F" i="289" b="1" n="1"></line>
+        <line t="C" i="290" b="1" n="1">! The assertion name</line>
+        <line t="X" i="291" b="1" n="1">  character(len=*), intent(in) :: name</line>
+        <line t="X" i="292" b="1" n="1"></line>
+        <line t="C" i="293" b="1" n="1">! The assertion type</line>
+        <line t="X" i="294" b="1" n="1">  integer, intent(in) :: type</line>
+        <line t="X" i="295" b="1" n="1"></line>
+        <line t="C" i="296" b="1" n="1">! The assertion evaluation status</line>
+        <line t="X" i="297" b="1" n="1">  integer, intent(in) :: status</line>
+        <line t="X" i="298" b="1" n="1"></line>
+        <line t="C" i="299" b="1" n="1">! The assertion</line>
+        <line t="X" i="300" b="1" n="1">  type(t_xfunit_assertion) :: res</line>
+        <line t="X" i="301" b="1" n="1"></line>
+        <line t="C" i="302" b="1" n="1">! Store the assertion information</line>
+        <line t="X" i="303" b="1" n="1">  res%name = name</line>
+        <line t="X" i="304" b="1" n="1">  res%type = type</line>
+        <line t="X" i="305" b="1" n="1">  res%status = status</line>
+        <line t="X" i="306" b="1" n="1"></line>
+        <line t="EF" i="307" b="1" n="1">end function xfunit_assertion</line>
+        <line t="EF" i="308" b="1" n="1"></line>
+        <line t="EF" i="309" b="1" n="1"></line>
+        <line t="C" i="310" b="1" n="1">! Serialize in XML (default in the base class)</line>
+        <line k="xfunit_assertion_write_xml" t="S" i="311" b="1" n="1">subroutine xfunit_assertion_write_xml( this, xml )</line>
+        <line t="S" i="312" b="1" n="1"></line>
+        <line t="C" i="313" b="1" n="1">! The assertion</line>
+        <line t="X" i="314" b="1" n="1">  class(t_xfunit_assertion), intent(in) :: this</line>
+        <line t="X" i="315" b="1" n="1"></line>
+        <line t="C" i="316" b="1" n="1">! The XML context structure</line>
+        <line t="X" i="317" b="1" n="1">  type(t_xml_writer), intent(inout) :: xml</line>
+        <line t="X" i="318" b="1" n="1"></line>
+        <line t="C" i="319" b="1" n="1">! Local variables</line>
+        <line t="X" i="320" b="1" n="1">  type(t_xml_attribute), dimension(2) :: attr</line>
+        <line t="X" i="321" b="1" n="1"></line>
+        <line t="C" i="322" b="1" n="1">! Serialize empty tag</line>
+        <line t="X" i="323" b="1" n="1">  attr(1) = xml_attribute( 'name', this%name )</line>
+        <line t="X" i="324" b="1" n="1">  attr(2) = xml_attribute( 'type', xfunit_assertion_name(this%type) )</line>
+        <line t="X" i="325" b="1" n="1">  call xml%write_terminal( 'assertion', attr=attr )</line>
+        <line t="X" i="326" b="1" n="1"></line>
+        <line t="ES" i="327" b="1" n="1">end subroutine xfunit_assertion_write_xml</line>
+        <line t="ES" i="328" b="1" n="1"></line>
+        <line t="ES" i="329" b="1" n="1"></line>
+        <line t="C" i="330" b="1" n="1">! Serialize in plain text (default in the base class)</line>
+        <line k="xfunit_assertion_write" t="S" i="331" b="1" n="1">subroutine xfunit_assertion_write( this, unit )</line>
+        <line t="S" i="332" b="1" n="1"></line>
+        <line t="C" i="333" b="1" n="1">! The assertion</line>
+        <line t="X" i="334" b="1" n="1">  class(t_xfunit_assertion), intent(in) :: this</line>
+        <line t="X" i="335" b="1" n="1"></line>
+        <line t="C" i="336" b="1" n="1">! The open fortran unit</line>
+        <line t="X" i="337" b="1" n="1">  integer, intent(in) :: unit</line>
+        <line t="X" i="338" b="1" n="1"></line>
+        <line t="C" i="339" b="1" n="1">! Write default message</line>
+        <line t="X" i="340" b="1" n="1">  write(unit,'(a,a,"(",a,")")') 'Not implemented for assertion: ', &amp;</line>
+        <line t="X" i="341" b="1" n="1">                                this%name%character(), &amp;</line>
+        <line t="X" i="342" b="1" n="1">                                xfunit_assertion_name(this%type)</line>
+        <line t="X" i="343" b="1" n="1"></line>
+        <line t="ES" i="344" b="1" n="1">end subroutine xfunit_assertion_write</line>
+        <line t="ES" i="345" b="1" n="1"></line>
+        <line t="ES" i="346" b="1" n="1"></line>
+        <line t="C" i="347" b="1" n="1">! Serialize in XML the start common section of the assertion</line>
+        <line k="xfunit_assertion_write_start_tag" t="S" i="348" b="1" n="1">subroutine xfunit_assertion_write_start_tag( this, xml )</line>
+        <line t="S" i="349" b="1" n="1"></line>
+        <line t="C" i="350" b="1" n="1">! The assertion</line>
+        <line t="X" i="351" b="1" n="1">  class(t_xfunit_assertion), intent(in) :: this</line>
+        <line t="X" i="352" b="1" n="1"></line>
+        <line t="C" i="353" b="1" n="1">! The XML context structure</line>
+        <line t="X" i="354" b="1" n="1">  type(t_xml_writer), intent(inout) :: xml</line>
+        <line t="X" i="355" b="1" n="1"></line>
+        <line t="C" i="356" b="1" n="1">! Local variables</line>
+        <line t="X" i="357" b="1" n="1">  type(t_xml_attribute), dimension(2) :: attr</line>
+        <line t="X" i="358" b="1" n="1"></line>
+        <line t="C" i="359" b="1" n="1">! Serialize start tag</line>
+        <line t="X" i="360" b="1" n="1">  attr(1) = xml_attribute( 'name', this%name )</line>
+        <line t="X" i="361" b="1" n="1">  attr(2) = xml_attribute( 'type', xfunit_assertion_name(this%type) )</line>
+        <line t="X" i="362" b="1" n="1">  call xml%write_start_tag( 'assertion', attr=attr, newline=.true. )</line>
+        <line t="X" i="363" b="1" n="1">  call xml%write_terminal( 'status', trim(xfunit_assertion_status(this%status)) )</line>
+        <line t="X" i="364" b="1" n="1"></line>
+        <line t="ES" i="365" b="1" n="1">end subroutine xfunit_assertion_write_start_tag</line>
+        <line t="ES" i="366" b="1" n="1"></line>
+        <line t="ES" i="367" b="1" n="1"></line>
+        <line t="C" i="368" b="1" n="1">! Serialize in XML the end common section of the assertion</line>
+        <line k="xfunit_assertion_write_end_tag" t="S" i="369" b="1" n="1">subroutine xfunit_assertion_write_end_tag( xml )</line>
+        <line t="S" i="370" b="1" n="1"></line>
+        <line t="C" i="371" b="1" n="1">! The XML context structure</line>
+        <line t="X" i="372" b="1" n="1">  type(t_xml_writer), intent(inout) :: xml</line>
+        <line t="X" i="373" b="1" n="1"></line>
+        <line t="C" i="374" b="1" n="1">! Serialize end tag</line>
+        <line t="X" i="375" b="1" n="1">  call xml%write_end_tag( 'assertion' )</line>
+        <line t="X" i="376" b="1" n="1"></line>
+        <line t="ES" i="377" b="1" n="1">end subroutine xfunit_assertion_write_end_tag</line>
+        <line t="ES" i="378" b="1" n="1"></line>
+        <line t="ES" i="379" b="1" n="1"></line>
+        <line t="C" i="380" b="1" n="1">! Serialize in plain text the start common section of the assertion</line>
+        <line k="xfunit_assertion_write_header" t="S" i="381" b="1" n="1">subroutine xfunit_assertion_write_header( this, unit )</line>
+        <line t="S" i="382" b="1" n="1"></line>
+        <line t="C" i="383" b="1" n="1">! The assertion</line>
+        <line t="X" i="384" b="1" n="1">  class(t_xfunit_assertion), intent(in) :: this</line>
+        <line t="X" i="385" b="1" n="1"></line>
+        <line t="C" i="386" b="1" n="1">! The fortran open unit</line>
+        <line t="X" i="387" b="1" n="1">  integer, intent(in) :: unit</line>
+        <line t="X" i="388" b="1" n="1"></line>
+        <line t="C" i="389" b="1" n="1">! Local variables</line>
+        <line t="X" i="390" b="1" n="1">  type(t_xml_encoder) :: encoder</line>
+        <line t="X" i="391" b="1" n="1">  character(len=:), allocatable :: text</line>
+        <line t="X" i="392" b="1" n="1"></line>
+        <line t="C" i="393" b="1" n="1">! Initialise encoder</line>
+        <line t="X" i="394" b="1" n="1">  encoder = xml_encoder()</line>
+        <line t="X" i="395" b="1" n="1"></line>
+        <line t="C" i="396" b="1" n="1">! Serialize header</line>
+        <line t="X" i="397" b="1" n="1">  text = encoder%encode( this%name%character() )</line>
+        <line t="X" i="398" b="1" n="1">  write( unit, '(a,1x,a)', advance='no' ) 'Assertion name:', trim(text)</line>
+        <line t="X" i="399" b="1" n="1">  write( unit, '(3x,a,1x,a)', advance='no' ) 'type:', xfunit_assertion_name(this%type)</line>
+        <line t="X" i="400" b="1" n="1">  write( unit, '(3x,a,1x,a)' ) 'status:', xfunit_assertion_status(this%status)</line>
+        <line t="X" i="401" b="1" n="1"></line>
+        <line t="ES" i="402" b="1" n="1">end subroutine xfunit_assertion_write_header</line>
+        <line t="ES" i="403" b="1" n="1"></line>
+        <line t="ES" i="404" b="1" n="1"></line>
+        <line t="C" i="405" b="1" n="1">! Serialize in plain text the end common section of the assertion</line>
+        <line k="xfunit_assertion_write_footer" t="S" i="406" b="1" n="1">subroutine xfunit_assertion_write_footer( unit )</line>
+        <line t="S" i="407" b="1" n="1"></line>
+        <line t="C" i="408" b="1" n="1">! The fortran open unit</line>
+        <line t="X" i="409" b="1" n="1">  integer, intent(in) :: unit</line>
+        <line t="X" i="410" b="1" n="1"></line>
+        <line t="C" i="411" b="1" n="1">! Serialize footer</line>
+        <line t="X" i="412" b="1" n="1">  write( unit, '(a)' ) repeat('-',78)</line>
+        <line t="X" i="413" b="1" n="1"></line>
+        <line t="ES" i="414" b="1" n="1">end subroutine xfunit_assertion_write_footer</line>
+        <line t="ES" i="415" b="1" n="1"></line>
+        <line t="ES" i="416" b="1" n="1"></line>
+        <line t="C" i="417" b="1" n="1">! Check assertion pass status</line>
+        <line k="xfunit_assertion_is_passed" t="F" i="418" b="1" n="1">elemental function xfunit_assertion_is_passed( this ) result(res)</line>
+        <line t="F" i="419" b="1" n="1"></line>
+        <line t="C" i="420" b="1" n="1">! The assertion</line>
+        <line t="X" i="421" b="1" n="1">  class(t_xfunit_assertion), intent(in) :: this</line>
+        <line t="X" i="422" b="1" n="1"></line>
+        <line t="C" i="423" b="1" n="1">! The assertion pass status</line>
+        <line t="X" i="424" b="1" n="1">  logical :: res</line>
+        <line t="X" i="425" b="1" n="1"></line>
+        <line t="C" i="426" b="1" n="1">! Get the pass status</line>
+        <line t="X" i="427" b="1" n="1">  res = ( this%status == xfunit_assertion_is_pass )</line>
+        <line t="X" i="428" b="1" n="1"></line>
+        <line t="EF" i="429" b="1" n="1">end function xfunit_assertion_is_passed</line>
+        <line t="EF" i="430" b="1" n="1"></line>
+        <line t="EF" i="431" b="1" n="1"></line>
+        <line t="C" i="432" b="1" n="1">! Assignment</line>
+        <line k="xfunit_assertion_assign" t="S" i="433" b="1" n="1">impure elemental subroutine xfunit_assertion_assign( this, other )</line>
+        <line t="S" i="434" b="1" n="1"></line>
+        <line t="C" i="435" b="1" n="1">! The target assertion</line>
+        <line t="X" i="436" b="1" n="1">  class(t_xfunit_assertion), intent(inout) :: this</line>
+        <line t="X" i="437" b="1" n="1"></line>
+        <line t="C" i="438" b="1" n="1">! The source assertion</line>
+        <line t="X" i="439" b="1" n="1">  class(t_xfunit_assertion), intent(in) :: other</line>
+        <line t="X" i="440" b="1" n="1"></line>
+        <line t="C" i="441" b="1" n="1">! Assign elements</line>
+        <line t="X" i="442" b="1" n="1">  this%name = other%name</line>
+        <line t="X" i="443" b="1" n="1">  this%type = other%type</line>
+        <line t="X" i="444" b="1" n="1">  this%status = other%status</line>
+        <line t="X" i="445" b="1" n="1">  this%msg = other%msg</line>
+        <line t="X" i="446" b="1" n="1"></line>
+        <line t="ES" i="447" b="1" n="1">end subroutine xfunit_assertion_assign</line>
+        <line t="ES" i="448" b="1" n="1"></line>
+        <line t="ES" i="449" b="1" n="1"></line>
+        <line t="C" i="450" b="1" n="1">! Operators (to allow inclusion in dyanmic containers)</line>
+        <line t="C" i="451" b="1" n="1"></line>
+        <line t="C" i="452" b="1" n="1">! Equality operator</line>
+        <line k="xfunit_assertion_equals" t="F" i="453" b="1" n="1">elemental function xfunit_assertion_equals( left, right ) result(res)</line>
+        <line t="F" i="454" b="1" n="1"></line>
+        <line t="C" i="455" b="1" n="1">! Left operand</line>
+        <line t="X" i="456" b="1" n="1">  class(t_xfunit_assertion), intent(in) :: left</line>
+        <line t="X" i="457" b="1" n="1"></line>
+        <line t="C" i="458" b="1" n="1">! Right operand</line>
+        <line t="X" i="459" b="1" n="1">  class(t_xfunit_assertion), intent(in) :: right</line>
+        <line t="X" i="460" b="1" n="1"></line>
+        <line t="C" i="461" b="1" n="1">! Operation result</line>
+        <line t="X" i="462" b="1" n="1">  logical :: res</line>
+        <line t="X" i="463" b="1" n="1"></line>
+        <line t="C" i="464" b="1" n="1">! Compute operation result</line>
+        <line t="X" i="465" b="1" n="1">  res = (left%type == right%type)</line>
+        <line t="X" i="466" b="1" n="1"></line>
+        <line t="EF" i="467" b="1" n="1">end function xfunit_assertion_equals</line>
+        <line t="EF" i="468" b="1" n="1"></line>
+        <line t="EF" i="469" b="1" n="1"></line>
+        <line t="C" i="470" b="1" n="1">! Less than operator</line>
+        <line k="xfunit_assertion_less" t="F" i="471" b="1" n="1">elemental function xfunit_assertion_less( left, right ) result(res)</line>
+        <line t="F" i="472" b="1" n="1"></line>
+        <line t="C" i="473" b="1" n="1">! Left operand</line>
+        <line t="X" i="474" b="1" n="1">  class(t_xfunit_assertion), intent(in) :: left</line>
+        <line t="X" i="475" b="1" n="1"></line>
+        <line t="C" i="476" b="1" n="1">! Right operand</line>
+        <line t="X" i="477" b="1" n="1">  class(t_xfunit_assertion), intent(in) :: right</line>
+        <line t="X" i="478" b="1" n="1"></line>
+        <line t="C" i="479" b="1" n="1">! Operation result</line>
+        <line t="X" i="480" b="1" n="1">  logical :: res</line>
+        <line t="X" i="481" b="1" n="1"></line>
+        <line t="C" i="482" b="1" n="1">! Compute operation result</line>
+        <line t="X" i="483" b="1" n="1">  res = (left%type &lt; right%type)</line>
+        <line t="X" i="484" b="1" n="1"></line>
+        <line t="EF" i="485" b="1" n="1">end function xfunit_assertion_less</line>
+        <line t="EF" i="486" b="1" n="1"></line>
+        <line t="C" i="487" b="1" n="1">! Greater than operator</line>
+        <line k="xfunit_assertion_greater" t="F" i="488" b="1" n="1">elemental function xfunit_assertion_greater( left, right ) result(res)</line>
+        <line t="F" i="489" b="1" n="1"></line>
+        <line t="C" i="490" b="1" n="1">! Left operand</line>
+        <line t="X" i="491" b="1" n="1">  class(t_xfunit_assertion), intent(in) :: left</line>
+        <line t="X" i="492" b="1" n="1"></line>
+        <line t="C" i="493" b="1" n="1">! Right operand</line>
+        <line t="X" i="494" b="1" n="1">  class(t_xfunit_assertion), intent(in) :: right</line>
+        <line t="X" i="495" b="1" n="1"></line>
+        <line t="C" i="496" b="1" n="1">! Operation result</line>
+        <line t="X" i="497" b="1" n="1">  logical :: res</line>
+        <line t="X" i="498" b="1" n="1"></line>
+        <line t="C" i="499" b="1" n="1">! Compute operation result</line>
+        <line t="X" i="500" b="1" n="1">  res = (left%type &gt; right%type)</line>
+        <line t="X" i="501" b="1" n="1"></line>
+        <line t="EF" i="502" b="1" n="1">end function xfunit_assertion_greater</line>
+        <line t="EF" i="503" b="1" n="1"></line>
+        <line t="EF" i="504" b="1" n="1"></line>
+        <line t="C" i="505" b="1" n="1">! Error handling check</line>
+        <line k="xfunit_assertion_on_error" t="F" i="506" b="1" n="1">pure function xfunit_assertion_on_error( this ) result(res)</line>
+        <line t="F" i="507" b="1" n="1"></line>
+        <line t="C" i="508" b="1" n="1">! Calling object</line>
+        <line t="X" i="509" b="1" n="1">  class(t_xfunit_assertion), intent(in) :: this</line>
+        <line t="X" i="510" b="1" n="1"></line>
+        <line t="C" i="511" b="1" n="1">! Error status</line>
+        <line t="X" i="512" b="1" n="1">  logical :: res</line>
+        <line t="X" i="513" b="1" n="1"></line>
+        <line t="C" i="514" b="1" n="1">! Get error status</line>
+        <line t="X" i="515" b="1" n="1">  res = (this%msg%get_code() /= 0)</line>
+        <line t="X" i="516" b="1" n="1"></line>
+        <line t="EF" i="517" b="1" n="1">end function xfunit_assertion_on_error</line>
+        <line t="EF" i="518" b="1" n="1"></line>
+        <line t="EF" i="519" b="1" n="1"></line>
+        <line t="C" i="520" b="1" n="1">! Getter for error structure</line>
+        <line k="xfunit_assertion_get_error" t="F" i="521" b="1" n="1">pure function xfunit_assertion_get_error( this ) result(res)</line>
+        <line t="F" i="522" b="1" n="1"></line>
+        <line t="C" i="523" b="1" n="1">! Calling object</line>
+        <line t="X" i="524" b="1" n="1">  class(t_xfunit_assertion), intent(in) :: this</line>
+        <line t="X" i="525" b="1" n="1"></line>
+        <line t="C" i="526" b="1" n="1">! Error structure</line>
+        <line t="X" i="527" b="1" n="1">  type(t_msg) :: res</line>
+        <line t="X" i="528" b="1" n="1"></line>
+        <line t="C" i="529" b="1" n="1">! Return the error structure</line>
+        <line t="X" i="530" b="1" n="1">  res = this%msg</line>
+        <line t="X" i="531" b="1" n="1"></line>
+        <line t="EF" i="532" b="1" n="1">end function xfunit_assertion_get_error</line>
+        <line t="EF" i="533" b="1" n="1"></line>
+        <line t="C" i="534" b="1" n="1">! Setter for error structure</line>
+        <line k="xfunit_assertion_set_error" t="S" i="535" b="1" n="1">pure subroutine xfunit_assertion_set_error( this, msg )</line>
+        <line t="S" i="536" b="1" n="1"></line>
+        <line t="C" i="537" b="1" n="1">! Calling object</line>
+        <line t="X" i="538" b="1" n="1">  class(t_xfunit_assertion), intent(inout) :: this</line>
+        <line t="X" i="539" b="1" n="1"></line>
+        <line t="C" i="540" b="1" n="1">! Error structure</line>
+        <line t="X" i="541" b="1" n="1">  type(t_msg), intent(in) :: msg</line>
+        <line t="X" i="542" b="1" n="1"></line>
+        <line t="C" i="543" b="1" n="1">! Set the error structure</line>
+        <line t="X" i="544" b="1" n="1">  this%msg = msg</line>
+        <line t="X" i="545" b="1" n="1"></line>
+        <line t="ES" i="546" b="1" n="1">end subroutine xfunit_assertion_set_error</line>
+        <line t="ES" i="547" b="1" n="1"></line>
+        <line t="ES" i="548" b="1" n="1"></line>
+        <line t="C" i="549" b="1" n="1">! Getter for name</line>
+        <line k="xfunit_assertion_get_name" t="F" i="550" b="1" n="1">pure function xfunit_assertion_get_name( this ) result(res)</line>
+        <line t="F" i="551" b="1" n="1"></line>
+        <line t="C" i="552" b="1" n="1">! Calling object</line>
+        <line t="X" i="553" b="1" n="1">  class(t_xfunit_assertion), intent(in) :: this</line>
+        <line t="X" i="554" b="1" n="1"></line>
+        <line t="C" i="555" b="1" n="1">! Return value</line>
+        <line t="X" i="556" b="1" n="1">  type(t_string) :: res</line>
+        <line t="X" i="557" b="1" n="1"></line>
+        <line t="C" i="558" b="1" n="1">! Set the return value</line>
+        <line t="X" i="559" b="1" n="1">  res = this%name</line>
+        <line t="X" i="560" b="1" n="1"></line>
+        <line t="EF" i="561" b="1" n="1">end function xfunit_assertion_get_name</line>
+        <line t="EF" i="562" b="1" n="1"></line>
+        <line t="EF" i="563" b="1" n="1"></line>
+        <line t="C" i="564" b="1" n="1">! Setter for name</line>
+        <line k="xfunit_assertion_set_name" t="S" i="565" b="1" n="1">elemental subroutine xfunit_assertion_set_name( this, name )</line>
+        <line t="S" i="566" b="1" n="1"></line>
+        <line t="C" i="567" b="1" n="1">! Calling object</line>
+        <line t="X" i="568" b="1" n="1">  class(t_xfunit_assertion), intent(inout) :: this</line>
+        <line t="X" i="569" b="1" n="1"></line>
+        <line t="C" i="570" b="1" n="1">! Value to set</line>
+        <line t="X" i="571" b="1" n="1">  type(t_string), intent(in) :: name</line>
+        <line t="X" i="572" b="1" n="1"></line>
+        <line t="C" i="573" b="1" n="1">! Store the input value</line>
+        <line t="X" i="574" b="1" n="1">  this%name = name</line>
+        <line t="X" i="575" b="1" n="1"></line>
+        <line t="ES" i="576" b="1" n="1">end subroutine xfunit_assertion_set_name</line>
+        <line t="ES" i="577" b="1" n="1"></line>
+        <line t="ES" i="578" b="1" n="1"></line>
+        <line t="C" i="579" b="1" n="1">! Getter for type</line>
+        <line k="xfunit_assertion_get_type" t="F" i="580" b="1" n="1">elemental function xfunit_assertion_get_type( this ) result(res)</line>
+        <line t="F" i="581" b="1" n="1"></line>
+        <line t="C" i="582" b="1" n="1">! Calling object</line>
+        <line t="X" i="583" b="1" n="1">  class(t_xfunit_assertion), intent(in) :: this</line>
+        <line t="X" i="584" b="1" n="1"></line>
+        <line t="C" i="585" b="1" n="1">! Set the return value</line>
+        <line t="X" i="586" b="1" n="1">  integer :: res</line>
+        <line t="X" i="587" b="1" n="1"></line>
+        <line t="C" i="588" b="1" n="1">! Set the return type</line>
+        <line t="X" i="589" b="1" n="1">  res = this%type</line>
+        <line t="X" i="590" b="1" n="1"></line>
+        <line t="EF" i="591" b="1" n="1">end function xfunit_assertion_get_type</line>
+        <line t="EF" i="592" b="1" n="1"></line>
+        <line t="EF" i="593" b="1" n="1"></line>
+        <line t="C" i="594" b="1" n="1">! Setter for type</line>
+        <line k="xfunit_assertion_set_type" t="S" i="595" b="1" n="1">elemental subroutine xfunit_assertion_set_type( this, type )</line>
+        <line t="S" i="596" b="1" n="1"></line>
+        <line t="C" i="597" b="1" n="1">! Calling object</line>
+        <line t="X" i="598" b="1" n="1">  class(t_xfunit_assertion), intent(inout) :: this</line>
+        <line t="X" i="599" b="1" n="1"></line>
+        <line t="C" i="600" b="1" n="1">! Value to set</line>
+        <line t="X" i="601" b="1" n="1">  integer, intent(in) :: type</line>
+        <line t="X" i="602" b="1" n="1"></line>
+        <line t="C" i="603" b="1" n="1">! Store the input value</line>
+        <line t="X" i="604" b="1" n="1">  this%type = type</line>
+        <line t="X" i="605" b="1" n="1"></line>
+        <line t="ES" i="606" b="1" n="1">end subroutine xfunit_assertion_set_type</line>
+        <line t="ES" i="607" b="1" n="1"></line>
+        <line t="ES" i="608" b="1" n="1"></line>
+        <line t="C" i="609" b="1" n="1">! Getter for status</line>
+        <line k="xfunit_assertion_get_status" t="F" i="610" b="1" n="1">elemental function xfunit_assertion_get_status( this ) result(res)</line>
+        <line t="F" i="611" b="1" n="1"></line>
+        <line t="C" i="612" b="1" n="1">! Calling object</line>
+        <line t="X" i="613" b="1" n="1">  class(t_xfunit_assertion), intent(in) :: this</line>
+        <line t="X" i="614" b="1" n="1"></line>
+        <line t="C" i="615" b="1" n="1">! Set the return value</line>
+        <line t="X" i="616" b="1" n="1">  integer :: res</line>
+        <line t="X" i="617" b="1" n="1"></line>
+        <line t="C" i="618" b="1" n="1">! Set the return value</line>
+        <line t="X" i="619" b="1" n="1">  res = this%status</line>
+        <line t="X" i="620" b="1" n="1"></line>
+        <line t="EF" i="621" b="1" n="1">end function xfunit_assertion_get_status</line>
+        <line t="EF" i="622" b="1" n="1"></line>
+        <line t="EF" i="623" b="1" n="1"></line>
+        <line t="C" i="624" b="1" n="1">! Setter for status</line>
+        <line k="xfunit_assertion_set_status" t="S" i="625" b="1" n="1">elemental subroutine xfunit_assertion_set_status( this, status )</line>
+        <line t="S" i="626" b="1" n="1"></line>
+        <line t="C" i="627" b="1" n="1">! Calling object</line>
+        <line t="X" i="628" b="1" n="1">  class(t_xfunit_assertion), intent(inout) :: this</line>
+        <line t="X" i="629" b="1" n="1"></line>
+        <line t="C" i="630" b="1" n="1">! Value to set</line>
+        <line t="X" i="631" b="1" n="1">  integer, intent(in) :: status</line>
+        <line t="X" i="632" b="1" n="1"></line>
+        <line t="C" i="633" b="1" n="1">! Stre the input value</line>
+        <line t="X" i="634" b="1" n="1">  this%status = status</line>
+        <line t="X" i="635" b="1" n="1"></line>
+        <line t="ES" i="636" b="1" n="1">end subroutine xfunit_assertion_set_status</line>
+        <line t="ES" i="637" b="1" n="1"></line>
+        <line t="M" i="638" b="1" n="1">end module m_xfunit_assertion</line>
+        <line t="M" i="639" b="1" n="1"></line>
+        <line t="M" i="640" b="1" n="1"></line>
+        <line t="M" i="641" b="1" n="1"></line>
+    </code>
+</fmx>

@@ -1,0 +1,1062 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../fmx.xsl"?>
+<fmx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="m_xfunit_suite.f90">
+    <context>
+        <time>2025-03-09T10:39:11</time>
+        <version>1.0.0.1</version>
+        <path>src</path>
+        <path_to_root>../</path_to_root>
+        <project>XFunit</project>
+        <name>m_xfunit_suite.f90</name>
+        <copyright>Copyright © 2020, Fran Martinez Fadrique &lt;Fran.Martinez.Fadrique@gmail.com&gt;</copyright>
+    </context>
+    <units>
+        <unit name="m_xfunit_suite" type="module">
+            <main>
+                <lines>
+                    <source percent="7.87">7</source>
+                    <comments percent="51.69">46</comments>
+                    <empty percent="40.45">36</empty>
+                    <total>89</total>
+                </lines>
+                <complexity>
+                    <minimum>0</minimum>
+                    <maximum>0</maximum>
+                    <average>0.00</average>
+                </complexity>
+                <nesting>
+                    <minimum>0</minimum>
+                    <maximum>0</maximum>
+                    <average>0.00</average>
+                </nesting>
+                <methods>0</methods>
+            </main>
+            <methods>
+                <method name="xfunit_suite_add_unit_test" type="subroutine">
+                    <statistics>
+                        <lines>
+                            <source percent="44.83">13</source>
+                            <comments percent="24.14">7</comments>
+                            <empty percent="31.03">9</empty>
+                            <total>29</total>
+                        </lines>
+                        <complexity>
+                            <minimum>0</minimum>
+                            <maximum>2</maximum>
+                            <average>0.00</average>
+                        </complexity>
+                        <nesting>
+                            <minimum>0</minimum>
+                            <maximum>2</maximum>
+                            <average>0.00</average>
+                        </nesting>
+                    </statistics>
+                </method>
+                <method name="xfunit_suite_assign_xfunit_suite" type="subroutine">
+                    <statistics>
+                        <lines>
+                            <source percent="54.55">12</source>
+                            <comments percent="18.18">4</comments>
+                            <empty percent="27.27">6</empty>
+                            <total>22</total>
+                        </lines>
+                        <complexity>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </complexity>
+                        <nesting>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </nesting>
+                    </statistics>
+                </method>
+                <method name="xfunit_suite_character" type="function">
+                    <statistics>
+                        <lines>
+                            <source percent="43.75">21</source>
+                            <comments percent="27.08">13</comments>
+                            <empty percent="29.17">14</empty>
+                            <total>48</total>
+                        </lines>
+                        <complexity>
+                            <minimum>0</minimum>
+                            <maximum>4</maximum>
+                            <average>0.00</average>
+                        </complexity>
+                        <nesting>
+                            <minimum>0</minimum>
+                            <maximum>2</maximum>
+                            <average>0.00</average>
+                        </nesting>
+                    </statistics>
+                </method>
+                <method name="xfunit_suite_error" type="subroutine">
+                    <statistics>
+                        <lines>
+                            <source percent="33.33">5</source>
+                            <comments percent="26.67">4</comments>
+                            <empty percent="40.00">6</empty>
+                            <total>15</total>
+                        </lines>
+                        <complexity>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </complexity>
+                        <nesting>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </nesting>
+                    </statistics>
+                </method>
+                <method name="xfunit_suite_execute_character" type="subroutine">
+                    <statistics>
+                        <lines>
+                            <source percent="45.45">10</source>
+                            <comments percent="22.73">5</comments>
+                            <empty percent="31.82">7</empty>
+                            <total>22</total>
+                        </lines>
+                        <complexity>
+                            <minimum>0</minimum>
+                            <maximum>2</maximum>
+                            <average>0.00</average>
+                        </complexity>
+                        <nesting>
+                            <minimum>0</minimum>
+                            <maximum>2</maximum>
+                            <average>0.00</average>
+                        </nesting>
+                    </statistics>
+                </method>
+                <method name="xfunit_suite_execute_string" type="subroutine">
+                    <statistics>
+                        <lines>
+                            <source percent="55.71">39</source>
+                            <comments percent="18.57">13</comments>
+                            <empty percent="25.71">18</empty>
+                            <total>70</total>
+                        </lines>
+                        <complexity>
+                            <minimum>0</minimum>
+                            <maximum>11</maximum>
+                            <average>0.00</average>
+                        </complexity>
+                        <nesting>
+                            <minimum>0</minimum>
+                            <maximum>6</maximum>
+                            <average>0.00</average>
+                        </nesting>
+                    </statistics>
+                </method>
+                <method name="xfunit_suite_generate_text_report" type="subroutine">
+                    <statistics>
+                        <lines>
+                            <source percent="53.06">26</source>
+                            <comments percent="20.41">10</comments>
+                            <empty percent="26.53">13</empty>
+                            <total>49</total>
+                        </lines>
+                        <complexity>
+                            <minimum>0</minimum>
+                            <maximum>5</maximum>
+                            <average>0.00</average>
+                        </complexity>
+                        <nesting>
+                            <minimum>0</minimum>
+                            <maximum>4</maximum>
+                            <average>0.00</average>
+                        </nesting>
+                    </statistics>
+                </method>
+                <method name="xfunit_suite_get_annotation" type="function">
+                    <statistics>
+                        <lines>
+                            <source percent="33.33">5</source>
+                            <comments percent="26.67">4</comments>
+                            <empty percent="40.00">6</empty>
+                            <total>15</total>
+                        </lines>
+                        <complexity>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </complexity>
+                        <nesting>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </nesting>
+                    </statistics>
+                </method>
+                <method name="xfunit_suite_get_name" type="function">
+                    <statistics>
+                        <lines>
+                            <source percent="33.33">5</source>
+                            <comments percent="26.67">4</comments>
+                            <empty percent="40.00">6</empty>
+                            <total>15</total>
+                        </lines>
+                        <complexity>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </complexity>
+                        <nesting>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </nesting>
+                    </statistics>
+                </method>
+                <method name="xfunit_suite_get_package" type="function">
+                    <statistics>
+                        <lines>
+                            <source percent="33.33">5</source>
+                            <comments percent="26.67">4</comments>
+                            <empty percent="40.00">6</empty>
+                            <total>15</total>
+                        </lines>
+                        <complexity>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </complexity>
+                        <nesting>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </nesting>
+                    </statistics>
+                </method>
+                <method name="xfunit_suite_get_source" type="function">
+                    <statistics>
+                        <lines>
+                            <source percent="33.33">5</source>
+                            <comments percent="26.67">4</comments>
+                            <empty percent="40.00">6</empty>
+                            <total>15</total>
+                        </lines>
+                        <complexity>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </complexity>
+                        <nesting>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </nesting>
+                    </statistics>
+                </method>
+                <method name="xfunit_suite_is_error" type="function">
+                    <statistics>
+                        <lines>
+                            <source percent="33.33">5</source>
+                            <comments percent="26.67">4</comments>
+                            <empty percent="40.00">6</empty>
+                            <total>15</total>
+                        </lines>
+                        <complexity>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </complexity>
+                        <nesting>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </nesting>
+                    </statistics>
+                </method>
+                <method name="xfunit_suite_string" type="function">
+                    <statistics>
+                        <lines>
+                            <source percent="35.71">10</source>
+                            <comments percent="28.57">8</comments>
+                            <empty percent="35.71">10</empty>
+                            <total>28</total>
+                        </lines>
+                        <complexity>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </complexity>
+                        <nesting>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </nesting>
+                    </statistics>
+                </method>
+                <method name="xfunit_suite_summary" type="subroutine">
+                    <statistics>
+                        <lines>
+                            <source percent="51.85">28</source>
+                            <comments percent="20.37">11</comments>
+                            <empty percent="27.78">15</empty>
+                            <total>54</total>
+                        </lines>
+                        <complexity>
+                            <minimum>0</minimum>
+                            <maximum>5</maximum>
+                            <average>0.00</average>
+                        </complexity>
+                        <nesting>
+                            <minimum>0</minimum>
+                            <maximum>4</maximum>
+                            <average>0.00</average>
+                        </nesting>
+                    </statistics>
+                </method>
+                <method name="xfunit_suite_write_properties_xml" type="subroutine">
+                    <statistics>
+                        <lines>
+                            <source percent="46.34">19</source>
+                            <comments percent="24.39">10</comments>
+                            <empty percent="29.27">12</empty>
+                            <total>41</total>
+                        </lines>
+                        <complexity>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </complexity>
+                        <nesting>
+                            <minimum>0</minimum>
+                            <maximum>1</maximum>
+                            <average>0.00</average>
+                        </nesting>
+                    </statistics>
+                </method>
+                <method name="xfunit_suite_write_xml" type="subroutine">
+                    <statistics>
+                        <lines>
+                            <source percent="45.83">33</source>
+                            <comments percent="25.00">18</comments>
+                            <empty percent="29.17">21</empty>
+                            <total>72</total>
+                        </lines>
+                        <complexity>
+                            <minimum>0</minimum>
+                            <maximum>2</maximum>
+                            <average>0.00</average>
+                        </complexity>
+                        <nesting>
+                            <minimum>0</minimum>
+                            <maximum>2</maximum>
+                            <average>0.00</average>
+                        </nesting>
+                    </statistics>
+                </method>
+            </methods>
+            <statistics>
+                <lines>
+                    <source percent="40.39">248</source>
+                    <comments percent="27.52">169</comments>
+                    <empty percent="32.08">197</empty>
+                    <total>614</total>
+                </lines>
+                <complexity>
+                    <minimum>1</minimum>
+                    <maximum>11</maximum>
+                    <average>2.50</average>
+                </complexity>
+                <nesting>
+                    <minimum>1</minimum>
+                    <maximum>6</maximum>
+                    <average>1.94</average>
+                </nesting>
+                <methods>16</methods>
+            </statistics>
+        </unit>
+    </units>
+    <statistics>
+        <lines>
+            <source percent="40.39">248</source>
+            <comments percent="27.52">169</comments>
+            <empty percent="32.08">197</empty>
+            <total>614</total>
+        </lines>
+        <complexity>
+            <minimum>1</minimum>
+            <maximum>11</maximum>
+            <average>2.50</average>
+        </complexity>
+        <nesting>
+            <minimum>1</minimum>
+            <maximum>6</maximum>
+            <average>1.94</average>
+        </nesting>
+        <methods>16</methods>
+    </statistics>
+    <code>
+        <line t="M" i="1" b="0" n="0">module m_xfunit_suite</line>
+        <line t="M" i="2" b="0" n="0"></line>
+        <line t="C" i="3" b="0" n="0">!-------------------------------------------------------------------------------</line>
+        <line t="C" i="4" b="0" n="0">! Copyright : 2025, Fran Martinez Fadrique &lt;Fran.Martinez.Fadrique@gmail.com&gt;</line>
+        <line t="C" i="5" b="0" n="0">! Project   : Atlantis</line>
+        <line t="C" i="6" b="0" n="0">! Author    : Fran Martinez Fadrique</line>
+        <line t="C" i="7" b="0" n="0">! Language  : Object Oriented Fortran 2018</line>
+        <line t="C" i="8" b="0" n="0">! Synopsis  : Unit tests suite top level implementation and interface</line>
+        <line t="C" i="9" b="0" n="0">! License   : This file is part of XFunit.</line>
+        <line t="C" i="10" b="0" n="0">!</line>
+        <line t="C" i="11" b="0" n="0">!             XFunit is free software: you can redistribute it and/or modify</line>
+        <line t="C" i="12" b="0" n="0">!             it under the terms of the GNU Lesser General Public License as</line>
+        <line t="C" i="13" b="0" n="0">!             published by the Free Software Foundation, either version 3 of</line>
+        <line t="C" i="14" b="0" n="0">!             the License, or (at your option) any later version.</line>
+        <line t="C" i="15" b="0" n="0">!</line>
+        <line t="C" i="16" b="0" n="0">!             XFunit is distributed in the hope that it will be useful,</line>
+        <line t="C" i="17" b="0" n="0">!             but WITHOUT ANY WARRANTY; without even the implied warranty of</line>
+        <line t="C" i="18" b="0" n="0">!             MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</line>
+        <line t="C" i="19" b="0" n="0">!             See the GNU Lesser General Public License for more details.</line>
+        <line t="C" i="20" b="0" n="0">!</line>
+        <line t="C" i="21" b="0" n="0">!             You should have received a copy of the GNU Lesser General Public</line>
+        <line t="C" i="22" b="0" n="0">!             License along with XFunit.  </line>
+        <line t="C" i="23" b="0" n="0">!             If not, see &lt;http://www.gnu.org/licenses/&gt;.</line>
+        <line t="C" i="24" b="0" n="0">!-------------------------------------------------------------------------------</line>
+        <line t="C" i="25" b="0" n="0"></line>
+        <line t="C" i="26" b="0" n="0">!---USE statements--------------------------------------------------------------</line>
+        <line t="C" i="27" b="0" n="0"></line>
+        <line t="X" i="28" b="0" n="0">  use, intrinsic :: iso_fortran_env</line>
+        <line t="X" i="29" b="0" n="0"></line>
+        <line t="X" i="30" b="0" n="0">  use m_xfunit_unit_list_ftl</line>
+        <line t="X" i="31" b="0" n="0"></line>
+        <line t="X" i="32" b="0" n="0">  use m_object</line>
+        <line t="X" i="33" b="0" n="0">  use m_string</line>
+        <line t="X" i="34" b="0" n="0">  use m_iso8601_date_time</line>
+        <line t="X" i="35" b="0" n="0">  use m_path</line>
+        <line t="X" i="36" b="0" n="0"></line>
+        <line t="X" i="37" b="0" n="0">  use m_file_handler</line>
+        <line t="X" i="38" b="0" n="0">  use m_xml</line>
+        <line t="X" i="39" b="0" n="0">  use m_xfunit_unit</line>
+        <line t="X" i="40" b="0" n="0">  use m_xfunit_summary</line>
+        <line t="X" i="41" b="0" n="0"></line>
+        <line t="C" i="42" b="0" n="0">!---End of use statements-------------------------------------------------------</line>
+        <line t="C" i="43" b="0" n="0"></line>
+        <line t="X" i="44" b="0" n="0">  implicit none</line>
+        <line t="X" i="45" b="0" n="0"></line>
+        <line t="C" i="46" b="0" n="0">!---Public/Private declarations-------------------------------------------------</line>
+        <line t="C" i="47" b="0" n="0"></line>
+        <line t="X" i="48" b="0" n="0">  private</line>
+        <line t="X" i="49" b="0" n="0"></line>
+        <line t="X" i="50" b="0" n="0">  public t_xfunit_suite</line>
+        <line t="X" i="51" b="0" n="0"></line>
+        <line t="X" i="52" b="0" n="0">  public xfunit_suite</line>
+        <line t="X" i="53" b="0" n="0"></line>
+        <line t="C" i="54" b="0" n="0">!---End of public/private declarations------------------------------------------</line>
+        <line t="C" i="55" b="0" n="0"></line>
+        <line t="C" i="56" b="0" n="0">!---Declaration of module variables---------------------------------------------</line>
+        <line t="C" i="57" b="0" n="0"></line>
+        <line t="C" i="58" b="0" n="0">! The test suite type</line>
+        <line t="T" i="59" b="0" n="0">  type, extends(t_object) :: t_xfunit_suite</line>
+        <line t="X" i="60" b="0" n="0">    private</line>
+        <line t="X" i="61" b="0" n="0"></line>
+        <line t="C" i="62" b="0" n="0">!     Package name</line>
+        <line t="X" i="63" b="0" n="0">      type(t_string) :: package</line>
+        <line t="X" i="64" b="0" n="0"></line>
+        <line t="C" i="65" b="0" n="0">!     Source file unit tested</line>
+        <line t="X" i="66" b="0" n="0">      type(t_string) :: source</line>
+        <line t="X" i="67" b="0" n="0"></line>
+        <line t="C" i="68" b="0" n="0">!     Test suite test name</line>
+        <line t="X" i="69" b="0" n="0">      type(t_string) :: name</line>
+        <line t="X" i="70" b="0" n="0"></line>
+        <line t="C" i="71" b="0" n="0">!     Test suite annotation</line>
+        <line t="X" i="72" b="0" n="0">      type(t_string) :: annotation</line>
+        <line t="X" i="73" b="0" n="0"></line>
+        <line t="C" i="74" b="0" n="0">!     List of unit tests in the test suite</line>
+        <line t="X" i="75" b="0" n="0">      type(t_xfunit_unit_list_ftl) :: ut</line>
+        <line t="X" i="76" b="0" n="0"></line>
+        <line t="C" i="77" b="0" n="0">!     Pointer to the subroutine to be executer prior to the unit test execution</line>
+        <line t="X" i="78" b="0" n="0">      procedure (xfunit_suite_executer), pointer :: before =&gt; null()</line>
+        <line t="X" i="79" b="0" n="0"></line>
+        <line t="C" i="80" b="0" n="0">!     Pointer to the subroutine to be executer after the unit test execution</line>
+        <line t="X" i="81" b="0" n="0">      procedure (xfunit_suite_executer), pointer :: after =&gt; null()</line>
+        <line t="X" i="82" b="0" n="0"></line>
+        <line t="C" i="83" b="0" n="0">!     Test suite execution status</line>
+        <line t="X" i="84" b="0" n="0">      integer :: status = 0</line>
+        <line t="X" i="85" b="0" n="0"></line>
+        <line t="X" i="86" b="0" n="0">    contains</line>
+        <line t="X" i="87" b="0" n="0"></line>
+        <line t="C" i="88" b="0" n="0">!     Write in XML</line>
+        <line t="X" i="89" b="0" n="0">      generic :: write_xml =&gt; xfunit_suite_write_xml</line>
+        <line t="X" i="90" b="0" n="0">      procedure, private :: xfunit_suite_write_xml</line>
+        <line t="X" i="91" b="0" n="0">      procedure, private :: xfunit_suite_summary</line>
+        <line t="X" i="92" b="0" n="0">      procedure, private :: xfunit_suite_write_properties_xml</line>
+        <line t="X" i="93" b="0" n="0"></line>
+        <line t="C" i="94" b="0" n="0">!     Add a unit test to the suite</line>
+        <line t="X" i="95" b="0" n="0">      procedure :: add_unit_test =&gt; xfunit_suite_add_unit_test</line>
+        <line t="X" i="96" b="0" n="0"></line>
+        <line t="C" i="97" b="0" n="0">!     Execute the unit tests in the suite; with filter</line>
+        <line t="X" i="98" b="0" n="0">      generic :: execute =&gt; xfunit_suite_execute_string, &amp;</line>
+        <line t="X" i="99" b="0" n="0">                            xfunit_suite_execute_character</line>
+        <line t="X" i="100" b="0" n="0">      procedure, private :: xfunit_suite_execute_string</line>
+        <line t="X" i="101" b="0" n="0">      procedure, private :: xfunit_suite_execute_character</line>
+        <line t="X" i="102" b="0" n="0"></line>
+        <line t="C" i="103" b="0" n="0">!     Error handling</line>
+        <line t="X" i="104" b="0" n="0">      procedure :: error =&gt; xfunit_suite_error</line>
+        <line t="X" i="105" b="0" n="0">      procedure :: is_error =&gt; xfunit_suite_is_error</line>
+        <line t="X" i="106" b="0" n="0"></line>
+        <line t="C" i="107" b="0" n="0">!     Getters (no setters required)</line>
+        <line t="X" i="108" b="0" n="0">      procedure :: get_package =&gt; xfunit_suite_get_package</line>
+        <line t="X" i="109" b="0" n="0">      procedure :: get_source =&gt; xfunit_suite_get_source</line>
+        <line t="X" i="110" b="0" n="0">      procedure :: get_name =&gt; xfunit_suite_get_name</line>
+        <line t="X" i="111" b="0" n="0">      procedure :: get_annotation =&gt; xfunit_suite_get_annotation</line>
+        <line t="X" i="112" b="0" n="0"></line>
+        <line t="C" i="113" b="0" n="0">!     Assignment operator</line>
+        <line t="X" i="114" b="0" n="0">      generic :: assignment(=) =&gt; xfunit_suite_assign_xfunit_suite</line>
+        <line t="X" i="115" b="0" n="0">      procedure, private :: xfunit_suite_assign_xfunit_suite</line>
+        <line t="X" i="116" b="0" n="0"></line>
+        <line t="T" i="117" b="0" n="0">  end type t_xfunit_suite</line>
+        <line t="T" i="118" b="0" n="0"></line>
+        <line t="C" i="119" b="0" n="0">! Constructor interface</line>
+        <line t="X" i="120" b="0" n="0">  interface xfunit_suite</line>
+        <line t="X" i="121" b="0" n="0">    module procedure xfunit_suite_character</line>
+        <line t="X" i="122" b="0" n="0">    module procedure xfunit_suite_string</line>
+        <line t="X" i="123" b="0" n="0">  end interface xfunit_suite</line>
+        <line t="X" i="124" b="0" n="0"></line>
+        <line t="C" i="125" b="0" n="0">! Interface for the executer subroutine</line>
+        <line t="X" i="126" b="0" n="0">  interface</line>
+        <line t="X" i="127" b="1" n="1">    subroutine xfunit_suite_executer( suite )</line>
+        <line t="X" i="128" b="1" n="1">      import t_xfunit_suite</line>
+        <line t="X" i="129" b="1" n="1">      class(t_xfunit_suite), intent(inout) :: suite</line>
+        <line t="X" i="130" b="1" n="1">    end subroutine xfunit_suite_executer</line>
+        <line t="X" i="131" b="1" n="1">  end interface</line>
+        <line t="X" i="132" b="1" n="1"></line>
+        <line t="C" i="133" b="1" n="1">!---End of declaration of module variables--------------------------------------</line>
+        <line t="C" i="134" b="1" n="1"></line>
+        <line t="X" i="135" b="1" n="1">contains</line>
+        <line t="X" i="136" b="1" n="1"></line>
+        <line t="C" i="137" b="1" n="1">! Constructor from character</line>
+        <line k="xfunit_suite_character" t="F" i="138" b="1" n="1">function xfunit_suite_character( package, source, annotation, before, after ) result(res)</line>
+        <line t="F" i="139" b="1" n="1"></line>
+        <line t="C" i="140" b="1" n="1">! The name of the package that the source belongs to</line>
+        <line t="X" i="141" b="1" n="1">  character(len=*), intent(in)  :: package</line>
+        <line t="X" i="142" b="1" n="1"></line>
+        <line t="C" i="143" b="1" n="1">! The name of the source on which the test is performed</line>
+        <line t="X" i="144" b="1" n="1">  character(len=*), intent(in)  :: source</line>
+        <line t="X" i="145" b="1" n="1"></line>
+        <line t="C" i="146" b="1" n="1">! The test suite annotation</line>
+        <line t="X" i="147" b="1" n="1">  character(len=*), optional, intent(in)  :: annotation</line>
+        <line t="X" i="148" b="1" n="1"></line>
+        <line t="C" i="149" b="1" n="1">! The procedure to execute before the test suite</line>
+        <line t="X" i="150" b="1" n="1">  procedure(xfunit_suite_executer), optional :: before</line>
+        <line t="X" i="151" b="1" n="1"></line>
+        <line t="C" i="152" b="1" n="1">! The procedure to execute after the test suite</line>
+        <line t="X" i="153" b="1" n="1">  procedure(xfunit_suite_executer), optional :: after</line>
+        <line t="X" i="154" b="1" n="1"></line>
+        <line t="C" i="155" b="1" n="1">! The test suite</line>
+        <line t="X" i="156" b="1" n="1">  type(t_xfunit_suite) :: res</line>
+        <line t="X" i="157" b="1" n="1"></line>
+        <line t="C" i="158" b="1" n="1">! Initialise the package</line>
+        <line t="X" i="159" b="1" n="1">  res%package = package</line>
+        <line t="X" i="160" b="1" n="1"></line>
+        <line t="C" i="161" b="1" n="1">! Set the source and name of the test suite</line>
+        <line t="X" i="162" b="1" n="1">  res%source = source</line>
+        <line t="X" i="163" b="1" n="1">  res%name = path_name( source )</line>
+        <line t="X" i="164" b="1" n="1"></line>
+        <line t="C" i="165" b="1" n="1">! Set the annotation of the test suite</line>
+        <line t="X" i="166" b="2" n="2">  if( present(annotation) ) then</line>
+        <line t="X" i="167" b="2" n="2">    res%annotation = annotation</line>
+        <line t="X" i="168" b="2" n="1">  end if</line>
+        <line t="X" i="169" b="2" n="1"></line>
+        <line t="C" i="170" b="2" n="1">! Initialise list of unit tests</line>
+        <line t="X" i="171" b="2" n="1">  call res%ut%clear()</line>
+        <line t="X" i="172" b="2" n="1"></line>
+        <line t="C" i="173" b="2" n="1">! Initialise the procedures to prepare the test suite execution</line>
+        <line t="X" i="174" b="3" n="2">  if( present(before) ) then</line>
+        <line t="X" i="175" b="3" n="2">    res%before =&gt; before</line>
+        <line t="X" i="176" b="3" n="1">  end if</line>
+        <line t="X" i="177" b="3" n="1"></line>
+        <line t="C" i="178" b="3" n="1">! Initialise the procedures to clean-up test suite execution</line>
+        <line t="X" i="179" b="4" n="2">  if( present(after) ) then</line>
+        <line t="X" i="180" b="4" n="2">    res%after =&gt; after</line>
+        <line t="X" i="181" b="4" n="1">  end if</line>
+        <line t="X" i="182" b="4" n="1"></line>
+        <line t="EF" i="183" b="4" n="1">end function xfunit_suite_character</line>
+        <line t="EF" i="184" b="1" n="1"></line>
+        <line t="EF" i="185" b="1" n="1"></line>
+        <line t="C" i="186" b="1" n="1">! Constructor from string</line>
+        <line k="xfunit_suite_string" t="F" i="187" b="1" n="1">function xfunit_suite_string( package, source, annotation, before, after ) result(res)</line>
+        <line t="F" i="188" b="1" n="1"></line>
+        <line t="C" i="189" b="1" n="1">! The name of the package that the source belongs to</line>
+        <line t="X" i="190" b="1" n="1">  type(t_string), intent(in)  :: package</line>
+        <line t="X" i="191" b="1" n="1"></line>
+        <line t="C" i="192" b="1" n="1">! The name of the source on which the test is performed</line>
+        <line t="X" i="193" b="1" n="1">  type(t_string), intent(in)  :: source</line>
+        <line t="X" i="194" b="1" n="1"></line>
+        <line t="C" i="195" b="1" n="1">! The test suite annotation</line>
+        <line t="X" i="196" b="1" n="1">  type(t_string), optional, intent(in)  :: annotation</line>
+        <line t="X" i="197" b="1" n="1"></line>
+        <line t="C" i="198" b="1" n="1">! The procedure to execute before the test suite</line>
+        <line t="X" i="199" b="1" n="1">  procedure(xfunit_suite_executer), optional :: before</line>
+        <line t="X" i="200" b="1" n="1"></line>
+        <line t="C" i="201" b="1" n="1">! The procedure to execute after the test suite</line>
+        <line t="X" i="202" b="1" n="1">  procedure(xfunit_suite_executer), optional :: after</line>
+        <line t="X" i="203" b="1" n="1"></line>
+        <line t="C" i="204" b="1" n="1">! The test suite</line>
+        <line t="X" i="205" b="1" n="1">  type(t_xfunit_suite) :: res</line>
+        <line t="X" i="206" b="1" n="1"></line>
+        <line t="C" i="207" b="1" n="1">! Invoke the character interface</line>
+        <line t="X" i="208" b="1" n="1">  res = xfunit_suite( package%character(), source%character(), annotation%character(), &amp;</line>
+        <line t="X" i="209" b="1" n="1">                      before, after )</line>
+        <line t="X" i="210" b="1" n="1"></line>
+        <line t="EF" i="211" b="1" n="1">end function xfunit_suite_string</line>
+        <line t="EF" i="212" b="1" n="1"></line>
+        <line t="EF" i="213" b="1" n="1"></line>
+        <line t="C" i="214" b="1" n="1">! Generate the suite block</line>
+        <line k="xfunit_suite_write_xml" t="S" i="215" b="1" n="1">subroutine xfunit_suite_write_xml( suite, xml, junit_strict, fail_only, stdout, stderr )</line>
+        <line t="S" i="216" b="1" n="1"></line>
+        <line t="C" i="217" b="1" n="1">! The test suite</line>
+        <line t="X" i="218" b="1" n="1">  class(t_xfunit_suite), intent(in) :: suite</line>
+        <line t="X" i="219" b="1" n="1"></line>
+        <line t="C" i="220" b="1" n="1">! The XML context structure</line>
+        <line t="X" i="221" b="1" n="1">  type(t_xml_writer), intent(inout) :: xml</line>
+        <line t="X" i="222" b="1" n="1"></line>
+        <line t="C" i="223" b="1" n="1">! The flag for strict JUnit generation report</line>
+        <line t="X" i="224" b="1" n="1">  logical, intent(in) :: junit_strict</line>
+        <line t="X" i="225" b="1" n="1"></line>
+        <line t="C" i="226" b="1" n="1">! The flag to output failed assertions only</line>
+        <line t="X" i="227" b="1" n="1">  logical, intent(in) :: fail_only</line>
+        <line t="X" i="228" b="1" n="1"></line>
+        <line t="C" i="229" b="1" n="1">! Captured stdout file path</line>
+        <line t="X" i="230" b="1" n="1">  type(t_file_handler), intent(in) :: stdout</line>
+        <line t="X" i="231" b="1" n="1"></line>
+        <line t="C" i="232" b="1" n="1">! Captured stderr file path</line>
+        <line t="X" i="233" b="1" n="1">  type(t_file_handler), intent(in) :: stderr</line>
+        <line t="X" i="234" b="1" n="1"></line>
+        <line t="C" i="235" b="1" n="1">! Local variables</line>
+        <line t="X" i="236" b="1" n="1">  type(t_xfunit_unit_list_ftl_iterator) :: it</line>
+        <line t="X" i="237" b="1" n="1">  type(t_xml_attribute), dimension(7) :: attr</line>
+        <line t="X" i="238" b="1" n="1">  type(t_xfunit_unit), pointer :: ut</line>
+        <line t="X" i="239" b="1" n="1">  type(t_xfunit_summary) :: summary</line>
+        <line t="X" i="240" b="1" n="1">  type(t_iso8601_date_time) :: timestamp</line>
+        <line t="X" i="241" b="1" n="1"></line>
+        <line t="C" i="242" b="1" n="1">! Compute the suite summary</line>
+        <line t="X" i="243" b="1" n="1">  call suite%xfunit_suite_summary( summary )</line>
+        <line t="X" i="244" b="1" n="1"></line>
+        <line t="C" i="245" b="1" n="1">! Generate the time stamp</line>
+        <line t="X" i="246" b="1" n="1">  timestamp = iso8601_date_time_now()</line>
+        <line t="X" i="247" b="1" n="1"></line>
+        <line t="C" i="248" b="1" n="1">! Write the suite start tag</line>
+        <line t="X" i="249" b="1" n="1">  attr(1) = xml_attribute( 'name', suite%name )</line>
+        <line t="X" i="250" b="1" n="1">  attr(2) = xml_attribute( 'timestamp', timestamp%to_string( zone=.false. ) )</line>
+        <line t="X" i="251" b="1" n="1">  attr(3) = xml_attribute( 'hostname', "localhost" )</line>
+        <line t="X" i="252" b="1" n="1">  attr(4) = xml_attribute( 'tests', summary%get_tests() )</line>
+        <line t="X" i="253" b="1" n="1">  attr(5) = xml_attribute( 'failures', summary%get_failed() )</line>
+        <line t="X" i="254" b="1" n="1">  attr(6) = xml_attribute( 'errors', summary%get_errors() )</line>
+        <line t="X" i="255" b="1" n="1">  attr(7) = xml_attribute( 'time', real(summary%get_time(),4) )</line>
+        <line t="X" i="256" b="1" n="1">  call xml%write_root_start_tag( 'testsuite', schema='JUnit.xsd', attr=attr )</line>
+        <line t="X" i="257" b="1" n="1"></line>
+        <line t="C" i="258" b="1" n="1">! Write the porperties section</line>
+        <line t="X" i="259" b="1" n="1">  call suite%xfunit_suite_write_properties_xml( xml )</line>
+        <line t="X" i="260" b="1" n="1"></line>
+        <line t="C" i="261" b="1" n="1">! Loop on the unit tests</line>
+        <line t="X" i="262" b="1" n="1">  it = suite%ut%begin()</line>
+        <line t="X" i="263" b="2" n="2">  do while( it%associated() )</line>
+        <line t="X" i="264" b="2" n="2"></line>
+        <line t="C" i="265" b="2" n="2">!   Write the unit test</line>
+        <line t="X" i="266" b="2" n="2">    ut =&gt; it%get_element_ptr()</line>
+        <line t="X" i="267" b="2" n="2">    call ut%write_xml( xml, junit_strict, fail_only )</line>
+        <line t="X" i="268" b="2" n="2"></line>
+        <line t="C" i="269" b="2" n="2">!   Iterate</line>
+        <line t="X" i="270" b="2" n="2">    it = it%next()</line>
+        <line t="X" i="271" b="2" n="2"></line>
+        <line t="X" i="272" b="2" n="1">  end do</line>
+        <line t="X" i="273" b="2" n="1"></line>
+        <line t="C" i="274" b="2" n="1">! Generate the output report</line>
+        <line t="X" i="275" b="2" n="1">  call xfunit_suite_generate_text_report( xml, string('system-out'), stdout%get_file_path() )</line>
+        <line t="X" i="276" b="2" n="1"></line>
+        <line t="C" i="277" b="2" n="1">! Generate the error report</line>
+        <line t="X" i="278" b="2" n="1">  call xfunit_suite_generate_text_report( xml, string('system-err'), stderr%get_file_path() )</line>
+        <line t="X" i="279" b="2" n="1"></line>
+        <line t="C" i="280" b="2" n="1">! Write the suite end tag</line>
+        <line t="X" i="281" b="2" n="1">  call xml%write_root_end_tag( 'testsuite' )</line>
+        <line t="X" i="282" b="2" n="1"></line>
+        <line t="ES" i="283" b="2" n="1">end subroutine xfunit_suite_write_xml</line>
+        <line t="ES" i="284" b="1" n="1"></line>
+        <line t="ES" i="285" b="1" n="1"></line>
+        <line t="C" i="286" b="1" n="1">! Generate the suite properties block</line>
+        <line k="xfunit_suite_write_properties_xml" t="S" i="287" b="1" n="1">subroutine xfunit_suite_write_properties_xml( suite, xml )</line>
+        <line t="S" i="288" b="1" n="1"></line>
+        <line t="C" i="289" b="1" n="1">! The test suite</line>
+        <line t="X" i="290" b="1" n="1">  class(t_xfunit_suite), intent(in) :: suite</line>
+        <line t="X" i="291" b="1" n="1"></line>
+        <line t="C" i="292" b="1" n="1">! The XML context structure</line>
+        <line t="X" i="293" b="1" n="1">  type(t_xml_writer), intent(inout) :: xml</line>
+        <line t="X" i="294" b="1" n="1"></line>
+        <line t="C" i="295" b="1" n="1">! Local variables</line>
+        <line t="X" i="296" b="1" n="1">  type(t_xml_attribute), dimension(2) :: attr</line>
+        <line t="X" i="297" b="1" n="1"></line>
+        <line t="C" i="298" b="1" n="1">! Write the properties start tag</line>
+        <line t="X" i="299" b="1" n="1">  call xml%write_start_tag( 'properties', newline=.true. )</line>
+        <line t="X" i="300" b="1" n="1"></line>
+        <line t="C" i="301" b="1" n="1">! Add the package</line>
+        <line t="X" i="302" b="1" n="1">  attr(1) = xml_attribute( 'name', 'package' )</line>
+        <line t="X" i="303" b="1" n="1">  attr(2) = xml_attribute( 'value', suite%package )</line>
+        <line t="X" i="304" b="1" n="1">  call xml%write_terminal( 'property', '', attr=attr )</line>
+        <line t="X" i="305" b="1" n="1"></line>
+        <line t="C" i="306" b="1" n="1">! Add the source file</line>
+        <line t="X" i="307" b="1" n="1">  attr(1) = xml_attribute( 'name', 'src' )</line>
+        <line t="X" i="308" b="1" n="1">  attr(2) = xml_attribute( 'value', suite%source )</line>
+        <line t="X" i="309" b="1" n="1">  call xml%write_terminal( 'property', '', attr=attr )</line>
+        <line t="X" i="310" b="1" n="1"></line>
+        <line t="C" i="311" b="1" n="1">! Add the module name</line>
+        <line t="X" i="312" b="1" n="1">  attr(1) = xml_attribute( 'name', 'module' )</line>
+        <line t="X" i="313" b="1" n="1">  attr(2) = xml_attribute( 'value', suite%name )</line>
+        <line t="X" i="314" b="1" n="1">  call xml%write_terminal( 'property', '', attr=attr )</line>
+        <line t="X" i="315" b="1" n="1"></line>
+        <line t="C" i="316" b="1" n="1">! Add the suite description</line>
+        <line t="X" i="317" b="1" n="1">  attr(1) = xml_attribute( 'name', 'annotation' )</line>
+        <line t="X" i="318" b="1" n="1">  attr(2) = xml_attribute( 'value', suite%annotation )</line>
+        <line t="X" i="319" b="1" n="1">  call xml%write_terminal( 'property', '', attr=attr )</line>
+        <line t="X" i="320" b="1" n="1"></line>
+        <line t="C" i="321" b="1" n="1">! Write the properties end tag</line>
+        <line t="X" i="322" b="1" n="1">  call xml%write_end_tag( 'properties' )</line>
+        <line t="X" i="323" b="1" n="1"></line>
+        <line t="ES" i="324" b="1" n="1">end subroutine xfunit_suite_write_properties_xml</line>
+        <line t="ES" i="325" b="1" n="1"></line>
+        <line t="ES" i="326" b="1" n="1"></line>
+        <line t="C" i="327" b="1" n="1">! Generate text report</line>
+        <line k="xfunit_suite_generate_text_report" t="S" i="328" b="1" n="1">subroutine xfunit_suite_generate_text_report( xml, tag, path )</line>
+        <line t="S" i="329" b="1" n="1"></line>
+        <line t="C" i="330" b="1" n="1">! XML writer object</line>
+        <line t="X" i="331" b="1" n="1">  type(t_xml_writer), intent(inout) :: xml</line>
+        <line t="X" i="332" b="1" n="1"></line>
+        <line t="C" i="333" b="1" n="1">! The tag for the text report container</line>
+        <line t="X" i="334" b="1" n="1">  type(t_string), intent(in) :: tag</line>
+        <line t="X" i="335" b="1" n="1"></line>
+        <line t="C" i="336" b="1" n="1">! Path to the file containing the report</line>
+        <line t="X" i="337" b="1" n="1">  type(t_string), intent(in) :: path</line>
+        <line t="X" i="338" b="1" n="1"></line>
+        <line t="C" i="339" b="1" n="1">! Local variables</line>
+        <line t="X" i="340" b="1" n="1">  type(t_file_handler) :: fhandler</line>
+        <line t="X" i="341" b="1" n="1">  character(len=1024) :: rec</line>
+        <line t="X" i="342" b="1" n="1">  integer :: iunit, ounit, iostat</line>
+        <line t="X" i="343" b="1" n="1"></line>
+        <line t="C" i="344" b="1" n="1">! Write the text report start tag</line>
+        <line t="X" i="345" b="1" n="1">  call xml%write_start_tag( tag, newline=.true. )</line>
+        <line t="X" i="346" b="1" n="1"></line>
+        <line t="C" i="347" b="1" n="1">! Open the report file</line>
+        <line t="X" i="348" b="1" n="1">  fhandler = file_handler( path )</line>
+        <line t="X" i="349" b="1" n="1">  call fhandler%open( write=.false. )</line>
+        <line t="X" i="350" b="2" n="2">  if( fhandler%is_open() ) then</line>
+        <line t="X" i="351" b="2" n="2"></line>
+        <line t="C" i="352" b="2" n="2">!   Transfer the report</line>
+        <line t="X" i="353" b="2" n="2">    iunit = fhandler%get_unit()</line>
+        <line t="X" i="354" b="2" n="2">    ounit = xml%get_unit()</line>
+        <line t="X" i="355" b="2" n="2">    iostat = 0</line>
+        <line t="X" i="356" b="3" n="3">    do</line>
+        <line t="X" i="357" b="3" n="3">      read( iunit, '(a1024)', iostat=iostat ) rec</line>
+        <line t="X" i="358" b="4" n="4">      if( iostat == 0 .or. iostat == iostat_eor ) then</line>
+        <line t="X" i="359" b="4" n="4">        write( ounit, '(a)' ) trim(rec)</line>
+        <line t="X" i="360" b="5" n="4">      else</line>
+        <line t="X" i="361" b="5" n="4">        exit</line>
+        <line t="X" i="362" b="5" n="3">      end if</line>
+        <line t="X" i="363" b="5" n="2">    end do</line>
+        <line t="X" i="364" b="5" n="2"></line>
+        <line t="C" i="365" b="5" n="2">!   Close the file</line>
+        <line t="X" i="366" b="5" n="2">    call fhandler%close()</line>
+        <line t="X" i="367" b="5" n="2"></line>
+        <line t="X" i="368" b="5" n="1">  end if</line>
+        <line t="X" i="369" b="5" n="1"></line>
+        <line t="C" i="370" b="5" n="1">! Write the text report end tag</line>
+        <line t="X" i="371" b="5" n="1">  call xml%write_end_tag( tag )</line>
+        <line t="X" i="372" b="5" n="1"></line>
+        <line t="ES" i="373" b="5" n="1">end subroutine xfunit_suite_generate_text_report</line>
+        <line t="ES" i="374" b="1" n="1"></line>
+        <line t="ES" i="375" b="1" n="1"></line>
+        <line t="C" i="376" b="1" n="1">! Insert a new unit test in the suite</line>
+        <line k="xfunit_suite_add_unit_test" t="S" i="377" b="1" n="1">subroutine xfunit_suite_add_unit_test( suite, ut, skip )</line>
+        <line t="S" i="378" b="1" n="1"></line>
+        <line t="C" i="379" b="1" n="1">! The unit test suite</line>
+        <line t="X" i="380" b="1" n="1">  class(t_xfunit_suite), intent(inout) :: suite</line>
+        <line t="X" i="381" b="1" n="1"></line>
+        <line t="C" i="382" b="1" n="1">! The assertion</line>
+        <line t="X" i="383" b="1" n="1">  type(t_xfunit_unit), intent(in)    :: ut</line>
+        <line t="X" i="384" b="1" n="1"></line>
+        <line t="C" i="385" b="1" n="1">! Flag to add the test but to skip the execution (optional; .false. by default)</line>
+        <line t="X" i="386" b="1" n="1">  logical, optional, intent(in) :: skip</line>
+        <line t="X" i="387" b="1" n="1"></line>
+        <line t="C" i="388" b="1" n="1">! Local variables</line>
+        <line t="X" i="389" b="1" n="1">  type(t_xfunit_unit_list_ftl_iterator) :: it</line>
+        <line t="X" i="390" b="1" n="1">  type(t_xfunit_unit), pointer :: put</line>
+        <line t="X" i="391" b="1" n="1"></line>
+        <line t="C" i="392" b="1" n="1">! Add the unit test to the suite</line>
+        <line t="X" i="393" b="1" n="1">  call suite%ut%push_back( ut )</line>
+        <line t="X" i="394" b="1" n="1"></line>
+        <line t="C" i="395" b="1" n="1">! Check skip flag</line>
+        <line t="X" i="396" b="2" n="2">  if( present(skip) ) then</line>
+        <line t="X" i="397" b="2" n="2">    it = suite%ut%end()</line>
+        <line t="X" i="398" b="2" n="2">    put =&gt; it%get_element_ptr()</line>
+        <line t="X" i="399" b="2" n="2">    call put%set_skip( skip )</line>
+        <line t="X" i="400" b="2" n="1">  end if</line>
+        <line t="X" i="401" b="2" n="1"></line>
+        <line t="ES" i="402" b="2" n="1">end subroutine xfunit_suite_add_unit_test</line>
+        <line t="ES" i="403" b="1" n="1"></line>
+        <line t="ES" i="404" b="1" n="1"></line>
+        <line t="C" i="405" b="1" n="1">! Execute the unit tests in the suite (string interface)</line>
+        <line k="xfunit_suite_execute_character" t="S" i="406" b="1" n="1">subroutine xfunit_suite_execute_character( suite, names )</line>
+        <line t="S" i="407" b="1" n="1"></line>
+        <line t="C" i="408" b="1" n="1">! The unit test suite</line>
+        <line t="X" i="409" b="1" n="1">  class(t_xfunit_suite), intent(inout) :: suite</line>
+        <line t="X" i="410" b="1" n="1"></line>
+        <line t="C" i="411" b="1" n="1">! The names of the tests to execute (optional)</line>
+        <line t="X" i="412" b="1" n="1">  character(len=*), dimension(:), intent(in) :: names</line>
+        <line t="X" i="413" b="1" n="1"></line>
+        <line t="C" i="414" b="1" n="1">! Local variables</line>
+        <line t="X" i="415" b="1" n="1">  type(t_string), dimension(size(names)) :: lnames</line>
+        <line t="X" i="416" b="1" n="1">  integer :: i</line>
+        <line t="X" i="417" b="1" n="1"></line>
+        <line t="C" i="418" b="1" n="1">! Call the character interface</line>
+        <line t="X" i="419" b="2" n="2">  do i = 1, size(names)</line>
+        <line t="X" i="420" b="2" n="2">    lnames(i) = string(names(i))</line>
+        <line t="X" i="421" b="2" n="1">  end do</line>
+        <line t="X" i="422" b="2" n="1">  call suite%xfunit_suite_execute_string( lnames )</line>
+        <line t="X" i="423" b="2" n="1"></line>
+        <line t="ES" i="424" b="2" n="1">end subroutine xfunit_suite_execute_character</line>
+        <line t="ES" i="425" b="1" n="1"></line>
+        <line t="ES" i="426" b="1" n="1"></line>
+        <line t="C" i="427" b="1" n="1">! Execute the unit tests in the suite (character interface)</line>
+        <line k="xfunit_suite_execute_string" t="S" i="428" b="1" n="1">subroutine xfunit_suite_execute_string( suite, names )</line>
+        <line t="S" i="429" b="1" n="1"></line>
+        <line t="C" i="430" b="1" n="1">! The unit test suite</line>
+        <line t="X" i="431" b="1" n="1">  class(t_xfunit_suite), intent(inout) :: suite</line>
+        <line t="X" i="432" b="1" n="1"></line>
+        <line t="C" i="433" b="1" n="1">! The names of the tests to execute (optional)</line>
+        <line t="X" i="434" b="1" n="1">  type(t_string), optional, dimension(:), intent(in) :: names</line>
+        <line t="X" i="435" b="1" n="1"></line>
+        <line t="C" i="436" b="1" n="1">! Local variables</line>
+        <line t="X" i="437" b="1" n="1">  type(t_xfunit_unit_list_ftl_iterator) :: it</line>
+        <line t="X" i="438" b="1" n="1">  type(t_xfunit_unit), pointer :: put</line>
+        <line t="X" i="439" b="1" n="1">  logical :: do_execute</line>
+        <line t="X" i="440" b="1" n="1">  type(t_string) :: utname</line>
+        <line t="X" i="441" b="1" n="1">  integer :: n</line>
+        <line t="X" i="442" b="1" n="1"></line>
+        <line t="C" i="443" b="1" n="1">! Execute the preparation routine</line>
+        <line t="X" i="444" b="2" n="2">  if( associated(suite%before) ) then</line>
+        <line t="X" i="445" b="2" n="2">    call suite%before()</line>
+        <line t="X" i="446" b="2" n="1">  end if</line>
+        <line t="X" i="447" b="2" n="1"></line>
+        <line t="C" i="448" b="2" n="1">! Check initialisation status</line>
+        <line t="X" i="449" b="3" n="2">  if( suite%status == 0 ) then</line>
+        <line t="X" i="450" b="3" n="2"></line>
+        <line t="C" i="451" b="3" n="2">!   Loop on the unit tests</line>
+        <line t="X" i="452" b="3" n="2">    it = suite%ut%begin()</line>
+        <line t="X" i="453" b="4" n="3">    do while( it%associated() )</line>
+        <line t="X" i="454" b="4" n="3"></line>
+        <line t="C" i="455" b="4" n="3">!     Point to test case</line>
+        <line t="X" i="456" b="4" n="3">      put =&gt; it%get_element_ptr()</line>
+        <line t="X" i="457" b="4" n="3"></line>
+        <line t="C" i="458" b="4" n="3">!     Check if this test is to be skipped</line>
+        <line t="X" i="459" b="4" n="3">      do_execute = .false.</line>
+        <line t="X" i="460" b="5" n="4">      if( .not. put%get_skip() ) then</line>
+        <line t="X" i="461" b="5" n="4"></line>
+        <line t="C" i="462" b="5" n="4">!       Check if test execution by name is requested from the command line</line>
+        <line t="X" i="463" b="6" n="5">        if( present(names) ) then</line>
+        <line t="X" i="464" b="6" n="5">          n = size(names)</line>
+        <line t="X" i="465" b="7" n="6">          if( size(names) &gt; 0 ) then</line>
+        <line t="X" i="466" b="7" n="6">            utname = put%get_name()</line>
+        <line t="X" i="467" b="7" n="6">            do_execute = any( match( utname, names ) )</line>
+        <line t="X" i="468" b="8" n="6">          else</line>
+        <line t="X" i="469" b="8" n="6">            do_execute = .true.</line>
+        <line t="X" i="470" b="8" n="5">          end if</line>
+        <line t="X" i="471" b="9" n="5">        else</line>
+        <line t="X" i="472" b="9" n="5">          do_execute = .true.</line>
+        <line t="X" i="473" b="9" n="4">        end if</line>
+        <line t="X" i="474" b="9" n="4"></line>
+        <line t="X" i="475" b="9" n="3">      end if</line>
+        <line t="X" i="476" b="9" n="3"></line>
+        <line t="C" i="477" b="9" n="3">!     Execute the unit test</line>
+        <line t="X" i="478" b="10" n="4">      if( do_execute ) then</line>
+        <line t="X" i="479" b="10" n="4">        call put%execute()</line>
+        <line t="X" i="480" b="10" n="3">      end if</line>
+        <line t="X" i="481" b="10" n="3"></line>
+        <line t="C" i="482" b="10" n="3">!     Iterate</line>
+        <line t="X" i="483" b="10" n="3">      it = it%next()</line>
+        <line t="X" i="484" b="10" n="3"></line>
+        <line t="X" i="485" b="10" n="2">    end do</line>
+        <line t="X" i="486" b="10" n="2"></line>
+        <line t="C" i="487" b="10" n="2">!   Execute the teardown routine</line>
+        <line t="X" i="488" b="11" n="3">    if( associated(suite%after) ) then</line>
+        <line t="X" i="489" b="11" n="3">      call suite%after()</line>
+        <line t="X" i="490" b="11" n="2">    end if</line>
+        <line t="X" i="491" b="11" n="2"></line>
+        <line t="X" i="492" b="11" n="1">  end if</line>
+        <line t="X" i="493" b="11" n="1"></line>
+        <line t="ES" i="494" b="11" n="1">end subroutine xfunit_suite_execute_string</line>
+        <line t="ES" i="495" b="1" n="1"></line>
+        <line t="ES" i="496" b="1" n="1"></line>
+        <line t="C" i="497" b="1" n="1">! Set the suite execution on error (status=0 to reset)</line>
+        <line k="xfunit_suite_error" t="S" i="498" b="1" n="1">elemental subroutine xfunit_suite_error( suite, status )</line>
+        <line t="S" i="499" b="1" n="1"></line>
+        <line t="C" i="500" b="1" n="1">! The unit test suite</line>
+        <line t="X" i="501" b="1" n="1">  class(t_xfunit_suite), intent(inout) :: suite</line>
+        <line t="X" i="502" b="1" n="1"></line>
+        <line t="C" i="503" b="1" n="1">! The provided error status</line>
+        <line t="X" i="504" b="1" n="1">  integer, intent(in) :: status</line>
+        <line t="X" i="505" b="1" n="1"></line>
+        <line t="C" i="506" b="1" n="1">! Set the status</line>
+        <line t="X" i="507" b="1" n="1">  suite%status = status</line>
+        <line t="X" i="508" b="1" n="1"></line>
+        <line t="ES" i="509" b="1" n="1">end subroutine xfunit_suite_error</line>
+        <line t="ES" i="510" b="1" n="1"></line>
+        <line t="ES" i="511" b="1" n="1"></line>
+        <line t="C" i="512" b="1" n="1">! Check the suite error status</line>
+        <line k="xfunit_suite_is_error" t="F" i="513" b="1" n="1">elemental function xfunit_suite_is_error( suite ) result(res)</line>
+        <line t="F" i="514" b="1" n="1"></line>
+        <line t="C" i="515" b="1" n="1">! The unit test suite</line>
+        <line t="X" i="516" b="1" n="1">  class(t_xfunit_suite), intent(in) :: suite</line>
+        <line t="X" i="517" b="1" n="1"></line>
+        <line t="C" i="518" b="1" n="1">! The on error status</line>
+        <line t="X" i="519" b="1" n="1">  logical :: res</line>
+        <line t="X" i="520" b="1" n="1"></line>
+        <line t="C" i="521" b="1" n="1">! Return the on error status</line>
+        <line t="X" i="522" b="1" n="1">  res = ( suite%status /= 0 )</line>
+        <line t="X" i="523" b="1" n="1"></line>
+        <line t="EF" i="524" b="1" n="1">end function xfunit_suite_is_error</line>
+        <line t="EF" i="525" b="1" n="1"></line>
+        <line t="EF" i="526" b="1" n="1"></line>
+        <line t="C" i="527" b="1" n="1">! Generate the unit test summary</line>
+        <line k="xfunit_suite_summary" t="S" i="528" b="1" n="1">subroutine xfunit_suite_summary( suite, summary )</line>
+        <line t="S" i="529" b="1" n="1"></line>
+        <line t="C" i="530" b="1" n="1">! The suite test</line>
+        <line t="X" i="531" b="1" n="1">  class(t_xfunit_suite), intent(in) :: suite</line>
+        <line t="X" i="532" b="1" n="1"></line>
+        <line t="C" i="533" b="1" n="1">! The summary</line>
+        <line t="X" i="534" b="1" n="1">  type(t_xfunit_summary), intent(out) :: summary</line>
+        <line t="X" i="535" b="1" n="1"></line>
+        <line t="C" i="536" b="1" n="1">! Local variables</line>
+        <line t="X" i="537" b="1" n="1">  type(t_xfunit_unit_list_ftl_iterator) :: it</line>
+        <line t="X" i="538" b="1" n="1">  integer :: npassed, nexecuted, nerrors, nfailed</line>
+        <line t="X" i="539" b="1" n="1">  real(kind=8) :: time</line>
+        <line t="X" i="540" b="1" n="1">  type(t_xfunit_unit), pointer :: put</line>
+        <line t="X" i="541" b="1" n="1"></line>
+        <line t="C" i="542" b="1" n="1">! Initialised</line>
+        <line t="X" i="543" b="1" n="1">  npassed = 0</line>
+        <line t="X" i="544" b="1" n="1">  nexecuted = 0</line>
+        <line t="X" i="545" b="1" n="1">  nerrors = 0</line>
+        <line t="X" i="546" b="1" n="1">  time = 0.0_8</line>
+        <line t="X" i="547" b="1" n="1"></line>
+        <line t="C" i="548" b="1" n="1">! Loop on the unit tests</line>
+        <line t="X" i="549" b="1" n="1">  it = suite%ut%begin()</line>
+        <line t="X" i="550" b="2" n="2">  do while( it%associated() )</line>
+        <line t="X" i="551" b="2" n="2"></line>
+        <line t="C" i="552" b="2" n="2">!   Check if test is executed</line>
+        <line t="X" i="553" b="2" n="2">    put =&gt; it%get_element_ptr()</line>
+        <line t="X" i="554" b="3" n="3">    if( put%is_executed() ) then</line>
+        <line t="X" i="555" b="3" n="3">      nexecuted = nexecuted + 1</line>
+        <line t="X" i="556" b="3" n="3"></line>
+        <line t="C" i="557" b="3" n="3">!     Check if test is passed</line>
+        <line t="X" i="558" b="4" n="4">      if( put%is_passed() ) then</line>
+        <line t="X" i="559" b="4" n="4">        npassed = npassed + 1</line>
+        <line t="X" i="560" b="5" n="4">      else if( put%is_error() ) then</line>
+        <line t="X" i="561" b="5" n="4">        nerrors = nerrors + 1</line>
+        <line t="X" i="562" b="5" n="3">      end if</line>
+        <line t="X" i="563" b="5" n="3"></line>
+        <line t="C" i="564" b="5" n="3">!     Accumulate execution time</line>
+        <line t="X" i="565" b="5" n="3">      time = time + put%get_elapsed()</line>
+        <line t="X" i="566" b="5" n="3"></line>
+        <line t="X" i="567" b="5" n="2">    end if</line>
+        <line t="X" i="568" b="5" n="2"></line>
+        <line t="C" i="569" b="5" n="2"> !  Iterate</line>
+        <line t="X" i="570" b="5" n="2">    it = it%next()</line>
+        <line t="X" i="571" b="5" n="2"></line>
+        <line t="X" i="572" b="5" n="1">  end do</line>
+        <line t="X" i="573" b="5" n="1"></line>
+        <line t="C" i="574" b="5" n="1">! Generate the summary</line>
+        <line t="X" i="575" b="5" n="1">  nfailed = nexecuted - npassed - nerrors</line>
+        <line t="X" i="576" b="5" n="1">  summary = xfunit_summary( suite%ut%size(), nexecuted, npassed, nfailed, nerrors, time )</line>
+        <line t="X" i="577" b="5" n="1"></line>
+        <line t="ES" i="578" b="5" n="1">end subroutine xfunit_suite_summary</line>
+        <line t="ES" i="579" b="1" n="1"></line>
+        <line t="ES" i="580" b="1" n="1"></line>
+        <line t="C" i="581" b="1" n="1">! Assignment operator</line>
+        <line k="xfunit_suite_assign_xfunit_suite" t="S" i="582" b="1" n="1">subroutine xfunit_suite_assign_xfunit_suite( left, right )</line>
+        <line t="S" i="583" b="1" n="1"></line>
+        <line t="C" i="584" b="1" n="1">! Left operand</line>
+        <line t="X" i="585" b="1" n="1">  class(t_xfunit_suite), intent(out) :: left</line>
+        <line t="X" i="586" b="1" n="1">  </line>
+        <line t="C" i="587" b="1" n="1">! Right operand</line>
+        <line t="X" i="588" b="1" n="1">  type(t_xfunit_suite), intent(in)  :: right</line>
+        <line t="X" i="589" b="1" n="1"></line>
+        <line t="C" i="590" b="1" n="1">! Assign the object properties</line>
+        <line t="X" i="591" b="1" n="1">  left%package = right%package</line>
+        <line t="X" i="592" b="1" n="1">  left%source = right%source</line>
+        <line t="X" i="593" b="1" n="1">  left%name = right%name</line>
+        <line t="X" i="594" b="1" n="1">  left%annotation = right%annotation</line>
+        <line t="X" i="595" b="1" n="1">  left%ut = right%ut</line>
+        <line t="X" i="596" b="1" n="1">  left%before =&gt; right%before</line>
+        <line t="X" i="597" b="1" n="1">  left%after =&gt; right%after</line>
+        <line t="X" i="598" b="1" n="1">  left%status = right%Status</line>
+        <line t="X" i="599" b="1" n="1"></line>
+        <line t="ES" i="600" b="1" n="1">end subroutine xfunit_suite_assign_xfunit_suite</line>
+        <line t="ES" i="601" b="1" n="1"></line>
+        <line t="ES" i="602" b="1" n="1"></line>
+        <line t="C" i="603" b="1" n="1">! Getter for package name</line>
+        <line k="xfunit_suite_get_package" t="F" i="604" b="1" n="1">elemental function xfunit_suite_get_package( this ) result(res)</line>
+        <line t="F" i="605" b="1" n="1"></line>
+        <line t="C" i="606" b="1" n="1">! Calling object</line>
+        <line t="X" i="607" b="1" n="1">  class(t_xfunit_suite), intent(in) :: this</line>
+        <line t="X" i="608" b="1" n="1"></line>
+        <line t="C" i="609" b="1" n="1">! Return value</line>
+        <line t="X" i="610" b="1" n="1">  type(t_string) :: res</line>
+        <line t="X" i="611" b="1" n="1"></line>
+        <line t="C" i="612" b="1" n="1">! Set the return value</line>
+        <line t="X" i="613" b="1" n="1">  res = this%package</line>
+        <line t="X" i="614" b="1" n="1"></line>
+        <line t="EF" i="615" b="1" n="1">end function xfunit_suite_get_package</line>
+        <line t="EF" i="616" b="1" n="1"></line>
+        <line t="EF" i="617" b="1" n="1"></line>
+        <line t="C" i="618" b="1" n="1">! Getter for Fortran source file</line>
+        <line k="xfunit_suite_get_source" t="F" i="619" b="1" n="1">elemental function xfunit_suite_get_source( this ) result(res)</line>
+        <line t="F" i="620" b="1" n="1"></line>
+        <line t="C" i="621" b="1" n="1">! Calling object</line>
+        <line t="X" i="622" b="1" n="1">  class(t_xfunit_suite), intent(in) :: this</line>
+        <line t="X" i="623" b="1" n="1"></line>
+        <line t="C" i="624" b="1" n="1">! Return value</line>
+        <line t="X" i="625" b="1" n="1">  type(t_string) :: res</line>
+        <line t="X" i="626" b="1" n="1"></line>
+        <line t="C" i="627" b="1" n="1">! Set the return value</line>
+        <line t="X" i="628" b="1" n="1">  res = this%source</line>
+        <line t="X" i="629" b="1" n="1"></line>
+        <line t="EF" i="630" b="1" n="1">end function xfunit_suite_get_source</line>
+        <line t="EF" i="631" b="1" n="1"></line>
+        <line t="EF" i="632" b="1" n="1"></line>
+        <line t="C" i="633" b="1" n="1">! Getter for unit test suite name</line>
+        <line k="xfunit_suite_get_name" t="F" i="634" b="1" n="1">elemental function xfunit_suite_get_name( this ) result(res)</line>
+        <line t="F" i="635" b="1" n="1"></line>
+        <line t="C" i="636" b="1" n="1">! Calling object</line>
+        <line t="X" i="637" b="1" n="1">  class(t_xfunit_suite), intent(in) :: this</line>
+        <line t="X" i="638" b="1" n="1"></line>
+        <line t="C" i="639" b="1" n="1">! Return value</line>
+        <line t="X" i="640" b="1" n="1">  type(t_string) :: res</line>
+        <line t="X" i="641" b="1" n="1"></line>
+        <line t="C" i="642" b="1" n="1">! Set the return value</line>
+        <line t="X" i="643" b="1" n="1">  res = this%name</line>
+        <line t="X" i="644" b="1" n="1"></line>
+        <line t="EF" i="645" b="1" n="1">end function xfunit_suite_get_name</line>
+        <line t="EF" i="646" b="1" n="1"></line>
+        <line t="EF" i="647" b="1" n="1"></line>
+        <line t="C" i="648" b="1" n="1">! Getter for unit test suite annotation</line>
+        <line k="xfunit_suite_get_annotation" t="F" i="649" b="1" n="1">pure function xfunit_suite_get_annotation( this ) result(res)</line>
+        <line t="F" i="650" b="1" n="1"></line>
+        <line t="C" i="651" b="1" n="1">! Calling object</line>
+        <line t="X" i="652" b="1" n="1">  class(t_xfunit_suite), intent(in) :: this</line>
+        <line t="X" i="653" b="1" n="1"></line>
+        <line t="C" i="654" b="1" n="1">! Return value</line>
+        <line t="X" i="655" b="1" n="1">  type(t_string) :: res</line>
+        <line t="X" i="656" b="1" n="1"></line>
+        <line t="C" i="657" b="1" n="1">! Set the return value</line>
+        <line t="X" i="658" b="1" n="1">  res = this%annotation</line>
+        <line t="X" i="659" b="1" n="1"></line>
+        <line t="EF" i="660" b="1" n="1">end function xfunit_suite_get_annotation</line>
+        <line t="EF" i="661" b="1" n="1"></line>
+        <line t="M" i="662" b="1" n="1">end module m_xfunit_suite</line>
+        <line t="M" i="663" b="1" n="1"></line>
+        <line t="C" i="664" b="1" n="1">! 2024-10-30T23:28:35</line>
+    </code>
+</fmx>
