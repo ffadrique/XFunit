@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="fmx.xsl"?>
 <fmxroot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <context>
-        <time>2025-03-09T10:39:11</time>
+        <time>2025-03-09T17:50:33</time>
         <version>1.0.0.1</version>
         <path>XFunit</path>
         <project>XFunit</project>
@@ -10,10 +10,10 @@
     </context>
     <statistics>
         <lines>
-            <source percent="36.50">6493</source>
-            <comments percent="31.55">5612</comments>
-            <empty percent="31.96">5685</empty>
-            <total>17790</total>
+            <source percent="36.51">6493</source>
+            <comments percent="31.54">5608</comments>
+            <empty percent="31.95">5681</empty>
+            <total>17782</total>
         </lines>
         <complexity>
             <minimum>1</minimum>
@@ -31,10 +31,10 @@
         <directory name="src">
             <statistics>
                 <lines>
-                    <source percent="36.50">6493</source>
-                    <comments percent="31.55">5612</comments>
-                    <empty percent="31.96">5685</empty>
-                    <total>17790</total>
+                    <source percent="36.51">6493</source>
+                    <comments percent="31.54">5608</comments>
+                    <empty percent="31.95">5681</empty>
+                    <total>17782</total>
                 </lines>
                 <complexity>
                     <minimum>1</minimum>

@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="../fmx.xsl"?>
 <fmx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="m_xfunit_suite.f90">
     <context>
-        <time>2025-03-09T10:39:11</time>
+        <time>2025-03-09T17:50:33</time>
         <version>1.0.0.1</version>
         <path>src</path>
         <path_to_root>../</path_to_root>
@@ -14,10 +14,10 @@
         <unit name="m_xfunit_suite" type="module">
             <main>
                 <lines>
-                    <source percent="7.87">7</source>
-                    <comments percent="51.69">46</comments>
-                    <empty percent="40.45">36</empty>
-                    <total>89</total>
+                    <source percent="8.05">7</source>
+                    <comments percent="51.72">45</comments>
+                    <empty percent="40.23">35</empty>
+                    <total>87</total>
                 </lines>
                 <complexity>
                     <minimum>0</minimum>
@@ -355,10 +355,10 @@
             </methods>
             <statistics>
                 <lines>
-                    <source percent="40.39">248</source>
-                    <comments percent="27.52">169</comments>
-                    <empty percent="32.08">197</empty>
-                    <total>614</total>
+                    <source percent="40.52">248</source>
+                    <comments percent="27.45">168</comments>
+                    <empty percent="32.03">196</empty>
+                    <total>612</total>
                 </lines>
                 <complexity>
                     <minimum>1</minimum>
@@ -376,10 +376,10 @@
     </units>
     <statistics>
         <lines>
-            <source percent="40.39">248</source>
-            <comments percent="27.52">169</comments>
-            <empty percent="32.08">197</empty>
-            <total>614</total>
+            <source percent="40.52">248</source>
+            <comments percent="27.45">168</comments>
+            <empty percent="32.03">196</empty>
+            <total>612</total>
         </lines>
         <complexity>
             <minimum>1</minimum>
@@ -1056,7 +1056,5 @@
         <line t="EF" i="660" b="1" n="1">end function xfunit_suite_get_annotation</line>
         <line t="EF" i="661" b="1" n="1"></line>
         <line t="M" i="662" b="1" n="1">end module m_xfunit_suite</line>
-        <line t="M" i="663" b="1" n="1"></line>
-        <line t="C" i="664" b="1" n="1">! 2024-10-30T23:28:35</line>
     </code>
 </fmx>

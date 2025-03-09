@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="../fmx.xsl"?>
 <fmx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="m_xfunit_report.f90">
     <context>
-        <time>2025-03-09T10:39:11</time>
+        <time>2025-03-09T17:50:33</time>
         <version>1.0.0.1</version>
         <path>src</path>
         <path_to_root>../</path_to_root>
@@ -14,10 +14,10 @@
         <unit name="m_xfunit_report" type="module">
             <main>
                 <lines>
-                    <source percent="26.39">19</source>
-                    <comments percent="44.44">32</comments>
-                    <empty percent="29.17">21</empty>
-                    <total>72</total>
+                    <source percent="27.14">19</source>
+                    <comments percent="44.29">31</comments>
+                    <empty percent="28.57">20</empty>
+                    <total>70</total>
                 </lines>
                 <complexity>
                     <minimum>0</minimum>
@@ -95,10 +95,10 @@
             </methods>
             <statistics>
                 <lines>
-                    <source percent="32.72">53</source>
-                    <comments percent="33.95">55</comments>
-                    <empty percent="33.33">54</empty>
-                    <total>162</total>
+                    <source percent="33.13">53</source>
+                    <comments percent="33.75">54</comments>
+                    <empty percent="33.13">53</empty>
+                    <total>160</total>
                 </lines>
                 <complexity>
                     <minimum>1</minimum>
@@ -116,10 +116,10 @@
     </units>
     <statistics>
         <lines>
-            <source percent="32.72">53</source>
-            <comments percent="33.95">55</comments>
-            <empty percent="33.33">54</empty>
-            <total>162</total>
+            <source percent="33.13">53</source>
+            <comments percent="33.75">54</comments>
+            <empty percent="33.13">53</empty>
+            <total>160</total>
         </lines>
         <complexity>
             <minimum>1</minimum>
@@ -295,7 +295,5 @@
         <line t="ES" i="159" b="3" n="1">end subroutine xfunit_report_write_xml</line>
         <line t="ES" i="160" b="1" n="1"></line>
         <line t="M" i="161" b="1" n="1">end module m_xfunit_report</line>
-        <line t="M" i="162" b="1" n="1"></line>
-        <line t="C" i="163" b="1" n="1">! 2024-10-30T23:28:35</line>
     </code>
 </fmx>

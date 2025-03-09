@@ -530,10 +530,10 @@
         <file name="m_xfunit_assertion_list_ftl.f90">
             <statistics>
                 <lines>
-                    <source percent="35.02">822</source>
-                    <comments percent="33.62">789</comments>
-                    <empty percent="31.36">736</empty>
-                    <total>2347</total>
+                    <source percent="35.05">822</source>
+                    <comments percent="33.60">788</comments>
+                    <empty percent="31.34">735</empty>
+                    <total>2345</total>
                 </lines>
                 <complexity>
                     <minimum>1</minimum>
@@ -803,10 +803,10 @@
         <file name="m_xfunit_report.f90">
             <statistics>
                 <lines>
-                    <source percent="32.72">53</source>
-                    <comments percent="33.95">55</comments>
-                    <empty percent="33.33">54</empty>
-                    <total>162</total>
+                    <source percent="33.13">53</source>
+                    <comments percent="33.75">54</comments>
+                    <empty percent="33.13">53</empty>
+                    <total>160</total>
                 </lines>
                 <complexity>
                     <minimum>1</minimum>
@@ -824,10 +824,10 @@
         <file name="m_xfunit_suite.f90">
             <statistics>
                 <lines>
-                    <source percent="40.39">248</source>
-                    <comments percent="27.52">169</comments>
-                    <empty percent="32.08">197</empty>
-                    <total>614</total>
+                    <source percent="40.52">248</source>
+                    <comments percent="27.45">168</comments>
+                    <empty percent="32.03">196</empty>
+                    <total>612</total>
                 </lines>
                 <complexity>
                     <minimum>1</minimum>
@@ -887,10 +887,10 @@
         <file name="m_xfunit_unit_list_ftl.f90">
             <statistics>
                 <lines>
-                    <source percent="35.02">822</source>
-                    <comments percent="33.62">789</comments>
-                    <empty percent="31.36">736</empty>
-                    <total>2347</total>
+                    <source percent="35.05">822</source>
+                    <comments percent="33.60">788</comments>
+                    <empty percent="31.34">735</empty>
+                    <total>2345</total>
                 </lines>
                 <complexity>
                     <minimum>1</minimum>
@@ -907,7 +907,7 @@
         </file>
     </files>
     <context>
-        <time>2025-03-09T10:39:11</time>
+        <time>2025-03-09T17:50:33</time>
         <version>1.0.0.1</version>
         <path>src</path>
         <path_to_root>../</path_to_root>
@@ -916,10 +916,10 @@
     </context>
     <statistics>
         <lines>
-            <source percent="36.50">6493</source>
-            <comments percent="31.55">5612</comments>
-            <empty percent="31.96">5685</empty>
-            <total>17790</total>
+            <source percent="36.51">6493</source>
+            <comments percent="31.54">5608</comments>
+            <empty percent="31.95">5681</empty>
+            <total>17782</total>
         </lines>
         <complexity>
             <minimum>1</minimum>
