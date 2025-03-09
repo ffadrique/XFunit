@@ -1,4 +1,4 @@
-# Copyright : 2022, Fran Martinez Fadrique <Fran.Martinez.Fadrique@gmail.com>
+# Copyright : 2025, Fran Martinez Fadrique <Fran.Martinez.Fadrique@gmail.com>
 # Project   : Atlantis
 # Author    : Fran Martinez Fadrique
 # Language  : make
