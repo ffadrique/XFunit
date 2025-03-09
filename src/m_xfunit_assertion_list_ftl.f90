@@ -1,7 +1,7 @@
 module m_xfunit_assertion_list_ftl
 
 !-------------------------------------------------------------------------------
-! Copyright : 2025, Fran Martinez Fadrique <Fran.Martinez.Fadrique@gmail.com>
+! Copyright : 2022, Fran Martinez Fadrique <Fran.Martinez.Fadrique@gmail.com>
 ! Project   : Atlantis
 ! Author    : Fran Martinez Fadrique
 ! Language  : Object Oriented Fortran 2018
@@ -2441,5 +2441,3 @@ pure function list_iterator_not_equal( left, right ) result(res)
 end function list_iterator_not_equal
 
 end module m_xfunit_assertion_list_ftl
-
-! 2024-10-30T23:28:35

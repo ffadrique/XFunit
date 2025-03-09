@@ -159,5 +159,3 @@ subroutine xfunit_report_write_xml( this, xml, fail_only )
 end subroutine xfunit_report_write_xml
 
 end module m_xfunit_report
-
-! 2024-10-30T23:28:35
