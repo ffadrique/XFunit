@@ -31,7 +31,7 @@ BINDIR := Debug
 IMODDIR := ../$(MODDIR) ../../../fommons/src/$(MODDIR)
 
 # Libraries
-LIBS = ../$(MODDIR)/libxfunit.a ../../../fommons/src/$(MODDIR)/libfommons.a
+LIBS = ../$(MODDIR)/libxfunit.a ../../../fommons/src/$(MODDIR)/libfommons.a -lgcov
 
 # Option selection for Intel Fortran (ifort)
 ifeq ($(findstring ifort, $(F90COMP)), ifort)
@@ -71,7 +71,7 @@ units: $(JUNITS)
 # Execute unit test
 %.jxml: $(BINDIR)/unit_%.bin
 	@echo "(UT)" $@
-	@export XFUNIT_ROOT_DIR=$(PWD);  \
+	@export XFUNIT_ROOT_DIR="$(PWD)";  \
     $< > /dev/null
 
 # Target for directory clean up

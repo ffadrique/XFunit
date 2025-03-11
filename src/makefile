@@ -43,7 +43,7 @@ endif
 
 # Option selection for GNU Fortran (gfortran)
 ifeq ($(findstring gfortran, $(F90COMP)), gfortran)
-OPTIONS = -c -cpp -g -O0 -std=f2008 -fbacktrace -fbounds-check -I $(MODDIR) $(EXTMODDIRS:%=-I%) -J $(MODDIR) -o $@ $<
+OPTIONS = -c -cpp -g -O0 -std=f2008 -fbacktrace -fbounds-check -ftest-coverage -fprofile-arcs -I $(MODDIR) $(EXTMODDIRS:%=-I%) -J $(MODDIR) -o $@ $<
 AR = ar
 endif
 
