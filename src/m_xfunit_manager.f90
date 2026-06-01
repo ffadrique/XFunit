@@ -429,6 +429,9 @@ subroutine xfunit_manager_execute_suite( this, suite )
 ! The test suite
   type(t_xfunit_suite), intent(inout) :: suite
 
+! Local variables
+  type(t_string), dimension(:), allocatable :: filtered_test_names
+  
 ! Capture standard output (try to open)
   call this%stdout%open( write=.true., unit=output_unit )
 
@@ -436,7 +439,8 @@ subroutine xfunit_manager_execute_suite( this, suite )
   call this%stderr%open( write=.true., unit=error_unit )
 
 ! Execute tests
-  call suite%execute( this%get_unit_test_filter() )
+  call this%get_unit_test_filter( filtered_test_names )
+  call suite%execute( filtered_test_names )
   if( suite%is_error() ) then
 
 !     Report the error
@@ -507,36 +511,30 @@ end subroutine xfunit_manager_write_xml_suite
 
 
 ! Get the unit test execution patterns
-pure function xfunit_manager_unit_test_filter_get( this ) result(res)
+pure subroutine xfunit_manager_unit_test_filter_get( this, res )
 
 ! The unit test manager
   class(t_xfunit_manager), intent(in) :: this
 
 ! The unit test filter patterns
-  type(t_string), dimension(:), allocatable :: res
+  type(t_string), dimension(:), allocatable, intent(out) :: res
 
 ! Local variables
-  integer :: nfilter, lfilter
+  integer :: nfilter
 
 ! Check for patterns
   if( allocated(this%unit_test_filter) ) then
 
 !   Intialise structure
     nfilter = size(this%unit_test_filter)
-    lfilter = len_trim(this%unit_test_filter(1))
     allocate( res(nfilter) )
 
 !   Return the patterns
     res = this%unit_test_filter
 
-  else
-
-!   Allocate empty
-    allocate( res(0) )
-
   end if
 
-end function xfunit_manager_unit_test_filter_get
+end subroutine xfunit_manager_unit_test_filter_get
 
 
 ! Access functions

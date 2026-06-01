@@ -380,7 +380,7 @@ subroutine xfunit_suite_add_unit_test( suite, ut, skip )
   class(t_xfunit_suite), intent(inout) :: suite
 
 ! The assertion
-  type(t_xfunit_unit), intent(in)    :: ut
+  type(t_xfunit_unit), intent(in) :: ut
 
 ! Flag to add the test but to skip the execution (optional; .false. by default)
   logical, optional, intent(in) :: skip
@@ -409,16 +409,24 @@ subroutine xfunit_suite_execute_character( suite, names )
   class(t_xfunit_suite), intent(inout) :: suite
 
 ! The names of the tests to execute (optional)
-  character(len=*), dimension(:), intent(in) :: names
+  character(len=*), dimension(:), allocatable, intent(in) :: names
 
 ! Local variables
-  type(t_string), dimension(size(names)) :: lnames
+  type(t_string), dimension(:), allocatable :: lnames
   integer :: i
 
-! Call the character interface
-  do i = 1, size(names)
-    lnames(i) = string(names(i))
-  end do
+! Check if names are provided
+  if( allocated(names) ) then
+
+!   Convert input names to string array
+    allocate( lnames(size(names)) )
+    do i = 1, size(names)
+      lnames(i) = string(names(i))
+    end do
+
+  end if
+
+! Call the string interface
   call suite%xfunit_suite_execute_string( lnames )
 
 end subroutine xfunit_suite_execute_character
@@ -431,7 +439,7 @@ subroutine xfunit_suite_execute_string( suite, names )
   class(t_xfunit_suite), intent(inout) :: suite
 
 ! The names of the tests to execute (optional)
-  type(t_string), optional, dimension(:), intent(in) :: names
+  type(t_string), optional, dimension(:), allocatable, intent(in) :: names
 
 ! Local variables
   list_iterator<m_xfunit_unit,t_xfunit_unit> :: it
@@ -461,12 +469,14 @@ subroutine xfunit_suite_execute_string( suite, names )
 
 !       Check if test execution by name is requested from the command line
         if( present(names) ) then
-          n = size(names)
-          if( size(names) > 0 ) then
-            utname = put%get_name()
-            do_execute = any( match( utname, names ) )
-          else
-            do_execute = .true.
+          if( allocated(names) ) then
+            n = size(names)
+            if( size(names) > 0 ) then
+              utname = put%get_name()
+              do_execute = any( match( utname, names ) )
+            else
+              do_execute = .true.
+            end if
           end if
         else
           do_execute = .true.
