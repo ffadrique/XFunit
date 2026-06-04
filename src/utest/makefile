@@ -31,7 +31,8 @@ BINDIR := Debug
 IMODDIR := ../$(MODDIR) ../../../fommons/src/$(MODDIR)
 
 # Libraries
-LIBS = ../$(MODDIR)/libxfunit.a ../../../fommons/src/$(MODDIR)/libfommons.a -lgcov
+LIB = ../$(MODDIR)/libxfunit.a
+LIBS = $(LIB)  ../../../fommons/src/$(MODDIR)/libfommons.a -lgcov
 
 # Option selection for Intel Fortran (ifort)
 ifeq ($(findstring ifort, $(F90COMP)), ifort)
@@ -41,7 +42,7 @@ endif
 
 # Option selection for GNU Fortran (gfortran)
 ifeq ($(findstring gfortran, $(F90COMP)), gfortran)
-OPTIONS = -cpp -O0 -no-pie -std=f2008 -fbacktrace -fbounds-check $(IMODDIR:%=-I%) -I $(MODDIR) -J $(MODDIR) -o $@ $^
+OPTIONS = -cpp -O0 -no-pie -std=f2018 -fbacktrace -fbounds-check $(IMODDIR:%=-I%) -I $(MODDIR) -J $(MODDIR) -o $@ $^
 AR = ar
 endif
 
@@ -60,7 +61,7 @@ JUNITS := $(JUNITS_F90)
 all: $(BINS_MAIN)
 
 # Build executables from related sources
-$(OBJDIR)/%.bin: %_tests.f90 %.f90
+$(OBJDIR)/%.bin: %_tests.f90 %.f90 $(LIB)
 	@if [ ! -d "$(BINDIR)" ]; then mkdir -p $(OBJDIR); fi
 	@echo "(FC)" $@
 	@$(F90COMP) $(OPTIONS) $(LIBS)

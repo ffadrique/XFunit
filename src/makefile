@@ -24,7 +24,7 @@
 F90COMP = gfortran
 
 # FXX command to process FTL files
-FXX := python ../fxx/fxx.py --templates-dir ../fxx
+FXX := python3 ../fxx/fxx.py --templates-dir ../fxx
 
 # Reference directories
 OBJDIR := Debug
@@ -43,7 +43,7 @@ endif
 
 # Option selection for GNU Fortran (gfortran)
 ifeq ($(findstring gfortran, $(F90COMP)), gfortran)
-OPTIONS = -c -cpp -g -O0 -std=f2008 -fbacktrace -fbounds-check -ftest-coverage -fprofile-arcs -I $(MODDIR) $(EXTMODDIRS:%=-I%) -J $(MODDIR) -o $@ $<
+OPTIONS = -c -cpp -g -O0 -std=f2018 -fbacktrace -fbounds-check -ftest-coverage -fprofile-arcs -I $(MODDIR) $(EXTMODDIRS:%=-I%) -J $(MODDIR) -o $@ $<
 AR = ar
 endif
 

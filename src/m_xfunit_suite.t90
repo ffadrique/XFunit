@@ -477,6 +477,8 @@ subroutine xfunit_suite_execute_string( suite, names )
             else
               do_execute = .true.
             end if
+          else
+            do_execute = .true.
           end if
         else
           do_execute = .true.
