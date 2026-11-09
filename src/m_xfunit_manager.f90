@@ -84,7 +84,7 @@ module m_xfunit_manager
 !     Flag to generate output reports (.jxml) strictly compliant with Junit.xsd
       logical :: junit_strict = .false.
 
-!     Report on failures only (not implemented yet)
+!     Report on failures only
       logical :: fail_only = .false.
 
 !     Error message stack
@@ -365,26 +365,31 @@ subroutine xfunit_manager_process_command_line( this )
 
 ! Local variables
   integer :: argc, iarg, larg
-  character(len=256) :: argv
+  character(len=:), allocatable :: argv
 
 ! Get the number of arguments in the command line
   argc = command_argument_count()
   if( argc > 0 ) then
-
-!   Compute the maximum argument length
-    larg = 0
-    do iarg = 1, argc
-      call get_command_argument( iarg, argv )
-      larg = max( larg, len_trim(argv) )
-    end do
 
 !   Allocate the argument list
     allocate( this%unit_test_filter(argc) )
 
 !   Loop reading command line arguments
     do iarg = 1, argc
-      call get_command_argument( iarg, argv )
+      
+!     Get the length of the argument      
+      call get_command_argument( iarg, length=larg )
+      
+!     Get the argument
+      allocate( character(len=larg) :: argv )
+      call get_command_argument( iarg, value=argv )
+
+!     Load the argument into the filter list            
       this%unit_test_filter(iarg) = string(trim(adjustl(argv)))
+      
+!     Release the argument
+      deallocate(argv)
+      
     end do
 
   end if
