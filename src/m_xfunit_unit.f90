@@ -584,7 +584,19 @@ function xfunit_unit_string( name, classname, annotation, executer, before, afte
   type(t_xfunit_unit) :: res
 
 ! Invoke the character interface
-  res = xfunit_unit( name%character(), classname%character(), annotation%character(), executer, before, after )
+  if( present(classname) ) then
+    if( present(annotation) ) then
+      res = xfunit_unit( name%character(), classname%character(), annotation%character(), executer, before, after )
+    else
+      res = xfunit_unit( name%character(), classname=classname%character(), executer=executer, before=before, after=after )
+    end if
+  else
+    if( present(annotation) ) then
+      res = xfunit_unit( name%character(), annotation=annotation%character(), executer=executer, before=before, after=after )
+    else
+      res = xfunit_unit( name%character(), executer=executer, before=before, after=after )
+    end if
+  end if
 
 end function xfunit_unit_string
 
@@ -597,6 +609,19 @@ subroutine xfunit_unit_execute( ut )
 
 ! Initialise
   ut%status = 0
+  ut%executed = .false.
+  ut%passed_assertions = 0
+  ut%failed_assertions = 0
+  ut%time0 = 0.0_8
+  ut%time1 = 0.0_8
+  ut%error_message = ''
+  call ut%msg%reset_error()
+  if( allocated(ut%report) ) then
+    call ut%report%clear()
+  else
+    allocate( ut%report )
+    ut%report = xfunit_report()
+  end if
 
 ! Execute the preparation routine
   if( associated(ut%before) ) then
@@ -4734,18 +4759,36 @@ subroutine xfunit_unit_process_assertion( ut, assertion, status )
 ! The assertion result (optional)
   integer, optional, intent(out) :: status
 
-! Local variables
-  integer :: localstatus
-
 ! Process the assertion
-  localstatus = assertion%get_status()
-  if( localstatus == xfunit_assertion_is_pass ) then
-    ut%passed_assertions = ut%passed_assertions + 1
-  else
-    ut%failed_assertions = ut%failed_assertions + 1
-  end if
+  select case( assertion%get_status() )
+    
+!   Assertion is passed
+    case( xfunit_assertion_is_pass )
+      ut%passed_assertions = ut%passed_assertions + 1
+
+!   Assertion is failed
+    case( xfunit_assertion_is_fail )
+      ut%failed_assertions = ut%failed_assertions + 1
+
+!   Assertion is undefined
+    case( xfunit_assertion_is_none )
+      call ut%msg%error( 'm_xfunit_unit', &
+                         'xfunit_unit_process_assertion', 1, &
+                         'Assertion returned an undefined status' )
+      ut%status = 1
+
+!   Assertion is invalid
+    case default
+      call ut%msg%error( 'm_xfunit_unit', &
+                         'xfunit_unit_process_assertion', 2, &
+                         'Assertion returned an invalid status' )
+      ut%status = 1
+      
+  end select
+    
+! Return the status if requested
   if( present(status) ) then
-    status = localstatus
+    status = assertion%get_status()
   end if
 
 ! Add the assertion error to the error stack

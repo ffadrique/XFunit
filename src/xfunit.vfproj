@@ -16,7 +16,7 @@
 			<Tool Name="VFPostBuildEventTool"/>
 		</Configuration>
 		<Configuration Name="Debug|x64" UseCompiler="ifxCompiler" ConfigurationType="typeStaticLibrary">
-			<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" DisableSpecificDiagnostics="5462" WarnInterfaces="true" Traceback="true" BoundsCheck="true" StackFrameCheck="true" RuntimeLibrary="rtMultiThreadedDebugDLL"/>
+			<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" StandardWarnings="standardWarningsF18" DisableSpecificDiagnostics="5462" WarnInterfaces="true" Traceback="true" BoundsCheck="true" StackFrameCheck="true" RuntimeLibrary="rtMultiThreadedDebugDLL"/>
 			<Tool Name="VFLibrarianTool"/>
 			<Tool Name="VFResourceCompilerTool"/>
 			<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
@@ -68,7 +68,8 @@
 						<Tool Name="VFCustomBuildTool" CommandLine="py &quot;$(ProjectDir)/../fxx/fxx.py&quot; &quot;$(InputDir)$(InputName).t90&quot;" Description="Generating $(InputName).f90" Outputs="$(InputDir)$(InputName).f90;$(InputDir)m_xfunit_unit_list_ftl.f90"/>
 					</FileConfiguration>
 				</File>
-				<File RelativePath="m_xfunit_unit.f90"/>
+				<File RelativePath="m_xfunit_unit.f90">
+				</File>
 				<File RelativePath="m_xfunit_unit_list_ftl.f90"/>
 			</Filter>
 			<Filter Name="Library">

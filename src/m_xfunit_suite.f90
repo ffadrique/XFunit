@@ -448,6 +448,9 @@ subroutine xfunit_suite_execute_string( suite, names )
   type(t_string) :: utname
   integer :: n
 
+! Initialize the suite status
+  suite%status = 0
+
 ! Execute the preparation routine
   if( associated(suite%before) ) then
     call suite%before()
@@ -496,11 +499,11 @@ subroutine xfunit_suite_execute_string( suite, names )
 
     end do
 
-!   Execute the teardown routine
-    if( associated(suite%after) ) then
-      call suite%after()
-    end if
+  end if
 
+! Execute the teardown routine
+  if( associated(suite%after) ) then
+    call suite%after()
   end if
 
 end subroutine xfunit_suite_execute_string
