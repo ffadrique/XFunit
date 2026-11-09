@@ -35,8 +35,8 @@ EXTMODDIRS := ../../fommons/src/$(MODDIR)
 # XFunit library
 LIBS = $(LIBDIR)/libxfunit.a
 
-# Option selection for Intel Fortran (ifort)
-ifeq ($(findstring ifort, $(F90COMP)), ifort)
+# Option selection for Intel Fortran (ifx)
+ifeq ($(findstring ifx, $(F90COMP)), ifx)
 OPTIONS = -c -fpp -g -O0 -stand f18 -traceback -check bounds -assume byterecl -diag-disable=5462 -I $(MODDIR)  $(EXTMODDIRS:%=-I%) -module $(MODDIR) -o $@ $<
 AR = ar
 endif

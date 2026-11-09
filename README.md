@@ -228,9 +228,9 @@ gmake units
 ```
 The default compiler is `gfortran` but can be overridden from the command line to use Intel Fortran
 ```make
-gmake F90COMP=ifort
+gmake F90COMP=ifx
 ```
-The ifort or gfortran commands must be in the execution path.
+The ifx or gfortran commands must be in the execution path.
 Alternatively, the makefile can be edited to provide the full path to the compiler.
 Compiler options are automatically selected for the active compiler; only Debug configuration is provided in the make files.
 

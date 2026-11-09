@@ -34,8 +34,8 @@ IMODDIR := ../$(MODDIR) ../../../fommons/src/$(MODDIR)
 LIB = ../$(MODDIR)/libxfunit.a
 LIBS = $(LIB)  ../../../fommons/src/$(MODDIR)/libfommons.a -lgcov
 
-# Option selection for Intel Fortran (ifort)
-ifeq ($(findstring ifort, $(F90COMP)), ifort)
+# Option selection for Intel Fortran (ifx)
+ifeq ($(findstring ifx, $(F90COMP)), ifx)
 OPTIONS = -fpp -O0 -stand f18 -traceback -check bounds -assume byterecl -diag-disable=5462 $(IMODDIR:%=-I%) -I $(MODDIR) -module $(MODDIR) -o $@ $< $(subst _tests,, $<)
 AR = ar
 endif
